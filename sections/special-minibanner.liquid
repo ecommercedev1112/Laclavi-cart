@@ -1,0 +1,85 @@
+{% style %}
+    
+#section-id-{{ section.id }} {
+  background: {{ section.settings.minibanner_bg_col }};
+}
+{% endstyle %}
+
+<div id="section-id-{{ section.id }}" class="">
+    {%- for block in section.blocks -%}
+      <div class="minibanner-container">
+        <div class="minibanner-title">
+          <p>{{ section.settings.title }}</p>
+        </div>
+        <div class="minibanner-subtitle">
+          <div class="content-subtitle">
+            <div class="mini-subtitle">{{ block.settings.subtitle }}</div>
+            <div class="mini-subtitle_price">{{ block.settings.subtitle_price }}</div>
+          </div>
+          <div class="minibanner-button"><a href="{{ block.settings.button-url }}">{{ block.settings.button }}</a></div>
+        </div>
+      </div>
+    {%- endfor -%}
+</div>
+
+
+{% schema %}
+  {
+    "name": "Mini banner",
+    "tag": "section",
+    "presets": [
+      {
+        "name": "Minibanner"
+      }
+    ],
+    "settings": [
+      {
+          "type": "header",
+          "content": "Mini Banner"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "FLASH SALE"
+      },
+      {
+        "type": "color",
+        "id": "minibanner_bg_col",
+        "label": "Bg",
+        "default": "#C9BEAC"
+      }
+    ],
+    "blocks":[
+      {
+        "type": "main_header",
+        "name": "Section Header",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "<p></p>"
+          },
+          {
+            "type": "richtext",
+            "id": "subtitle_price",
+            "label": "Subtitle price",
+            "default": "<p></p>"
+          },
+          {
+            "type": "richtext",
+            "id": "button",
+            "label": "Button",
+            "default": "<p></p>"
+          },
+          {
+            "type": "url",
+            "id": "button-url",
+            "label": "Button url"
+          }
+        ]
+      }
+    ] 
+  }
+{% endschema %}

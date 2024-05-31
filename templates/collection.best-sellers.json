@@ -1,0 +1,287 @@
+{
+  "sections": {
+    "1655967750612cb575": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/c69fac887635a400833796dac24e583d.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/2_b5977061-e031-451c-ada2-25d19fa0e078.png",
+        "image_position": "center center",
+        "mobile_image_position": "center bottom",
+        "height": "fixed",
+        "height_desktop": 660,
+        "height_mobile": 600,
+        "image_link": "",
+        "subheading": "",
+        "title": "BEST SELLERS",
+        "title_size": 56,
+        "title_size_mobile": 26,
+        "use_h1": false,
+        "text": "<p>Our team combines decades of industry experience with a deep affection<br\/> for the glamour of the 20th century! <br\/>We strive to provide an unmatched product experience and support a more sustainable future.<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "box"
+      }
+    },
+    "1655968240b55c557c": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "code": "<!-- Begin Mailchimp Signup Form -->\n<link href=\"\/\/cdn-images.mailchimp.com\/embedcode\/classic-10_7.css\" rel=\"stylesheet\" type=\"text\/css\">\n\n<div class=\"sc_forms\" id=\"mc_embed_signup\">\n<h2>GET FIRST ACCESS WITH FRESH RELEASE<\/h2>\n<form action=\"https:\/\/outlook.us14.list-manage.com\/subscribe\/post?u=dc8c7fbc123a5d1c578b1740e&amp;id=50de482643\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n    <div id=\"mc_embed_signup_scroll\">\n  \n<div class=\"sc_fileds\">\n  <div class=\"mc-field-group\">\n    <input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" placeholder=\"Enter your email\">\n<\/div>\n<input type=\"submit\" value=\"subscribe\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\">\n<\/div>\n\n\n  <div id=\"mce-responses\" class=\"clear\">\n    <div class=\"response\" id=\"mce-error-response\" style=\"display:none\"><\/div>\n    <div class=\"response\" id=\"mce-success-response\" style=\"display:none\"><\/div>\n  <\/div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_dc8c7fbc123a5d1c578b1740e_50de482643\" tabindex=\"-1\" value=\"\"><\/div>\n    \n    <\/div>\n<\/form>\n<\/div>\n<script type='text\/javascript' src='\/\/s3.amazonaws.com\/downloads.mailchimp.com\/js\/mc-validate.js'><\/script><script type='text\/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[8]='MMERGE8';ftypes[8]='radio';fnames[9]='MMERGE9';ftypes[9]='imageurl';}(jQuery));var $mcj = jQuery.noConflict(true);<\/script>\n<!--End mc_embed_signup-->"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "shadow",
+        "coll_num_per_page_int": 48,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": false,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "show_disabled_filters": true,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "main-menu",
+        "subcoll_style": "buttons",
+        "subcoll_gall_shape": "sq",
+        "image_position": "center center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": false,
+        "subcoll_gall_overlay_style": "full",
+        "subcoll_gall_text_alignment": "center center",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "165604990181f397e5": {
+      "type": "logo-list",
+      "blocks": {
+        "16dc4d4a-33c6-47b0-bf58-320996e22b1f": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sc1.png",
+            "image_width": 60,
+            "link": "shopify:\/\/pages\/shipping-policy",
+            "title": "Free Shippingover $100"
+          }
+        },
+        "71589993-387d-424e-8f51-a33696842a35": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sc2.png",
+            "image_width": 40,
+            "link": "shopify:\/\/pages\/return-refund-exchange-policy",
+            "title": "14-dayReturn Window"
+          }
+        },
+        "a0b0702d-e337-4684-9fe3-4260da6d2969": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sc3.png",
+            "image_width": 40,
+            "link": "shopify:\/\/pages\/faq",
+            "title": "Answers forYour Questions"
+          }
+        },
+        "481a44ec-57b4-4d26-b0d7-29630b42a219": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sc4.png",
+            "image_width": 40,
+            "link": "shopify:\/\/pages\/contact-us",
+            "title": "Email Usfor more"
+          }
+        }
+      },
+      "block_order": [
+        "16dc4d4a-33c6-47b0-bf58-320996e22b1f",
+        "71589993-387d-424e-8f51-a33696842a35",
+        "a0b0702d-e337-4684-9fe3-4260da6d2969",
+        "481a44ec-57b4-4d26-b0d7-29630b42a219"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "image_opacity": 75,
+        "use_alt_bg": false
+      }
+    },
+    "165605349625aad5a6": {
+      "type": "home-review",
+      "blocks": {
+        "1649fac3-32d8-4123-a8ff-866ec89f4788": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Very cute and well made!",
+            "review_content": "Perfect flapper dress for Roaring 20’s events. The beading and stitch detail on this dress are gorgeous. The fit is a little loose, but perfect for the style and allows for dancing. Great buy for such an inexpensive price.",
+            "author": "S***a",
+            "review_date": "18 \/ 06 \/ 2022"
+          }
+        },
+        "ac9aef77-2479-404e-a834-21a59dd98690": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Great easy way to dress up an outfit!",
+            "review_content": "Very sturdy necklace. I‘ve worn twice to two weddings and even with a 2.5 year old pulling on them they’ve held up very well. Great easy way to dress up any outfit! Would recommend!",
+            "author": "B***i",
+            "review_date": "12 \/ 06 \/ 2022"
+          }
+        },
+        "8b15b20a-2042-4a83-a570-653cd20fe853": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Beautiful Dress Great price",
+            "review_content": "The dress was beautiful and the details on the dress was top notch. The quality of the dress was better than expected and the fit was probably a little bigger than expected. I purchased a small and it still fit a little big.",
+            "author": "C***u",
+            "review_date": "05 \/ 06 \/ 2022"
+          }
+        },
+        "f9db530a-c383-4ad5-bd71-2fb3ac760dfb": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Great complimentary accessories",
+            "review_content": "These accessories were great for my halloween costume this year. I was worried that they might be poor quality when I initially ordered them. Thankfully, they are reasonably well built and looked great. I would definitely recommend them if you have some kind of flapper\/1920s costume in mind!",
+            "author": "I***l",
+            "review_date": "02 \/ 06 \/ 2022"
+          }
+        },
+        "4c647ab6-95a3-4688-a8de-f081ac1ebda8": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Beautifully made, and fits as it should",
+            "review_content": "I was pleasantly surprised at the quality and workmanship of this dress! I originally ordered a large, but it was a bit snug, so I reordered in the extra large and it was perfect..I’m 5.5'' 168..(and over 60..so..).Anyway, the beading is very detailed, beautifully done. The dress is comfortable, and heavy because of the extensive beading, and looks wonderful.I also purchased the accessories, and they matched perfectly. Excellent buy!",
+            "author": "J***n",
+            "review_date": "15 \/ 05 \/ 2022"
+          }
+        },
+        "758cbf22-8072-4533-92dd-ec24653e72b3": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Beautiful Bargain",
+            "review_content": "Perfect for a flapper themed event! Looked more expensive than the price. I would definitely order from them again. The green was really pretty and I got lots of compliments on the dress. If you're on the fence, I'd say order. Runs true to size, maybe a tad smallish.",
+            "author": "C***e",
+            "review_date": "05 \/ 05 \/ 2022"
+          }
+        },
+        "177be116-aaf5-49ee-be7d-91e1db689378": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Absolutely Love This Dress!",
+            "review_content": "This dress fits like a glove! I have a 32\" bust, 26\" waist, 34\" hip, and is 5'6\" and the XS fit perfectly! I originally purchased the size S but it was too large. The XS provides a tight enough fit without it being suffocating and easy movement. And the quality of the dress is very well made!",
+            "author": "M***n",
+            "review_date": "04 \/ 04 \/ 2022"
+          }
+        },
+        "666e9e23-9a82-40cb-98d7-df98d9cee727": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Beautiful, flattering dress...buy it!",
+            "review_content": "Beautiful dress! I was worried when zipping up around the bust area but, true to the reviews, it does have some stretch. Definetly a hand wash item in order to keep the sequins intact and the fringe untangled.",
+            "author": "L***l",
+            "review_date": "03 \/ 04 \/ 2022"
+          }
+        },
+        "d34cb232-10bf-44bf-bd3b-aedebb947206": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Outstanding quality for the price!",
+            "review_content": "This dress rocks! It is beautiful, well made, tons of detail and gorgeous!! I received so many compliments on it. Highly recommended. Buy up in size 16 is a 2X and 18 3X as it should be slightly loose.",
+            "author": "L***i",
+            "review_date": "03 \/ 04 \/ 2022"
+          }
+        },
+        "07f95b7e-3b54-42ba-b73a-d28e2dc5fcc1": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "BEAUTIFUL",
+            "review_content": "I loved this! It was great for the 20's party. Would highly recommend this to anyone... (I'd love to wear it again and again!!)",
+            "author": "N***a",
+            "review_date": "02 \/ 04 \/ 2022"
+          }
+        },
+        "eb08e495-014f-4503-bdf5-004fc857da98": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Very pretty! Worth the money.",
+            "review_content": "Very cute set! The earrings are actually really pretty and the colors in the feathers are also. I got so many compliments!",
+            "author": "J***r",
+            "review_date": "02 \/ 04 \/ 2022"
+          }
+        },
+        "2baa8efc-af0f-49a5-8c62-3abef463754b": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Flawless",
+            "review_content": "The feather was perfect. Perfect coloring, size, quality. I was worried it would be too small or frayed but it was amazing. The colored crystals are a darker amber color which makes this whole headband look so much classier than if it had some garish bright yellow stones. All the stones were set properly with nothing glued in crooked. Really nice quality for this price.",
+            "author": "M***i",
+            "review_date": "02 \/ 04 \/ 2022"
+          }
+        }
+      },
+      "block_order": [
+        "1649fac3-32d8-4123-a8ff-866ec89f4788",
+        "ac9aef77-2479-404e-a834-21a59dd98690",
+        "8b15b20a-2042-4a83-a570-653cd20fe853",
+        "f9db530a-c383-4ad5-bd71-2fb3ac760dfb",
+        "4c647ab6-95a3-4688-a8de-f081ac1ebda8",
+        "758cbf22-8072-4533-92dd-ec24653e72b3",
+        "177be116-aaf5-49ee-be7d-91e1db689378",
+        "666e9e23-9a82-40cb-98d7-df98d9cee727",
+        "d34cb232-10bf-44bf-bd3b-aedebb947206",
+        "07f95b7e-3b54-42ba-b73a-d28e2dc5fcc1",
+        "eb08e495-014f-4503-bdf5-004fc857da98",
+        "2baa8efc-af0f-49a5-8c62-3abef463754b"
+      ],
+      "settings": {
+        "title": "REVIEWS FROM OUR COMMUNITY",
+        "star_rating": 5,
+        "allreview": "7623 Reviews"
+      }
+    }
+  },
+  "order": [
+    "1655967750612cb575",
+    "1655968240b55c557c",
+    "main",
+    "165604990181f397e5",
+    "165605349625aad5a6"
+  ]
+}

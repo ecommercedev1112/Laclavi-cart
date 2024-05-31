@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "full_width": false
+      }
+    },
+    "16478347615c50667b": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "1647834761f9834156-0": {
+          "type": "question",
+          "settings": {
+            "title": "What is your return policy?",
+            "answer": "<p>BABEYOND only accepts returns <strong>within 14 days<\/strong> since their delivery date.<\/p><ul><li>Items must be returned unworn, unwashed, undamaged, and with all original packaging and tags attached.<\/li><li>Please note that we only accept returns within the 14 days’ timeframe since their delivery date. If an item is sent back after the 14 days window, we will not accept your return.<\/li><li>The 14-day return window is calculated from the delivery time of your last item arrived to the time you submit a return request. So rest assured, you don't need to worry if you request a return on the 14th day, but our customer service hasn't replied to you yet.<\/li><li>Items marked as clearance sale and items without original hangtags are not eligible for returns or exchanges unless there is a quality issue.<\/li><li>Currently, we are unable to provide a free returns service, so the cost of return shipping must be covered by you. However, if the return is due to an issue on our end, such as a product defect or a delay beyond the website's promised time frame, we will cover the return costs.<\/li><\/ul><p>To start a return, please send an email that includes your Order Number and the complete product name (including color and size, if available, all of which can be found in your order confirmation email) to <span style=\"text-decoration:underline\">support@babeyond.zendesk.com<\/span>. We will reply to you within 1 business day.<\/p><p><strong>* Please note that we do not accept returned items that have been sent back without proper return requests.<\/strong><\/p>"
+          }
+        },
+        "1647834761f9834156-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I make a return?",
+            "answer": "<p>To start a return, please send an email that includes your Order Number and the complete product name (including color and size, if available, all of which can be found in your order confirmation email) to <span style=\"text-decoration:underline\">support@babeyond.zendesk.com<\/span>. We will reply to you within 1 business day.<\/p>"
+          }
+        },
+        "1b9d10e3-7a49-4b08-9cde-1d745981e9c2": {
+          "type": "question",
+          "settings": {
+            "title": "Which items couldn't be returned or refunded?",
+            "answer": "<p>We gladly accept returns <strong>within 14 days’<\/strong> timeframe since their delivery date. For the items that couldn't be returned, please check below:<\/p><p>1) Items over our 14-days limit<\/p><p>2) Used, worn, soiled or altered items<\/p><p>3) Items on clearance sale and items without original hangtags cannot be returned<\/p>"
+          }
+        },
+        "7fc1bce0-17af-4754-b6b7-3c35889b9a25": {
+          "type": "question",
+          "settings": {
+            "title": "Should I pay the shipping fee if I return the items?",
+            "answer": "<p>Currently, we are unable to provide a free returns service, so the cost of return shipping must be covered by you. However, if the return is due to an issue on our end, such as a product defect or a delay beyond the website's promised time frame, we will cover the return costs.<\/p>"
+          }
+        },
+        "4f93edcd-fdc2-4cd3-9b55-97c13637abfb": {
+          "type": "question",
+          "settings": {
+            "title": "When will I receive my refund?",
+            "answer": "<p>Upon receiving the return package, our warehouse will assess its eligibility for a refund. This evaluation typically takes less than 1 week, but during periods of high volume, it may extend to 2 weeks due to limited staffing.<br\/>Once our warehouse confirms eligibility, we will process the refund within 1 business day. Subsequently, the refunded amount will be automatically credited to your original method of payment, such as your credit card, within 5 business days.<\/p><p>If you couldn't receive the money in time, please feel free to contact our <a href=\"https:\/\/babeyond.com\/pages\/contact-us\">Customer Care Team<\/a> for further assistance.<\/p>"
+          }
+        },
+        "4de3110f-aaf8-40e2-a3ff-17c703cc899e": {
+          "type": "question",
+          "settings": {
+            "title": "My order arrived wrong or damaged. What should I do?",
+            "answer": "<p>We always want to ensure that we get you all your faves! If we made a mistake or sent the wrong item, please don't worry - we'll make it right!<\/p><p>Within 2 business days of receipt, please send an email that includes your Order Number and the complete product name (including color and size, if available, all of which can be found in your order confirmation email) to <span style=\"text-decoration:underline\">support@babeyond.zendesk.com<\/span>. We will reply to you within 1 business day.<\/p>"
+          }
+        },
+        "50a7b4ac-62fa-4d6c-a40b-4a3a0628e513": {
+          "type": "question",
+          "settings": {
+            "title": "What if I want an exchange?",
+            "answer": "<p>For our exchange process, if the items are not fit, you can return the order and place a new one.<\/p><p>We accept exchanges under the following conditions:<\/p><p>1) The order is within 14 days since its delivery date.<\/p><p>2) Items must be returned intact with all original packaging and tags attached.<\/p><p>3) Items on Clearance Sale and items without original hangtags can not be exchanged.<\/p><p>To start an exchange, please send an email that includes your Order Number and the complete product name (including color and size, if available, all of which can be found in your order confirmation email) of the item you wish to exchange, and specify the product you'd like to exchange for (including complete product name and its size and color) , to <span style=\"text-decoration:underline\">support@babeyond.zendesk.com<\/span>. We will reply to you within 1 business day.<\/p><p><strong>* Please note that we do not accept returned items that have been sent back without proper return requests.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1647834761f9834156-0",
+        "1647834761f9834156-1",
+        "1b9d10e3-7a49-4b08-9cde-1d745981e9c2",
+        "7fc1bce0-17af-4754-b6b7-3c35889b9a25",
+        "4f93edcd-fdc2-4cd3-9b55-97c13637abfb",
+        "4de3110f-aaf8-40e2-a3ff-17c703cc899e",
+        "50a7b4ac-62fa-4d6c-a40b-4a3a0628e513"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Return FAQS"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16478347615c50667b"
+  ]
+}

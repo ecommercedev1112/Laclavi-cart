@@ -1,0 +1,112 @@
+<div class="fabric-story-text">
+  <div class="text-container">
+    <div class="fabric-story-text-row">
+      {% for block in section.blocks %}
+      <div class="fabric-story-text-col left-col">
+        <div class="text-col-title">
+          {{ block.settings.title }}
+        </div>
+      </div>
+      <div class="fabric-story-text-col right-col">
+        {{ block.settings.text }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .text-container{
+    margin-block: {{section.settings.section_spacing_block}}px;
+    margin-inline: {{section.settings.section_spacing_inline}}px;
+  }
+  .fabric-story-text .text-container {
+    margin-bottom: 136px;
+  }
+  @media (max-width: 989px){
+     .text-container{
+      margin-block: calc({{section.settings.section_spacing_block}}px/2);
+    } 
+  }
+  
+  @media (max-width: 767px){
+     .text-container{
+      margin-block: {{section.settings.section_spacing_block_mobile}}px !important;
+      margin-inline: {{section.settings.section_spacing_inline_mobile}}px;
+    } 
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Fabric Story Text",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "section_spacing_block",
+      "label": "Top Bottom Spacing",
+      "min": 0,
+      "max": 300,
+      "step": 6,
+      "unit": "px",
+      "default": 54
+    },
+    {
+      "type": "range",
+      "id": "section_spacing_inline",
+      "label": "Left Right Spacing",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 54
+    },
+    {
+      "type": "range",
+      "id": "section_spacing_block_mobile",
+      "label": "Top Bottom Spacing Mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "section_spacing_inline_mobile",
+      "label": "Left Right Spacing Mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Text Left",
+          "default": "<p>Use this text to share information</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text Right",
+          "default": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fabric Story Text"
+    }
+  ]
+}
+{% endschema %}

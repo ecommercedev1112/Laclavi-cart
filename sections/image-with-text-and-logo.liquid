@@ -1,0 +1,389 @@
+
+<div class="Affiliate"  id="section-id-{{ section.id }}">
+
+  <div class="partnerBlock">
+   <div class="title">{{ section.settings.text1 }}</div>
+   <div class="content">
+       <div class="partnerImg">
+           <img class="partnerPcmb" src="{{ section.settings.image  | img_url: '1024x1024'}}">
+           <img class="partnerPad" src="{{ section.settings.image  | img_url: '1024x1024'}}">
+       </div>
+       <div class="partnerText">
+          {%- for block in section.blocks -%}
+          <div class="list">
+              <div class="list-img">
+                   <img src="{{  block.settings.image  | img_url: '1024x1024'}}">
+              </div>
+              <div class="list-text">
+                  <div class="list-title">
+                      {{ block.settings.text1 }}:
+                   </div>
+                  <div class="list-content">
+                      {{ block.settings.textBody }}
+                  </div>
+              </div>
+          </div>
+        {%- endfor -%}
+       
+            
+          <div class="buttonBox">
+               <a class="partnerBtn" href="{{ section.settings.link }}">
+                   <img class="theBk" src="{{  section.settings.image3 | img_url: '1024x1024' }}">
+                   <img class="theWt" src="{{  section.settings.image2 | img_url: '1024x1024' }}">
+               </a>
+               <!-- <a class="partnerBtn" href="{{ section.settings.link }}">
+                   <img class="theBk" src="https://images.lilysilk.com/promotion/pagebuild_solid/affiliate/impact-bk.svg">
+                   <img class="theWt" src="https://images.lilysilk.com/promotion/pagebuild_solid/affiliate/impact-wt.svg">
+               </a> -->
+       </div>
+           <div class="partnerbottom">
+             {{ section.settings.textfu }}
+               
+           </div>
+       </div>
+   </div>
+  </div>
+  </div>
+  {% schema %}
+  {
+    "name": "Image with text and logo",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text1",
+        "label": "Head Text",
+        "default": "Partner  Affiliate  Platforms"
+      },
+        {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "Intrinsic aspect ratio:5∶4 recommended"
+      } ,
+           {
+            "type": "image_picker",
+            "id": "image2",
+            "label": "button Image ",
+            "info": "Intrinsic size:386 × 126 px recommended"
+          },
+           {
+            "type": "image_picker",
+            "id": "image3",
+            "label": "button Image hover",
+            "info": "Intrinsic size:386 × 126 px recommended"
+          },
+           {
+            "type": "url",
+            "id": "link",
+            "label": "button Link "
+          },
+            {
+              "type": "html",
+              "id": "textfu",
+              "label": "bottom content "
+            }
+    ],
+    "blocks": [
+      {
+          "type": "text",
+          "name": "Body Text",
+          "limit": 3,
+         "settings": [
+          {
+            "type": "text",
+            "id": "text1",
+            "label": "Head Text",
+            "default": "SIGN UP"
+          },
+            {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image Ico",
+            "info": "Intrinsic aspect ratio:1∶1 recommended"
+          },
+            {
+              "type": "html",
+              "id": "textBody",
+              "label": "html content ",
+              "default": " <p>Join is free and easy, sign up to get approved.</p>"
+            }
+        ]
+      }
+             
+     ],
+    "presets": [
+      {
+        "name": "Image with text and logo",
+        "settings": {
+        },
+         "blocks": [
+      ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% style %}
+   .Affiliate img{
+    width: 100%;
+   }
+   .Affiliate  a {
+    text-decoration: underline;
+    color: #2c2c2c;
+}
+    .Affiliate .partnerBlock .title {
+          font-family: FreightDispPro-Book;
+          font-size: 50px;
+          line-height: 0.96;
+          color: #2c2c2c;
+          width: 80%;
+          margin: auto;
+          margin-bottom: 55px;
+          text-align: center;
+      }
+      .Affiliate .partnerBlock .content {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .Affiliate .partnerBlock .partnerImg {
+          width: 50%;
+          position: relative;
+      }
+      .Affiliate .partnerBlock .partnerText {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          width: 50%;
+          padding: 0 10%;
+          background: #f7f7f7;
+          box-sizing: border-box;
+      }
+      .Affiliate .partnerBlock .list {
+          display: flex;
+          margin-bottom: 24px;
+          width: 100%;
+          max-width: 502px;
+      }
+      .Affiliate .partnerBlock .list:nth-of-type(3) {
+          margin-bottom: 34px;
+      }
+      .Affiliate .partnerBlock .list .list-img {
+          display: inline-block;
+          width: 18px;
+          margin-right: 24px;
+      }
+      .Affiliate .partnerBlock .list-text {
+          display: inline-block;
+          width: calc( 100% - 42px );
+      }
+      .Affiliate .partnerBlock .list-text .list-title{
+          font-family: Graphik-Medium-Web;
+          font-size: 14px;
+          line-height: 23px;
+          color: #2c2c2c;
+      }
+      .Affiliate .partnerBlock .list-text .content{
+          font-family: Graphik-Regular-Web;
+          font-size: 14px;
+          line-height: 23px;
+          color: #2c2c2c;
+      }
+      .Affiliate .partnerBlock .buttonBox {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+      }
+      .Affiliate .partnerBlock .partnerBtn {
+          display: inline-block;
+          position: relative;
+          width: calc(50% - 15px);
+      }
+      .Affiliate .partnerBlock .partnerBtn .theBk {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          transition: 0.3s;
+      }
+      .Affiliate .partnerBlock .partnerBtn .theWt {
+          visibility: visible;
+          opacity: 1;
+          transition: 0.3s;
+      }
+      .Affiliate .partnerBlock .partnerbottom {
+          width: 100%;
+          font-family: Graphik-Regular-Web;
+          font-size: 14px;
+          line-height: 23px;
+          color: #2c2c2c;
+          margin-top: 11px;
+          text-align: left;
+      }
+      .Affiliate .partnerBlock .partnerbottom a {
+          text-decoration: underline;
+      }
+      .Affiliate .partnerBlock .partnerbottom a:hover {
+          color: #bc836d;
+      }
+      .Affiliate .postPad {
+          display: none;
+      }
+      .Affiliate .postMb {
+          display: none;
+      }
+      .Affiliate .partnerPad {
+          display: none;
+      }
+  
+      @media screen and (min-width: 1025px) {
+          .Affiliate .partnerBlock .partnerBtn:hover .theBk {
+              visibility: visible;
+              opacity: 1;
+          }
+          .Affiliate .partnerBlock .partnerBtn:hover .theWt {
+              visibility: hidden;
+              opacity: 0;
+          }
+      }
+      @media screen and (max-width: 1280px) {
+          .Affiliate .partnerBlock .partnerText {
+              padding: 0 5%;
+          }
+      }
+      @media screen and (max-width: 1120px) {
+          .Affiliate .partnerBlock .partnerText {
+              padding: 0 25px;
+          }
+          .Affiliate .partnerBlock .list .list-img {
+              margin-right: 20px;
+          }
+      }
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+          .Affiliate .partnerPcmb {
+              display: none;
+          }
+          .Affiliate .partnerPad {
+              display: block;
+          }
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+          .Affiliate .partnerBlock .list {
+              margin-bottom: 14px;
+          }
+          .Affiliate .partnerBlock .list:nth-of-type(3) {
+              margin-bottom: 24px;
+          }
+      }
+      @media screen and (max-width: 768px) {
+          .Affiliate .logoBlock {
+              font-size: 40px;
+           line-height: 1.13;
+              max-width:unset;
+              width: 90%;
+              margin: auto;
+              text-align: center;
+              padding: 30px 0 20px 0;
+          }
+          .Affiliate .logo-content {
+              width: 90%;
+              max-width: unset;
+              padding-top: 30px;
+              margin: auto;
+          }
+          .Affiliate .partnerBlock .title {
+           font-size: 28px;
+              line-height: 1.25;
+              width: 90%;
+              margin: auto;
+              margin-bottom: 25px;
+              text-align: center;
+          }
+          .Affiliate .top{
+              font-size: 14px;
+              line-height: 1.64;
+              padding-bottom: 21px;
+          }
+          .Affiliate .bottom{
+              font-size: 28px;
+              line-height: 1.14;
+              padding-bottom: 61px;
+          }
+          .Affiliate .itWorks {
+              display: block;
+              margin-bottom: 39px;
+          }
+          .Affiliate .itWorks .right{
+              width: 90%;
+              margin: auto;
+          }
+          .Affiliate .itWorks .better .imgBox{
+              margin-bottom: 5px;
+          }
+          .Affiliate .itWorks .left{
+              width: 90%;
+              margin: auto;
+              padding-bottom: 39px;
+          }
+          .Affiliate .itWorks .writing{
+              font-size: 34px;
+           line-height: 1.12;
+              padding: 30px 0 0 0;
+              width: unset;
+          }
+          .Affiliate .itWorks .writing .xian{
+              margin: 20px 0 20px 0;
+          }
+          .Affiliate .itWorks .better{
+              width: unset;
+          }
+          .Affiliate .itWorks .better .imgBox img{
+              height: 32px;
+              margin-left: unset;
+              margin-right: 10px;
+          }
+          .Affiliate .itWorks .better .imgBox .copy{
+              font-size: 16px;
+              line-height: 1.5;
+          }
+          .Affiliate .partnerBlock .partnerImg {
+              width: 100%;
+          }
+          .Affiliate .partnerBlock .partnerText {
+              width: 100%;
+              padding: 40px 30px;
+          }
+          .Affiliate .partnerBlock .buttonBox {
+              text-align: center;
+          }
+          .Affiliate .partnerBlock .partnerBtn {
+              width: calc(50% - 12px);
+          }
+          .Affiliate .partnerBlock .partnerbottom {
+              text-align: center;
+          }
+          .Affiliate .postPc {
+              display: none;
+          }
+          .Affiliate .postPad {
+              display: none;
+          }
+          .Affiliate .postMb {
+              display: block;
+          }
+          .Affiliate .partnerPad {
+              display: none;
+          }
+      }
+      @media screen and (max-width: 400px) {
+          .Affiliate .partnerBlock .partnerBtn {
+              width: calc(50% - 6px);
+          }
+      }
+{% endstyle %}
+
+{% javascript %}
+{% endjavascript %}

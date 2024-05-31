@@ -1,0 +1,284 @@
+{
+  "sections": {
+    "heading": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/03_3e0d4ddc-4bc5-43c2-be96-23d271f4fa4d.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/02_61a4dd66-d1b4-44c6-8ef0-5468bc6197c8.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "fixed",
+        "height_desktop": 300,
+        "height_mobile": 300,
+        "image_link": "",
+        "subheading": "",
+        "title": "Customer Help",
+        "title_size": 52,
+        "title_size_mobile": 20,
+        "use_h1": false,
+        "text": "<p>We've got your back find all the things you want to know.<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "main": {
+      "type": "faq-header",
+      "settings": {
+        "title": "FAQ",
+        "use_h1": false,
+        "text": "",
+        "show_search": true,
+        "show_index": true,
+        "index_heading": "How can we help?"
+      }
+    },
+    "faq-content-1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need to create an account to place an online order?",
+            "answer": "<p>No, you can place an order directly without creating an account. However, an account has various advantages such as faster checkout process for future purchases and clear record of pending or completed orders.<\/p><p>Please feel assured that we do NOT share your information within your account with third parties. For more information, please view our <a href=\"https:\/\/babeyond.com\/pages\/privacy-policy\">Privacy Policy.<\/a><\/p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Can I modify or cancel my order after it has been placed?",
+            "answer": "<p>You can only cancel\/change your order up to <strong>one hour<\/strong> after the order is placed. Once we have shipped your package, you may simply return the items you unwanted by following our Return Instructions.<\/p><p>For further assistance, feel free to reach out to our <a href=\"https:\/\/babeyond.com\/pages\/contact-us\">Customer Care Team<\/a>.<\/p>"
+          }
+        },
+        "e56dedd5-6576-425d-8b5d-695843350b6d": {
+          "type": "question",
+          "settings": {
+            "title": "Can I combine promo codes?",
+            "answer": "<p>Please note that the promo codes can only be used once and cannot be used in combination.<\/p>"
+          }
+        },
+        "b4697bb6-5dc3-412a-acc2-aad13f76e920": {
+          "type": "question",
+          "settings": {
+            "title": "What should I do if I did not receive a confirmation email?",
+            "answer": "<p>Our order confirmation email is sent out automatically by our ordering system. If you did not receive an Order Confirmation email and you are certain that you entered a valid email address during checkout, you may want to check your SPAM mailbox first. <\/p><p>If there is no relevant email, please contact us at <a href=\"mailto:support@babeyond.zendesk.com\" title=\"mailto:support@babeyond.zendesk.com\">support@babeyond.zendesk.com<\/a> to confirm whether or not the order went through. For your convenience, we strongly recommend creating an account with us so that you can log in to keep track of your orders.<\/p>"
+          }
+        },
+        "e7526c85-12f7-40ae-b466-64d31ea5182c": {
+          "type": "question",
+          "settings": {
+            "title": "How do I check my order status?",
+            "answer": "<p>You can check the status of your order on our website by clicking on Account--Orders.<\/p><p>You can also check it from the shipment details email we send you when items you ordered have been shipped.<\/p><p>If there are any questions, please contact <a href=\"mailto:support@babeyond.zendesk.com\" title=\"mailto:support@babeyond.zendesk.com\">support@babeyond.zendesk.com<\/a> with your <strong>order ID<\/strong>, we'll be in touch in 1 business day and provide specific order status information.<\/p>"
+          }
+        },
+        "a7ba722f-f04f-4efd-8301-8d90a9872f00": {
+          "type": "question",
+          "settings": {
+            "title": "Why was my order canceled?",
+            "answer": "<p>We are sorry that if your order was canceled it's likely that the item you purchased is currently out of stock. Please feel assured that you will not been charged for this order.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "e56dedd5-6576-425d-8b5d-695843350b6d",
+        "b4697bb6-5dc3-412a-acc2-aad13f76e920",
+        "e7526c85-12f7-40ae-b466-64d31ea5182c",
+        "a7ba722f-f04f-4efd-8301-8d90a9872f00"
+      ],
+      "settings": {
+        "title": "PLACING AN ORDER"
+      }
+    },
+    "faq-content-2": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "What shipping methods do you offer?",
+            "answer": "<p>We offer Expedited & Express shipping methods, so you can choose the shipping method that meet your needs. For more details, please review our <a href=\"https:\/\/babeyond.com\/pages\/shipping-policy\">Shipping Policy<\/a>. <\/p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "When will my order ship?",
+            "answer": "<p>Orders are generally processed within 1-2 business days of purchase. You will receive an email with tracking information when we have fulfilled your order. Delivery depends on the selected shipping method. <\/p><p>For more details on estimated delivery times, please review our <a href=\"https:\/\/babeyond.com\/pages\/shipping-policy\">Shipping Policy<\/a>.<\/p>"
+          }
+        },
+        "d878d249-a658-4ec2-a3e5-90b698818724": {
+          "type": "question",
+          "settings": {
+            "title": "How do I track my package?",
+            "answer": "<p>You can find your tracking number on your shippinng confirmation email. If you’re having trouble finding this email, please feel free to reach out to  <a href=\"mailto:support@babeyond.zendesk.com\" title=\"mailto:support@babeyond.zendesk.com\">support@babeyond.zendesk.com<\/a>.<\/p>"
+          }
+        },
+        "07173a37-50c6-4550-8192-0062e052cfd1": {
+          "type": "question",
+          "settings": {
+            "title": "My order was delivered with only some of my items, what do I do?",
+            "answer": "<p>We may have shipped your order separately as the goods are in different warehouses, please check the status of each package in the shipping details email we send to you.<\/p><p>If you do not receive all the items, please contact <a href=\"mailto:support@babeyond.zendesk.com\" title=\"mailto:support@babeyond.zendesk.com\">support@babeyond.zendesk.com<\/a> with your <strong>order ID and the missing items<\/strong>, we'll be in touch in 1 business day and resolve your matter.<\/p>"
+          }
+        },
+        "57402564-fa2b-4aab-9236-6cedf1648e28": {
+          "type": "question",
+          "settings": {
+            "title": "What should I do if I never received my order?",
+            "answer": "<p>Generally, we need 1-2 business days to process and ship your order. Once we have fulfilled your items, a shipment details with tracking number will be sent to your email address. If you do not receive the email, please verify your email address and shipping details were correct.<\/p><p>For further assistance, please contact us at <a href=\"mailto:support@babeyond.zendesk.com\" title=\"mailto:support@babeyond.zendesk.com\">support@babeyond.zendesk.com<\/a> with the <strong>order number<\/strong> and we'll be happy to help.<\/p>"
+          }
+        },
+        "3a65077a-a8ca-4851-b0c8-90a5799d7310": {
+          "type": "question",
+          "settings": {
+            "title": "Can I have my order redirected to a different address?(shipped)",
+            "answer": "<p>We are sorry that we can only change your order address while the order is not shipped. Once we have shipped your package, you may simply return the items you unwanted by following our Return Instructions.<\/p><p>For further assistance, please feel free to reach out to our <a href=\"https:\/\/babeyond.com\/pages\/contact-us\">Customer Care Team<\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "d878d249-a658-4ec2-a3e5-90b698818724",
+        "07173a37-50c6-4550-8192-0062e052cfd1",
+        "57402564-fa2b-4aab-9236-6cedf1648e28",
+        "3a65077a-a8ca-4851-b0c8-90a5799d7310"
+      ],
+      "settings": {
+        "title": "DELIVERY"
+      }
+    },
+    "165482697328896670": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "1654826973f784a16a-0": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "What is your return policy?",
+            "answer": "<p>BABEYOND only accepts returns <strong>within 14 days<\/strong> since their delivery date.<\/p><p>To start a return, please go to <a href=\"https:\/\/babeyond.com\/tools\/returns-center\">Returns Center<\/a>, and follow the step to initiate a return request, then you will get a detailed return instruction as well as a prepaid return label. Send the package back using the prepaid return label. Shipping costs for your return will be deducted from your refund.<\/p><p>Learn more about our <a href=\"https:\/\/babeyond.com\/pages\/free-return-policy\">Return Policy<\/a><a href=\"https:\/\/babeyond.com\/pages\/return-refund-exchange-policy\">.<\/a><\/p><p><strong>* Please note that we do not accept returned items that have been sent back without proper return requests.<\/strong><\/p>"
+          }
+        },
+        "1654826973f784a16a-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I return or exchange an item?",
+            "answer": "<h6>Step 1.<\/h6><p>Go to <a href=\"https:\/\/babeyond.com\/tools\/returns-center\" title=\"BABEYOND Return Center\">https:\/\/babeyond.com\/tools\/returns-center<\/a>.<\/p><h6>Step 2.<\/h6><p>Find your order by entering your order number, either with or without the #, and email address.<\/p><h6>Step 3.<\/h6><p>Follow the steps to initiate a return request, and you will get a detailed return instruction as well as a prepaid return label. (Customers in Canada will get a detailed return instruction. Currently we cannot provide prepaid return labels for customers in Canada.)<\/p><h6>Step 4.<\/h6><p>Send the package back using the prepaid return label. Shipping costs for your return will be deducted from your refund.<\/p><p><strong>* Please note that we do not accept returned items that have been sent back without proper return requests.<\/strong><\/p>"
+          }
+        },
+        "e4dc7002-142b-4ef6-bb31-6f3b165ea48b": {
+          "type": "question",
+          "settings": {
+            "title": "Which items couldn't be returned or refunded?",
+            "answer": "<ul><li>Items over 14-day return window limit<\/li><li>Items without original hang tags or used, worn, soiled or altered items<\/li><li>Items marked as Clearance Sale unless it is a faulty product<\/li><li>Original shipping charges, duties and taxes<\/li><li>Unshipped products\/Order Cancellation: [Important]Currently our system cannot auto process order cancellation for unshipped products. If you need to cancel unshipped orders, simply send the order number and the items you want to cancel to <a href=\"mailto:support@babeyond.zendesk.com\">support@babeyond.zendesk.com<\/a>. Our customer service team will cancel them in 1 business days.<\/li><\/ul>"
+          }
+        },
+        "383bd2ac-cdc4-4282-bd56-510f662b28c6": {
+          "type": "question",
+          "settings": {
+            "title": "Should I pay the shipping fee if I return the items?",
+            "answer": "<p>Sorry, currently we cannot provide free returns for all customers, so customers will cover the return shipping fee. If customers use the prepaid return label, shipping costs for the prepaid return label will be deducted from your refund.<\/p>"
+          }
+        },
+        "a942a213-934a-4238-bbe5-3da7c40a87b7": {
+          "type": "question",
+          "settings": {
+            "title": "When will I receive my refund?",
+            "answer": "<p>Once the package arrived at our warehouse, we will check the item(s) before the<strong>Friday next week<\/strong>. After we determine that it's eligible for a refund, it takes<strong>1 additional business day<\/strong>for BABEYOND Operation Team to process the refund and you will received a clear notification of successful refund processing. After that, the refund should be sent back to your original payment methods in several business days. (Paypal could take<strong>3 business days<\/strong>for them to process, and Credit Card could take<strong>10 business days<\/strong>.)<\/p>"
+          }
+        },
+        "7ebf9f06-8d11-48c9-9a04-091e3abbe794": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "My order arrived wrong or damaged. What should I do?",
+            "answer": "<p>We always want to ensure that we get you all your faves! If we made a mistake or sent the wrong item, please don't worry - we'll make it right!<\/p><p>Within 2 business days of receipt, please send an email that includes your Order Number and the complete product name (including color and size, if available, all of which can be found in your order confirmation email) to <span style=\"text-decoration:underline\">support@babeyond.zendesk.com<\/span>. We will reply to you within 1 business day.<\/p>"
+          }
+        },
+        "cbfa68a5-e15b-4426-9693-7ee754a74248": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "What if I want an exchange?",
+            "answer": "<p>Currently, we do not offer exchange services. If you are dissatisfied with your product and wish to exchange it, we recommend that you initiate a return and simultaneously purchase the new product on our website. If you used a discount code during your initial purchase, you can contact our customer service at<a href=\"mailto:support@babeyond.zendesk.com\">support@babeyond.zendesk.com<\/a>after completing the new order. We will refund the discount amount for the new order based on the discount applied to your initial purchase.<\/p>"
+          }
+        },
+        "1c3c8cc0-aedd-491c-87a3-33756fe215b3": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Are the final sale items returnable?",
+            "answer": "<p>Please kindly note that items marked as FINAL SALE cannot be exchanged or returned for a store credit, unless deemed faulty.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1654826973f784a16a-0",
+        "1654826973f784a16a-1",
+        "e4dc7002-142b-4ef6-bb31-6f3b165ea48b",
+        "383bd2ac-cdc4-4282-bd56-510f662b28c6",
+        "a942a213-934a-4238-bbe5-3da7c40a87b7",
+        "7ebf9f06-8d11-48c9-9a04-091e3abbe794",
+        "cbfa68a5-e15b-4426-9693-7ee754a74248",
+        "1c3c8cc0-aedd-491c-87a3-33756fe215b3"
+      ],
+      "settings": {
+        "title": "RETURNS"
+      }
+    },
+    "16548286858a45caf9": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "1654828685ac0a588c-0": {
+          "type": "question",
+          "settings": {
+            "title": "Who is BABEYOND?",
+            "answer": "<p>Founded in 2014, BABEYOND is a sophisticated clothing brand dedicated to 20th century fashion. Our team, combines decades of industry experience with a deep affection for the glamour of the 20th century, is committed to making the brand synonymous with dedication, passion,craft, and care.<\/p><p>Whether you're exploring ideas for a themed party, or redefining your formal look, our mission is to help individuals immerse themselves into their favorite era and shine through high-quality, authentic vintage fashion.<\/p>"
+          }
+        },
+        "e4b9a10a-48a9-4925-8bb0-1d7bdb68f03c": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "How do I access to my BABEYOND account?",
+            "answer": "<p>More Member Benefits are <a href=\"\/pages\/email-subsribe\" title=\"Welcome New Customer\">here<\/a> for you to explore...<\/p>"
+          }
+        },
+        "1654828685ac0a588c-1": {
+          "type": "question",
+          "settings": {
+            "title": "How can I get in touch with you?",
+            "answer": "<p>We value the real feelings of our customers and want to build a good connection with you. Your feedback and suggestions can truly help us improve the quality of our products and services.<\/p><p>You can submit a ticket by clicking on <a href=\"https:\/\/babeyond.com\/pages\/contact-us\">Contact Us<\/a> in the footer of our website to enter your inquiries and suggestions.<\/p><p>You can also contact us by emailing us directly at <a href=\"mailto:support@babeyond.zendesk.com\" title=\"mailto:support@babeyond.zendesk.com\">support@babeyond.zendesk.com<\/a>.<\/p><p>Either way, we will get back to you within 24 hours to answer your inquiries and concerns.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1654828685ac0a588c-0",
+        "e4b9a10a-48a9-4925-8bb0-1d7bdb68f03c",
+        "1654828685ac0a588c-1"
+      ],
+      "settings": {
+        "title": "ABOUT BABEYOND"
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "faq-content-1",
+    "faq-content-2",
+    "165482697328896670",
+    "16548286858a45caf9"
+  ]
+}

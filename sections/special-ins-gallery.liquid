@@ -1,0 +1,195 @@
+<style>
+    .hus-ins-gallery img { max-width: inherit!important; height:inherit!important; }
+    .hus-ins-gallery .pop_ins { display: flex; align-items:flex-start; justify-content: flex-start; position: relative; }
+    .hus-ins-gallery .pop_ins #pop_ins_close { position: absolute; right:10px; top:10px; cursor: pointer;}
+    .hus-ins-gallery .pop_instagram-pic{ flex:0; width:530px; height:530px; margin-right:28px; }
+    .hus-ins-gallery .pop_instagram-pic .images { width:530px!important; height:530px!important; }
+    .hus-ins-gallery .instagram-desc { margin: 0;}
+    .hus-ins-gallery .instagram-box { display: flex; align-items: flex-start; justify-content: flex-start; margin-bottom:30px; }
+    .hus-ins-gallery .instagram-box .ins-pro_thumb { height:180px!important; }
+    .hus-ins-gallery .instagram-box .ins-pro_info { margin-left:20px; flex-flow: column; justify-content: space-between; align-items:flex-start; display: flex; height:180px;}
+    .hus-ins-gallery .instagram-box .ins-pro_info .ins-pro_title { font-size:16px; color:#000000; font-weight:bold; word-wrap: break-word; }
+    .hus-ins-gallery .instagram-box .ins-pro_info .ins-pro_price { margin-top:10px; font-size:16px; color:#000000; font-weight:bold; }
+    .hus-ins-gallery .instagram-box .ins-pro_info .ins-pro_link {  margin:0; } 
+    .hus-ins-gallery .ins-pro-body-info, .hus-ins-gallery .ins-pro-body-info *, .hus-ins-gallery .ins-pro-body-date {
+        word-wrap: break-word!important; word-break: break-word;
+    }
+   
+    @media only screen and (max-width:590px){
+        .hus-ins-gallery .thumb-prev, .hus-ins-gallery .thumb-next{
+            width: 25px!important;
+        }
+        .hus-ins-gallery .instagram-box { margin-bottom:25px; }
+        .hus-ins-gallery .pop_ins { display:block; }
+        .hus-ins-gallery .pop_instagram-pic{ flex:0; width:100%; height:auto; margin-right:0; }
+        .hus-ins-gallery .instagram-desc { margin:20px 10px;}
+    }
+    .swiper-slide.grid-insta-item:nth-child(n+ 8) {
+        display: none;
+    }   
+</style>
+<div id="section-id-{{ section.id }}" class="ins-gallery hus-ins-gallery">
+    <div class="ins-gallery-top">
+        <h2 class="hometitle h1-style align-center spaced-row" data-cc-animate data-cc-animate-delay="0.15s">
+            {{ section.settings.title | escape }}
+        </h2>
+        <a href="{{ section.settings.ins_url }}" class="cubtitlee"> {{ section.settings.subtitle }}</a>
+    </div>
+    <!-- Swiper -->
+    <div thumbsSlider="" class="swiper thumbsSlider grid-insta-list" data-cc-animate data-cc-animate-delay="0.2s">
+        <div class="swiper-wrapper grid-insta-inner">
+            {% for block in section.blocks %}
+            <div class="swiper-slide grid-insta-item">
+                <div class="thumb-item">
+                    <img src="{{block.settings.ins_image | img_url: '900x900'}}" alt="instagram image"
+                        aria-label="list" role="group"/>
+                    <div class="thumb_mask">
+                        <i class="ins_icon"></i>
+                        <span>SHOP NOW</span>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="popmask"></div>
+    <div class="popSliderbox">
+        <div class="swiper popSlider">
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                <div class="swiper-slide">
+                    <div class="pop_ins">
+                        <div id="pop_ins_close">{% render 'svg-x' %}</div>
+                        <div class="pop_instagram-pic">
+                            <img src="{{block.settings.ins_image2 | img_url: '530x530' }}" class="images" />
+                        </div>
+                        <div class="instagram-desc">
+                            <div class="instagram-box">
+                                <div class="ins-pro_thumb"><img src="{{block.settings.product.media.first.preview_image | img_url: '120x180' }}" /></div>
+                                <div class="ins-pro_info">
+                                    <div class="ins-pro_info-product">
+                                        <div class="ins-pro_title">{{block.settings.product.title}}</div>
+                                        <div class="ins-pro_price">{{block.settings.product.price | money }}</div>
+                                    </div> 
+                                    <div class="ins-pro_link">
+                                        <a href="{{block.settings.product.url}}" class="ins-pro_link">{{block.settings.btn_text}}</a>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="ins-pro-body-info" style="margin-bottom:20px;">{{block.settings.pro_info}}</div>
+                            <div class="ins-pro-body-date" style="margin-top:0">{{block.settings.ins_date}}</div>
+                        </div>  
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+        <div class="swiper-button-next pop-next"></div>
+        <div class="swiper-button-prev pop-prev"></div>
+    </div>
+
+</div>
+
+<script>
+    var swiper2 = new Swiper(".thumbsSlider", {
+        slidesPerView: 4,
+        slidesPerColumn: 2,
+        allowTouchMove: false
+    });
+    var swiper2 = new Swiper(".popSlider", {
+        spaceBetween: 10,
+        autoHeight: false,
+        navigation: {
+            nextEl: ".pop-next",
+            prevEl: ".pop-prev",
+        },
+        thumbs: {
+            swiper: swiper2,
+        },
+    });
+    $('.thumbsSlider .swiper-slide').on('click', function () {
+        $('.popmask').show()
+        $('.popSliderbox').show();
+        $('html').addClass('no-scrolling');
+    })
+    $('.popmask, #pop_ins_close').on('click', function () {
+        $('.popmask').hide()
+        $('.popSliderbox').hide();
+        $('html').removeClass('no-scrolling');
+    })
+</script>
+
+{% schema %}
+{
+    "name": "Ins Gallery",
+    "class": "section-special-ins-gallery",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
+        },
+        {
+            "type": "url",
+            "id": "ins_url",
+            "label": "ins link"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "Insgallery",
+            "name": "Ins item",
+            "limit": 7,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "ins_image",
+                    "label": "Ins image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "ins_image2",
+                    "label": "Ins image2"
+                },
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "Select product"
+                },
+                {
+                    "type": "richtext",
+                    "id": "pro_info",
+                    "label": "Product desc",
+                    "default": "<p>Comfort is key and neiwaiofficial never disappoints! </p>"
+                },
+                {
+                    "type": "text",
+                    "id": "ins_date",
+                    "label": "Ins date"
+                },
+                {
+                    "type": "text",
+                    "id": "btn_text",
+                    "label": "Btn Text",
+                    "default": "SHOP NOW"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Ins gallery",
+            "settings": {},
+            "blocks": []
+        }
+    ]
+}
+{% endschema %}

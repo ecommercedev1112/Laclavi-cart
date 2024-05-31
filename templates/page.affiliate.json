@@ -1,0 +1,209 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "16624597161e0697fa": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/02_b02ac8b4-8449-47a7-892f-be10dfc5c9e3.png",
+        "mobile_image": "shopify:\/\/shop_images\/03_a377d9c5-fc96-40e4-8e65-326c5ad90e30.png",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": false,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "1662458925c48bb049": {
+      "type": "rich-text",
+      "blocks": {
+        "1662458924515b3004-0": {
+          "type": "heading",
+          "settings": {
+            "title": "BABEYOND Affiliate Program",
+            "use_h1": false
+          }
+        },
+        "1662458924515b3004-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>BABEYOND is here to establish a long-term win-win business partnership with you. You will get a relatively high commission because of the 1920s flapper outfits created from exclusive designs, precise cropping and meticulous craftsmanship we sell.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "1662458924515b3004-0",
+        "1662458924515b3004-1"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "1662459807d3f5594a": {
+      "type": "multi-column",
+      "blocks": {
+        "166245980749061caf-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/04_fe71be1b-cd70-483e-9740-d8631bcb6451.png",
+            "image_width": 700,
+            "title": "<strong><center>BABEYOND Affiliates Benefits<\/center><\/strong>",
+            "text": "<p>       ✔   Up to <strong>15%<\/strong> commission on all approved sales.<\/p><p>       ✔   Monthly newsletter with updates on promotion.<\/p><p>       ✔   <strong>30-days<\/strong> tracking cookies.<\/p><p>       ✔   Real time reporting and sales tracking.<\/p><p>       ✔   Responsive affiliate managers.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "166245980749061caf-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/05.png",
+            "image_width": 700,
+            "title": "Benefits For Your Customers",
+            "text": "<p>       ✔   Diverse styles of products available.<\/p><p>       ✔   <strong>14-day unconditional return and refund.<\/strong><\/p><p>       ✔   Affordable price with adorable high quality.<\/p><p>       ✔   Customer service within <strong>1 business day.<\/strong><\/p><p>       ✔   Latest website offer notification.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166245980749061caf-0",
+        "166245980749061caf-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "left",
+        "button_style": "secondary",
+        "use_alt_bg": false
+      }
+    },
+    "1663920983dea724f7": {
+      "type": "image-with-text-and-logo",
+      "blocks": {
+        "57475182-6196-4aad-bdca-72d97a3180c4": {
+          "type": "text",
+          "settings": {
+            "text1": "SIGN UP",
+            "image": "shopify:\/\/shop_images\/ren.png",
+            "textBody": "<p>Join is free and easy, sign up to get approved.<\/p>"
+          }
+        },
+        "9078abe6-0459-4b34-a406-ebacf4899065": {
+          "type": "text",
+          "settings": {
+            "text1": "POST",
+            "image": "shopify:\/\/shop_images\/tou.png",
+            "textBody": "<p>After your visitors visit your links and purchase on BABEYOND, we will give you commission on net sales.<\/p><p><\/p>"
+          }
+        },
+        "0b6393c0-82b4-41a8-8b67-534d69e83444": {
+          "type": "text",
+          "settings": {
+            "text1": "GET COMMISSION",
+            "image": "shopify:\/\/shop_images\/qian.png",
+            "textBody": "<p>After your visitors visit your links and purchase on BABEYOND, we will give you commission on net sales.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "57475182-6196-4aad-bdca-72d97a3180c4",
+        "9078abe6-0459-4b34-a406-ebacf4899065",
+        "0b6393c0-82b4-41a8-8b67-534d69e83444"
+      ],
+      "settings": {
+        "text1": "<h1>Partner  Affiliate  Platforms<\/h1>",
+        "image": "shopify:\/\/shop_images\/06_192747c7-5e2a-489b-80cb-f26a50bb113f.jpg",
+        "image2": "shopify:\/\/shop_images\/3_41018933-912a-4693-aaae-325a829c425f.png",
+        "image3": "shopify:\/\/shop_images\/4_f3fbb8bd-2f93-4b20-9e99-919d0aca17a9.png",
+        "link": "https:\/\/www.shareasale.com\/shareasale.cfm?merchantID=130076",
+        "textfu": "<p>If you have any other inquiries, please do not hesitate to contact <a href=\"mailto:affiliate@babeyond.com\">affiliate@babeyond.com<\/a> for further help!<\/p>"
+      }
+    },
+    "1662460330cb359f46": {
+      "type": "rich-text",
+      "blocks": {
+        "166246033036c47cdc-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Join BABEYOND Affiliate Program",
+            "use_h1": false
+          }
+        },
+        "e35ce204-6099-4835-b963-69d036d121e4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please visit our SAS Affiliate Network page to apply.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "20c75c7a-92ba-4b0a-a786-3ad1de9f2db4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/singlelogo_245579_o.jpg",
+            "image_width": 360,
+            "url": "https:\/\/www.shareasale.com\/shareasale.cfm?merchantID=130076"
+          }
+        },
+        "ea01055e-c070-49c2-8fec-539d21c5b154": {
+          "type": "button",
+          "settings": {
+            "button_label": "Apply Now",
+            "button_link": "https:\/\/www.shareasale.com\/shareasale.cfm?merchantID=130076",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "166246033036c47cdc-0",
+        "e35ce204-6099-4835-b963-69d036d121e4",
+        "20c75c7a-92ba-4b0a-a786-3ad1de9f2db4",
+        "ea01055e-c070-49c2-8fec-539d21c5b154"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16624597161e0697fa",
+    "1662458925c48bb049",
+    "1662459807d3f5594a",
+    "1663920983dea724f7",
+    "1662460330cb359f46"
+  ]
+}

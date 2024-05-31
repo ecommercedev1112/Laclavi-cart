@@ -1,0 +1,180 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": false,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": true,
+            "show_pickup_availability": true
+          }
+        },
+        "accordion_XQzWKG": {
+          "type": "accordion",
+          "settings": {
+            "title": "Shipping",
+            "icon": "",
+            "content": "<p>Collapsible tab content<\/p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_iBHnhf": {
+          "type": "accordion",
+          "settings": {
+            "title": "Return policy",
+            "icon": "",
+            "content": "<p>Collapsible tab content<\/p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "description",
+        "vendor",
+        "divider",
+        "variant_picker",
+        "buy_buttons",
+        "accordion_XQzWKG",
+        "accordion_iBHnhf"
+      ],
+      "settings": {
+        "show_breadcrumbs": false,
+        "show_breadcrumbs_mb": false,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "columns-1",
+        "enable_zoom": false,
+        "enable_video_looping": false,
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "product_info_qK3HK7": {
+      "type": "product-info",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "rich_text_4Ptitz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bm9QpM": {
+          "type": "heading",
+          "settings": {
+            "title": "Knit polo sweater in dual faced cotton and merino blend. The unique blend and knitting technique offers both good warmth and ventilation at the same time. Hal-zip centerline opening.",
+            "use_h1": false
+          }
+        },
+        "text_T4ifRq": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_bm9QpM",
+        "text_T4ifRq"
+      ],
+      "settings": {
+        "height": "medium",
+        "section_spacing_block": 54,
+        "section_spacing_inline": 54,
+        "section_spacing_block_mobile": 26,
+        "section_spacing_inline_mobile": 26,
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "product_info_accordion_664tJP": {
+      "type": "product-info-accordion",
+      "settings": {
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "title": "You May Also Like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "recently": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": true,
+        "grid": 4
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_info_qK3HK7",
+    "rich_text_4Ptitz",
+    "product_info_accordion_664tJP",
+    "recommendations",
+    "recently"
+  ]
+}

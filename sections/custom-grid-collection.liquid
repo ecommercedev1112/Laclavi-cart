@@ -1,0 +1,190 @@
+<div class="custom-collection-grid-wrap">
+      <div class="container">
+         <div class="title-wrap">
+            <h2>KNITWEAR</h2>
+         </div>
+  {% for block in section.blocks %}
+       {% case block.type %}
+    {% when 'announcement' %}
+ <div class="custom-grid model-{{ block.settings.grid_position }}">
+           {% if block.settings.image_model != blank %}
+            <div class="grid-big">
+               <div class="grid-item">
+                  <a href="#">
+                     <div class="prod-image">
+                        <img src="{{ block.settings.image_model | img_url: 'master' }}" alt="">
+                     </div>
+                     <div class="prod-content">
+                        <div class="prod-title">
+                           <h4>Training Tshirt</h4>
+                        </div>
+                        <p class="prod-price">$285.00 USD</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         {% endif %}
+            <div class="grid-small">
+  {% for product in collection.products %}
+    <div class="grid-item">
+      <a href="{{ product.url }}">
+        <div class="prod-image">
+          <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}">
+        </div>
+        <div class="prod-content">
+          <div class="prod-title">
+            <h4>{{ product.title }}</h4>
+          </div>
+          <p class="prod-price">{{ product.price | money }}</p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+         </div>
+          {% endcase %}
+{% endfor %}
+        {% comment %}
+         <div class="custom-grid model-right">
+            <div class="grid-big">
+               <div class="grid-item">
+                  <a href="#">
+                     <div class="prod-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0873/8658/7445/files/Rectangle_1.png?v=1713536132" alt="">
+                     </div>
+                     <div class="prod-content">
+                        <div class="prod-title">
+                           <h4>Training Tshirt</h4>
+                        </div>
+                        <p class="prod-price">$285.00 USD</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="grid-small">
+               <div class="grid-item">
+                  <a href="#">
+                     <div class="prod-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0873/8658/7445/files/product-1_0dd671b9-5ed4-4203-812c-9dec95535994.png?v=1713536131" alt="">
+                     </div>
+                     <div class="prod-content">
+                        <div class="prod-title">
+                           <h4>Training Tshirt</h4>
+                        </div>
+                        <p class="prod-price">$285.00 USD</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="grid-item">
+                  <a href="#">
+                     <div class="prod-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0873/8658/7445/files/product-2.png?v=1713536131" alt="">
+                     </div>
+                     <div class="prod-content">
+                        <div class="prod-title">
+                           <h4>Training Tshirt</h4>
+                        </div>
+                        <p class="prod-price">$285.00 USD</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="grid-item">
+                  <a href="#">
+                     <div class="prod-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0873/8658/7445/files/product-1_0dd671b9-5ed4-4203-812c-9dec95535994.png?v=1713536131" alt="">
+                     </div>
+                     <div class="prod-content">
+                        <div class="prod-title">
+                           <h4>Training Tshirt</h4>
+                        </div>
+                        <p class="prod-price">$285.00 USD</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="grid-item">
+                  <a href="#">
+                     <div class="prod-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0873/8658/7445/files/product-2.png?v=1713536131" alt="">
+                     </div>
+                     <div class="prod-content">
+                        <div class="prod-title">
+                           <h4>Training Tshirt</h4>
+                        </div>
+                        <p class="prod-price">$285.00 USD</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+            {% endcomment %}
+{% for block in section.blocks %}
+       {% case block.type %}
+    {% when 'textarea' %}
+         <div class="custom-grid no-model">
+            {% for product in collection.products %}
+    <div class="grid-item">
+      <a href="{{ product.url }}">
+        <div class="prod-image">
+          <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}">
+        </div>
+        <div class="prod-content">
+          <div class="prod-title">
+            <h4>{{ product.title }}</h4>
+          </div>
+          <p class="prod-price">{{ product.price | money }}</p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+         </div>
+     {% endcase %}
+{% endfor %}
+      </div>
+   </div>
+
+{% schema %}
+{
+  "name": "Custom Grid Collection",
+  "tag": "section",
+  "settings": [
+   
+  ],
+  "blocks": [
+  {
+    "name": "With Model Image",
+    "type": "announcement",
+    "settings": [
+      {
+  "type": "image_picker",
+  "id": "image_model",
+  "label": "Image"
+},
+    {
+      "type": "select",
+      "id": "grid_position",
+      "label": "Grid Position",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+        
+      ],
+      "default": "left"
+    }
+    ]
+  },
+      {
+    "name": "No Model Image",
+    "type": "textarea",
+    "settings": [
+    ]
+  }
+],
+
+  "presets": [
+    {
+      "name": "Custom Grid Collection"
+    }
+  ]
+}
+{% endschema %}

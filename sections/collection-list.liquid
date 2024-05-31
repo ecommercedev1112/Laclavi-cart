@@ -1,0 +1,194 @@
+<div class="section-id-{{ section.id }} collection-slider-row for-collections {% if section.settings.use_alt_bg %}use-alt-bg{% endif %}" data-section-type="featured-collections">
+  <div class="container{% if section.settings.enable_carousel %} container--not-mobile{% endif %}{% if section.settings.full_width %} container--no-max{% endif %}">
+    <div class="{% if section.settings.enable_carousel %}collection-slider{% endif %}">
+      <div class="top-wrap">
+      <h1 class="hometitle h4-style align-center has-paging" data-cc-animate>
+        {% if section.settings.enable_carousel %}<a class="prev" href="#">{% render 'svg-chevron-left' %}</a>{% endif %}
+        {% if section.settings.title == blank %}
+          <span class="has-paging__title">&nbsp;</span>
+        {% else %}
+          <span class="has-paging__title">{{ section.settings.title | escape }}</span>
+        {% endif %}
+        {% if section.settings.enable_carousel %}<a class="next" href="#">{% render 'svg-chevron-right' %}</a>{% endif %}
+      </h1>
+      {% if section.settings.top_btn != blank %}
+      <a href="{{ section.settings.top_btn }}">
+        {{ section.settings.top_btn_text }}
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.772 10.6666L9.04937 18.3893L10 19.3333L19.3334 9.99996L10 0.666626L9.04937 1.61063L16.772 9.33329H0.666706V10.6666H16.772Z" fill="currentcolor"></path></svg>
+      </a>
+      {% endif %}
+      </div>
+      <div class="collection-listing">
+        <div class="product-list product-list--per-row-{{ section.settings.grid }} product-list--per-row-mob-{{ settings.prod_thumb_mob_per_row }} product-list--image-shape-{{ settings.coll_grid_image_shape }} {% if section.settings.enable_carousel %}carousel{% endif %}">
+          {% if section.blocks.size > 0 %}
+            {%- liquid
+              if settings.coll_grid_image_shape == 'portrait-23'
+                assign chosen_aspect_ratio = 0.67
+              elsif settings.coll_grid_image_shape == 'portrait-45'
+                assign chosen_aspect_ratio = 0.8
+              elsif settings.coll_grid_image_shape == 'square'
+                assign chosen_aspect_ratio = 1.0
+              elsif settings.coll_grid_image_shape == 'landscape-54'
+                assign chosen_aspect_ratio = 1.25
+              elsif settings.coll_grid_image_shape == 'landscape-32'
+                assign chosen_aspect_ratio = 1.50
+              elsif settings.coll_grid_image_shape == 'tallest'
+                assign chosen_aspect_ratio = 999
+                for block in section.blocks
+                  assign collection = collections[block.settings.collection]
+                  if collection != blank
+                    assign collection_image = block.settings.image | default: collection.featured_image
+                    if collection_image.aspect_ratio < chosen_aspect_ratio
+                      assign chosen_aspect_ratio = collection_image.aspect_ratio
+                    endif
+                  endif
+                endfor
+              else
+                assign chosen_aspect_ratio = 0
+                for block in section.blocks
+                  assign collection = collections[block.settings.collection]
+                  if collection != blank
+                    assign collection_image = block.settings.image | default: collection.featured_image
+                    if collection_image.aspect_ratio > chosen_aspect_ratio
+                      assign chosen_aspect_ratio = collection_image.aspect_ratio
+                    endif
+                  endif
+                endfor
+              endif
+            -%}
+
+            {% comment %}
+            <div class="product-block collection-block mobile-only" style="display: none;">
+            <div class="top-wrap">
+            <h1 class="hometitle h4-style align-center has-paging" data-cc-animate>
+                {% if section.settings.enable_carousel %}<a class="prev" href="#">{% render 'svg-chevron-left' %}</a>{% endif %}
+                {% if section.settings.title == blank %}
+                  <span class="has-paging__title">&nbsp;</span>
+                {% else %}
+                  <span class="has-paging__title">{{ section.settings.title | escape }}</span>
+                {% endif %}
+                {% if section.settings.enable_carousel %}<a class="next" href="#">{% render 'svg-chevron-right' %}</a>{% endif %}
+              </h1>
+              {% if section.settings.top_btn != blank %}
+              <a href="{{ section.settings.top_btn }}">
+                {{ section.settings.top_btn_text }}
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.772 10.6666L9.04937 18.3893L10 19.3333L19.3334 9.99996L10 0.666626L9.04937 1.61063L16.772 9.33329H0.666706V10.6666H16.772Z" fill="white"></path></svg>
+              </a>
+              {% endif %}
+            </div>
+            </div>
+            {% endcomment %}
+                      
+            {% for block in section.blocks %}
+              {% assign collection = collections[block.settings.collection] %}
+
+              {% unless collection == blank %}
+                {% render 'collection-block', collection: collection, custom_attrs: block.shopify_attributes, manual_image_load: section.settings.enable_carousel, custom_image: block.settings.image, custom_aspect_ratio: chosen_aspect_ratio %}
+              {% else %}
+                {% render 'onboarding-collection-block', forloop: forloop %}
+              {% endunless %}
+            {% endfor %}
+
+          {% else %}
+
+            {% for i in (1..6) %}
+              {% render 'onboarding-collection-block', forloop: forloop %}
+            {% endfor %}
+
+          {% endif %}
+        </div>
+      </div>
+
+        <div class="top-wrap mobile-only" style="display: none">
+        {% if section.settings.top_btn != blank %}
+        <a href="{{ section.settings.top_btn }}">
+          {{ section.settings.top_btn_text }}
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.772 10.6666L9.04937 18.3893L10 19.3333L19.3334 9.99996L10 0.666626L9.04937 1.61063L16.772 9.33329H0.666706V10.6666H16.772Z" fill="currentcolor"></path></svg>
+        </a>
+        {% endif %}
+        </div>
+                      
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Collection list",
+    "class": "section-collection-list",
+    "max_blocks": 20,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Collection list"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_carousel",
+        "label": "Enable carousel",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Collections per row",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "default": 4
+      },
+      {
+        "type": "checkbox",
+        "id": "use_alt_bg",
+        "label": "Use alternate section color",
+        "default": true
+      },
+      {
+        "id": "full_width",
+        "type": "checkbox",
+        "label": "Full page width",
+        "default": true
+      },
+      {
+        "id": "top_btn",
+        "type": "url",
+        "label": "Button Link"
+      },
+      {
+        "id": "top_btn_text",
+        "type": "text",
+        "label": "Button Text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection list",
+        "settings": {
+        },
+        "blocks": [
+        ]
+      }
+    ]
+  }
+{% endschema %}

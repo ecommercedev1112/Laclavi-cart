@@ -1,0 +1,253 @@
+{
+  "sections": {
+    "slideshow_jrizNg": {
+      "type": "slideshow",
+      "blocks": {
+        "image_dfhhwi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2-01_5_3a2d0937-0e2b-4742-a3b4-9e5310f5b33b.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/222-02_1.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_dfhhwi"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 540,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "1655967750612cb575": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "custom_css": [
+        "* {color: black;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/c69fac887635a400833796dac24e583d.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/QQ_20230224143604.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center bottom",
+        "height": "fixed",
+        "height_desktop": 660,
+        "height_mobile": 600,
+        "image_link": "",
+        "subheading": "",
+        "title": "BEST SELLERS",
+        "title_size": 56,
+        "title_size_mobile": 26,
+        "use_h1": false,
+        "text": "<p>Our team combines decades of industry experience with a deep affection<br\/> for the glamour of the 20th century! <br\/>We strive to provide an unmatched product experience and support a more sustainable future.<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "box"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "shadow",
+        "coll_num_per_page_int": 48,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "show_disabled_filters": false,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "main-menu",
+        "subcoll_style": "buttons",
+        "subcoll_gall_shape": "sq",
+        "image_position": "center center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": false,
+        "subcoll_gall_overlay_style": "full",
+        "subcoll_gall_text_alignment": "center center",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "165604990181f397e5": {
+      "type": "logo-list",
+      "blocks": {
+        "16dc4d4a-33c6-47b0-bf58-320996e22b1f": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sc1.png",
+            "image_width": 60,
+            "link": "shopify:\/\/pages\/shipping-policy",
+            "title": "Free Shippingover $100"
+          }
+        },
+        "71589993-387d-424e-8f51-a33696842a35": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sc2.png",
+            "image_width": 40,
+            "link": "shopify:\/\/pages\/return-refund-exchange-policy",
+            "title": "14-dayReturn Window"
+          }
+        },
+        "a0b0702d-e337-4684-9fe3-4260da6d2969": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sc3.png",
+            "image_width": 40,
+            "link": "shopify:\/\/pages\/faq",
+            "title": "Answers forYour Questions"
+          }
+        },
+        "481a44ec-57b4-4d26-b0d7-29630b42a219": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sc4.png",
+            "image_width": 40,
+            "link": "shopify:\/\/pages\/contact-us",
+            "title": "Email Usfor more"
+          }
+        }
+      },
+      "block_order": [
+        "16dc4d4a-33c6-47b0-bf58-320996e22b1f",
+        "71589993-387d-424e-8f51-a33696842a35",
+        "a0b0702d-e337-4684-9fe3-4260da6d2969",
+        "481a44ec-57b4-4d26-b0d7-29630b42a219"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "image_opacity": 75,
+        "use_alt_bg": false
+      }
+    },
+    "165605349625aad5a6": {
+      "type": "home-review",
+      "blocks": {
+        "177be116-aaf5-49ee-be7d-91e1db689378": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Gorgeous!!",
+            "review_content": "This fascinator is very good quality and completed my look. I love that the veil is a separate piece, so I can make multiple looks from the pieces.",
+            "author": "--A***d",
+            "review_date": "12 \/ 08 \/ 2023"
+          }
+        },
+        "666e9e23-9a82-40cb-98d7-df98d9cee727": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Beautiful gown",
+            "review_content": "Babeyond hasn’t disappointed me! I feel amazing in their gowns and I’m looking forward to an occasion to purchase again! Absolutely love this company❣️🥰",
+            "author": "--L***n",
+            "review_date": "08 \/ 08 \/ 2023"
+          }
+        },
+        "d34cb232-10bf-44bf-bd3b-aedebb947206": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Impressing dress",
+            "review_content": "A beautiful piece that combines intricate sequin detailing with a delicate floral print. The flowing silhouette and sleeveless design make it perfect for any formal occasion. It is sure to make you feel elegant and glamorous.",
+            "author": "--L***n",
+            "review_date": "30 \/ 07 \/ 2023"
+          }
+        },
+        "07f95b7e-3b54-42ba-b73a-d28e2dc5fcc1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Amazing wedding dress!",
+            "review_content": "I bought this for my wedding, and love it! The beading is beautiful, and the fit flattering. The sizing chart helped a lot as I've never heard of 18 being an XL. Fantastic buy - can't wait to wear it at my wedding!",
+            "author": "--M***l",
+            "review_date": "26 \/ 07 \/ 2023"
+          }
+        },
+        "eb08e495-014f-4503-bdf5-004fc857da98": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Show stopper!",
+            "review_content": "It was gorgeous! I got so many compliments and won a best dressed award for my gate by costume... I’m sure this piece had a lot to do with it. It’s large, but not cumbersome. It stayed in place well.",
+            "author": "--K***t",
+            "review_date": "08 \/ 07 \/ 2023"
+          }
+        },
+        "2baa8efc-af0f-49a5-8c62-3abef463754b": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Very Elegant & Great Quality!",
+            "review_content": "I bought this cape for a wedding and just loved it. It kept me warm at night, looked elegant, great quality, and so soft! Highly recommend.",
+            "author": "--H***n",
+            "review_date": "05 \/ 07 \/ 2023"
+          }
+        }
+      },
+      "block_order": [
+        "177be116-aaf5-49ee-be7d-91e1db689378",
+        "666e9e23-9a82-40cb-98d7-df98d9cee727",
+        "d34cb232-10bf-44bf-bd3b-aedebb947206",
+        "07f95b7e-3b54-42ba-b73a-d28e2dc5fcc1",
+        "eb08e495-014f-4503-bdf5-004fc857da98",
+        "2baa8efc-af0f-49a5-8c62-3abef463754b"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "REVIEWS FROM OUR COMMUNITY",
+        "star_rating": 5,
+        "allreview": "7623 Reviews"
+      }
+    }
+  },
+  "order": [
+    "slideshow_jrizNg",
+    "1655967750612cb575",
+    "main",
+    "165604990181f397e5",
+    "165605349625aad5a6"
+  ]
+}

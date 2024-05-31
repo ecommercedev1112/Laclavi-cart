@@ -1,0 +1,7 @@
+<span class="cart-link__label">{{ 'layout.header.cart' | t | escape }}</span>
+<span class="cart-link__icon">
+                  {%- render 'svg-cart' -%}
+    {%- if cart.item_count > 0 -%}
+        <span class="cart-link__count">{{ cart.item_count }}</span>
+    {%- endif -%}
+                </span>

@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "full_width": false
+      }
+    },
+    "16462796531d682a47": {
+      "type": "slideshow",
+      "blocks": {
+        "164627965343a9cbef-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/12_66bcbc8a-3f80-4194-9cce-83c6f4cbcdd4.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/2-2_2cde0a6f-5968-48fc-a922-d3e703a5c494.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "164627965343a9cbef-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 780,
+        "height_mobile": 380,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full",
+        "slide_transition": "slide_fade",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "164627999825ae3c0f": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_01_f3f35d7e-c953-45a1-8751-396aaea08309.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/1_01_01_93a2b64e-2e55-4de4-bb66-9e41e46d9a24.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background"
+      }
+    },
+    "1646284338bfbfcf4d": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_02_ef1b4f8c-784d-4ebb-bf85-6b2578c9f6d8.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/1_01_02.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background"
+      }
+    },
+    "16462844134a4ed143": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_03_1de611f1-b02a-43ce-8de5-4985fe4fa0d0.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/1_01_03_4d630efc-4395-4b42-93c5-3cf89b3baa26.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16462796531d682a47",
+    "164627999825ae3c0f",
+    "1646284338bfbfcf4d",
+    "16462844134a4ed143"
+  ]
+}

@@ -1,0 +1,469 @@
+{% liquid
+    assign product_images = product.media | where: 'media_type', 'image'
+    if settings.prod_thumb_hover_image and product_images.size > 1
+    assign show_hover_image = true
+    else
+    assign show_hover_image = false
+    endif
+
+    assign no_swiping = true
+    assign cheapest_variant = product.variants | sort: 'price' | first
+    assign no_quick_buy = false
+%}
+<div class="image-cont image-recently">
+    <a
+        class="product-link{% if settings.quickbuy_style == 'whole' %} quickbuy-toggle{% endif %}"
+        href="{{ product.url }}"
+        aria-label="{{ product.title | escape }}"
+        tabindex="-1">
+        <div class="image-label-wrap">
+        <div>
+            <!--         product-block__image--active 影响  -->
+            {%- if show_hover_image -%}
+            <div class="product-block__image product-block__image--primary{% if product.featured_media.id == product.media.first.id %}{% assign active_media_found = true %} product-block__image--active{% endif %}{% if product_images.last.id == product.featured_media.id %} product-block__image--show-on-hover{% endif %}" data-media-id="{{ product.media.first.id }}">
+                {%- render 'responsive-image', no_lazyload: true, image: product.media.first.preview_image, manual_image_load: true, aspect_ratio: 0.6665907019143118, min_aspect_ratio: 0.6, no_max_width: true, cover: settings.prod_thumb_crop -%}
+            </div>
+            {%- for media in product_images offset: 1 -%}
+                {%- liquid
+                assign image_state_class = ''
+                if media.id == product.featured_media.id
+                    assign active_media_found = true
+                    assign image_state_class = 'product-block__image--active'
+                else
+                    if active_media_found
+                    assign active_media_found = false
+                    assign image_state_class = 'product-block__image--show-on-hover'
+                    else
+                    assign image_state_class = 'product-block__image--inactivated'
+                    endif
+                endif
+                -%}
+                <div
+                class="product-block__image product-block__image--secondary rimage-wrapper lazyload--placeholder {{ image_state_class }}"
+                data-media-id="{{ media.id }}"
+                data-image-index="{{ forloop.index }}">
+                <div
+                    class="lazyload--manual rimage-background fade-in{% if settings.prod_thumb_crop %} cover{% endif %}"
+                    data-lazy-bgset-src="{{ media.preview_image | img_url: 'master' }}"
+                    data-lazy-bgset-aspect-ratio="{{ media.preview_image.aspect_ratio }}"
+                    data-lazy-bgset-width="{{ media.preview_image.width }}"
+                    data-sizes="auto"
+                    data-parent-fit="{% if settings.prod_thumb_crop %}cover{% else %}contain{% endif %}"
+                    style="background-image: url({{  media.preview_image | img_url: 'master' }}); opacity:1;"></div>
+                </div>
+            {%- endfor -%}
+            {%- else -%}
+            <div class="product-block__image product-block__image--primary product-block__image--active" data-media-id="{{ product.featured_media.id }}">
+                {%- render 'responsive-image', no_lazyload: true, image: product.featured_media.preview_image, manual_image_load: true, min_aspect_ratio: 0.6, aspect_ratio: 0.6665907019143118, no_max_width: true, cover: settings.prod_thumb_crop -%}
+            </div>
+            {%- endif -%}
+        </div>
+        {%- if show_hover_image -%}
+            {%- unless no_swiping -%}
+            <div class="product-block__image-dots" aria-hidden="true">
+                <div class="product-block__image-dot product-block__image-dot--active"></div>
+                <div class="product-block__image-dot"></div>
+                {%- if product_images.size > 2 -%}
+                <div class="product-block__image-dot product-block__image-dot--more"></div>
+                {%- endif -%}
+            </div>
+            {%- endunless -%}
+        {%- endif -%}
+        <div class="product-label-product">
+            {% render 'product-label', product: product, cheapest_variant: cheapest_variant %}
+        </div>
+        </div>
+        </a>
+        {%- if show_hover_image -%}
+        <a
+        class="image-page-button image-page-button--previous"
+        href="#"
+        aria-label="{{ 'general.accessibility_labels.previous' | t | escape }}"
+        tabindex="-1">{%- render 'svg-chevron-left', stroke_width: 1.3 -%}</a>
+        <a
+        class="image-page-button image-page-button--next"
+        href="#"
+        aria-label="{{ 'general.accessibility_labels.previous' | t | escape }}"
+        tabindex="-1">{%- render 'svg-chevron-right', stroke_width: 1.3 -%}</a>
+        {%- endif -%}
+
+        {% if settings.quickbuy_style == 'button' %}
+        {% unless no_quick_buy %}
+        <a class="btn btn--secondary quickbuy-toggle" href="{{ product.url }}">{{ 'products.quick_buy.launch' | t }}</a>
+        {% endunless %}
+        {% endif %}
+        </div>
+</div>
+<div class="template-sale-price">
+  <div class="product-price box-product-price-custom">
+            <div class="product-price-custom">
+              {% if product.price_varies %}
+                <span class="product-price__item product-price__from">{{ 'products.listing.from' | t }}</span>
+              {% endif %}
+              <span class="product-price__item product-price__amount {% if cheapest_variant.compare_at_price > cheapest_variant.price %}product-price__amount--on-sale{% endif %} theme-money">
+                {%- if settings.product_currency_code_enabled -%}
+                  {{ cheapest_variant.price | money_with_currency }}
+                {%- else -%}
+                  {{ cheapest_variant.price | money }}
+                {%- endif -%}
+              </span>
+              {% if cheapest_variant.compare_at_price > cheapest_variant.price %}
+                <span class="product-price__item product-price__compare theme-money">{{ cheapest_variant.compare_at_price | money }}</span>
+              {% endif %}
+            </div>
+            {% if cheapest_variant.compare_at_price > cheapest_variant.price %}
+              <div class="here-is-sale">Sale</div>
+            {% endif %}
+          </div>
+
+          {% render 'unit-price', variant: cheapest_variant %}
+          <div class="product-label-collection">
+            {% render 'product-label', product: product, cheapest_variant: cheapest_variant %}
+          </div>
+</div>
+<div class="swatch-template">
+    <div class="swatch-desktop">
+      {%- if settings.prod_thumb_show_options -%}
+          {% assign option_limit_related = 3 %}
+        {%- liquid
+          assign option_limit = option_limit_related
+          assign options_to_show = settings.swatch_option_name | append: ',' | append: settings.prod_thumb_options_names | replace: ', ', ',' | split: ','
+        -%}
+        {%- for product_option in product.options_with_values -%}
+          {%- if options_to_show contains product_option.name -%}
+            {%- liquid
+              if settings.swatch_enabled and settings.swatch_option_name contains product_option.name
+                assign is_swatch = true
+              else
+                assign is_swatch = false
+              endif
+            -%}
+            <div class="product-block-options{% if is_swatch %} product-block-options--swatch{% endif %}" data-option-name="{{ product_option.name | escape }}">
+              <div class="product-block-options__inner">
+                {%- if product.options.size == 1 -%}
+                  {%- for variant in product.variants -%}
+                    {%- liquid
+                      if is_swatch and settings.swatch_method == 'image' and variant.featured_media == blank
+                        continue
+                      endif
+                    -%}
+                    <span
+                      class="{% if product.tags contains 'Yellow Fuilfull' %}bgyellow{% endif %} {% if product.tags contains 'Fullfill' %}bgcolors{% endif %} {% if product.tags contains 'Full-size swatch' %}img_cover{% endif%} {% if product.tags contains 'headpiece-size up' %}img_headpiece{% endif %} bianliang product-block-options__item{% unless settings.prod_thumb_options_disable_unavailable == false or variant.available %} product-block-options__item--unavailable{% endunless %}{% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}{% if is_swatch %} lazyload{% if manual_image_load %}--manual{% endif %}{% endif %}"
+                      data-option-item="{{ variant.title | downcase | escape }}"
+                      {% if variant.featured_media %}data-media="{{ variant.featured_media.id }}"{% endif %}
+                      {% if is_swatch -%}
+                      {%- if settings.swatch_method == 'standard' -%}
+                      data-swatch="{{ variant.title | escape | downcase }}"
+                      {%- elsif settings.swatch_method == 'image' and variant.featured_media.preview_image -%}
+                      data-bgset="{{ variant.featured_media.preview_image | img_url: '70x70' }}"
+                      {%- endif -%}
+                      {%- endif %}>
+                      <span class="product-block-options__item__text">{{ variant.title }}</span>
+                    </span>
+                    <script>
+
+                        $('.product-block[data-product-id=" {{ product.id }} "] .product-block-options__item').click(function(event) {
+                          $('.product-block[data-product-id=" {{ product.id }} "] .active-image').removeClass('active-image');
+                          $(this).addClass('active-image');
+                          event.preventDefault();
+                        });
+
+                    </script>
+                  {%- endfor -%}
+                  {%- if product.variants.size > option_limit and is_swatch -%}
+                    {%- assign remaining = product.variants.size | minus: option_limit -%}
+                    <span class="product-block-options__more-label">{{ 'collections.general.more_swatches' | t: count: remaining }}</span>
+                  {%- endif -%}
+                {%- else -%}
+                  {%- assign product_option_position_0index = product_option.position | minus: 1 -%}
+                  {%- for product_option_value in product_option.values -%}
+                    {%- liquid
+                      assign option_value_variant = false
+                      for variant in product.variants
+                        if variant.options[product_option_position_0index] == product_option_value
+                          assign option_value_variant = variant
+                          break
+                        endif
+                      endfor
+
+                      if settings.prod_thumb_options_disable_unavailable
+                        assign is_unavailable = true
+                        for variant in product.variants
+                          if variant.available and variant.options[product_option_position_0index] == product_option_value
+                            assign is_unavailable = false
+                            break
+                          endif
+                        endfor
+                      else
+                        assign is_unavailable = false
+                      endif
+
+                      if is_swatch and settings.swatch_method == 'image' and option_value_variant.featured_media == blank
+                        continue
+                      endif
+                    -%}
+                    <span
+                      class="{% if product.tags contains 'Yellow Fuilfull' %}bgyellow{% endif %} {% if product.tags contains 'Fullfill' %}bgcolors{% endif %} {% if product.tags contains 'Full-size swatch' %}img_cover{% endif%} {% if product.tags contains 'headpiece-size up' %}img_headpiece{% endif %} bianliang product-block-options__item{% if is_unavailable %} product-block-options__item--unavailable{% endif %}{% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}{% if is_swatch %} lazyload{% if manual_image_load %}--manual{% endif %}{% endif %}"
+                      data-option-item="{{ product_option_value | downcase | escape }}"
+                      {% if option_value_variant.featured_media %}data-media="{{ option_value_variant.featured_media.id }}"{% endif %}
+                      {% if is_swatch %}
+                      {%- if settings.swatch_method == 'standard' -%}
+                      data-swatch="{{ product_option_value | escape | downcase }}"
+                      {%- elsif settings.swatch_method == 'image' and option_value_variant.featured_media -%}
+                      data-bgset="{{ option_value_variant.featured_media.preview_image | img_url: '100x100'}}"
+                      {%- endif -%}
+                      {% endif %}>
+                      <span class="product-block-options__item__text">{{ product_option_value }}</span>
+                    </span>
+                    <script>
+                        $('.product-block[data-product-id=" {{ product.id }} "] .product-block-options__item').click(function(event) {
+                          $('.product-block[data-product-id=" {{ product.id }} "] .active-image').removeClass('active-image');
+                          $(this).addClass('active-image');
+                          event.preventDefault();
+                        });
+
+                    </script>
+                  {%- endfor -%}
+                  {%- if product_option.values.size > option_limit and is_swatch -%}
+                    {%- assign remaining = product_option.values.size | minus: option_limit -%}
+                    <span class="product-block-options__more-label">{{ 'collections.general.more_swatches' | t: count: remaining }}</span>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+    <div class="swatch-small-desktop">
+      {%- if settings.prod_thumb_show_options -%}
+        {% if related_product %}
+          {% assign option_limit_related = 2 %}
+        {% else %}
+          {% assign option_limit_related = 3 %}
+        {% endif %}
+        {%- liquid
+          assign option_limit = option_limit_related
+          assign options_to_show = settings.swatch_option_name | append: ',' | append: settings.prod_thumb_options_names | replace: ', ', ',' | split: ','
+        -%}
+        {%- for product_option in product.options_with_values -%}
+          {%- if options_to_show contains product_option.name -%}
+            {%- liquid
+              if settings.swatch_enabled and settings.swatch_option_name contains product_option.name
+                assign is_swatch = true
+              else
+                assign is_swatch = false
+              endif
+            -%}
+            <div class="product-block-options{% if is_swatch %} product-block-options--swatch{% endif %}" data-option-name="{{ product_option.name | escape }}">
+              <div class="product-block-options__inner">
+                {%- if product.options.size == 1 -%}
+                  {%- for variant in product.variants -%}
+                    {%- liquid
+                      if is_swatch and settings.swatch_method == 'image' and variant.featured_media == blank
+                        continue
+                      endif
+                    -%}
+                    <span
+                      class="{% if product.tags contains 'Yellow Fuilfull' %}bgyellow{% endif %} {% if product.tags contains 'Fullfill' %}bgcolors{% endif %} {% if product.tags contains 'Full-size swatch' %}img_cover{% endif%} {% if product.tags contains 'headpiece-size up' %}img_headpiece{% endif %} bianliang product-block-options__item{% unless settings.prod_thumb_options_disable_unavailable == false or variant.available %} product-block-options__item--unavailable{% endunless %}{% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}{% if is_swatch %} lazyload{% if manual_image_load %}--manual{% endif %}{% endif %}"
+                      data-option-item="{{ variant.title | downcase | escape }}"
+                      {% if variant.featured_media %}data-media="{{ variant.featured_media.id }}"{% endif %}
+                      {% if is_swatch -%}
+                      {%- if settings.swatch_method == 'standard' -%}
+                      data-swatch="{{ variant.title | escape | downcase }}"
+                      {%- elsif settings.swatch_method == 'image' and variant.featured_media.preview_image -%}
+                      data-bgset="{{ variant.featured_media.preview_image | img_url: '70x70' }}"
+                      {%- endif -%}
+                      {%- endif %}>
+                      <span class="product-block-options__item__text">{{ variant.title }}</span>
+                    </span>
+                    <script>
+
+                        $('.product-block[data-product-id=" {{ product.id }} "] .product-block-options__item').click(function(event) {
+                          $('.product-block[data-product-id=" {{ product.id }} "] .active-image').removeClass('active-image');
+                          $(this).addClass('active-image');
+                          event.preventDefault();
+                        });
+
+                    </script>
+                  {%- endfor -%}
+                  {%- if product.variants.size > option_limit and is_swatch -%}
+                    {%- assign remaining = product.variants.size | minus: option_limit -%}
+                    <span class="product-block-options__more-label">{{ 'collections.general.more_swatches' | t: count: remaining }}</span>
+                  {%- endif -%}
+                {%- else -%}
+                  {%- assign product_option_position_0index = product_option.position | minus: 1 -%}
+                  {%- for product_option_value in product_option.values -%}
+                    {%- liquid
+                      assign option_value_variant = false
+                      for variant in product.variants
+                        if variant.options[product_option_position_0index] == product_option_value
+                          assign option_value_variant = variant
+                          break
+                        endif
+                      endfor
+
+                      if settings.prod_thumb_options_disable_unavailable
+                        assign is_unavailable = true
+                        for variant in product.variants
+                          if variant.available and variant.options[product_option_position_0index] == product_option_value
+                            assign is_unavailable = false
+                            break
+                          endif
+                        endfor
+                      else
+                        assign is_unavailable = false
+                      endif
+
+                      if is_swatch and settings.swatch_method == 'image' and option_value_variant.featured_media == blank
+                        continue
+                      endif
+                    -%}
+                    <span
+                      class="{% if product.tags contains 'Yellow Fuilfull' %}bgyellow{% endif %} {% if product.tags contains 'Fullfill' %}bgcolors{% endif %} {% if product.tags contains 'Full-size swatch' %}img_cover{% endif%} {% if product.tags contains 'headpiece-size up' %}img_headpiece{% endif %} bianliang product-block-options__item{% if is_unavailable %} product-block-options__item--unavailable{% endif %}{% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}{% if is_swatch %} lazyload{% if manual_image_load %}--manual{% endif %}{% endif %}"
+                      data-option-item="{{ product_option_value | downcase | escape }}"
+                      {% if option_value_variant.featured_media %}data-media="{{ option_value_variant.featured_media.id }}"{% endif %}
+                      {% if is_swatch %}
+                      {%- if settings.swatch_method == 'standard' -%}
+                      data-swatch="{{ product_option_value | escape | downcase }}"
+                      {%- elsif settings.swatch_method == 'image' and option_value_variant.featured_media -%}
+                      data-bgset="{{ option_value_variant.featured_media.preview_image | img_url: '70x70'}}"
+                      {%- endif -%}
+                      {% endif %}>
+                      <span class="product-block-options__item__text">{{ product_option_value }}</span>
+                    </span>
+                    <script>
+
+                        $('.product-block[data-product-id=" {{ product.id }} "] .product-block-options__item').click(function(event) {
+                          $('.product-block[data-product-id=" {{ product.id }} "] .active-image').removeClass('active-image');
+                          $(this).addClass('active-image');
+                          event.preventDefault();
+                        });
+
+                    </script>
+                  {%- endfor -%}
+                  {%- if product_option.values.size > option_limit and is_swatch -%}
+                    {%- assign remaining = product_option.values.size | minus: option_limit -%}
+                    <span class="product-block-options__more-label">{{ 'collections.general.more_swatches' | t: count: remaining }}</span>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+    <div class="swatch-mobile">
+      {%- if settings.prod_thumb_show_options -%}
+        {%- liquid
+          assign option_limit = 3
+          assign options_to_show = settings.swatch_option_name | append: ',' | append: settings.prod_thumb_options_names | replace: ', ', ',' | split: ','
+        -%}
+        {%- for product_option in product.options_with_values -%}
+          {%- if options_to_show contains product_option.name -%}
+            {%- liquid
+              if settings.swatch_enabled and settings.swatch_option_name contains product_option.name
+                assign is_swatch = true
+              else
+                assign is_swatch = false
+              endif
+            -%}
+            <div class="product-block-options{% if is_swatch %} product-block-options--swatch{% endif %}" data-option-name="{{ product_option.name | escape }}">
+              <div class="product-block-options__inner">
+                {%- if product.options.size == 1 -%}
+                  {%- for variant in product.variants -%}
+                    {%- liquid
+                      if is_swatch and settings.swatch_method == 'image' and variant.featured_media == blank
+                        continue
+                      endif
+                    -%}
+                    <span
+                      class="{% if product.tags contains 'Yellow Fuilfull' %}bgyellow{% endif %} {% if product.tags contains 'Fullfill' %}bgcolors{% endif %} {% if product.tags contains 'Full-size swatch' %}img_cover{% endif%} {% if product.tags contains 'headpiece-size up' %}img_headpiece{% endif %} bianliang product-block-options__item{% unless settings.prod_thumb_options_disable_unavailable == false or variant.available %} product-block-options__item--unavailable{% endunless %}{% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}{% if is_swatch %} lazyload{% if manual_image_load %}--manual{% endif %}{% endif %}"
+                      data-option-item="{{ variant.title | downcase | escape }}"
+                      {% if variant.featured_media %}data-media="{{ variant.featured_media.id }}"{% endif %}
+                      {% if is_swatch -%}
+                      {%- if settings.swatch_method == 'standard' -%}
+                      data-swatch="{{ variant.title | escape | downcase }}"
+                      {%- elsif settings.swatch_method == 'image' and variant.featured_media.preview_image -%}
+                      data-bgset="{{ variant.featured_media.preview_image | img_url: '70x70' }}"
+                      {%- endif -%}
+                      {%- endif %}>
+                      <span class="product-block-options__item__text">{{ variant.title }}</span>
+                    </span>
+                    <script>
+
+                        $('.product-block[data-product-id=" {{ product.id }} "] .product-block-options__item').click(function(event) {
+                          $('.product-block[data-product-id=" {{ product.id }} "] .active-image').removeClass('active-image');
+                          $(this).addClass('active-image');
+                          event.preventDefault();
+                        });
+
+                    </script>
+                  {%- endfor -%}
+                  {%- if product.variants.size > option_limit and is_swatch -%}
+                    {%- assign remaining = product.variants.size | minus: option_limit -%}
+                    <span class="product-block-options__more-label">{{ 'collections.general.more_swatches' | t: count: remaining }}</span>
+                  {%- endif -%}
+                {%- else -%}
+                  {%- assign product_option_position_0index = product_option.position | minus: 1 -%}
+                  {%- for product_option_value in product_option.values -%}
+                    {%- liquid
+                      assign option_value_variant = false
+                      for variant in product.variants
+                        if variant.options[product_option_position_0index] == product_option_value
+                          assign option_value_variant = variant
+                          break
+                        endif
+                      endfor
+
+                      if settings.prod_thumb_options_disable_unavailable
+                        assign is_unavailable = true
+                        for variant in product.variants
+                          if variant.available and variant.options[product_option_position_0index] == product_option_value
+                            assign is_unavailable = false
+                            break
+                          endif
+                        endfor
+                      else
+                        assign is_unavailable = false
+                      endif
+
+                      if is_swatch and settings.swatch_method == 'image' and option_value_variant.featured_media == blank
+                        continue
+                      endif
+                    -%}
+                    <span
+                      class="{% if product.tags contains 'Yellow Fuilfull' %}bgyellow{% endif %} {% if product.tags contains 'Fullfill' %}bgcolors{% endif %} {% if product.tags contains 'Full-size swatch' %}img_cover{% endif%} {% if product.tags contains 'headpiece-size up' %}img_headpiece{% endif %} bianliang product-block-options__item{% if is_unavailable %} product-block-options__item--unavailable{% endif %}{% if forloop.index > option_limit and is_swatch %} product-block-options__item--truncated{% endif %}{% if is_swatch %} lazyload{% if manual_image_load %}--manual{% endif %}{% endif %}"
+                      data-option-item="{{ product_option_value | downcase | escape }}"
+                      {% if option_value_variant.featured_media %}data-media="{{ option_value_variant.featured_media.id }}"{% endif %}
+                      {% if is_swatch %}
+                      {%- if settings.swatch_method == 'standard' -%}
+                      data-swatch="{{ product_option_value | escape | downcase }}"
+                      {%- elsif settings.swatch_method == 'image' and option_value_variant.featured_media -%}
+                      data-bgset="{{ option_value_variant.featured_media.preview_image | img_url: '48x48'}}"
+                      {%- endif -%}
+                      {% endif %}>
+                      <span class="product-block-options__item__text">{{ product_option_value }}</span>
+                    </span>
+                    <script>
+
+                        $('.product-block[data-product-id=" {{ product.id }} "] .product-block-options__item').click(function(event) {
+                          $('.product-block[data-product-id=" {{ product.id }} "] .active-image').removeClass('active-image');
+                          $(this).addClass('active-image');
+                          event.preventDefault();
+                        });
+
+                    </script>
+                  {%- endfor -%}
+                  {%- if product_option.values.size > option_limit and is_swatch -%}
+                    {%- assign remaining = product_option.values.size | minus: option_limit -%}
+                    <span class="product-block-options__more-label">{{ 'collections.general.more_swatches' | t: count: remaining }}</span>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </div>

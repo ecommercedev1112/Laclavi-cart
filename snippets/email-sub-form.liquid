@@ -1,0 +1,42 @@
+<div class="signup-form">
+    {% form 'customer', id: 'email_signup_popup',name:'frmfooter'%}
+        {% if form.posted_successfully? %}
+            <div class="section-footer__newsletter-block__message signup-form__response emailPopup-form__response--success">
+                {{ section.settings.title_success }}
+            </div>
+        {% else %}
+            <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
+            <p class="footer_input emailpopup-input">
+                <input 
+                    type="email"
+                    placeholder="{{ 'layout.signup.placeholder' | t }}"
+                    class="emailPopUp-form__email signup-form__email newsletter_input_checking"
+                    value="{{ form.email }}"
+                    id="myInput_popup"
+                    name="contact[email]"
+                    aria-label="{{ 'layout.signup.input_label' | t | escape }}"
+                    required 
+                />
+            </p>
+            <div id="email-error-msg"></div>
+            <button id="mySubmit_popup" class="btn signup-form__button" type="submit">
+                {{- 'layout.signup.submit' | t -}}
+            </button>
+        {% endif %}
+    {% endform %}
+</div>
+<script>
+    function validateEmailPopUp() {
+        const emailInputPopUp = document.getElementById("myInput_popup");
+        const submitBtnPopUp = document.getElementById("mySubmit_popup");
+        if (emailInputPopUp.value.trim() === "") {
+        submitBtnPopUp.classList.add("blur");  
+        } else {
+        submitBtnPopUp.classList.remove("blur"); 
+        }
+    }
+    const emailInputPopUp = document.getElementById("myInput_popup");
+    emailInputPopUp.addEventListener("input", validateEmailPopUp);
+    const submitBtnPopUpcheck = document.getElementById("mySubmit_popup");
+    submitBtnPopUpcheck.addEventListener("click", validateEmailPopUp);
+</script>

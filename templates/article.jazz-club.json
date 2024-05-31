@@ -1,0 +1,522 @@
+{
+  "sections": {
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 18px;}",
+        "h2 {font-size: 40px; line-height: 1.4;}",
+        ".rte p:nth-of-type(3) {font-size: 13px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Best-Jazz-in-New-Orleans-1024x682.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Jazzing it Up: How to Dress for a Night Out at the Jazz Club",
+        "use_h1": false,
+        "text": "<p>As Herbie Hancock said, jazz is about being in the moment. Let‘s head out for a night of jazz music and dancing! <\/p><p><br\/><\/p><p>April 18, 2023 | By Emily Aniston<br\/>Image:©<a href=\"https:\/\/blogofneworleans.com\/where-to-see-the-best-jazz-in-new-orleans\/\" title=\"https:\/\/blogofneworleans.com\/where-to-see-the-best-jazz-in-new-orleans\/\">blogofneworleans<\/a><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jazz music and the 1920s have a close relationship, with the jazz club being a popular destination for those looking to enjoy the music and dance the night away. We'll explore how to dress for a night out at the jazz club and incorporate the iconic styles of the 1920s into a modern outfit.<br\/><\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "f9e03650-258b-4f21-be30-118977b95a74": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-04.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Gatsby Glamour Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Gatsby Glamour Prom Dresses are the epitome of 1920s style. These dresses feature intricate beading, sequins, and fringe details that add a touch of glamour to your outfit. They come in a variety of colors, including classic black and gold, and can be worn in long or short lengths. Pair your Gatsby Glamour dress with a pair of strappy heels and a vintage-inspired clutch for a truly authentic look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/323babeyond4205.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "4b663300-f0bb-487a-8b94-03a9214c241d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "The History of Jazz Clubs",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jazz originated in the late 19th and early 20th centuries in New Orleans, Louisiana, and quickly spread to other cities in the United States. Jazz was often played in small groups, and these groups began performing in nightclubs in the 1910s and 1920s.<br\/><br\/>The Cotton Club in Harlem was one of the most famous, frequented by wealthy patrons and featuring performances by Duke Ellington and other famous jazz musicians, jazz clubs soon began popping up in cities across the country, including New York, Chicago, and Los Angeles. In the 1920s, jazz music and jazz clubs became associated with the Roaring Twenties, a period of social and cultural change in the United States. Jazz clubs were seen as places where people could escape the stresses of everyday life and let loose.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0",
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP GATSBY PROM DRESSES",
+        "collection": "gatsby-glamour-prom-dresses",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "a6837111-fc06-4307-a150-40a02baed26a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-03.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Backless Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Backless Prom Dresses were also a popular choice in the 1920s, and they continue to be a fashionable option for prom parties today. These dresses feature an open back, often adorned with beading or lace, and come in a variety of colors and lengths. Backless dresses can be paired with statement earrings and a sleek updo to showcase the intricate details on the back of the dress.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/cotton-club-richard-gere-diane-lane.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>© The Cotton Club <a href=\"https:\/\/www.sentieriselvaggi.it\/film-in-tv-cotton-club-di-francis-ford-coppola\/\" title=\"https:\/\/www.sentieriselvaggi.it\/film-in-tv-cotton-club-di-francis-ford-coppola\/\">(film)<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "b57a0a43-c9be-45eb-867f-57c71542fa67": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Dressing for the Occasion",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When dressing for a night out at the jazz club, it's important to strike a balance between comfort and style. While you want to look your best, you also want to be able to dance and enjoy the music without feeling restricted. Depending on the type of jazz club you're going to, you may want to dress more casually or opt for a more formal outfit. <\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0",
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "5059d91b-1533-45cd-aa15-18a4df2a0459": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-02.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Retro Prom Accessories",
+        "use_h1": false,
+        "text": "<p>No prom outfit is complete without the perfect accessories, and for a 1920s-inspired look, retro accessories are a must. Think feathered headbands, long pearl necklaces, and vintage-inspired clutch bags. These accessories add a touch of sophistication and glamour to any outfit and are the perfect finishing touch for your prom party look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20230412133858.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP Jazz Club DRESSES",
+        "collection": "jazz-club-dress-collection",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "63c9a312-d076-4d40-b804-da9e92b883bc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Accessorizing for Jazz",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Accessories are a great way to jazz up any outfit. When accessorizing a jazz-inspired outfit, you can add jewelry, hats, and other accessories to complete the look. To avoid going overboard, it's important to select statement pieces that complement the outfit rather than overpowering it.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0",
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "8498afbe-1255-4fe9-b7da-c858736a83ca": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16704424968413__8498afbe-1255-4fe9-b7da-c858736a83ca-1681278101fa5d2bbb-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20230412133852.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16704424968413__8498afbe-1255-4fe9-b7da-c858736a83ca-1681278101fa5d2bbb-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "67e89375-003f-4303-90a6-7458465553c3": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP Jazz Club ACCESSORIES",
+        "collection": "jazz-club-accessories-collection",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        ".back {display: none;}"
+      ],
+      "settings": {
+        "show_date": false,
+        "show_author": false,
+        "show_article_tags": false,
+        "show_sharing_icons": true,
+        "show_featured_image": false,
+        "full_width_image": false,
+        "featured_image_height": "natural",
+        "enable_title_overlay": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef": {
+      "type": "logo-list",
+      "blocks": {
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282541_fb_social_media_facebook_facebook_logo_social_network_icon_fd6b582a-fdd0-4fbe-a3d0-aa084695ae87.png",
+            "image_width": 40,
+            "link": "https:\/\/www.facebook.com\/sharer.php?u=https%3A%2F%2Fbabeyond.com%2Fblogs%2Fstyle%2Fjazzing-it-up-how-to-dress-for-a-night-out-at-the-jazz-club",
+            "title": ""
+          }
+        },
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282551_tweet_twitter_twitter_logo_icon_a52bbc76-aea3-4c04-ba3c-43b881018f3f.png",
+            "image_width": 40,
+            "link": "https:\/\/twitter.com\/intent\/tweet?text=1920s+Glam+for+Prom+Season&url=https:\/\/babeyond.com\/blogs\/style\/prom-party-outline",
+            "title": ""
+          }
+        },
+        "63791460-50c7-440c-bc47-9861f9327ee8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282545_pin_pinterest_inspiration_pinterest_logo_icon_3bf23350-beb7-4fbe-9de8-a7be021dfa58.png",
+            "image_width": 40,
+            "link": "https:\/\/www.pinterest.com\/pin-builder\/?description=How+to+dress+for+a+night+out+at+the+jazz+club&media=%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0015%2F8937%2F9159%2Farticles%2F04_1024x1024.png%3Fv%3D1678332826&method=button&url=https:\/\/babeyond.com\/blogs\/style\/jazzing-it-up-how-to-dress-for-a-night-out-at-the-jazz-club",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9",
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131",
+        "63791460-50c7-440c-bc47-9861f9327ee8"
+      ],
+      "custom_css": [
+        "h2 {font-size: 14px;}",
+        ".rimage-outer-wrapper {}"
+      ],
+      "settings": {
+        "title": "SHARE ARTICLE",
+        "image_opacity": 80,
+        "use_alt_bg": false
+      }
+    },
+    "06b1fff1-7390-4d06-818d-505593e9ab90": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "blog_bar_col": "#c9beac",
+        "blog_bar_col_mb": "#f5f2eb",
+        "title": "MORE IN STYLE",
+        "blog": "style",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "subtitle": "<p><\/p>",
+        "button": "<p><\/p>",
+        "crop_ratio": "1.78"
+      }
+    },
+    "955d1050-ddc5-47d5-9791-1d15cf21adde": {
+      "type": "special-blog",
+      "blocks": {
+        "da5bc81e-3f79-41f4-90d7-d3375086abdd": {
+          "type": "block",
+          "settings": {
+            "blog_url": "",
+            "image": "shopify:\/\/shop_images\/b19c8b9e52979fe82331d359c51d957e.png",
+            "title": "<p>A Journey Through the Evolution of Jazz Music<\/p>",
+            "main_content": "<p>Life is a lot like jazz...it's best when you improvise.--George Gershwin<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "6cb6f7e4-a0ef-4d1c-a9c3-89c623385f3b": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/dressing-for-a-music-festival-tips-from-1920s-fashion",
+            "image": "shopify:\/\/shop_images\/banner.jpg",
+            "title": "<p>Dressing for a Music Festival: Tips from 1920s Fashion<\/p>",
+            "main_content": "<p>Take a cue from the roaring twenties and channel their playful, rebellious spirit into your Music Festival outfit. <\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "31860f59-e42b-40b1-b2ca-ed8490690a1f": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/what-to-wear-to-taylor-swift-eras-tour",
+            "image": "shopify:\/\/shop_images\/326c04ce4fb51d7952ec550747eb6615_1.png",
+            "title": "<p>What To Wear To Taylor Swift Eras Tour?<\/p>",
+            "main_content": "<p>“People haven't always been there for me but music always has.”― Taylor Swift<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        }
+      },
+      "block_order": [
+        "da5bc81e-3f79-41f4-90d7-d3375086abdd",
+        "6cb6f7e4-a0ef-4d1c-a9c3-89c623385f3b",
+        "31860f59-e42b-40b1-b2ca-ed8490690a1f"
+      ],
+      "settings": {
+        "crop_ratio": "1.0"
+      }
+    }
+  },
+  "order": [
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3",
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a",
+    "f9e03650-258b-4f21-be30-118977b95a74",
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6",
+    "4b663300-f0bb-487a-8b94-03a9214c241d",
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab",
+    "a6837111-fc06-4307-a150-40a02baed26a",
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f",
+    "b57a0a43-c9be-45eb-867f-57c71542fa67",
+    "5059d91b-1533-45cd-aa15-18a4df2a0459",
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9",
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84",
+    "63c9a312-d076-4d40-b804-da9e92b883bc",
+    "8498afbe-1255-4fe9-b7da-c858736a83ca",
+    "67e89375-003f-4303-90a6-7458465553c3",
+    "main",
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef",
+    "06b1fff1-7390-4d06-818d-505593e9ab90",
+    "955d1050-ddc5-47d5-9791-1d15cf21adde"
+  ]
+}

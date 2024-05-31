@@ -1,0 +1,77 @@
+<script type="text/javascript">
+	//<![CDATA[
+	function skt_load(url, callback) {
+		var xhr;
+		if(typeof XMLHttpRequest !== 'undefined') xhr = new XMLHttpRequest();
+		else {
+			var versions = ["MSXML2.XmlHttp.5.0",
+				"MSXML2.XmlHttp.4.0",
+				"MSXML2.XmlHttp.3.0",
+				"MSXML2.XmlHttp.2.0",
+				"Microsoft.XmlHttp"]
+			for(var i = 0, len = versions.length; i < len; i++) {
+				try {
+					xhr = new ActiveXObject(versions[i]);
+					break;
+				}
+				catch(e){}
+			} // end for
+		}
+		xhr.onreadystatechange = ensureReadiness;
+		function ensureReadiness() {
+			if(xhr.readyState < 4) {
+				return;
+			}
+			if(xhr.status !== 200) {
+				return;
+			}
+			// all is well
+			if(xhr.readyState === 4) {
+				callback(xhr);
+			}
+		}
+		xhr.open('GET', url, true);
+		xhr.send('');
+	}
+	function sktAsyncLoad() {
+		// var urls = ["https:\/\/gift-cards.shopkeepertools.com\/sktjs?shop="+Shopify.shop];
+		var urls = ["https:\/\/gc.shopkeepertools.com\/sktjs?shop="+Shopify.shop];
+		for (var i = 0; i < urls.length; i++) {
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = urls[i];
+			var x = document.getElementsByTagName('script')[0];
+			x.parentNode.insertBefore(s, x);
+		}
+	}
+	function skt_start() {
+		var url = "{{product.url}}" + ".json";
+		skt_load(url, function(xhr) {
+			skt_string = xhr.responseText;
+			skt_fillment = '"fulfillment_service":"gift_card"';
+			if(skt_string.indexOf(skt_fillment) !== -1){
+				if(window.attachEvent) {
+					window.attachEvent('onload', sktAsyncLoad);
+				} else {
+					if (window.jQuery) {
+						$(document).ready(function () {
+							sktAsyncLoad();
+						});
+					}else{
+						window.addEventListener('load', sktAsyncLoad, false);
+					}
+				}
+			}
+		});
+	}
+	skt_start();
+	//]]>
+</script>
+<div id="skt_gc_line_items">
+	<input type="hidden" id="skt_gc_slug" name="properties[Customization]" value="" disabled="disabled"/>
+	<input type="hidden" id="skt_gc_to" name="properties[To]" value="" disabled="disabled"/>
+	<input type="hidden" id="skt_gc_shop_id" value="1962" disabled="disabled" />
+	<input type="hidden" id="skt_gc_shop_name" value="{{shop.name}}" disabled="disabled" />
+</div>
+

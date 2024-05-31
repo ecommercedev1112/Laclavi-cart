@@ -1,0 +1,311 @@
+<div class="Container">
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">Track Your Order</h1>
+    </div>
+  </header> 
+
+  <div class="PageContent PageContent--narrow Rte">
+    <div class="order-shipping-input">
+      <p class="policy-alert Form__Alert Alert Alert--error">Oops,can't track your order.</p>
+      <p class="benull-alert Form__Alert Alert Alert--error">Order Number and Email can't be empty.</p>
+      <input id="orderNum" class="Form__Input " aria-label="Input Order Number" placeholder="Order Number" required="" style="margin-bottom:20px">
+      <input id="orderEmail" class="Form__Input " aria-label="Input Email" placeholder="Email" required="">
+      <button id="order_tracking_submit" class="Form__Submit Button Button--primary">track</button>
+    </div>
+  </div>
+  
+  <div class="PageContent PageContent--narrow LogisticsContent">
+    <div class="packageTabCon"></div>
+  </div>  
+</div>
+{{ '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js' | script_tag }}
+<script type="text/javascript">
+  
+  var sitename = '{{ shop.name }}';
+  var AjaxHandler = function(url,method,data,callBack,errorBack){
+    $.ajax({
+      url : url,
+      dataType : "jsonp",
+      method:method,
+      async : true,
+      success : function(datar) {
+        if(datar && datar.code == '200'){
+          callBack(datar);
+        }else{
+          if(errorBack){
+            errorBack(datar);
+          }
+        }
+      },
+      error : function(request, textStatus, errorThrown) {
+        $('.policy-alert').show();
+        if(errorBack){
+          errorBack();
+        }
+      }
+    });
+  };
+  $(function(){
+    function displayTime(l){
+        var date = new Date(l)
+        return date.toString()
+    }
+    
+    function getTimeStr(mess){
+        var timeStr='';
+        var self=this;
+        timeStr=displayTime(mess.checkpointTime);
+        timeStr=timeStr.substr(4,20);
+        if(timeStr.substr(4,2)=='01'||timeStr.substr(4,2)=='21'||timeStr.substr(4,2)=='31'){
+        timeStr=timeStr.split('');
+        timeStr.splice(6,0,'st');
+        timeStr=timeStr.join('');
+        }else if(timeStr.substr(4,2)=='02'||timeStr.substr(4,2)=='22'){
+        timeStr=timeStr.split('');
+        timeStr.splice(6,0,'nd');
+        timeStr=timeStr.join('');
+        }else{
+        timeStr=timeStr.split('');
+        timeStr.splice(6,0,'th');
+        timeStr=timeStr.join('');
+        }
+        return timeStr;
+    }
+    
+    function statusHtml(index,len,mess){
+      var self=this;
+      var classname = "bgball";
+      if(index==len-1){
+        classname="activebgball"
+      }
+      var hide = "";
+      if(index==0){
+        hide="hide";
+      }
+      var html = [
+        '<ul>',
+        '   <li>',
+        '       <span class="'+classname+'"></span>',
+        '       <span class="time">'+getTimeStr(mess)+'</span>',
+        '       <span>'+mess.message+'</span>',
+        '   </li>',
+        '   <li class="'+hide+'">',
+        '       <span class="bgline"></span>',
+        '   </li>',
+        '</ul>',
+      ];
+        return html.join('');
+    } 
+        
+    function createTracking(container,array){
+      var self=this;
+      if(array&&array.length){
+        for(var i=array.length-1;i >= 0;i--){
+          container.append(statusHtml(i,array.length,array[i]));
+        }
+      }
+    }
+    
+    function createWebsiteURL(container,weburl){
+        var html = [
+            '<div>',
+          '<span>Tracking Detail Information: </span><a href="'+weburl+'">'+weburl+'</a>',
+          '</div>'
+        ]
+        
+        container.append(html.join(''));
+    }
+    
+    function createPackageContent(i,tracking){
+        var active = "";
+        if(i==0){
+          active="active";
+        }
+    
+        $('.packageTabCon').append('<div class="packageTab packageTab'+i+' '+active+'" data-div="packagecontent'+i+'">package'+(i+1)+'</div>');
+
+        var packHtml = [
+          '<div class="Rte packageContent '+active+'" id="packagecontent'+i+'" style="border-top:1px solid #ddd;">',
+          ' <h4>Logistics Information</h4>',
+          ' <div class="info">',
+          '      <p><span class="t-company-tit'+i+'"></span><font class="t-company-text'+i+'"></font></p>',
+          '      <p><span class="t-num-tit'+i+'"></span><font class="t-num-text'+i+'"></font></p>',
+          ' </div>',
+          ' <div class="logisticsinfo logisticsinfo'+i+'">',
+          '     <p class="tracking-current-status'+i+'"></p>',
+          ' </div>',
+          '</div>',
+        ];
+          
+        $('.LogisticsContent').append(packHtml.join(''));
+          
+    
+        if(tracking.slug){
+          $('.t-company-tit'+i).text("Logistics Company: ");
+          $('.t-company-text'+i).text(tracking.slug);
+        }
+        if(tracking.trackingStatus){
+          if(tracking.trackingStatus==10){
+            $('.tracking-current-status'+i).text('Current Stataus:In transit');
+          }else if(tracking.trackingStatus==20){
+            $('.tracking-current-status'+i).text('Current Stataus:Transport too long');
+          }else if(tracking.trackingStatus==30){
+            $('.tracking-current-status'+i).text('Current Stataus:To be taken');
+          }else if(tracking.trackingStatus==35){
+            $('.tracking-current-status'+i).text('Current Stataus:Fail in mailing');
+          }else if(tracking.trackingStatus==39){
+            $('.tracking-current-status'+i).text('Current Stataus:Track success');
+          }else if(tracking.trackingStatus==40){
+            $('.tracking-current-status'+i).text('Current Stataus:Sign up for success');
+          }else if(tracking.trackingStatus==50){
+            $('.tracking-current-status'+i).text('Current Stataus:Trace exception');
+          }
+        }
+        if(tracking.destinPoints){
+          createTracking($('.logisticsinfo'+i),tracking.destinPoints)
+        }
+        if(tracking.originPoints){
+          createTracking($('.logisticsinfo'+i),tracking.originPoints);
+        }
+        if(tracking.logisticsSupplierWebsiteURL){
+          createWebsiteURL($('.logisticsinfo'+i),tracking.logisticsSupplierWebsiteURL);
+        }
+          
+        $('.LogisticsContent').show();
+    }
+    
+    function searchTracking(orderNum,orderEmail){
+      orderNum = orderNum.replace('#', '%23');
+      $.ajax({
+        type:'get',
+        dataType: 'json',
+        url:'https://shopify.geeko.online/tracking/get-by-order-number-and-email?orderNumber='+orderNum+'&email='+orderEmail+'&web='+sitename,
+        success:function (data) {
+            if(data.result && data.result.packages.length>0){
+              var packages=data.result.packages;
+                
+              for(var i=0;i<packages.length;i++){
+                createPackageContent(i,packages[i]);
+              }
+            }else{
+                $('.policy-alert').show();
+            }
+        },
+          error:function(){
+            $('.policy-alert').show();
+          }
+        })
+    }
+
+    $("#order_tracking_submit").click(function(){
+      $(".packageTabCon").empty();
+      $(".packageContent").empty();
+      if($('.order-shipping-input input').val()){
+        var orderNum = $('#orderNum').val();
+        var orderEmail = $('#orderEmail').val();
+        searchTracking(orderNum,orderEmail);
+      }else{
+        $('.benull-alert').show();
+      }
+    })
+    $('.order-shipping-input input').change(function(){
+      $('.policy-alert').hide();
+    })
+    
+    $(document).on('click', '.packageTab', function (event) {
+        event.preventDefault();
+        var packageDiv = $(this).attr('data-div');
+        $('#'+packageDiv+'').addClass('active').siblings().removeClass('active');
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+  })
+</script>
+<style type="text/css">
+  .hide{
+    display:none;
+  }
+  .Form__Submit{
+    margin: 20px auto 0;
+  }
+  .Rte ul{
+    margin-left: 0;
+  }
+  .Rte ul:not(:last-child){
+    margin-bottom:0;
+  }
+  .policy-alert{
+    display: none;
+  }
+  .benull-alert{
+    display: none;
+  }
+  .logisticsinfo ul li{
+    line-height: 25px;
+    list-style: none;
+  }
+  .logisticsinfo ul li span{
+    color: #999;
+  }
+  .logisticsinfo ul li .time{
+    margin-right: 25px;
+  }
+
+  .logisticsinfo ul .bgball{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #cacaca;
+    margin-right: 10px;
+  }
+  .logisticsinfo ul .activebgball{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #57b936;
+    margin-right: 7px;
+    position: relative;
+    left: -2px;
+  }
+  .logisticsinfo ul .bgline{
+    width: 2px;
+    height: 50px;
+    border: 1px dashed #cacaca;
+    margin-left: 3px;
+  }
+  .btxt span{
+    color: #222 !important;
+  }
+  .title-pannel{
+    width: 1150px;
+    margin: 0 auto;
+    padding: 35px 0 0 0;
+  }
+  .LogisticsContent{
+    display:none;
+  }
+  .packageTabCon::after{
+    display:block;
+    content:'';
+    clear:both;
+  }
+  .packageTab{
+    float: left;
+    margin-right: 20px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    cursor:pointer;
+  }
+  .packageTab.active{
+    border-bottom: 2px solid #222;
+  }
+  .packageContent{
+    display:none;
+  }
+  .packageContent.active{
+    display:block;
+  }
+</style>

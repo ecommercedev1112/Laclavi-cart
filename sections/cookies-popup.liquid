@@ -1,0 +1,86 @@
+{% if section.settings.mode != 'disabled' %}
+
+  <section class="section-{{ section.id }} cc-popup"
+    data-freeze-scroll="false"
+    data-section-id="{{ section.id }}"
+    data-section-type="newsletter-popup"
+    data-dismiss-for-days="{{ section.settings.popup_dismiss_for_days }}"
+    data-delay-seconds="{{ section.settings.popup_delay_seconds }}"
+    data-test-mode="{% if section.settings.mode == 'testing' %}true{% else %}false{% endif %}">
+    <div class="cc-popup-modal {% if section.settings.image != blank %} cc-popup-modal--has-image{% endif %}"
+         role="dialog"
+         aria-modal="true">
+      <div class="cc-popup-container">
+          <div class="cc-popup-content">
+            <div class="cc-popup-column">
+                  <div class="cc-popup-text">
+                  
+                    {%- if section.settings.text != blank -%}
+                      <div class="rte">{{ section.settings.text }}</div>
+                    {%- endif -%}
+                  </div>
+             
+            </div>
+          </div>
+
+      </div>
+      <button type="button" class="cc-popup-close" aria-label="{{ 'general.accessibility_labels.close' | t | escape }}">
+       accept cookies
+      </button>
+    </div>
+  </section>
+
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Cookies Popup",
+    "class": "section-popup",
+    "settings": [
+      {
+        "type": "select",
+        "id": "mode",
+        "label": "Display mode",
+        "default": "disabled",
+        "options": [
+          {
+            "value": "enabled",
+            "label": "Enabled"
+          },
+          {
+            "value": "disabled",
+            "label": "Disabled"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "popup_delay_seconds",
+        "label": "Delay",
+        "info": "Delay is disabled in theme editor for visibility",
+        "default": 5,
+        "min": 2,
+        "max": 60,
+        "step": 1,
+        "unit": "sec"
+      },
+      {
+        "type": "range",
+        "id": "popup_dismiss_for_days",
+        "label": "Frequency",
+        "default": 30,
+        "info": "Number of days before a dismissed popup reappears",
+        "min": 2,
+        "max": 30,
+        "step": 1,
+        "unit": "day"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.</p>"
+      }
+    ]
+  }
+{% endschema %}

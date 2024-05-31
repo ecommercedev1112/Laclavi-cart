@@ -1,0 +1,99 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "full image-overlay--bg-shadow",
+        "coll_num_per_page_int": 48,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-6",
+        "show_filter_counts": false,
+        "show_disabled_filters": false,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "main-menu",
+        "subcoll_style": "buttons",
+        "subcoll_gall_shape": "sq",
+        "image_position": "center center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": false,
+        "subcoll_gall_overlay_style": "full",
+        "subcoll_gall_text_alignment": "center center",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "821801426874916034": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "custom_grid_collection_e66nqC": {
+      "type": "custom-grid-collection",
+      "blocks": {
+        "announcement_XB7ktP": {
+          "type": "announcement",
+          "settings": {
+            "image_model": "shopify:\/\/shop_images\/Rectangle_1.png",
+            "grid_position": "left"
+          }
+        },
+        "announcement_aJBq3U": {
+          "type": "announcement",
+          "settings": {
+            "image_model": "shopify:\/\/shop_images\/Rectangle_2.png",
+            "grid_position": "right"
+          }
+        },
+        "announcement_VWxUyx": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "image_model": "shopify:\/\/shop_images\/Rectangle_1.png",
+            "grid_position": "left"
+          }
+        },
+        "announcement_JctmFF": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "image_model": "shopify:\/\/shop_images\/Rectangle_2.png",
+            "grid_position": "left"
+          }
+        },
+        "textarea_z7zB7H": {
+          "type": "textarea",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "announcement_XB7ktP",
+        "announcement_aJBq3U",
+        "announcement_VWxUyx",
+        "announcement_JctmFF",
+        "textarea_z7zB7H"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "821801426874916034",
+    "custom_grid_collection_e66nqC"
+  ]
+}

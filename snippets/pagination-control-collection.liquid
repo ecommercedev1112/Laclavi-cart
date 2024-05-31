@@ -1,0 +1,233 @@
+{% if paginate.pages > 1 %}
+  <div class="pagination">
+    <a class="prev {% if paginate.previous %} pagination-btn-active {% endif %}" href="{{ paginate.previous.url }}">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+        <g id="arrow">
+        <g id="Group">
+        <path id="Vector" d="M4.88 9.9303L0.400024 6.25024L4.88 2.57031" stroke="#666666" stroke-width="0.5" stroke-miterlimit="10"/>
+        <path id="Vector_2" d="M0.400024 6.25H12" stroke="#666666" stroke-width="0.5" stroke-miterlimit="10"/>
+        </g>
+        </g>
+      </svg>
+    </a>
+
+    {% assign current_pageZero = paginate.pages %}
+    {% assign current_pageOne = paginate.pages | minus: 1 %}
+    {% assign current_pageTwo = paginate.pages | minus: 2 %}
+    {% assign current_pageThree = paginate.pages | minus: 3 %}
+    {% assign current_pageFour = paginate.pages | minus: 4 %}
+    {% if paginate.pages >= 7 %}
+      {% if paginate.current_page == 1  %}
+        <span class="mot pagination__number active">1</span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=2" title="">2</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=3" title="">3</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=4" title="">4</a>
+        </span>
+        <span class="pagination__number ">
+          <a href="{{ collection.url }}?page=5" title="">5</a>
+        </span>
+        <span class="pagination__number">
+          …
+        </span>
+        <span class="pagination__number ">
+          <a href="{{ collection.url }}?page={{ paginate.pages }}" title="">{{ paginate.pages }}</a>
+        </span>
+      {% elsif paginate.current_page == 2 %}
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=1" title="">1</a>
+        </span>
+        <span class="hai pagination__number active">
+          <a href="{{ collection.url }}?page=2" title="">2</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=3" title="">3</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=4" title="">4</a>
+        </span>
+        <span class="pagination__number ">
+          <a href="{{ collection.url }}?page=5" title="">5</a>
+        </span>
+        <span class="pagination__number">
+          …
+        </span>
+        <span class="pagination__number ">
+          <a href="{{ collection.url }}?page={{ paginate.pages }}" title="">{{ paginate.pages }}</a>
+        </span>
+      {% elsif paginate.current_page == 3  %}
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=1" title="">1</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=2" title="">2</a>
+        </span>
+        <span class="pagination__number active">
+          <a href="{{ collection.url }}?page=3" title="">3</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=4" title="">4</a>
+        </span>
+        <span class="pagination__number ">
+          <a href="{{ collection.url }}?page=5" title="">5</a>
+        </span>
+        <span class="pagination__number">
+          …
+        </span>
+        <span class="pagination__number ">
+          <a href="{{ collection.url }}?page={{ paginate.pages }}" title="">{{ paginate.pages }}</a>
+        </span>
+      {% elsif paginate.current_page == current_pageZero  %}
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=1" title="">1</a>
+        </span>
+        <span class="pagination__number">
+          …
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageFour }}" title="">{{ current_pageFour }}</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageThree }}" title="">{{ current_pageThree }}</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageTwo }}" title="">{{ current_pageTwo }}</a>
+        </span>
+        <span class="pagination__number ">
+          <a href="{{ collection.url }}?page={{ current_pageOne }}" title="">{{ current_pageOne }}</a>
+        </span>
+        <span class="pagination__number active">
+          <a href="{{ collection.url }}?page={{ paginate.pages }}" title="">{{ paginate.pages }}</a>
+        </span>
+      {% elsif paginate.current_page == current_pageOne  %}
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=1" title="">1</a>
+        </span>
+          <span class="pagination__number">
+            …
+          </span>
+          <span class="pagination__number">
+            <a href="{{ collection.url }}?page={{ current_pageFour }}" title="">{{ current_pageFour }}</a>
+          </span>
+          <span class="pagination__number">
+            <a href="{{ collection.url }}?page={{ current_pageThree }}" title="">{{ current_pageThree }}</a>
+          </span>
+          <span class="pagination__number">
+            <a href="{{ collection.url }}?page={{ current_pageTwo }}" title="">{{ current_pageTwo }}</a>
+          </span>
+          <span class="pagination__number active">
+            <a href="{{ collection.url }}?page={{ current_pageOne }}" title="">{{ current_pageOne }}</a>
+          </span>
+          <span class="pagination__number ">
+            <a href="{{ collection.url }}?page={{ paginate.pages }}" title="">{{ paginate.pages }}</a>
+          </span>
+      {% elsif paginate.current_page == current_pageTwo  %}
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=1" title="">1</a>
+        </span>
+        <span class="pagination__number">
+          …
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageFour }}" title="">{{ current_pageFour }}</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageThree }}" title="">{{ current_pageThree }}</a>
+        </span>
+        <span class="pagination__number active">
+          <a href="{{ collection.url }}?page={{ current_pageTwo }}" title="">{{ current_pageTwo }}</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageOne }}" title="">{{ current_pageOne }}</a>
+        </span>
+        <span class="pagination__number ">
+          <a href="{{ collection.url }}?page={{ paginate.pages }}" title="">{{ paginate.pages }}</a>
+        </span>
+      {% elsif paginate.current_page == current_pageThree  %}
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=1" title="">1</a>
+        </span>
+        <span class="pagination__number">
+          …
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageFour }}" title="">{{ current_pageFour }}</a>
+        </span>
+        <span class="pagination__number active">
+          <a href="{{ collection.url }}?page={{ current_pageThree }}" title="">{{ current_pageThree }}</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageTwo }}" title="">{{ current_pageTwo }}</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageOne }}" title="">{{ current_pageOne }}</a>
+        </span>
+        <span class="pagination__number ">
+          <a href="{{ collection.url }}?page={{ paginate.pages }}" title="">{{ paginate.pages }}</a>
+        </span>
+      {% elsif paginate.current_page == current_pageFour  %}
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page=1" title="">1</a>
+        </span>
+        <span class="pagination__number">
+          …
+        </span>
+        <span class="pagination__number  active">
+          <a href="{{ collection.url }}?page={{ current_pageFour }}" title="">{{ current_pageFour }}</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageThree }}" title="">{{ current_pageThree }}</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageTwo }}" title="">{{ current_pageTwo }}</a>
+        </span>
+        <span class="pagination__number">
+          <a href="{{ collection.url }}?page={{ current_pageOne }}" title="">{{ current_pageOne }}</a>
+        </span>
+        <span class="pagination__number ">
+          <a href="{{ collection.url }}?page={{ paginate.pages }}" title="">{{ paginate.pages }}</a>
+        </span>
+      {% elsif paginate.current_page > 3  %}
+        {% for part in paginate.parts %}
+          <span class="pagination__number {% if paginate.current_page == part.title %}active {% if forloop.last %}last-page{% endif %} {% endif %}" data-index="{{ forloop.index }}">
+            {% if part.is_link %}
+              {{ part.title | link_to: part.url }}
+            {% else %}
+              {{ part.title }}
+            {% endif %}
+          </span>
+        {% endfor %}
+      {% endif %}
+    {% else %}
+      {% for part in paginate.parts %}
+        <span class="pagination__number {% if paginate.current_page == part.title %}active {% if forloop.last %}last-page{% endif %} {% endif %}" data-index="{{ forloop.index }}">
+          {% if part.is_link %}
+            {{ part.title | link_to: part.url }}
+          {% else %}
+            {{ part.title }}
+          {% endif %}
+        </span>
+      {% endfor %}
+    {% endif %}
+
+    <a class="next {% if paginate.next %} pagination-btn-active {% endif %}" href="{{ paginate.next.url }}">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+        <g id="arrow" clip-path="url(#clip0_297_635)">
+        <g id="Group">
+        <path id="Vector" d="M7.78162 9.6803L12.2616 6.00024L7.78162 2.32031" stroke="#666666" stroke-width="0.5" stroke-miterlimit="10"/>
+        <path id="Vector_2" d="M12.2616 6H0.661621" stroke="#666666" stroke-width="0.5" stroke-miterlimit="10"/>
+        </g>
+        </g>
+        <defs>
+        <clipPath id="clip0_297_635">
+        <rect width="12" height="12" fill="white" transform="translate(0.661621)"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </a>
+  </div>
+{% endif %}

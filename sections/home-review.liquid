@@ -1,0 +1,212 @@
+<div class="home-review">
+  <div class="container-fulle">
+    <div class="review_top">
+      <h2>{{section.settings.title}}</h2>
+      <div class="allreview-right pc_showflex">
+        {%- if section.settings.star_rating > 0 -%}
+              <div class="testimonial__star-rating heading-font">
+                {%- for i in (1..section.settings.star_rating) -%}
+                <span class="testimonial__star">{% render 'svg-star' %}</span>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+        <div class="allreview">
+        	{{section.settings.allreview}}
+        </div>
+        <div class="review_np">
+           <div class="swiper-button-prev review-prev"></div>
+        	 <div class="swiper-button-next review-next"></div>
+      		
+        </div>
+      </div>
+      
+      <div class="allreview-right mobile_showflex">
+        <div class="swiper-button-prev review-prev"></div>
+        {%- if section.settings.star_rating > 0 -%}
+              <div class="testimonial__star-rating heading-font">
+                {%- for i in (1..section.settings.star_rating) -%}
+                <span class="testimonial__star">{% render 'svg-star' %}</span>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+        <div class="allreview">
+        	{{section.settings.allreview}}
+        </div>
+           
+        	 <div class="swiper-button-next review-next"></div>
+      		
+      </div>
+    	
+    </div>
+    
+    <div class="review_box">
+      <div class="swiper reviewSlider">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+        <div class="swiper-slide">
+          <div class="rew_top">
+            {%- if block.settings.star_rating2 > 0 -%}
+              <div class="testimonial__star-rating heading-font">
+                {%- for i in (1..block.settings.star_rating2) -%}
+                <span class="testimonial__star">{% render 'svg-star' %}</span>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+            <span>{{block.settings.review_date}}</span>
+          </div>
+          <div class="rew_content">
+            <h2>{{block.settings.review_title}}</h2>
+            <div>{{block.settings.review_content}}</div>
+            <div class="rev_author">{{block.settings.author}}</div>
+          </div>
+        </div>
+        {% endfor %}
+        </div>
+        
+       
+        
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Home review",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "REVIEWS FROM OUR COMMUNITY"
+      },
+	 {
+        "type": "range",
+        "id": "star_rating",
+        "min": 0,
+        "max": 5,
+        "step": 1,
+        "label": "Star rating",
+        "default": 5
+        },
+		{
+        "type": "text",
+        "id": "allreview",
+        "label": "All review",
+        "default": "5436 Reviews"
+      }
+      
+     
+    ],
+    "blocks": [
+      {
+        "type": "testimonial",
+        "name": "item",
+        "settings": [
+          {
+            "type": "range",
+            "id": "star_rating2",
+            "min": 0,
+            "max": 5,
+            "step": 1,
+            "label": "Star rating",
+            "default": 5
+          },
+		 {
+            "type": "text",
+            "id": "review_title",
+            "label": "Review title"
+          },
+		 
+          {
+            "type": "textarea",
+            "id": "review_content",
+            "label": "Review content",
+            "default": "Add reviews"
+          },
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Author",
+            "default": "Author's name"
+          },
+		 {
+            "type": "text",
+            "id": "review_date",
+            "label": "Review date"
+          }
+           
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Home review",
+      "settings": {
+      },
+      "blocks": [
+      ]
+    }
+  ]
+  }
+{% endschema %}
+
+
+<!-- <link href="https://cdn.shopifycdn.net/s/files/1/0015/8937/9159/files/swiper-bundle.min.css?v=1648020578" rel="stylesheet" type="text/css" media="all"> -->
+
+<!-- <script src="https://cdn.shopifycdn.net/s/files/1/0015/8937/9159/files/swiper-bundle.min.js?v=1648020579"></script> -->
+
+{% javascript %} 
+
+var swiper = new Swiper(".reviewSlider", {
+        spaceBetween: 50,
+        slidesPerView: 3,
+ 		slidesPerGroup: 3,
+        loopFillGroupWithBlank: true,
+		loop:true,
+		autoplay: {
+          delay: 5000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+        },
+        speed:2500,
+        navigation: {
+          nextEl: ".review-next",
+          prevEl: ".review-prev",
+        },
+  breakpoints: { 
+      320: {  
+        spaceBetween: 20,
+        slidesPerView: 1,
+slidesPerGroup: 1,
+        loopFillGroupWithBlank: true,
+autoplay: {
+          delay: 5000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+        },
+        speed:2500,
+autoHeight: true
+      },
+      768: {  
+        spaceBetween: 50,
+        slidesPerView: 3,
+slidesPerGroup: 3,
+        loopFillGroupWithBlank: true,
+      },
+      1280: { 
+        spaceBetween: 50,
+        slidesPerView: 3,
+slidesPerGroup: 3,
+        loopFillGroupWithBlank: true,
+      }
+    }
+      });
+    
+
+
+{% endjavascript %}

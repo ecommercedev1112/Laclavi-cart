@@ -1,0 +1,472 @@
+{
+  "sections": {
+    "6dd03103-522e-45ce-99a6-6e2043cf1cfa": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 12px; padding-left: 5%; padding-right: 5%;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/JB_Campaign___1.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Sensational Ever",
+        "use_h1": false,
+        "text": "<p>When Ernest Hemingway described Josephine Baker as the “most sensational woman anyone ever saw”, he wasn't merely stringing words together. He was capturing the spirit of an era, an energy, and most importantly, the essence of a woman who would go on to shape history, not just through her art but her indomitable spirit.<\/p><p>Our newest collection, \"Sensational Ever\", is inspired by this legend, this force of nature. Each piece resonates with Josephine's fearless embrace of life. From the glitzy cabarets of Paris to her unwavering spirit during WWII, she danced through life with grace, audacity, and an unyielding commitment to her beliefs.<\/p><p>In curating this collection, we've dipped into various chapters of her illustrious journey, drawing inspiration from her iconic styles, her artistic ventures, and the powerful legacy she left behind. We believe fashion is a narrative, and who better to tell a story than Josephine Baker?<\/p><p>This isn't merely a collection. It's an homage. An invitation to wear a piece of history, to feel the weight of legacy and the lightness of feathers, to embrace the boldness of sequins and the strength of convictions.<\/p><p>Join us in celebrating the spirit of Josephine Baker with \"Sensational Ever\". For in each garment, her legacy is sewn, her story is told, and her spirit dances on.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "center",
+        "use_alt_bg": false
+      }
+    },
+    "77fa3a27-7663-404f-b61c-f36f4f0c0efd": {
+      "type": "custom-row",
+      "blocks": {
+        "template--16784030925021__77fa3a27-7663-404f-b61c-f36f4f0c0efd-text-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Sensational Ever",
+            "text": "<p>When Ernest Hemingway described Josephine Baker as the “most sensational woman anyone ever saw”, he wasn't merely stringing words together. He was capturing the spirit of an era, an energy, and most importantly, the essence of a woman who would go on to shape history, not just through her art but her indomitable spirit.<\/p><p>Our newest collection, \"Sensational Ever,\" is inspired by this legend, this force of nature. Each piece resonates with Josephine's fearless embrace of life. From the glitzy cabarets of Paris to her unwavering spirit during WWII, she danced through life with grace, audacity, and an unyielding commitment to her beliefs.<\/p><p>In curating this collection, we've dipped into various chapters of her illustrious journey, drawing inspiration from her iconic styles, her artistic ventures, and the powerful legacy she left behind. We believe fashion is a narrative, and who better to tell a story than Josephine Baker?<\/p><p>This isn't merely a collection. It's an homage. An invitation to wear a piece of history, to feel the weight of legacy and the lightness of feathers, to embrace the boldness of sequins and the strength of convictions.<\/p><p>Join us in celebrating the spirit of Josephine Baker with \"Sensational Ever.\" For in each garment, her legacy is sewn, her story is told, and her spirit dances on.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "template--16784030925021__77fa3a27-7663-404f-b61c-f36f4f0c0efd-image-1": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/JB_Campaign___1.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "template--16784030925021__77fa3a27-7663-404f-b61c-f36f4f0c0efd-text-1",
+        "template--16784030925021__77fa3a27-7663-404f-b61c-f36f4f0c0efd-image-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "p {font-size: 12px; text-align: middle;}",
+        "h1 {font-size: 30px;}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [
+        ".container {padding-left: 5%; padding-right: 5%;}"
+      ],
+      "settings": {
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "full image-overlay--bg-shadow",
+        "coll_num_per_page_int": 48,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": true,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-6",
+        "show_filter_counts": false,
+        "show_disabled_filters": false,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "main-menu",
+        "subcoll_style": "buttons",
+        "subcoll_gall_shape": "sq",
+        "image_position": "center center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": false,
+        "subcoll_gall_overlay_style": "full",
+        "subcoll_gall_text_alignment": "center center",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "a218b9b8-409a-4002-ac08-d335dd0c051e": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_11__1.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/banner_M_-03.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 360,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 70,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": false,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "e8decdf4-045f-4d6e-9be5-637f64d1b0a2": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": ""
+      }
+    },
+    "bff769f3-ceaa-4c91-aa23-704d5e017e49": {
+      "type": "gallery",
+      "blocks": {
+        "template--16784030925021__bff769f3-ceaa-4c91-aa23-704d5e017e49-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_1_a9e9d43f-e3ca-47f1-b675-e351fa72f05e.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "La Revue Nègre",
+            "title": "Feathered Elegance",
+            "button_label": "",
+            "link": "https:\/\/babeyond.com\/collections\/la-revue-negre",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--16784030925021__bff769f3-ceaa-4c91-aa23-704d5e017e49-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_5897de45-7df7-4735-a909-45c62f5926c3.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "ZouZou",
+            "title": "Sequin Sparkle",
+            "button_label": "",
+            "link": "https:\/\/babeyond.com\/collections\/zouzou",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--16784030925021__bff769f3-ceaa-4c91-aa23-704d5e017e49-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_2.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "Princesse Tam Tam",
+            "title": "Roaring 20s Classic",
+            "button_label": "",
+            "link": "https:\/\/babeyond.com\/collections\/princesse-tam-tam",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--16784030925021__bff769f3-ceaa-4c91-aa23-704d5e017e49-image-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_3.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "The Story of an Awakening",
+            "title": "Modern 20s Revival",
+            "button_label": "",
+            "link": "https:\/\/babeyond.com\/collections\/the-story-of-an-awakening",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "template--16784030925021__bff769f3-ceaa-4c91-aa23-704d5e017e49-image-1",
+        "template--16784030925021__bff769f3-ceaa-4c91-aa23-704d5e017e49-image-2",
+        "template--16784030925021__bff769f3-ceaa-4c91-aa23-704d5e017e49-image-3",
+        "template--16784030925021__bff769f3-ceaa-4c91-aa23-704d5e017e49-image-4"
+      ],
+      "custom_css": [
+        ".overlay-text__title {font-size: 12px; font-family: \"Gotham\"; text-transform: capitalize;}",
+        ".overlay-text__subheading {font-size: 16px; font-weight: 600;}"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 520,
+        "mobile_image_height": 200,
+        "title_size": 28,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": true,
+        "use_alt_bg": false,
+        "enable_carousel": false,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "82bae6f5-d468-4787-b14f-10d6681c06c8": {
+      "type": "custom-row",
+      "blocks": {
+        "64ad159f-c52d-49ce-8111-52a87dc947b2": {
+          "type": "image",
+          "settings": {
+            "width": "two-thirds",
+            "image": "shopify:\/\/shop_images\/15__1_5d57616d-1445-42de-a594-8876a6e1ae27.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "0fa998fc-d75e-4ad4-ba2d-05b80603e9ee": {
+          "type": "image",
+          "settings": {
+            "width": "two-thirds",
+            "image": "shopify:\/\/shop_images\/15__1_4.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "00810a92-a1d1-4b89-acd7-7a6a09e81a10": {
+          "type": "image",
+          "settings": {
+            "width": "two-thirds",
+            "image": "shopify:\/\/shop_images\/15__1_3.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "56681df1-2da3-4383-9e2f-140a20bc30d9": {
+          "type": "image",
+          "settings": {
+            "width": "two-thirds",
+            "image": "shopify:\/\/shop_images\/15__1.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "ec4be949-01aa-4a7f-8d85-ea2e64578dc5": {
+          "type": "image",
+          "settings": {
+            "width": "two-thirds",
+            "image": "shopify:\/\/shop_images\/15__1_2.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "64ad159f-c52d-49ce-8111-52a87dc947b2",
+        "0fa998fc-d75e-4ad4-ba2d-05b80603e9ee",
+        "00810a92-a1d1-4b89-acd7-7a6a09e81a10",
+        "56681df1-2da3-4383-9e2f-140a20bc30d9",
+        "ec4be949-01aa-4a7f-8d85-ea2e64578dc5"
+      ],
+      "custom_css": [
+        "div {padding-left: 3%; padding-right: 3%;}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "7df4db32-1838-442e-89ed-8a6d22dfda78": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": ""
+      }
+    },
+    "2ffb89e4-8f2b-4251-9255-1c982898f33d": {
+      "type": "custom-row",
+      "blocks": {
+        "template--16786366857437__2ffb89e4-8f2b-4251-9255-1c982898f33d-image-1": {
+          "type": "image",
+          "settings": {
+            "width": "two-thirds",
+            "image": "shopify:\/\/shop_images\/02_9d8c03e3-885a-4d03-9818-6a1c34ed7b0a.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "c18d527c-fe79-4b17-adc2-f33d57e495b8": {
+          "type": "image",
+          "settings": {
+            "width": "two-thirds",
+            "image": "shopify:\/\/shop_images\/03_640923bb-6fe2-42ee-84b1-9fed4d086165.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "e4effbcd-9e5b-4a85-ad11-e47e2c857f6b": {
+          "type": "image",
+          "settings": {
+            "width": "two-thirds",
+            "image": "shopify:\/\/shop_images\/1_f75285fb-75da-4f61-a526-062d594878e9.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "template--16786366857437__2ffb89e4-8f2b-4251-9255-1c982898f33d-image-1",
+        "c18d527c-fe79-4b17-adc2-f33d57e495b8",
+        "e4effbcd-9e5b-4a85-ad11-e47e2c857f6b"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div {padding-left: 3%; padding-right: 3%;}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "8e531ec7-9b9b-4a8f-8ae4-a13b0160e062": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": ""
+      }
+    },
+    "ac5647f8-fe6e-4ce2-8413-8fe31669fc37": {
+      "type": "image-with-text",
+      "custom_css": [
+        "a.btn--primary {background-color: #000000;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1__1.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "JOSEPHINE BAKER'S TIMELESS IMPACT ON FASHION",
+        "use_h1": false,
+        "text": "<p>I shall dance all my life... I would like to die, breathless, spent, at the end of a dance. ― Josephine Baker<\/p>",
+        "button_label": "VIEW BLOG",
+        "button_link": "https:\/\/babeyond.com\/blogs\/style\/josephine-bakers-timeless-impact-on-fashion",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "center",
+        "use_alt_bg": true
+      }
+    }
+  },
+  "order": [
+    "6dd03103-522e-45ce-99a6-6e2043cf1cfa",
+    "77fa3a27-7663-404f-b61c-f36f4f0c0efd",
+    "main",
+    "a218b9b8-409a-4002-ac08-d335dd0c051e",
+    "e8decdf4-045f-4d6e-9be5-637f64d1b0a2",
+    "bff769f3-ceaa-4c91-aa23-704d5e017e49",
+    "82bae6f5-d468-4787-b14f-10d6681c06c8",
+    "7df4db32-1838-442e-89ed-8a6d22dfda78",
+    "2ffb89e4-8f2b-4251-9255-1c982898f33d",
+    "8e531ec7-9b9b-4a8f-8ae4-a13b0160e062",
+    "ac5647f8-fe6e-4ce2-8413-8fe31669fc37"
+  ]
+}

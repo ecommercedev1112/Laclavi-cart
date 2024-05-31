@@ -1,0 +1,36 @@
+{% comment %}
+  Parameters:
+  - title {string} [required] - The item title or summary
+  - content {string} [required] - The item content
+  - add_content_class {string} [optional] - Additional class(es) to add to the content element
+  - toggle_icon {string} [optional] - Custom icon markup, e.g. '<span class="icon">...</span>'
+  - item_open {boolean} [optional] - Whether the item should be open on page load. Default is false.
+{% endcomment %}
+
+{%- liquid
+  assign item_attr = 'class="cc-accordion-item"'
+
+  if item_open == true
+    assign item_attr = 'class="cc-accordion-item is-open" open'
+  endif
+
+  if add_content_class
+    assign content_class = add_content_class | prepend: ' '
+  endif
+-%}
+
+<details {{ item_attr }}>
+  <summary class="cc-accordion-item__title">{{- title -}}{{- toggle_icon -}} 
+    <!-- <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.5 12.079L0.708 6.287L0 7L7 14L14 7L13.292 6.287L7.5 12.079L7.5 0H6.5L6.5 12.079Z" fill="black"/>
+    </svg> -->
+    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 0.800294L6 6.80029L0 0.800294L0.800302 -7.62939e-06L6 5.19969L11.1997 -7.62939e-06L12 0.800294Z" fill="black"/>
+    </svg>
+</summary>
+  <div class="cc-accordion-item__panel">
+    <div class="cc-accordion-item__content{{ content_class }}">
+      {{- content -}}
+    </div>
+  </div>
+</details>

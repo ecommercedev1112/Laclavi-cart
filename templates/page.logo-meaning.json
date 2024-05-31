@@ -1,0 +1,107 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".rte {font-size: 12px; color: #0f0f0f;}"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "custom_rich_text_CARRct": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "text_fFRg3L": {
+          "type": "text",
+          "settings": {
+            "text": "<p>LOGO MEANING<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "text_fFRg3L"
+      ],
+      "settings": {
+        "height": "medium",
+        "section_spacing_block": 54,
+        "section_spacing_inline": 54,
+        "text_alignment": "left",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "slideshow_VfFUii": {
+      "type": "slideshow",
+      "blocks": {
+        "image_QFURVw": {
+          "type": "image",
+          "settings": {
+            "img_btn": true,
+            "image": "shopify:\/\/shop_images\/banner-grey-desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/banner-grey-mobile.png",
+            "video_url_btn": false,
+            "video_url": "",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_QFURVw"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 560,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": false
+      }
+    },
+    "logo_meaning_text_gmbgQX": {
+      "type": "logo-meaning-text",
+      "blocks": {
+        "text_VqhFaE": {
+          "type": "text",
+          "settings": {
+            "title": "<p>The Intersection of <\/p><p>Golf, Spirit, and <\/p><p>Harmony<\/p>",
+            "text": "<p>Our logo symbolizes the fusion of gold and spirit, with the intersection of lines representing the harmonious balance between the inner journey of self-discovery and the serene beauty of the natural environment<\/p><p>The slash represents the follow-through of your swing, a moment of connection between you and the sport. The horizontal line symbolizes the ground you stand on, the course itself, and the larger world of nature that surrounds you. Together, they embody the harmony- the unity of challenge and serenity, power and precision, that golf inspires and that LACLAVI strives to help you achieve.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_VqhFaE"
+      ],
+      "settings": {
+        "section_spacing_block": 210,
+        "section_spacing_inline": 54,
+        "section_spacing_block_mobile": 48,
+        "section_spacing_inline_mobile": 16
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_rich_text_CARRct",
+    "slideshow_VfFUii",
+    "logo_meaning_text_gmbgQX"
+  ]
+}

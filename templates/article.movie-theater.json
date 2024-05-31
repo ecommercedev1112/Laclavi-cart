@@ -1,0 +1,522 @@
+{
+  "sections": {
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 18px;}",
+        "h2 {font-size: 40px; line-height: 1.4;}",
+        ".rte p:nth-of-type(3) {font-size: 13px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/0625BABEYOND_999700455.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "1920s-Inspired Outfits for Movie Night",
+        "use_h1": false,
+        "text": "<p>Lights, camera, action! You've got your popcorn, your favorite movie, and the perfect movie night setup, but what about your outfit?<\/p><p> <\/p><p>April 25, 2023 | By Emily Aniston<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Are you a fan of classic Hollywood glamour? If so, why not incorporate some 1920s fashion into your next movie night outfit? Here are some tips and ideas to help you create a stylish and sophisticated look that will transport you back in time.<br\/><\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "f9e03650-258b-4f21-be30-118977b95a74": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-04.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Gatsby Glamour Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Gatsby Glamour Prom Dresses are the epitome of 1920s style. These dresses feature intricate beading, sequins, and fringe details that add a touch of glamour to your outfit. They come in a variety of colors, including classic black and gold, and can be worn in long or short lengths. Pair your Gatsby Glamour dress with a pair of strappy heels and a vintage-inspired clutch for a truly authentic look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20230420102739.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "4b663300-f0bb-487a-8b94-03a9214c241d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "The Roaring Twenties: Adding Some Glam to Your Movie Night",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Want to really bring the 1920s to life? Add some glam to your outfit with a flapper dress. These dresses were all about the glitz and glamour, with sequins, beads, and fringe galore. Choose a dress with a drop waist and some intricate beading, and pair it with some strappy heels for the ultimate Hollywood look. Complete your outfit with bold lip color and some statement earrings. Your movie night just got a whole lot more glamorous!<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0",
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP GATSBY PROM DRESSES",
+        "collection": "gatsby-glamour-prom-dresses",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "a6837111-fc06-4307-a150-40a02baed26a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-03.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Backless Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Backless Prom Dresses were also a popular choice in the 1920s, and they continue to be a fashionable option for prom parties today. These dresses feature an open back, often adorned with beading or lace, and come in a variety of colors and lengths. Backless dresses can be paired with statement earrings and a sleek updo to showcase the intricate details on the back of the dress.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20230420102745.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "b57a0a43-c9be-45eb-867f-57c71542fa67": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "A Classic Pajama: Unleash Your Inner Elegance and Comfort",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Who says you can't be comfortable and chic at the same time? A classic pajama is a perfect solution for your movie night attire. Look for sets with delicate patterns or luxurious fabrics like silk, and pair them with some cozy slippers. Add a statement hair accessory like a 1920s embroidered shawl or headband to complete the look.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0",
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/0625BABEYOND_977500233.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP Classic Pajamas",
+        "collection": "a-classic-pajama-unleash-your-inner-elegance-and-comfort",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "5059d91b-1533-45cd-aa15-18a4df2a0459": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-02.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Retro Prom Accessories",
+        "use_h1": false,
+        "text": "<p>No prom outfit is complete without the perfect accessories, and for a 1920s-inspired look, retro accessories are a must. Think feathered headbands, long pearl necklaces, and vintage-inspired clutch bags. These accessories add a touch of sophistication and glamour to any outfit and are the perfect finishing touch for your prom party look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "63c9a312-d076-4d40-b804-da9e92b883bc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "A Lounge Dress: Effortlessly Chic for Your Movie Night",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Another comfortable option for your movie night is a lounge dress. These dresses were popular in the 1920s for their relaxed fit and easy-to-wear style. Look for dresses made of lightweight fabrics like cotton or linen, and choose a loose, flowing silhouette. Pair with some simple sandals or slides and add some playful jewelry for a touch of fun. Whether you're watching a classic film or a new release, a lounge dress is a stylish and comfortable choice that will make you feel chic and relaxed.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0",
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "42f279c5-cd73-42cb-b954-0e1e7fd5db22": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16709658214621__42f279c5-cd73-42cb-b954-0e1e7fd5db22-16819565963ffaaa3c-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20230420102749.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16709658214621__42f279c5-cd73-42cb-b954-0e1e7fd5db22-16819565963ffaaa3c-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "67e89375-003f-4303-90a6-7458465553c3": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP Lounge Dresses",
+        "collection": "a-lounge-dress-effortlessly-chic-for-your-movie-night",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        ".back {display: none;}"
+      ],
+      "settings": {
+        "show_date": false,
+        "show_author": false,
+        "show_article_tags": false,
+        "show_sharing_icons": true,
+        "show_featured_image": false,
+        "full_width_image": false,
+        "featured_image_height": "natural",
+        "enable_title_overlay": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef": {
+      "type": "logo-list",
+      "blocks": {
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282541_fb_social_media_facebook_facebook_logo_social_network_icon_fd6b582a-fdd0-4fbe-a3d0-aa084695ae87.png",
+            "image_width": 40,
+            "link": "https:\/\/www.facebook.com\/sharer.php?u=https:\/\/babeyond.com\/blogs\/style\/1920s-inspired-outfits-for-movie-night",
+            "title": ""
+          }
+        },
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282551_tweet_twitter_twitter_logo_icon_a52bbc76-aea3-4c04-ba3c-43b881018f3f.png",
+            "image_width": 40,
+            "link": "https:\/\/twitter.com\/intent\/tweet?text=1920s+inspired+outfits+for+movie+night&url=https:\/\/babeyond.com\/blogs\/style\/1920s-inspired-outfits-for-movie-night",
+            "title": ""
+          }
+        },
+        "63791460-50c7-440c-bc47-9861f9327ee8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282545_pin_pinterest_inspiration_pinterest_logo_icon_3bf23350-beb7-4fbe-9de8-a7be021dfa58.png",
+            "image_width": 40,
+            "link": "https:\/\/www.pinterest.com\/pin-builder\/?description=1920s+Glam+for+Prom+Season&media=%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0015%2F8937%2F9159%2Farticles%2F04_1024x1024.png%3Fv%3D1678332826&method=button&url=https%3A%2F%2Fbabeyond.com%2Fblogs%2Fstyle%2Fprom-party-outline",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9",
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131",
+        "63791460-50c7-440c-bc47-9861f9327ee8"
+      ],
+      "custom_css": [
+        "h2 {font-size: 14px;}",
+        ".rimage-outer-wrapper {}"
+      ],
+      "settings": {
+        "title": "SHARE ARTICLE",
+        "image_opacity": 80,
+        "use_alt_bg": false
+      }
+    },
+    "06b1fff1-7390-4d06-818d-505593e9ab90": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "blog_bar_col": "#c9beac",
+        "blog_bar_col_mb": "#f5f2eb",
+        "title": "MORE IN STYLE",
+        "blog": "style",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "subtitle": "<p><\/p>",
+        "button": "<p><\/p>",
+        "crop_ratio": "1.78"
+      }
+    },
+    "20172979-f362-46b3-a6ef-a3c07323587e": {
+      "type": "special-blog",
+      "blocks": {
+        "112200b6-0817-4595-baec-b2d57cd4400e": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/step-back-in-time-a-journey-through-the-best-1920s-movies",
+            "image": "shopify:\/\/shop_images\/banner_326d12f5-af81-47e9-a0af-36ba32c1149b.jpg",
+            "title": "<p>Step Back in Time: A Journey through the Best 1920s Movies<\/p>",
+            "main_content": "<p>No one asks to be left behind. But in a hundred years, when you and I are both long gone, any time someone threads a frame of yours through a sprocket, you will be alive again. -- Elinor St. John, Babylon<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "27abb664-2277-43d3-9d1c-67bb3c15593b": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/cannes-chic-unforgettable-fashion-moments-on-the-red-carpet",
+            "image": "shopify:\/\/shop_images\/QQ_20230524110505.jpg",
+            "title": "<p>Cannes Chic: Unforgettable Fashion Moments on the Red Carpet<\/p>",
+            "main_content": "<p>Who had the most captivating fashion statement on the 2023 Cannes red carpet that you absolutely adored?<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "87f7c0c5-f23d-4ed5-9f4a-5763533b3fc0": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/clara-bow-the-flapper-icon-of-the-roaring-twenties",
+            "image": "shopify:\/\/shop_images\/4f034d0903d1b1b45dda928540c8137c.jpg",
+            "title": "<p>Clara Bow: The Flapper Icon of the Roaring Twenties<\/p>",
+            "main_content": "<p>Discover the Captivating Tale of Clara Bow: From Adversity to Flapper Extraordinaire, Her Story Transcends Time.<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        }
+      },
+      "block_order": [
+        "112200b6-0817-4595-baec-b2d57cd4400e",
+        "27abb664-2277-43d3-9d1c-67bb3c15593b",
+        "87f7c0c5-f23d-4ed5-9f4a-5763533b3fc0"
+      ],
+      "settings": {
+        "crop_ratio": "1.0"
+      }
+    }
+  },
+  "order": [
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3",
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a",
+    "f9e03650-258b-4f21-be30-118977b95a74",
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6",
+    "4b663300-f0bb-487a-8b94-03a9214c241d",
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab",
+    "a6837111-fc06-4307-a150-40a02baed26a",
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f",
+    "b57a0a43-c9be-45eb-867f-57c71542fa67",
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9",
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84",
+    "5059d91b-1533-45cd-aa15-18a4df2a0459",
+    "63c9a312-d076-4d40-b804-da9e92b883bc",
+    "42f279c5-cd73-42cb-b954-0e1e7fd5db22",
+    "67e89375-003f-4303-90a6-7458465553c3",
+    "main",
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef",
+    "06b1fff1-7390-4d06-818d-505593e9ab90",
+    "20172979-f362-46b3-a6ef-a3c07323587e"
+  ]
+}

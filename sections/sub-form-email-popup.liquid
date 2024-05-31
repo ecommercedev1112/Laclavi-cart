@@ -1,0 +1,926 @@
+{% if template.name == "index" %}
+{% if section.settings.show_popup %}
+
+{% style %}
+  .emailPopup-overlay .footer_input.emailpopup-input {
+    margin-bottom: 0;
+  }
+  #shopify-section-sub-form-email-popup:has(.emailPopup-overlay.hidden) {
+    z-index: -1;
+  }
+  .sub-form-emailPopUp {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 9999999999;
+  }
+  .sub-form-emailPopUp .emailPopup-overlay {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  .emailPopup-overlay-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #00000040;
+  }
+  .sub-form-emailPopUp .email-popup-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    z-index: 9999999;
+    width: 327px;
+  }
+  .email-popup-inner {
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+  }
+  .sub-form-emailPopUp .email-sub-image img {
+    height: 100%;
+  }
+  .emailPopup-bar,
+  .emailPopup-bar--container {
+    display: block;
+  }
+  .emailPopup-bar {
+    height: 300px;
+    z-index: 99999999;
+    position: fixed;
+    position: fixed;
+    top: 50%;
+    margin-top: -171px;
+    right: 0px;
+    width: 24px;
+    cursor: pointer;
+    z-index: 10000000;
+  }
+  .emailPopup-bar--right-side {
+    position: fixed;
+    top: 65%;
+    margin-top: -45px;
+    right: -1px;
+    z-index: 10000000;
+  }
+  #shopify-section-sub-form-email-popup .signup-form:has(.emailPopup-form__response--success) {
+    margin-top: 0;
+  }
+  .email-sub-form--main:has(.emailPopup-form__response--success) {
+    padding-bottom: 30px;
+  }
+  .emailPopup-bar--side-tab-wrapper {
+    right: -50%;
+    transform-origin: bottom center;
+    pointer-events: none;
+    position: relative;
+    transform: rotate(-90deg);
+    cursor: pointer;
+  }
+  .emailPopup-bar-tab {
+    z-index: 9999000;
+    background-color: #CCC1AF;
+    color: #161616;
+    padding: 0 28px 0 22px !important;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+    display: inline-block;
+    margin: 0px 3px;
+    cursor: pointer;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    border: 1px solid rgba(0,0,0,0.07);
+    position: relative;
+    letter-spacing: 0px !important;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease, transform 1ms;
+    -moz-transition: all 0.2s ease, transform 1ms;
+    -o-transition: all 0.2s ease, transform 1ms;
+    transition: all 0.2s ease, transform 1ms;
+  }
+  .emailPopup-bar-tab-text {
+    display: inline-block;
+    position: relative;
+    text-transform: none;
+    right: -10px;
+    color: #161616;
+    font-size: 12px;
+    font-family: Gotham;
+    font-weight: 325;
+    text-transform: uppercase;
+  }
+  .emailPopup-bar-tab-text:after {
+    content: '';
+    transform: rotate(-90deg);
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: url(https://cdn.shopifycdn.net/s/files/1/0015/8937/9159/files/gb.png?v=1656919217);
+    right: 10px;
+    margin: auto;
+    top: 0;
+    background-size: cover;
+    bottom: -200px;
+    cursor: pointer;
+  }
+  .sub-form-emailPopUp .btn-close {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+  .sub-form-emailPopUp .btn-close svg {
+    width: 16px;
+    height: 16px;
+  }
+  .emailPopup-overlay.hidden {
+    display: none;
+  }
+  .email-sub-form--main {
+    display: flex;
+    flex-direction: column;
+    background: #F2EFE8;
+  }
+  #email_signup_popup:has(.emailPopup-form__response--success) #mySubmit_popup,
+  #email_signup_popup:has(.emailPopup-form__response--success) .emailpopup-input,
+  #shopify-section-sub-form-email-popup:has(.emailPopup-form__response--success) .email-sub-form--title,
+  #shopify-section-sub-form-email-popup:has(.emailPopup-form__response--success) .email-sub-form--subtitle,
+  #shopify-section-sub-form-email-popup:has(.emailPopup-form__response--success) .email-sub-form--note {
+    display: none;
+  }
+  #shopify-section-sub-form-email-popup:has(.emailPopup-form__response--success) .email-sub-form--subtitle_success,
+  #shopify-section-sub-form-email-popup:has(.emailPopup-form__response--success) .email-sub-form--code_success,
+  #shopify-section-sub-form-email-popup:has(.emailPopup-form__response--success) .btn-cta {
+    display: block;
+  }
+  #myInput_popup:focus-visible {
+    outline: none;
+  }
+  .email-sub-form--subtitle_success,
+  .email-sub-form--code_success,
+  .btn-cta {
+    display: none;
+  }
+  .email-sub-form--logo,
+  .email-sub-form--title,
+  .email-sub-form--subtitle,
+  #shopify-section-sub-form-email-popup .signup-form,
+  .email-sub-form--note,
+  .email-sub-form--subtitle_success,
+  .email-sub-form--code_success,
+  .email-sub-form--subtitle_success,
+  .email-sub-form--code_success,
+  .btn-cta {
+    text-align: center;
+  }
+  .email-sub-form--title h3 {
+    color: #2D2D2D;
+    text-align: center;
+    font-size: 30px;
+    font-family:MADE-Saonara;
+    text-transform: unset;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 32px;
+    max-height: 64px;
+    word-break: break-word;
+  }
+  .email-sub-form--subtitle p {
+    margin-bottom: 0;
+    color: #666;
+    font-size: 12px;
+    font-family: Gotham;
+    font-weight: 325;
+    margin-top: 8px;
+    line-height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-height: 14px;
+    word-break: break-word;
+  }
+  .email-sub-form--main {
+    padding: 16px 12px;
+  }
+  #shopify-section-sub-form-email-popup .signup-form {
+    margin-top: 16px;
+  }
+  .emailPopUp-form__email,
+  #mySubmit_popup {
+    width: 100%;
+  }
+  #mySubmit_popup {
+    transition: all 0.3s ease-in-out;
+  }
+  #mySubmit_popup:hover {
+    background: #C9BEAC80;
+  }
+  .email-sub-form--note p {
+    margin-bottom: 0;
+    line-height: 14px;
+    color: #A1A1A1;
+    text-align: center;
+    font-size: 12px;
+    font-family: Gotham;
+    font-weight: 325;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    max-height: 42px;
+    word-break: break-word;
+  }
+  .email-sub-form--note {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Gotham;
+    font-weight: 325;
+    margin-bottom: 0;
+  }
+  .email-sub-form--logo {
+    height: 13px;
+    display: none;
+  }
+  #shopify-section-sub-form-email-popup:has(#email-error-msg[style="display: block;"]) .email-sub-form--note {
+    margin-top: 33px;
+  }
+  #shopify-section-sub-form-email-popup #email-error-msg[style="display: block;"] {
+    color: #FA5050;
+    font-size: 11px;
+    font-family: Gotham;
+    font-weight: 325;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+  .emailPopup-form__response--success h6 {
+    margin-bottom: 0px;
+    color: #2D2D2D;
+    text-align: center;
+    font-size: 30px;
+    font-family:MADE-Saonara;
+    line-height: 32px;
+    letter-spacing: 4px;
+    text-transform: unset;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 32px;
+    max-height: 64px;
+    word-break: break-word;
+  }
+  .email-sub-form--subtitle_success.first-child {
+    margin-top: 20px;
+  }
+  .email-sub-form--subtitle_success p {
+    margin-bottom: 0;
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+    font-family: Gotham;
+    font-weight: 325;
+    text-transform: uppercase;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 14px;
+    word-break: break-word;
+    max-height: 28px;
+  }
+  .email-sub-form--code_success p {
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+    font-family: Gotham;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    word-break: break-word;
+    line-height: 14px;
+    margin-top: 4px;
+  } 
+  .email-sub-form--subtitle_success.second-child {
+    margin-top: 16px;
+  }
+  #shopify-section-sub-form-email-popup .btn-cta {
+    margin-top: 40px;
+    color:#282828;
+    font-size: 11px;
+    font-family: Gotham;
+    font-weight: 325;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+  .email-sub-image--image.mobile {
+    display: block;
+    width: 100%;
+    height: 190px !important;
+  }
+  .email-sub-image--image.desktop {
+    display: none;
+  }
+  .emailpopup-input {
+    width: 100%;
+  }
+  #shopify-section-sub-form-email-popup .emailPopUp-form__email {
+    color: #282828;
+    font-size: 12px;
+    font-family: Gotham;
+    font-weight: 325;
+    padding: 9px 12px;
+  }
+  #shopify-section-sub-form-email-popup .emailPopUp-form__email::-webkit-input-placeholder {
+    padding: 0;
+    font-size: 12px;
+    font-family: Gotham;
+    font-weight: 325;
+    color: #A1A1A1;
+  }
+  #mySubmit_popup {
+    color: #282828;
+    font-size: 12px;
+    font-family: Gotham;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 8px;
+    background: #C9BEAC;
+    border: 0;
+    line-height: 14px;
+  }
+  body:has(.emailPopup-overlay.hidden) .emailPopup-bar {
+    display: block;
+  }
+  body .emailPopup-bar {
+    display: none;
+  }
+  @media(max-width: 839px) {
+    .emailPopup-bar {
+      top: 64%;
+      height: 220px;
+      margin-top: -125px;
+    }
+  }
+  @media(min-width: 840px) {
+    .email-sub-form--main:has(.emailPopup-form__response--success) {
+      padding-bottom: 48px;
+    }
+    .email-sub-form--logo a {
+      line-height: 13px;
+      height: 13px;
+      display: block;
+    }
+    .email-sub-form--logo svg {
+      width: 110.85px;
+      height: 13.14px;
+    }
+    #shopify-section-sub-form-email-popup .signup-form:has(.emailPopup-form__response--success) {
+      margin-top: 30px;
+    }
+    .emailPopup-bar--right-side {
+      top: 50%;
+    }
+    .email-sub-form--logo img {
+      object-fit: cover;
+    }
+    .emailPopup-bar-tab-text {
+      font-size: 14px;
+    }
+    .emailPopup-bar-tab {
+      padding: 0 44px 0 40px !important;
+    }
+    .email-sub-form--logo {
+      display: block;
+    }
+    .email-sub-image--image.mobile {
+      display: none;
+    }
+    .email-sub-image--image.desktop {
+      display: block;
+    }
+    .email-popup-inner {
+      flex-direction: row;
+    }
+    .sub-form-emailPopUp .email-popup-popup {
+      width: 800px;
+      height: 450px;
+    }
+    #shopify-section-sub-form-email-popup .emailPopUp-form__email {
+      padding: 9px 10px;
+      font-size: 12px;
+    }
+    #shopify-section-sub-form-email-popup .emailPopUp-form__email::-webkit-input-placeholder {
+      padding: 0;
+    }
+    #mySubmit_popup {
+      padding: 10px;
+      font-size: 12px;
+    }
+    #shopify-section-sub-form-email-popup .signup-form {
+      margin-top: 44px;
+    }
+    .email-sub-form--title h3 {
+      font-size: 34px;
+      margin: 0 auto;
+      margin-top: 30px;
+      letter-spacing: 4px;
+      padding: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-height: 36px;
+      max-height: 72px;
+    }
+    .email-sub-form--subtitle p {
+      margin-top: 16px;
+    }
+    .email-sub-form--main {
+      padding: 40px 30px 44px;
+      max-width: 450px;
+      position: relative;
+    }
+    .email-sub-image {
+      width: 100%;
+      max-width: 350px;
+      min-width: 350px;
+    }
+    .email-sub-form--note {
+      margin-top: 50px;
+    }
+    .email-sub-form--note p {
+      color:#A1A1A1;
+      text-align: center;
+      font-size: 12px;
+      font-family: Gotham;
+      font-weight: 325;
+      max-width: 255px;
+      margin: 0 auto;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      max-height: 56px;
+    }
+    .emailPopup-form__response--success h6 {
+      font-size: 34px;
+      line-height: 38px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-height: 38px;
+      max-height: 76px;
+    }
+    .email-sub-form--subtitle_success.first-child {
+      margin-top: 50px;
+    }
+    .email-sub-form--subtitle_success p {
+      font-size: 14px;
+      line-height: 17px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-height: 17px;
+      max-height: 34px;
+    }
+    .email-sub-form--code_success p {
+      font-size: 14px;
+    } 
+    #shopify-section-sub-form-email-popup .btn-cta {
+      font-size: 16px;
+      line-height: 17px;
+      margin: 0;
+      position: absolute;
+      bottom: 48px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+{% endstyle %}
+
+<div class="emailPopup-overlay hidden">
+  <div class="email-popup-popup">
+    <div class="email-popup-inner">
+      <div class="email-sub-image">
+        {%- if section.settings.image != blank -%}
+          <img
+            srcset="
+          {%- if section.settings.image.width >= 375 -%}
+            {{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
+          {%- if section.settings.image.width >= 750 -%}
+            {{ section.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+          {%- if section.settings.image.width >= 1100 -%}
+            {{ section.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
+          {%- if section.settings.image.width >= 1500 -%}
+            {{ section.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+          {%- if section.settings.image.width >= 1780 -%}
+            {{ section.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
+          {%- if section.settings.image.width >= 2000 -%}
+            {{ section.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
+          {%- if section.settings.image.width >= 3000 -%}
+            {{ section.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
+          {%- if section.settings.image.width >= 3840 -%}
+            {{ section.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
+          {{ section.settings.image | image_url }} {{ section.settings.image.width }}w
+                  "
+          sizes="100vw"
+          src="{{ section.settings.image | image_url: "master" }}"
+          alt="{{ section.settings.image.alt | escape }}"
+          width="{{ section.settings.image.width }}"
+          height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
+          class="email-sub-image--image desktop">
+        {%- endif -%}
+        {%- if section.settings.image_mb != blank -%}
+          <img
+            srcset="
+          {%- if section.settings.image_mb.width >= 375 -%}
+            {{ section.settings.image_mb | image_url: width: 375 }} 375w,{%- endif -%}
+          {%- if section.settings.image_mb.width >= 750 -%}
+            {{ section.settings.image_mb | image_url: width: 750 }} 750w,{%- endif -%}
+          {%- if section.settings.image_mb.width >= 1100 -%}
+            {{ section.settings.image_mb | image_url: width: 1100 }} 1100w,{%- endif -%}
+          {%- if section.settings.image_mb.width >= 1500 -%}
+            {{ section.settings.image_mb | image_url: width: 1500 }} 1500w,{%- endif -%}
+          {%- if section.settings.image_mb.width >= 1780 -%}
+            {{ section.settings.image_mbage | image_url: width: 1780 }} 1780w,{%- endif -%}
+          {%- if section.settings.image_mb.width >= 2000 -%}
+            {{ section.settings.image_mb | image_url: width: 2000 }} 2000w,{%- endif -%}
+          {%- if section.settings.image_mb.width >= 3000 -%}
+            {{ section.settings.image_mb | image_url: width: 3000 }} 3000w,{%- endif -%}
+          {%- if section.settings.image_mb.width >= 3840 -%}
+            {{ section.settings.image_mb | image_url: width: 3840 }} 3840w,{%- endif -%}
+          {{ section.settings.image_mb | image_url }} {{ section.settings.image_mb.width }}w
+                  "
+          sizes="100vw"
+          src="{{ section.settings.image_mb | image_url: "master" }}"
+          alt="{{ section.settings.image_mb.alt | escape }}"
+          width="{{ section.settings.image_mb.width }}"
+          height="{{ section.settings.image_mb.width | divided_by: section.settings.image_mb.aspect_ratio }}"
+          class="email-sub-image--image mobile">
+        {%- endif -%}
+      </div>
+      <div class="email-sub-form--main" style="width:100%;">
+        {%- if section.settings.logo != blank -%}
+          <div class="email-sub-form--logo">
+            <a href="{{ routes.root_url }}" title="{{ shop.name }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="111" height="14" viewBox="0 0 111 14" fill="none">
+                <g id="Frame" clip-path="url(#clip0_1_311)">
+                <g id="Group">
+                <g id="Group_2">
+                <g id="Group_3">
+                <g id="Group_4">
+                <path id="Vector" d="M39.0501 6.79C38.7801 6.57 38.4701 6.4 38.1301 6.28C37.7901 6.16 37.3101 6.05 36.7001 5.94C37.1501 5.78 37.4901 5.63 37.7301 5.5C37.9701 5.37 38.1801 5.2 38.3601 5.01C38.8801 4.47 39.1401 3.78 39.1401 2.95C39.1401 2.43 39.0301 1.96 38.8001 1.55C38.5701 1.13 38.2501 0.8 37.8301 0.54C37.3501 0.25 36.7501 0.08 36.0201 0.02C35.8201 0.01 35.4001 0 34.7601 0H28.5201H28.4601H28.4501C28.3901 0 28.3501 0.05 28.3501 0.11C28.3501 0.17 28.4001 0.21 28.4501 0.22C28.8201 0.24 29.1101 0.29 29.3401 0.37C29.5701 0.45 29.7701 0.59 29.9501 0.77C30.1501 0.98 30.2901 1.23 30.3601 1.55C30.4301 1.86 30.4701 2.35 30.4701 3.01V10.09C30.4701 10.75 30.4301 11.24 30.3601 11.55C30.2901 11.86 30.1501 12.12 29.9501 12.33C29.7801 12.51 29.5801 12.64 29.3501 12.73C29.1201 12.82 28.8201 12.87 28.4501 12.89C28.3901 12.89 28.3401 12.94 28.3401 13C28.3401 13.06 28.3901 13.11 28.4501 13.11H28.5101H35.4701C36.4201 13.11 37.1501 13.06 37.6701 12.96C38.1901 12.86 38.6401 12.68 39.0201 12.41C39.4401 12.12 39.7601 11.73 39.9901 11.24C40.2201 10.76 40.3401 10.22 40.3401 9.64C40.3401 9.06 40.2301 8.53 40.0001 8.03C39.7801 7.54 39.4601 7.13 39.0501 6.79ZM32.5701 0.3H33.4601C34.1401 0.3 34.6601 0.34 34.9901 0.42C35.3301 0.5 35.6301 0.64 35.8901 0.85C36.1901 1.09 36.4301 1.43 36.6101 1.87C36.7901 2.31 36.8801 2.77 36.8801 3.26C36.8801 3.72 36.7901 4.14 36.6201 4.52C36.4401 4.9 36.1901 5.21 35.8701 5.46C35.7001 5.58 35.5101 5.68 35.3001 5.75C35.0901 5.82 34.8201 5.88 34.4801 5.93C34.0901 5.98 33.7101 6.01 33.3501 6.01H32.5701V0.3ZM37.1201 11.97C36.5201 12.53 35.7101 12.81 34.6801 12.81C33.8901 12.81 33.3301 12.6 33.0001 12.17C32.8501 11.97 32.7401 11.72 32.6701 11.42C32.6001 11.13 32.5701 10.74 32.5701 10.26V6.3H34.2901C35.5201 6.3 36.4201 6.54 37.0001 7.01C37.3101 7.27 37.5601 7.63 37.7501 8.11C37.9401 8.59 38.0301 9.1 38.0301 9.66C38.0201 10.64 37.7201 11.41 37.1201 11.97Z" fill="#2D2D2D"/>
+                <path id="Vector_2" d="M74.96 0.0400085C73.28 0.0400085 71.86 0.590009 70.7 1.69001C69.41 2.90001 68.77 4.54001 68.77 6.59001C68.77 8.56001 69.38 10.15 70.59 11.36C71.75 12.52 73.21 13.1 74.96 13.1C76.74 13.1 78.2 12.52 79.35 11.36C80.55 10.15 81.15 8.56001 81.15 6.59001C81.15 4.52001 80.51 2.88001 79.22 1.67001C78.07 0.580009 76.65 0.0400085 74.96 0.0400085ZM77.76 11.06C77.04 11.97 76.11 12.42 74.96 12.42C73.81 12.42 72.88 11.97 72.16 11.06C71.34 10.02 70.93 8.53001 70.93 6.57001C70.93 4.58001 71.36 3.06001 72.22 2.03001C72.94 1.16001 73.85 0.720009 74.97 0.720009C76.09 0.720009 77 1.16001 77.72 2.03001C78.58 3.07001 79.01 4.58001 79.01 6.57001C78.99 8.53001 78.58 10.02 77.76 11.06Z" fill="#2D2D2D"/>
+                <path id="Vector_3" d="M108.68 1.66999C107.31 0.589988 105.41 0.0499878 102.98 0.0499878H97.77C97.77 0.0499878 97.77 0.0499878 97.76 0.0499878H97.65C97.55 0.0499878 97.47 0.129988 97.47 0.229988V0.239988C97.47 0.339988 97.55 0.419988 97.65 0.419988C98.4 0.419988 98.88 0.529988 99.08 0.749988C99.28 0.969988 99.39 1.44999 99.39 2.19999V10.96C99.39 11.67 99.29 12.14 99.07 12.38C98.87 12.61 98.41 12.73 97.71 12.73H97.66C97.66 12.73 97.66 12.73 97.65 12.73C97.65 12.73 97.65 12.73 97.64 12.73C97.54 12.74 97.47 12.81 97.47 12.91V12.92C97.47 13.02 97.55 13.1 97.64 13.1H97.65H97.76H103.24C105.95 13.1 107.97 12.34 109.32 10.83C110.33 9.68999 110.84 8.27999 110.84 6.60999C110.85 4.45999 110.13 2.80999 108.68 1.66999ZM107.4 10.68C106.74 11.42 105.85 11.92 104.72 12.18C104.15 12.31 103.44 12.38 102.59 12.38C102.12 12.38 101.8 12.33 101.64 12.22C101.48 12.12 101.4 11.9 101.4 11.57V1.54999C101.4 1.28999 101.44 1.10999 101.52 1.01999C101.65 0.859988 101.92 0.779988 102.33 0.779988C103.5 0.779988 104.45 0.909988 105.19 1.14999C105.78 1.34999 106.34 1.67999 106.87 2.15999C107.54 2.74999 108.01 3.41999 108.29 4.15999C108.57 4.89999 108.7 5.72999 108.7 6.63999C108.7 8.36999 108.27 9.71999 107.4 10.68Z" fill="#2D2D2D"/>
+                <path id="Vector_4" d="M10.72 6.8C10.44 6.58 10.14 6.41 9.8 6.29C9.46 6.17 8.98 6.05 8.37 5.95C8.82 5.79 9.16 5.65 9.4 5.51C9.64 5.38 9.85 5.21 10.03 5.01C10.55 4.47 10.81 3.78 10.81 2.94C10.81 2.42 10.7 1.95 10.47 1.54C10.24 1.13 9.92 0.79 9.5 0.54C9.02 0.25 8.42 0.08 7.69 0.02C7.49 0.01 7.07 0 6.43 0H0.21H0.14H0.12C0.06 0 0.01 0.05 0.01 0.11V0.12C0.01 0.18 0.06 0.23 0.12 0.23H0.15C0.51 0.24 0.77 0.29 1 0.38C1.23 0.46 1.43 0.6 1.61 0.78C1.82 0.99 1.95 1.24 2.02 1.56C2.09 1.87 2.13 2.36 2.13 3.02V10.11C2.13 10.77 2.09 11.26 2.02 11.57C1.95 11.88 1.81 12.14 1.61 12.35C1.44 12.53 1.24 12.66 1.01 12.75C0.78 12.84 0.49 12.89 0.12 12.91H0.11C0.05 12.9 0 12.95 0 13.01V13.02C0 13.08 0.05 13.13 0.11 13.13H0.21H7.14C8.09 13.13 8.82 13.08 9.35 12.98C9.87 12.88 10.32 12.7 10.7 12.43C11.12 12.14 11.44 11.75 11.68 11.26C11.91 10.78 12.03 10.24 12.03 9.66C12.03 9.08 11.92 8.55 11.69 8.05C11.45 7.55 11.13 7.13 10.72 6.8ZM4.23 0.3H5.12C5.81 0.3 6.32 0.34 6.65 0.42C7 0.49 7.3 0.63 7.56 0.85C7.86 1.09 8.1 1.43 8.29 1.87C8.47 2.31 8.56 2.77 8.56 3.26C8.56 3.72 8.47 4.14 8.3 4.52C8.12 4.91 7.87 5.22 7.54 5.46C7.37 5.58 7.18 5.68 6.97 5.75C6.76 5.82 6.49 5.88 6.15 5.93C5.76 5.98 5.38 6.01 5.01 6.01H4.23V0.3ZM8.8 11.98C8.2 12.54 7.39 12.83 6.35 12.83C5.55 12.83 4.99 12.62 4.67 12.19C4.52 11.98 4.41 11.74 4.34 11.44C4.27 11.15 4.24 10.76 4.24 10.28V6.31H5.96C7.19 6.31 8.09 6.55 8.67 7.02C8.98 7.28 9.23 7.64 9.42 8.12C9.61 8.6 9.7 9.12 9.7 9.67C9.69 10.65 9.4 11.42 8.8 11.98Z" fill="#2D2D2D"/>
+                <path id="Vector_5" d="M68.0901 0H68.0601H68.0301H63.6801H63.6301H63.6201C63.5601 0 63.5101 0.05 63.5101 0.11C63.5101 0.17 63.5601 0.22 63.6201 0.22H63.6301C64.1001 0.22 64.4701 0.33 64.7401 0.56C65.0001 0.78 65.1301 1.1 65.1301 1.51C65.1301 1.87 65.0101 2.24 64.7701 2.61L64.5201 3L62.3001 6.49L59.6901 2.41C59.5101 2.13 59.3801 1.89 59.3001 1.71C59.2201 1.52 59.1801 1.36 59.1801 1.21C59.1801 0.81 59.3601 0.53 59.7201 0.37C59.8701 0.31 60.2101 0.26 60.7401 0.23H60.7501C60.8101 0.23 60.8601 0.18 60.8601 0.12C60.8601 0.06 60.8101 0.01 60.7501 0.01H60.7401H60.6901H54.5201H54.4601C54.4001 0.01 54.3501 0.06 54.3501 0.12C54.3501 0.18 54.4001 0.23 54.4601 0.23C54.7501 0.24 54.9701 0.27 55.1301 0.31C55.2901 0.35 55.4501 0.42 55.6101 0.51C55.9201 0.69 56.2501 1.02 56.5701 1.51L57.0101 2.18L59.5001 5.92C59.8801 6.49 60.1301 6.97 60.2501 7.34C60.3601 7.67 60.4101 7.97 60.4101 8.23L60.4001 10.11C60.4001 10.77 60.3601 11.26 60.2901 11.57C60.2201 11.89 60.0801 12.14 59.8901 12.35C59.7101 12.54 59.5101 12.67 59.2701 12.75C59.0401 12.83 58.7401 12.88 58.3801 12.9C58.3201 12.9 58.2701 12.95 58.2701 13.01C58.2701 13.07 58.3201 13.12 58.3801 13.12H58.4401H64.4901H64.5301H64.5501C64.6101 13.12 64.6601 13.07 64.6601 13.01C64.6601 12.95 64.6101 12.9 64.5501 12.9H64.5301C63.8801 12.9 63.3701 12.71 63.0201 12.34C62.8101 12.13 62.6801 11.87 62.6101 11.57C62.5401 11.27 62.5101 10.78 62.5101 10.09V7.76C62.5101 7.32 62.5401 7 62.6001 6.82C62.6601 6.63 62.8201 6.34 63.0801 5.94L65.2701 2.59C65.8001 1.78 66.2901 1.16 66.7201 0.75C66.9101 0.58 67.0901 0.46 67.2701 0.39C67.4501 0.32 67.7101 0.26 68.0401 0.22H68.0701C68.1301 0.22 68.1801 0.17 68.1801 0.11C68.2001 0.05 68.1501 0 68.0901 0Z" fill="#2D2D2D"/>
+                <path id="Vector_6" d="M96.0799 0.0500085H95.9799H91.5699H91.5099H91.4699C91.3699 0.0500085 91.2899 0.130009 91.2899 0.230009C91.2899 0.330009 91.3699 0.410009 91.4699 0.410009H91.5099C92.2299 0.410009 92.7099 0.550009 92.9499 0.820009C93.2299 1.14001 93.3799 1.83001 93.3799 2.89001L93.3399 9.10001C93.3399 9.19001 93.2299 9.23001 93.1699 9.16001L85.9299 0.0800085C85.9099 0.0600085 85.8899 0.0400085 85.8599 0.0400085H82.6899H82.5899C82.4899 0.0400085 82.4099 0.120009 82.4099 0.220009C82.4099 0.320009 82.4899 0.400009 82.5899 0.400009H82.6299C83.0099 0.400009 83.3199 0.470008 83.5499 0.590008C83.7799 0.720008 84.0799 1.00001 84.4499 1.43001C84.4599 1.45001 84.4699 1.47001 84.4699 1.49001V10.02C84.4699 11.06 84.3499 11.73 84.0999 12.04C83.8599 12.35 83.3599 12.5 82.6099 12.51H82.5999C82.5899 12.51 82.5899 12.51 82.5799 12.51C82.4899 12.52 82.4099 12.59 82.4099 12.69C82.4099 12.79 82.4799 12.86 82.5799 12.87H82.5899H82.6899H87.0099H87.1099H87.1199C87.2199 12.86 87.2899 12.79 87.2899 12.69C87.2899 12.59 87.2099 12.51 87.1199 12.51C86.3999 12.51 85.9099 12.34 85.6599 12.01C85.4099 11.68 85.2899 11.02 85.2899 10.02L85.3299 2.71001C85.3299 2.62001 85.4399 2.58001 85.4999 2.65001L93.7099 12.87C93.7499 12.92 93.7899 12.96 93.7899 12.96C93.7999 12.98 93.8299 12.99 93.8499 13.01C93.8899 13.04 93.9399 13.07 93.9899 13.08C94.0499 13.09 94.1099 13.07 94.1599 13.03C94.1699 13.02 94.1899 13.01 94.1999 12.99C94.2099 12.98 94.2099 12.97 94.2199 12.96C94.2199 12.95 94.2199 12.93 94.2199 12.92C94.2199 12.86 94.2199 12.8 94.2199 12.74V12.54V12.38V12.34V2.90001C94.2199 1.85001 94.3799 1.17001 94.6899 0.840008C94.8799 0.630009 95.3399 0.490009 96.0699 0.410009C96.1699 0.410009 96.2499 0.330009 96.2499 0.230009C96.2599 0.130009 96.1799 0.0500085 96.0799 0.0500085Z" fill="#2D2D2D"/>
+                <path id="Vector_7" d="M53.2901 9.36V9.31C53.2801 9.26 53.2401 9.21 53.1901 9.21C53.1401 9.21 53.1001 9.25 53.0901 9.3C53.0901 9.3 52.8301 10.34 52.6801 10.69C52.5401 11.04 52.3501 11.36 52.1201 11.63C51.7901 12.04 51.3701 12.34 50.8501 12.54C50.3301 12.74 49.6901 12.83 48.9201 12.83C48.1901 12.83 47.6001 12.72 47.1501 12.51C46.7001 12.3 46.3701 11.96 46.1501 11.49C46.0201 11.22 45.9301 10.88 45.8901 10.48C45.8401 10.08 45.8201 9.44 45.8201 8.56V6.36H46.3701C46.8501 6.36 47.2401 6.41 47.5401 6.5C47.8501 6.6 48.1001 6.75 48.2901 6.95C48.4901 7.16 48.6401 7.42 48.7601 7.72C48.8701 8.02 48.9601 8.42 49.0201 8.91C49.0301 8.96 49.0701 9.01 49.1301 9.01C49.1901 9.01 49.2301 8.97 49.2301 8.91V8.93V8.84L49.2701 3.87V3.85V3.78C49.2701 3.72 49.2201 3.67 49.1601 3.67C49.1001 3.67 49.0601 3.71 49.0601 3.77V3.78V3.79C49.0001 4.27 48.9301 4.64 48.8501 4.89C48.7601 5.14 48.6301 5.36 48.4501 5.55C48.2401 5.75 48.0001 5.89 47.7001 5.96C47.4001 6.04 46.9601 6.08 46.3801 6.08H45.8001V0.52C45.8001 0.4 45.9001 0.3 46.0201 0.3H48.0001C48.6801 0.3 49.2301 0.35 49.6401 0.44C50.0501 0.53 50.4101 0.69 50.7101 0.92C51.0801 1.19 51.3501 1.5 51.5501 1.85C51.7401 2.2 51.9701 3.19 51.9701 3.19C51.9801 3.24 52.0201 3.28 52.0801 3.27H52.0901C52.1501 3.27 52.1901 3.21 52.1901 3.15L52.1801 3.06L52.0401 0.21C52.0301 0.1 51.9301 0 51.8201 0H41.7401H41.6801C41.6201 0 41.5701 0.05 41.5701 0.11C41.5701 0.17 41.6201 0.22 41.6801 0.22C42.0501 0.24 42.3501 0.29 42.5801 0.37C42.8101 0.45 43.0101 0.59 43.1801 0.77C43.3801 0.98 43.5201 1.24 43.5901 1.55C43.6601 1.87 43.7001 2.35 43.7001 3.01V10.1C43.7001 10.75 43.6601 11.24 43.5901 11.56C43.5201 11.88 43.3801 12.14 43.1801 12.34C43.0001 12.53 42.8001 12.66 42.5701 12.74C42.3401 12.82 42.0501 12.87 41.6801 12.89C41.6201 12.89 41.5701 12.94 41.5701 13C41.5701 13.06 41.6201 13.11 41.6801 13.11H41.7401H52.9501C53.0701 13.11 53.1701 13.02 53.1701 12.9L53.2901 9.39V9.36Z" fill="#2D2D2D"/>
+                <path id="Vector_8" d="M26.9699 12.73H26.9399C26.4999 12.73 26.1699 12.63 25.9699 12.43C25.7699 12.23 25.4999 11.76 25.1799 11.03L20.4599 0.25001C20.3999 0.11001 20.2699 0.0100098 20.1099 0.0100098C19.9499 0.0100098 19.8099 0.11001 19.7599 0.25001L15.8399 9.51001C15.5399 10.2 15.3099 10.71 15.1499 11.04C14.8499 11.67 14.5999 12.09 14.4099 12.29C14.2799 12.42 14.1399 12.53 13.9899 12.6C13.8399 12.68 13.6499 12.72 13.4099 12.72H13.3799C13.2799 12.72 13.1899 12.8 13.1899 12.91C13.1899 13.01 13.2699 13.1 13.3799 13.1H13.4099H13.4799H17.2599H17.2899H17.3599C17.4599 13.1 17.5499 13.02 17.5499 12.91C17.5499 12.81 17.4699 12.72 17.3599 12.72H17.2899C16.9099 12.72 16.6399 12.69 16.4699 12.62C16.1299 12.49 15.9599 12.25 15.9599 11.9C15.9599 11.68 16.0099 11.43 16.1199 11.16L16.9999 8.87001H22.1399L22.9599 10.75C23.0899 11.06 23.1799 11.32 23.2299 11.52C23.2899 11.72 23.3099 11.87 23.3099 11.99C23.3099 12.32 23.1699 12.53 22.8999 12.64C22.7299 12.71 22.4099 12.74 21.9399 12.74C21.8499 12.75 21.7799 12.83 21.7799 12.92C21.7799 13.01 21.8499 13.09 21.9399 13.1H21.9599H22.0599H26.8599H26.9299H26.9599C27.0599 13.1 27.1499 13.02 27.1499 12.91C27.1599 12.81 27.0699 12.73 26.9699 12.73ZM17.3399 8.07001L19.5999 2.69001L21.8699 8.07001H17.3399Z" fill="#2D2D2D"/>
+                </g>
+                </g>
+                </g>
+                </g>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_311">
+                <rect width="110.85" height="13.14" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        {%- endif -%}
+        {%- if section.settings.title != blank -%}
+          <div class="email-sub-form--title">
+            {{ section.settings.title }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.subtitle != blank -%}
+          <div class="email-sub-form--subtitle">
+            {{ section.settings.subtitle }}
+          </div>
+        {%- endif -%}
+        {% render 'email-sub-form' %}
+        {%- if section.settings.note != blank -%}
+          <div class="email-sub-form--note">
+            {{ section.settings.note }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.subtitle_success_1 != blank -%}
+          <div class="email-sub-form--subtitle_success first-child">
+            {{ section.settings.subtitle_success_1 }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.code_success_1 != blank -%}
+          <div class="email-sub-form--code_success">
+            {{ section.settings.code_success_1 }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.subtitle_success_2 != blank -%}
+          <div class="email-sub-form--subtitle_success second-child">
+            {{ section.settings.subtitle_success_2 }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.code_success_2 != blank -%}
+          <div class="email-sub-form--code_success">
+            {{ section.settings.code_success_2 }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.btn_url != blank -%}
+          <a class="btn-cta" href="{{ section.settings.btn_url }}">{{ section.settings.btn }}</a>
+        {% endif %}
+      </div>
+      <div class="btn-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><g id="close" clip-path="url(#clip0_1_62)"><g id="Group"><path id="Vector" d="M14.6784 1.32159L1.32166 14.6784" stroke="#282828" stroke-width="0.785692" stroke-miterlimit="10" stroke-linecap="round"/><path id="Vector_2" d="M1.32166 1.32159L14.6784 14.6784" stroke="#282828" stroke-width="0.785692" stroke-miterlimit="10" stroke-linecap="round"/></g></g><defs><clipPath id="clip0_1_62"><rect width="16" height="16" fill="white"/></clipPath></defs></svg>
+      </div>
+    </div>
+  </div>
+  <div class="emailPopup-overlay-overlay"></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    document.querySelector('.emailPopup-bar-tab-text').innerHTML += "{{ section.settings.emailPopUp_bar }}"
+    let flag = false;
+    var btnClose_PopUp = document.querySelector('.btn-close'),
+        emailPopup_overlay = document.querySelector('.emailPopup-overlay'),
+        emailPopup_bar = document.querySelector('.emailPopup-bar');
+
+    if (window.location.href.indexOf("challenge") > -1) {
+      emailPopup_overlay.classList.add('hidden');
+    } else if (window.location.href.indexOf("contact%5Btags%5D") > -1 || window.location.href.indexOf("customer_posted=true") > -1) { 
+      const myTimeout = setTimeout(showPopUp, 1000);
+      function showPopUp() {
+        document.querySelector(".emailPopup-overlay").classList.remove('hidden');
+      }
+      function myStopFunction() {
+        clearTimeout(myTimeout);
+      }
+    } else {
+      const myTimeout = setTimeout(showPopUp, {{section.settings.time_to_show}}000);
+      function showPopUp() {
+        document.querySelector(".emailPopup-overlay").classList.remove('hidden');
+        var cookieEmail = getCookie("TimeShowPopUp");
+        if (cookieEmail == null) {
+          btnClose_PopUp.addEventListener('click', () => {
+            let username = 'Time Show PopUp';
+            // Set a Cookie
+            function setCookie(cName, cValue, expDays) {
+                    let date = new Date();
+                    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+                    const expires = "expires=" + date.toUTCString();
+                    document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+            }
+          setCookie('TimeShowPopUp', username, {{ section.settings.cookies_time_again }});
+          })
+        }
+        else {
+          emailPopup_overlay.classList.add('hidden');
+        }
+      }
+      function myStopFunction() {
+        clearTimeout(myTimeout);
+      }
+    }
+
+    if (btnClose_PopUp) {
+      btnClose_PopUp.addEventListener('click', () => {
+        emailPopup_overlay.classList.add('hidden');
+      })
+    }
+
+    if (emailPopup_bar) {
+      emailPopup_bar.addEventListener('click', () => {
+        emailPopup_overlay.classList.remove('hidden');
+      })
+    }
+    if (emailPopup_overlay) {
+      document.querySelector('.emailPopup-overlay-overlay').addEventListener('click', () => {
+        emailPopup_overlay.classList.add('hidden');
+      })
+    }
+  })
+
+  {% comment %} CHECK EMAIL {% endcomment %}
+  const emailField = document.getElementById("myInput_popup");
+  const emailErrorMsg = document.getElementById("email-error-msg");
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
+  const changeErrorMsg = (obj, msg, status="fail", displaySvg=false) => {
+    if(status === "fail"){
+      emailField.style.borderColor = "#fd410f";
+      obj.style.display = "block";
+      obj.innerText = msg; 
+    }else{
+      emailField.style.borderColor = "#b0b0b0";
+      obj.style.display = "none";
+    }
+  }
+
+  if(emailField){
+    emailField.addEventListener("change", handler, false);
+    emailField.addEventListener("focusout", handler, false);
+    document.querySelector('#mySubmit_popup').addEventListener("click", handler, false);
+
+    function handler(event) {
+      var emailFieldValue = emailField.value.trim();
+      var isValid = validateEmail(emailFieldValue)
+      if(emailFieldValue === ""){
+        changeErrorMsg(emailErrorMsg, "{{ section.settings.error_null }}", "fail", false);
+        emailErrorMsg.classList.add('fail');
+      }else if(!isValid){
+        emailField.style.borderColor = "#fd410f";
+        changeErrorMsg(emailErrorMsg, "{{ section.settings.error_invalid }}", "fail", true);
+        emailErrorMsg.classList.add('fail');
+      }else{
+        changeErrorMsg(emailErrorMsg, "", "success", true);
+        emailErrorMsg.classList.remove('fail');
+      }
+    }
+  }
+  if (window.location.href.indexOf("contact%5Btags%5D") > -1) {
+    changeErrorMsg(emailErrorMsg, "{{ section.settings.error_used }}", "fail", false);
+    emailErrorMsg.classList.add('fail');
+  }
+</script>
+{% endif %}
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Email PopUp",
+    "tag": "section",
+    "class": "sub-form-emailPopUp",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_popup",
+        "label": "Show Email PopUp",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "time_to_show",
+        "label": "Time To Show PopUp",
+        "min": 2,
+        "max": 10,
+        "step": 1,
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "cookies_time_again",
+        "label": "Cookies time again",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "default": 1,
+        "unit": "day"
+      },
+      {
+        "type": "header",
+        "content": "MEDIA"
+      },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo",
+          "info": "520 x 200 (recommended)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mb",
+          "label": "Image on mobile"
+        },
+      {
+        "type": "header",
+        "content": "CONTENT"
+      },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "subtitle",
+          "label": "SubTitle"
+        },
+        {
+          "type": "richtext",
+          "id": "note",
+          "label": "Note"
+        },
+        {
+          "type": "text",
+          "id": "emailPopUp_bar",
+          "label": "Emai PopUp Bar",
+          "default": "GET EXTRA 15% OFF ▲"
+        },
+      {
+        "type": "header",
+        "content": "SUBSCRIBE SUCCESS"
+      },
+        {
+          "type": "richtext",
+          "id": "title_success",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "subtitle_success_1",
+          "label": "Subtitle"
+        },
+        {
+          "type": "richtext",
+          "id": "code_success_1",
+          "label": "Code"
+        },
+        {
+          "type": "richtext",
+          "id": "subtitle_success_2",
+          "label": "Subtitle"
+        },
+        {
+          "type": "richtext",
+          "id": "code_success_2",
+          "label": "Code"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "text",
+          "id": "btn",
+          "label": "Button"
+        },
+      {
+        "type": "header",
+        "content": "ERROR MESSAGE"
+      },
+        {
+          "type": "text",
+          "id": "error_null",
+          "label": "Blank Message"
+        },
+        {
+          "type": "text",
+          "id": "error_invalid",
+          "label": "Invalid Message"
+        },
+        {
+          "type": "text",
+          "id": "error_used",
+          "label": "Used Message",
+          "default": "xxxxxxxxxxxxxxxxxx"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Email PopUp"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "4d3fd2b3-ddf2-4a4b-a263-db5e99fd13d9": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/04_be2567b8-43b1-4503-b6ab-b3bb6df6e242.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/390x300-2.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "fixed",
+        "height_desktop": 320,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "EASY RETURNS",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "<p><strong>Please fill out the request form below to get started.<\/strong><\/p><p>We want our customers to be satisfied with their purchases. However, if you change your mind or would like to exchange for another size, color, or style, please return the item(s) within 14 days of delivery, and we will refund you. <\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "4d3fd2b3-ddf2-4a4b-a263-db5e99fd13d9",
+    "main"
+  ]
+}

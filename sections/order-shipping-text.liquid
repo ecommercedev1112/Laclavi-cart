@@ -1,0 +1,50 @@
+<div class="order-shipping-text-wrap">
+  <div class="order-container">
+    <div class="order-row">
+      <div class="order-left-col">
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+      <div class="order-right-col">
+        <div class="order-text-block-top">{{ section.settings.content_top }}</div>
+        <div class="order-text-block-bottom">{{ section.settings.content_bottom }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Order & Shipping Text",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "richtext",
+      "label": "Content Top",
+      "id": "content_top"
+    },
+    {
+      "type": "richtext",
+      "label": "Content Bottom",
+      "id": "content_bottom"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Order & Shipping Text"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "full_width": false
+      }
+    },
+    "59892e10-b981-4dfe-b91d-d3cd02e8ff85": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": false,
+        "code": "<!-- RYVIU APP :: FEATURE -->\n<ryviu-widget feature=\"1\"><\/ryviu-widget>\n<!-- \/ RYVIU APP -->"
+      }
+    },
+    "16931991379cd94593": {
+      "type": "apps",
+      "settings": {
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "59892e10-b981-4dfe-b91d-d3cd02e8ff85",
+    "16931991379cd94593"
+  ]
+}

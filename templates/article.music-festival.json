@@ -1,0 +1,603 @@
+{
+  "sections": {
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 18px;}",
+        "h2 {font-size: 40px; line-height: 1.4;}",
+        ".rte p:nth-of-type(3) {font-size: 13px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/coachella-2023-social.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Dressing for a Music Festival: Tips from 1920s Fashion",
+        "use_h1": false,
+        "text": "<p>Take a cue from the roaring twenties and channel their playful, rebellious spirit into your Music Festival outfit.<\/p><p> <\/p><p>April 14, 2023 | By Emily Aniston<br\/>Image: ©Christopher Polk, Getty Images<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Are you excited about Coachella? With more Music Festivals quickly approaching, it's time to start thinking about what to wear. Dressing for a music festival can be a challenge, but don't worry - we've got you covered! We'll share some tips from 1920s fashion to help you dress for Music Festival with confidence and style. So whether you're a festival veteran or a first-time attendee, read on to learn how to make a statement with your festival fashion!<br\/><\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "f9e03650-258b-4f21-be30-118977b95a74": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-04.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Gatsby Glamour Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Gatsby Glamour Prom Dresses are the epitome of 1920s style. These dresses feature intricate beading, sequins, and fringe details that add a touch of glamour to your outfit. They come in a variety of colors, including classic black and gold, and can be worn in long or short lengths. Pair your Gatsby Glamour dress with a pair of strappy heels and a vintage-inspired clutch for a truly authentic look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/0625BABEYOND_1076901227.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "4b663300-f0bb-487a-8b94-03a9214c241d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Consider the Setting",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The first step to dressing for a music festival is to consider the setting. If it's an outdoor festival, you'll need to dress for the weather and terrain. For example, if it's hot and sunny, you'll want to wear light, breathable fabrics, and avoid dark colors that absorb heat. If it's a muddy or dusty festival, you'll want to wear closed-toe shoes that can protect your feet and be easily cleaned.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0",
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP GATSBY PROM DRESSES",
+        "collection": "gatsby-glamour-prom-dresses",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "a6837111-fc06-4307-a150-40a02baed26a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-03.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Backless Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Backless Prom Dresses were also a popular choice in the 1920s, and they continue to be a fashionable option for prom parties today. These dresses feature an open back, often adorned with beading or lace, and come in a variety of colors and lengths. Backless dresses can be paired with statement earrings and a sleek updo to showcase the intricate details on the back of the dress.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/0625BABEYOND_009501553.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "b57a0a43-c9be-45eb-867f-57c71542fa67": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Don't Forget About Layers",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Layering is important for a music festival as temperatures can fluctuate throughout the day. Lightweight jackets, cardigans, or kimonos are great options for layering. For a vintage touch, a 1920s  shawl or wrap can keep you warm while adding an elegant touch to your festival look.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0",
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "5059d91b-1533-45cd-aa15-18a4df2a0459": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-02.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Retro Prom Accessories",
+        "use_h1": false,
+        "text": "<p>No prom outfit is complete without the perfect accessories, and for a 1920s-inspired look, retro accessories are a must. Think feathered headbands, long pearl necklaces, and vintage-inspired clutch bags. These accessories add a touch of sophistication and glamour to any outfit and are the perfect finishing touch for your prom party look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/EmptyName_2374.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP SHAWLS & SCARVES",
+        "collection": "vintage-shawl",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "63c9a312-d076-4d40-b804-da9e92b883bc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Accessorize with Statement Pieces",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Accessories are a key element of music festival fashion. In the 1920s, women often wore long beaded necklaces, feather boas, and headbands to add flair to their outfits. You can also wear sunglasses to protect your eyes from the sun, and a cross-body bag or backpack to keep your hands free for dancing and taking pictures. <\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0",
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "573b5e6b-bfe3-4c84-8167-af2c3a5c119f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16702946476253__573b5e6b-bfe3-4c84-8167-af2c3a5c119f-16810891248f188768-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/0625BABEYOND_1094201400.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16702946476253__573b5e6b-bfe3-4c84-8167-af2c3a5c119f-16810891248f188768-0"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "67e89375-003f-4303-90a6-7458465553c3": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP PROM ACCESSORIES",
+        "collection": "retro-prom-accessories",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "5cf18fd9-6897-4469-bc1d-6376ea29854a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16702946476253__5cf18fd9-6897-4469-bc1d-6376ea29854a-1681089355cbaa6421-0": {
+          "type": "heading",
+          "settings": {
+            "title": "How to Dress Like Your Idols",
+            "use_h1": false
+          }
+        },
+        "template--16702946476253__5cf18fd9-6897-4469-bc1d-6376ea29854a-1681089355cbaa6421-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>One of the best things about music festivals is the opportunity to see your favorite artists perform live. If you want to pay homage to your music idols with your festival fashion, consider incorporating elements of their style into your outfit. For example, if you're a fan of Taylor Swift's glamorous style, you could wear a sequin or fringe maxi dress to her concert. Don't be afraid to get creative and make your festival fashion a tribute to your favorite musicians!<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16702946476253__5cf18fd9-6897-4469-bc1d-6376ea29854a-1681089355cbaa6421-0",
+        "template--16702946476253__5cf18fd9-6897-4469-bc1d-6376ea29854a-1681089355cbaa6421-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "e4d8b165-ce8a-45c5-96f4-f7ad97aad139": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16702946476253__e4d8b165-ce8a-45c5-96f4-f7ad97aad139-16810891248f188768-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Taylor_Swift.png",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16702946476253__e4d8b165-ce8a-45c5-96f4-f7ad97aad139-16810891248f188768-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "39673ce5-5aeb-40bc-8bdf-ee48749a8c7a": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "Shop Music Festival Collection",
+        "collection": "music-festival-collection",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        ".back {display: none;}"
+      ],
+      "settings": {
+        "show_date": false,
+        "show_author": false,
+        "show_article_tags": false,
+        "show_sharing_icons": true,
+        "show_featured_image": false,
+        "full_width_image": false,
+        "featured_image_height": "natural",
+        "enable_title_overlay": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef": {
+      "type": "logo-list",
+      "blocks": {
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282541_fb_social_media_facebook_facebook_logo_social_network_icon_fd6b582a-fdd0-4fbe-a3d0-aa084695ae87.png",
+            "image_width": 40,
+            "link": "https:\/\/www.facebook.com\/sharer.php?u=https:\/\/babeyond.com\/blogs\/style\/dressing-for-a-music-festival-tips-from-1920s-fashion",
+            "title": ""
+          }
+        },
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282551_tweet_twitter_twitter_logo_icon_a52bbc76-aea3-4c04-ba3c-43b881018f3f.png",
+            "image_width": 40,
+            "link": "https:\/\/twitter.com\/intent\/tweet?text=Dressing%20for%20a%20Music%20Festival&url=https:\/\/babeyond.com\/blogs\/style\/dressing-for-a-music-festival-tips-from-1920s-fashion",
+            "title": ""
+          }
+        },
+        "63791460-50c7-440c-bc47-9861f9327ee8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282545_pin_pinterest_inspiration_pinterest_logo_icon_3bf23350-beb7-4fbe-9de8-a7be021dfa58.png",
+            "image_width": 40,
+            "link": "https:\/\/www.pinterest.com\/pin-builder\/?description=Dressing+for+a+Music+Festival&media=%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0015%2F8937%2F9159%2Farticles%2F04_1024x1024.png%3Fv%3D1678332826&method=button&url=https:\/\/babeyond.com\/blogs\/style\/dressing-for-a-music-festival-tips-from-1920s-fashion",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9",
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131",
+        "63791460-50c7-440c-bc47-9861f9327ee8"
+      ],
+      "custom_css": [
+        "h2 {font-size: 14px;}",
+        ".rimage-outer-wrapper {}"
+      ],
+      "settings": {
+        "title": "SHARE ARTICLE",
+        "image_opacity": 80,
+        "use_alt_bg": false
+      }
+    },
+    "06b1fff1-7390-4d06-818d-505593e9ab90": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "blog_bar_col": "#c9beac",
+        "blog_bar_col_mb": "#f5f2eb",
+        "title": "MORE IN STYLE",
+        "blog": "style",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "subtitle": "",
+        "button": "",
+        "crop_ratio": "1.78"
+      }
+    },
+    "a881a793-d30b-4308-81eb-d46b24f38ebb": {
+      "type": "special-blog",
+      "blocks": {
+        "951a9207-796e-4c67-893f-7660b5815a72": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/what-to-wear-to-taylor-swift-eras-tour",
+            "image": "shopify:\/\/shop_images\/326c04ce4fb51d7952ec550747eb6615_1.png",
+            "title": "<p>What To Wear To Taylor Swift Eras Tour?<\/p>",
+            "main_content": "<p>“People haven't always been there for me but music always has.”― Taylor Swift<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "de90a4fc-3400-44c1-a911-c6167b853222": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/a-journey-through-the-evolution-of-jazz-music",
+            "image": "shopify:\/\/shop_images\/b19c8b9e52979fe82331d359c51d957e.png",
+            "title": "<p>A Journey Through the Evolution of Jazz Music<\/p>",
+            "main_content": "<p>Life is a lot like jazz...it's best when you improvise.--George Gershwin<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "53e6abea-b4a7-443d-96ed-861c2fddb58f": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/jazzing-it-up-how-to-dress-for-a-night-out-at-the-jazz-club",
+            "image": "shopify:\/\/shop_images\/banner_8007820c-1f35-466c-be03-d3b4501ded00.jpg",
+            "title": "<p>Jazzing it Up: How to Dress for a Night Out at the Jazz Club<\/p>",
+            "main_content": "<p>As Herbie Hancock said, jazz is about being in the moment. Let‘s head out for a night of jazz music and dancing! <\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        }
+      },
+      "block_order": [
+        "951a9207-796e-4c67-893f-7660b5815a72",
+        "de90a4fc-3400-44c1-a911-c6167b853222",
+        "53e6abea-b4a7-443d-96ed-861c2fddb58f"
+      ],
+      "settings": {
+        "crop_ratio": "1.0"
+      }
+    }
+  },
+  "order": [
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3",
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a",
+    "f9e03650-258b-4f21-be30-118977b95a74",
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6",
+    "4b663300-f0bb-487a-8b94-03a9214c241d",
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab",
+    "a6837111-fc06-4307-a150-40a02baed26a",
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f",
+    "b57a0a43-c9be-45eb-867f-57c71542fa67",
+    "5059d91b-1533-45cd-aa15-18a4df2a0459",
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9",
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84",
+    "63c9a312-d076-4d40-b804-da9e92b883bc",
+    "573b5e6b-bfe3-4c84-8167-af2c3a5c119f",
+    "67e89375-003f-4303-90a6-7458465553c3",
+    "5cf18fd9-6897-4469-bc1d-6376ea29854a",
+    "e4d8b165-ce8a-45c5-96f4-f7ad97aad139",
+    "39673ce5-5aeb-40bc-8bdf-ee48749a8c7a",
+    "main",
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef",
+    "06b1fff1-7390-4d06-818d-505593e9ab90",
+    "a881a793-d30b-4308-81eb-d46b24f38ebb"
+  ]
+}

@@ -1,0 +1,584 @@
+{
+  "sections": {
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 18px;}",
+        "h2 {font-size: 40px; line-height: 1.4;}",
+        ".rte p:nth-of-type(3) {font-size: 13px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1b82f8057a38590e56814457b4c05dff.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "The Harlem Renaissance: A Cultural Revolution",
+        "use_h1": false,
+        "text": "<p>When I think of the Harlem Renaissance, I think of bright colors, and bold, dynamic art. -- Nikki Grimes<\/p><p><br\/><\/p><p>July 7, 2023 | By Emily Aniston<br\/>Image: ©Harlem flapper in 1928, Glamourdaze, <a href=\"https:\/\/www.pinterest.com\/pin\/AeUnUBqVUrTNrS_g5Opds_yq5h-UGrS5L6fhiVQEhBNEfbplbdVpiwQ\/\" title=\"https:\/\/www.pinterest.com\/pin\/AeUnUBqVUrTNrS_g5Opds_yq5h-UGrS5L6fhiVQEhBNEfbplbdVpiwQ\/\">Pinterest<\/a><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to the vibrant world of the Harlem Renaissance, a transformative period in American history that celebrated African American art, literature, music, and dance. During the 1920s, Harlem became a hotbed of creativity, where talented individuals defied societal barriers and unleashed their artistic genius. We'll explore the captivating era of the Harlem Renaissance and its profound impact on American culture.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "f9e03650-258b-4f21-be30-118977b95a74": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-04.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Gatsby Glamour Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Gatsby Glamour Prom Dresses are the epitome of 1920s style. These dresses feature intricate beading, sequins, and fringe details that add a touch of glamour to your outfit. They come in a variety of colors, including classic black and gold, and can be worn in long or short lengths. Pair your Gatsby Glamour dress with a pair of strappy heels and a vintage-inspired clutch for a truly authentic look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/b0deff7d06b2f497dc0923d88e556d43.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>©Jasmine Guy in Harlem Nights (1989), <a href=\"https:\/\/www.pinterest.com\/pin\/17521886043448666\/\" title=\"https:\/\/www.pinterest.com\/pin\/17521886043448666\/\">Pinterest<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "4b663300-f0bb-487a-8b94-03a9214c241d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Historical Context: A Melting Pot of Talent and Ambition",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Harlem Renaissance emerged against the backdrop of post-World War I America, where racial tensions and social dynamics were shifting. African Americans migrated from the South to Northern cities like Harlem, seeking better opportunities and escaping oppressive conditions. Harlem soon became a hub for cultural expression, attracting a diverse group of artists, writers, musicians, and intellectuals.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0",
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP GATSBY PROM DRESSES",
+        "collection": "gatsby-glamour-prom-dresses",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "a6837111-fc06-4307-a150-40a02baed26a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-03.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Backless Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Backless Prom Dresses were also a popular choice in the 1920s, and they continue to be a fashionable option for prom parties today. These dresses feature an open back, often adorned with beading or lace, and come in a variety of colors and lengths. Backless dresses can be paired with statement earrings and a sleek updo to showcase the intricate details on the back of the dress.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/duke-ellington-during-jam-session-with-band-members-probably-in-photographer-gjon-mili-s-studio_u-l-p6dvu00.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>Duke Ellington © Art.com, <a href=\"https:\/\/www.pinterest.com\/pin\/56506170338060513\/\" title=\"https:\/\/www.pinterest.com\/pin\/56506170338060513\/\">Pinterest<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "b57a0a43-c9be-45eb-867f-57c71542fa67": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Key Figures of the Harlem Renaissance: Movers and Shakers",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>During the Harlem Renaissance, key figures emerged as movers and shakers, propelling the movement forward with their artistic brilliance. Langston Hughes mesmerized audiences with his soul-stirring poetry, capturing the essence of the African American experience. Zora Neale Hurston's vibrant storytelling captivated readers and celebrated the strength of black women. Countee Cullen's poetic verses challenged stereotypes and celebrated black culture. These figures, among others, pushed boundaries, defied norms, and ignited a sense of pride within the community. Their artistic contributions continue to inspire and shape generations to this day.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0",
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "5059d91b-1533-45cd-aa15-18a4df2a0459": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-02.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Retro Prom Accessories",
+        "use_h1": false,
+        "text": "<p>No prom outfit is complete without the perfect accessories, and for a 1920s-inspired look, retro accessories are a must. Think feathered headbands, long pearl necklaces, and vintage-inspired clutch bags. These accessories add a touch of sophistication and glamour to any outfit and are the perfect finishing touch for your prom party look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/the-american-author-playwright-folklorist-anthropologist-news-photo-1676319096.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>Zora Neale Hurston © North Carolina Central University, <a href=\"https:\/\/www.pinterest.com\/pin\/139048707236599442\/\" title=\"https:\/\/www.pinterest.com\/pin\/139048707236599442\/\">Getty Images<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP Jazz Club DRESSES",
+        "collection": "jazz-club-dress-collection",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "63c9a312-d076-4d40-b804-da9e92b883bc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Artistic and Literary Movements: A Kaleidoscope of Creativity",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Step into a world bursting with creativity during the Harlem Renaissance! Immerse yourself in the captivating literature that emerged during this era. From Nella Larsen's \"Passing\" to Claude McKay's \"Home to Harlem,\" these stories beautifully capture the triumphs and struggles of African Americans. <br\/><br\/>Let's witness the power of visual arts as Aaron Douglas and Archibald Motley Jr. unleash their paintbrushes, challenging stereotypes and showcasing the resilience of African American culture. Their vivid paintings and sculptures breathe life into the Harlem Renaissance. Feel the pulsating rhythms of jazz, the defining sound of the era. Duke Ellington, Louis Armstrong, and Bessie Smith fill the airwaves, infusing every club and speakeasy with energy. The Charleston and the Lindy Hop take the nation by storm, as people dance to the syncopated beats of this transformative musical movement.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0",
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "8498afbe-1255-4fe9-b7da-c858736a83ca": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16704424968413__8498afbe-1255-4fe9-b7da-c858736a83ca-1681278101fa5d2bbb-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Primary_Source_48_2.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>The 306 Workshop Group © <a href=\"https:\/\/www.phillipscollection.org\/lesson-plan\/artists-harlem-renaissance\" title=\"https:\/\/www.phillipscollection.org\/lesson-plan\/artists-harlem-renaissance\">phillipscollection<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16704424968413__8498afbe-1255-4fe9-b7da-c858736a83ca-1681278101fa5d2bbb-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "c755aee6-b517-44e1-9340-f55ea54bf9f0": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16771573678301__c755aee6-b517-44e1-9340-f55ea54bf9f0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Harlem Renaissance Fashion: A Stylish Expression of Identity",
+            "use_h1": false
+          }
+        },
+        "template--16771573678301__c755aee6-b517-44e1-9340-f55ea54bf9f0-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>During the Harlem Renaissance, fashion became a powerful tool for African Americans to reclaim their narrative and challenge societal norms. Influenced by the Great Migration and the influx of diverse cultures, Harlem became a melting pot of styles and trends.<br\/><br\/>The fashion of the era celebrated boldness, vibrancy, and creativity. Men and women showcased their distinctive personalities through their attire, combining elements of traditional African clothing with contemporary Western styles. Men often sported well-tailored suits, fedora hats, and two-tone shoes, exuding elegance and sophistication. Women embraced a sense of glamour, adorning themselves with vibrant dresses, stylish hats, and accessories that accentuated their individuality. Notable fashion figures emerged during this time, such as designer Ann Lowe, who created elegant and intricate gowns for prominent figures in Harlem society.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16771573678301__c755aee6-b517-44e1-9340-f55ea54bf9f0-heading-1",
+        "template--16771573678301__c755aee6-b517-44e1-9340-f55ea54bf9f0-text-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "9e085955-8d63-41f2-af59-bbaf2283ad13": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16771573678301__9e085955-8d63-41f2-af59-bbaf2283ad13-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/32f07ca3dcb1bcb295225d6a4bde1505.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>Jacqueline Kennedy wearing the wedding dress Lowe designed for her marriage to John F. Kennedy on September 12, 1953 © Art.com, <a href=\"https:\/\/www.pinterest.com\/pin\/459859811948125769\/\" title=\"https:\/\/www.pinterest.com\/pin\/459859811948125769\/\">Pinterest<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16771573678301__9e085955-8d63-41f2-af59-bbaf2283ad13-text_block-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "67e89375-003f-4303-90a6-7458465553c3": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP 1920S INSPIRED OUTFITS",
+        "collection": "harlem-renaissance-fashion",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        ".back {display: none;}"
+      ],
+      "settings": {
+        "show_date": false,
+        "show_author": false,
+        "show_article_tags": false,
+        "show_sharing_icons": true,
+        "show_featured_image": false,
+        "full_width_image": false,
+        "featured_image_height": "natural",
+        "enable_title_overlay": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef": {
+      "type": "logo-list",
+      "blocks": {
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282541_fb_social_media_facebook_facebook_logo_social_network_icon_fd6b582a-fdd0-4fbe-a3d0-aa084695ae87.png",
+            "image_width": 40,
+            "link": "https:\/\/www.facebook.com\/sharer.php?u=https%3A%2F%2Fbabeyond.com%2Fblogs%2Fstyle%2Fjazzing-it-up-how-to-dress-for-a-night-out-at-the-jazz-club",
+            "title": ""
+          }
+        },
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282551_tweet_twitter_twitter_logo_icon_a52bbc76-aea3-4c04-ba3c-43b881018f3f.png",
+            "image_width": 40,
+            "link": "https:\/\/twitter.com\/intent\/tweet?text=1920s+Glam+for+Prom+Season&url=https:\/\/babeyond.com\/blogs\/style\/prom-party-outline",
+            "title": ""
+          }
+        },
+        "63791460-50c7-440c-bc47-9861f9327ee8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282545_pin_pinterest_inspiration_pinterest_logo_icon_3bf23350-beb7-4fbe-9de8-a7be021dfa58.png",
+            "image_width": 40,
+            "link": "https:\/\/www.pinterest.com\/pin-builder\/?description=How+to+dress+for+a+night+out+at+the+jazz+club&media=%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0015%2F8937%2F9159%2Farticles%2F04_1024x1024.png%3Fv%3D1678332826&method=button&url=https:\/\/babeyond.com\/blogs\/style\/jazzing-it-up-how-to-dress-for-a-night-out-at-the-jazz-club",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9",
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131",
+        "63791460-50c7-440c-bc47-9861f9327ee8"
+      ],
+      "custom_css": [
+        "h2 {font-size: 14px;}",
+        ".rimage-outer-wrapper {}"
+      ],
+      "settings": {
+        "title": "SHARE ARTICLE",
+        "image_opacity": 80,
+        "use_alt_bg": false
+      }
+    },
+    "06b1fff1-7390-4d06-818d-505593e9ab90": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "blog_bar_col": "#c9beac",
+        "blog_bar_col_mb": "#f5f2eb",
+        "title": "MORE IN STYLE",
+        "blog": "style",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "subtitle": "<p><\/p>",
+        "button": "<p><\/p>",
+        "crop_ratio": "1.78"
+      }
+    },
+    "955d1050-ddc5-47d5-9791-1d15cf21adde": {
+      "type": "special-blog",
+      "blocks": {
+        "da5bc81e-3f79-41f4-90d7-d3375086abdd": {
+          "type": "block",
+          "settings": {
+            "blog_url": "",
+            "image": "shopify:\/\/shop_images\/b19c8b9e52979fe82331d359c51d957e.png",
+            "title": "<p>A Journey Through the Evolution of Jazz Music<\/p>",
+            "main_content": "<p>Life is a lot like jazz...it's best when you improvise.--George Gershwin<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "6cb6f7e4-a0ef-4d1c-a9c3-89c623385f3b": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/dressing-for-a-music-festival-tips-from-1920s-fashion",
+            "image": "shopify:\/\/shop_images\/banner.jpg",
+            "title": "<p>Dressing for a Music Festival: Tips from 1920s Fashion<\/p>",
+            "main_content": "<p>Take a cue from the roaring twenties and channel their playful, rebellious spirit into your Music Festival outfit. <\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "31860f59-e42b-40b1-b2ca-ed8490690a1f": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/what-to-wear-to-taylor-swift-eras-tour",
+            "image": "shopify:\/\/shop_images\/326c04ce4fb51d7952ec550747eb6615_1.png",
+            "title": "<p>What To Wear To Taylor Swift Eras Tour?<\/p>",
+            "main_content": "<p>“People haven't always been there for me but music always has.”― Taylor Swift<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        }
+      },
+      "block_order": [
+        "da5bc81e-3f79-41f4-90d7-d3375086abdd",
+        "6cb6f7e4-a0ef-4d1c-a9c3-89c623385f3b",
+        "31860f59-e42b-40b1-b2ca-ed8490690a1f"
+      ],
+      "settings": {
+        "crop_ratio": "1.0"
+      }
+    }
+  },
+  "order": [
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3",
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a",
+    "f9e03650-258b-4f21-be30-118977b95a74",
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6",
+    "4b663300-f0bb-487a-8b94-03a9214c241d",
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab",
+    "a6837111-fc06-4307-a150-40a02baed26a",
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f",
+    "b57a0a43-c9be-45eb-867f-57c71542fa67",
+    "5059d91b-1533-45cd-aa15-18a4df2a0459",
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9",
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84",
+    "63c9a312-d076-4d40-b804-da9e92b883bc",
+    "8498afbe-1255-4fe9-b7da-c858736a83ca",
+    "c755aee6-b517-44e1-9340-f55ea54bf9f0",
+    "9e085955-8d63-41f2-af59-bbaf2283ad13",
+    "67e89375-003f-4303-90a6-7458465553c3",
+    "main",
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef",
+    "06b1fff1-7390-4d06-818d-505593e9ab90",
+    "955d1050-ddc5-47d5-9791-1d15cf21adde"
+  ]
+}

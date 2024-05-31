@@ -1,0 +1,29 @@
+{% if paginate.pages > 1 %}
+  <div class="pagination">
+    {% if paginate.previous %}
+      <a class="prev" href="{{ paginate.previous.url }}">
+        <svg class="Icon Icon--select-arrow-left" role="presentation" viewBox="0 0 11 18">
+      <path d="M9.5 1.5L1.5 9l8 7.5" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+    </svg>
+      </a>
+<!--       <span class="pagination__sep">&middot;&middot;&middot;</span> -->
+    {% endif %}
+
+    {% for part in paginate.parts %}
+      <span class="pagination__number {% if paginate.current_page == part.title %}active{% endif %}">
+        {% if part.is_link %}
+          {{ part.title | link_to: part.url }}
+        {% else %}
+          {{ part.title }}
+        {% endif %}
+      </span>
+    {% endfor %}
+
+    {% if paginate.next %}
+<!--       <span class="pagination__sep">&middot;&middot;&middot;</span> -->
+      <a class="next" href="{{ paginate.next.url }}"><svg class="Icon Icon--select-arrow-right" role="presentation" viewBox="0 0 11 18">
+      <path d="M1.5 1.5l8 7.5-8 7.5" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+    </svg></a>
+    {% endif %}
+  </div>
+{% endif %}

@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-contact",
+      "blocks": {
+        "14f4a6b2-ab4c-4675-9a61-ba48bdc880cd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Email: support@babeyond.zendesk.com<\/p><p>Address: Shanghai China 868 Changshou Rd PuTuo District Shanghai, Shanghai, China<\/p><p>Please visit our <a href=\"\/pages\/shipping-policy\" target=\"_blank\" title=\"Shipping\">Shipping Policy<\/a> or <a href=\"https:\/\/babeyond.com\/pages\/return-exchange\" target=\"_blank\" title=\"https:\/\/babeyond.com\/pages\/return-exchange\">Return\/Refund\/Exchange<\/a> page to find more information. Fill out the form below if you need further assistance.<\/p>"
+          }
+        },
+        "e0276d16-38b9-4944-8a27-acc79b924417": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Name",
+            "type": "text",
+            "required": false,
+            "half_width": false
+          }
+        },
+        "1c6aecf8-7d97-4943-9e6a-0fe39261859c": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Email *",
+            "type": "email",
+            "required": false,
+            "half_width": false
+          }
+        },
+        "efd364bc-9128-4a50-a842-a7df9f05ca26": {
+          "type": "phone_input",
+          "settings": {
+            "required": false,
+            "half_width": false
+          }
+        },
+        "c1b250d9-0621-4dbf-8a46-2d394e431d39": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Order Code",
+            "type": "number",
+            "required": false,
+            "half_width": false
+          }
+        },
+        "71eec4dc-6cd4-4366-a16b-04d0d4273a96": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Message *",
+            "type": "textarea",
+            "required": false,
+            "half_width": false
+          }
+        }
+      },
+      "block_order": [
+        "14f4a6b2-ab4c-4675-9a61-ba48bdc880cd",
+        "e0276d16-38b9-4944-8a27-acc79b924417",
+        "1c6aecf8-7d97-4943-9e6a-0fe39261859c",
+        "efd364bc-9128-4a50-a842-a7df9f05ca26",
+        "c1b250d9-0621-4dbf-8a46-2d394e431d39",
+        "71eec4dc-6cd4-4366-a16b-04d0d4273a96"
+      ],
+      "settings": {
+        "show_page_title": false,
+        "use_columns": false,
+        "contact_main_title": "Contact Us",
+        "contact_title": "",
+        "contact_text": "<p>CUSTOMER SERVICE & INFORMATION<br\/>INFO@LACLAVIGOLF.COM<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

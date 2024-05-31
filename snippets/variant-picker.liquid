@@ -1,0 +1,198 @@
+{% liquid 
+  assign color_position = 1
+  if product.variants.size > 1
+    for variant_obj in product.variants
+      if variant_obj.available == false
+        assign color_position = color_position | plus: 1
+      else
+        break
+      endif
+    endfor
+  endif
+%}
+{%- if product.has_only_default_variant == false -%}
+  {%- if product.variants.size > 1 or block.settings.show_single -%}
+    {%- assign variant_style = block.settings.variant_style -%}
+    <div class="option-selectors" data-disable-unavailable="{{ block.settings.disable_unavailable_variants }}">
+      {%- for option in product.options_with_values -%}
+        {%- capture option_id -%}{{ section.id }}-{{ product.id }}-{{ option.name | handle }}-selector{%- endcapture -%}
+
+        {%- liquid
+          assign uses_swatches = false
+          if settings.swatch_enabled and settings.swatch_option_name contains option.name
+            assign uses_swatches = true
+            if settings.swatch_style == 'dropdown'
+              assign variant_style = 'dropdown'
+            else
+              assign variant_style = 'listed'
+            endif
+          endif
+        -%}
+
+        {%- if uses_swatches and settings.swatch_method == 'image' -%}
+        <style>
+          {%- assign option_index0 = forloop.index0 -%}
+          {%- assign swatch_image_size = settings.swatch_picker_image_size | times: 2 | append: 'x' -%}
+          {%- for option_value in option.values -%}
+            {%- for variant in product.variants -%}
+              {%- if variant.options[option_index0] == option_value -%}
+                {%- if settings.swatch_style == 'icon_square' -%}.product-form[data-product-id="{{ product.id }}"] [data-swatch="{{ option_value | escape | downcase }}"] { aspect-ratio: {{ variant.featured_media.preview_image.aspect_ratio }} }{%- endif -%}
+                .product-form[data-product-id="{{ product.id }}"] [data-swatch="{{ option_value | escape | downcase }}"] { --swatch-background-image: url({{ variant.featured_media.preview_image | img_url: swatch_image_size }}) }
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+        </style>
+        {%- endif -%}
+
+        {%- capture size_chart_html -%}
+          {%- if block.settings.show_size_chart and block.settings.size_chart_variant contains option.name and block.settings.size_chart_page != blank -%}
+            <div class="size-chart-container">
+              <a href="{{ pages[block.settings.size_chart_page].url }}" target="_blank" class="size-chart-link cc-modal" data-cc-modal-contentelement="#size-chart-content--{{ section.id }}">
+                <span class="size-chart-link__text underline">{{- 'products.product.size_chart' | t -}}</span>
+              </a>
+              <div class="size-chart-content hidden" id="size-chart-content--{{ section.id }}">
+                <div class="size-chart">
+                  <div class="size-chart__inner rte">
+                    {{ pages[block.settings.size_chart_page].content }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endcapture -%}
+        {%- if block.settings.variant_style contains 'dropdown' -%}
+          {%- liquid
+            if block.settings.select_first_variant or product.variants.size == 1
+              assign blank_option = false
+              assign selected_value = option.selected_value
+            else
+              assign blank_option = 'products.product.no_selection' | t
+              if product.selected_variant
+                assign selected_value = option.selected_value
+              else
+                assign selected_value = ''
+              endif
+            endif
+          -%}
+          <div class="option-selector{% if size_chart_html != empty or option.name contains "Size" %} option-selector--with-size-chart{% endif %}{% if uses_swatches %} option-selector--swatch{% endif %}" data-selector-type="dropdown" data-option-index="{{ forloop.index0 }}">
+            {% if uses_swatches %} 
+              <fieldset class="option-selector-fieldset">
+                <div class="opposing-items">
+                  <legend class="label">
+                    {{ option.name }}
+                  </legend>
+                </div>
+                <div class="option-selector__btns">
+                  {%- for value in option.values -%}
+                    <input class="opt-btn js-option"
+                          type="radio"
+                          name="{{ option_id }}"
+                          id="{{ option_id }}-opt-{{ forloop.index0 }}"
+                          value="{{ value | escape }}"
+                          {% if block.settings.select_first_variant or product.variants.size == 1 or product.selected_variant %}{% if option.selected_value == value %}checked{% endif %}{% endif %}
+                          required>
+                    <label class="{% if product.tags contains 'Yellow Fuilfull' %}bgyellow{% endif %} {% if product.tags contains 'Fullfill' %}bgcolors{% endif %} {% if product.tags contains 'Full-size swatch' %}img_cover{% endif%} {% if product.tags contains 'headpiece-size up' %}img_headpiece{% endif %} opt-label"{% if uses_swatches %} data-swatch="{{ value | escape | downcase }}"{% endif %} for="{{ option_id }}-opt-{{ forloop.index0 }}"><span class="opt-label__text">{{ value }}</span></label>
+                  {%- endfor -%}
+                </div>
+              </fieldset>
+            {% else %} 
+              {{ size_chart_html }}
+              {% render 'custom-select',
+                id: option_id,
+                label: option.name,
+                option_values: option.values,
+                selected_value: selected_value,
+                swatches: uses_swatches,
+                blank_option: blank_option
+              %}
+            {% endif %}
+          </div>
+        {%- else -%}
+          {% if size_chart_html != empty or option.name contains "Size" %}
+            <div class="size-wrapper option-selector{% if size_chart_html != empty or option.name contains "Size" %} option-selector--with-size-chart{% endif %}{% if uses_swatches %} option-selector--swatch{% endif %}" data-selector-type="listed" data-option-index="{{ forloop.index0 }}">
+              <fieldset class="option-selector-fieldset rty">
+                <div class="opposing-items relative">
+                   <span>Size</span>
+                  <legend class="label justify-between">
+                   
+                    {% comment %} <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><g id="arrow_next"><path id="Vector" d="M1.31687 5.66113L6.99999 8.88543L12.6831 5.66113" stroke="#282828" stroke-width="0.56" stroke-miterlimit="10"></path></g></svg> {% endcomment %}
+                  </legend>
+                  {{ size_chart_html }}
+                </div>
+                <div class="option-selector__btns">
+                  {%- for value in option.values -%}
+                    <div class="opt-btn-btn">
+                      <input class="opt-btn js-option"
+                            type="radio"
+                            name="{{ option_id }}"
+                            id="{{ option_id }}-opt-{{ forloop.index0 }}"
+                            value="{{ value | escape }}"
+                            required>
+                      <label class="{% if product.tags contains 'Yellow Fuilfull' %}bgyellow{% endif %} {% if product.tags contains 'Fullfill' %}bgcolors{% endif %} {% if product.tags contains 'Full-size swatch' %}img_cover{% endif%} {% if product.tags contains 'headpiece-size up' %}img_headpiece{% endif %} opt-label"{% if uses_swatches %} data-swatch="{{ value | escape | downcase }}"{% endif %} for="{{ option_id }}-opt-{{ forloop.index0 }}"><span class="opt-label__text">{{ value }}</span></label>
+                    </div>
+                  {%- endfor -%}
+                </div>
+              </fieldset>
+            </div>
+          {% else %}
+            <div class="option-selector {% if uses_swatches %} option-selector--swatch{% endif %}" data-selector-type="listed" data-option-index="{{ forloop.index0 }}">
+              <fieldset class="option-selector-fieldset">
+                <div class="opposing-items relative">
+                  <legend class="label justify-between">
+                    <span>Size</span>
+                  {{ option.name }}
+                   {% comment %} <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><g id="arrow_next"><path id="Vector" d="M1.31687 5.66113L6.99999 8.88543L12.6831 5.66113" stroke="#282828" stroke-width="0.56" stroke-miterlimit="10"></path></g></svg>{% endcomment %}
+                  </legend>
+                  {{ size_chart_html }}
+                </div>
+                <div class="option-selector__btns {% if size_chart_html != empty %} visible-hidden{% endif %}">
+                  {%- for value in option.values -%}
+                    <div class="custom-custom">
+                      <input class="opt-btn js-option"
+                            type="radio"
+                            name="{{ option_id }}"
+                            id="{{ option_id }}-opt-{{ forloop.index0 }}"
+                            value="{{ value | escape }}"
+                            data-variant-id="{{ value.id }}"
+                            
+                            {% if block.settings.select_first_variant or product.variants.size == 1 or product.selected_variant %}{% if option.selected_value == value %}checked{% endif %}{% endif %}
+                            required>
+                      <label class="{% if product.tags contains 'Yellow Fuilfull' %}bgyellow{% endif %} {% if product.tags contains 'Fullfill' %}bgcolors{% endif %} {% if product.tags contains 'Full-size swatch' %}img_cover{% endif%} {% if product.tags contains 'headpiece-size up' %}img_headpiece{% endif %} opt-label"{% if uses_swatches %} data-swatch="{{ value | escape | downcase }}"{% endif %} for="{{ option_id }}-opt-{{ forloop.index0 }}" style="background: {{ value }};"><span class="opt-label__text">{{ value }}</span></label>
+                    </div>
+                  {%- endfor -%}
+                </div>
+              </fieldset>
+            </div>
+          {% endif %}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    <style>
+      body.template-product .section-main-product .product-detail .product-form .option-selectors .option-selector--with-size-chart.size-only .opt-btn:checked+.opt-label {
+        background: #fff;
+      }
+      body.template-product .section-main-product .product-detail .product-form .option-selectors .option-selector--with-size-chart.size-only .opt-btn {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            z-index: 2;
+      }
+      body.template-product .section-main-product .product-detail .product-form .option-selectors .option-selector--with-size-chart.size-only .opt-btn.is-unavailable {
+            pointer-events: none;
+            cursor: default;
+      }
+      body.template-product .section-main-product .product-detail .product-form .option-selectors .option-selector--with-size-chart.size-only .opt-btn-btn {
+          position: relative;
+      }
+      body.template-product .section-main-product .product-detail .product-form .option-selectors .option-selector--with-size-chart.size-only .option-selector-fieldset:has(.option-selector__btns.visible-hidden) legend svg {
+            transform: rotate(0deg);
+            transition: all 0.3s ease-in-out;
+      }
+      body.template-product .section-main-product .product-detail .product-form .option-selectors .option-selector--with-size-chart.size-only .option-selector-fieldset legend svg {
+            transform: rotate(180deg);
+             transition: all 0.3s ease-in-out;
+      }
+    </style>
+  {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,192 @@
+
+{% if section.settings.announcement_show or section.settings.show_language_selector or section.settings.show_country_selector or section.settings.menu != blank %}
+  <div id="section-id-{{ section.id }}" class="{% if section.settings.bar-fixed %} ann_fixed {% endif %}announcement-bar{% if section.settings.announcement_show %} announcement-bar--with-announcement{% endif %}{% if section.settings.announcement_text.size > 45 and section.settings.menu != blank %} announcement-bar--tablet-wrap{% endif %}" data-section-type="announcement-bar" data-cc-animate>
+    {% style %}
+     
+      #section-id-{{ section.id }} {
+        background: {{ section.settings.announcement_bar_col }};
+        color: {{ section.settings.announcement_text_col }};
+      }
+.announcement-bar__middle .swiper-slide{
+display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
+.announcement-bar__middle .swiper-wrapper{
+height:30px
+}
+    {% endstyle %}
+
+<!--     {%- capture announcement_html -%}
+      {%- if section.settings.announcement_show -%}
+        {%- if block.settings.announcement_link != blank -%}
+          <a class="announcement-bar__link" href="{{ block.settings.announcement_link }}">
+        {%- endif -%}
+        <div class="announcement-bar__inner">{{ block.settings.announcement_text }}</div>
+        {%- if block.settings.announcement_link != blank -%}
+          </a>
+        {%- endif -%}
+      {%- endif -%}
+    {%- endcapture -%} -->
+
+  <div class="container container--no-max">
+    <div class="announcement-bar__left">
+      {% if section.settings.show_social_icons %}
+        {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: 'x30', container_class: 'desktop-only' %}
+      {% endif %}
+    </div>
+  
+    <div class="announcement-bar__middle">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+          <div class="swiper-slide">
+  <!--         			{{ announcement_html }} -->
+            {%- if section.settings.announcement_show -%}
+            <a class="announcement-bar__link" href="{{ block.settings.announcement_link }}">
+              <div class="announcement-bar__inner">{{ block.settings.announcement_text }}</div>
+            </a>
+            {%- endif -%}
+          </div>
+          {%- endfor -%}
+        </div>   
+      </div>
+    </div>
+  
+    <div class="announcement-bar__right">
+      {% if section.settings.menu != blank %}
+        <span class="inline-menu desktop-only">
+          {% for link in linklists[section.settings.menu].links %}
+            <a class="inline-menu__link announcement-bar__link" href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
+        </span>
+      {% endif %}
+      {% if section.settings.show_language_selector or section.settings.show_country_selector %}
+        <div class="header-disclosures desktop-only">
+          {% render 'localization', input_prefix: 'annbar' %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{%- endif -%}
+<script src="https://cdn.shopifycdn.net/s/files/1/0015/8937/9159/files/swiper-bundle.min.js?v=1648020579"></script>
+<link href="https://cdn.shopifycdn.net/s/files/1/0015/8937/9159/files/swiper-bundle.min.css?v=1648020578" rel="stylesheet" type="text/css" media="all">
+<script>
+	 var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+        },
+ direction: "vertical",
+        speed: 1500,
+       loop:true
+      });
+</script>
+ 
+{% schema %}
+  {
+    "name": "Announcement bar",
+    "class": "section-announcement-bar",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "announcement_show",
+        "label": "Show announcement",
+        "default": true
+      },
+      {
+         "type": "checkbox",
+        "id": "bar-fixed",
+        "label": "Announcement fixed",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "announcement_bar_col",
+        "label": "Bar",
+        "default": "#CCC1AF"
+      },
+      {
+        "type": "color",
+        "id": "announcement_text_col",
+        "label": "Text",
+        "default": "#282828"
+      },
+      {
+        "type": "header",
+        "content": "Links"
+      },
+      {
+        "type": "paragraph",
+        "content": "Links, social media icons, and localization options will show in the menu on mobile"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_social_icons",
+        "label": "Show social media links",
+        "default": true
+      },
+      {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu",
+        "info": "This menu won't show dropdown items"
+      },
+      {
+        "type": "header",
+        "content": "Country/Region Selector",
+        "info": "To add a country/region, go to your [payment settings.](/admin/settings/payments)"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_country_selector",
+        "label": "Enable country/region selector",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Language Selector",
+        "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_language_selector",
+        "label": "Enable language selector",
+        "default": true
+      }
+    ],
+	"blocks": [
+      {
+        "type": "announcement",
+        "name": "Announcement",
+        "limit": 3,
+        "settings": [
+          {
+        "type": "html",
+        "id": "announcement_text",
+        "label": "Text",
+        "default": "Announce something here"
+      },
+      {
+        "type": "url",
+        "id": "announcement_link",
+        "label": "Link"
+      }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <!-- Symmetry 5.2.0 -->
+
+  <link rel="preload" href="{{ 'styles.css' | asset_url }}" as="style">
+  {% render 'head-tag' %}
+  <meta name="theme-color" content="{{ settings.btn_col }}">
+
+  <title>
+    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+  </title>
+
+  {% render 'social-meta-tags' %}
+
+  {{ 'styles.css' | asset_url | stylesheet_tag }}
+  {{ 'custom.css' | asset_url | stylesheet_tag }}
+
+  <script>
+    window.theme = window.theme || {};
+    theme.money_format_with_product_code_preference = {% if settings.product_currency_code_enabled %}{{ shop.money_with_currency_format | json }}{% else %}{{ shop.money_format | json }}{% endif %};
+    theme.money_format_with_cart_code_preference = {% if settings.cart_currency_code_enabled %}{{ shop.money_with_currency_format | json }}{% else %}{{ shop.money_format | json }}{% endif %};
+    theme.money_format = {{ shop.money_format | json }};
+    theme.strings = {
+      previous: {{ 'general.accessibility_labels.previous' | t | json }},
+      next: {{ 'general.accessibility_labels.next' | t | json }},
+      addressError: {{ 'map.errors.address_error' | t | json }},
+      addressNoResults: {{ 'map.errors.address_no_results' | t | json }},
+      addressQueryLimit: {{ 'map.errors.address_query_limit_html' | t | json }},
+      authError: {{ 'map.errors.auth_error' | t | json }},
+      icon_labels_left: {{ 'general.icon_labels.left' | t | escape | json }},
+      icon_labels_right: {{ 'general.icon_labels.right' | t | escape | json }},
+      icon_labels_down: {{ 'general.icon_labels.down' | t | escape | json }},
+      icon_labels_close: {{ 'general.icon_labels.close' | t | escape | json }},
+      icon_labels_plus: {{ 'general.icon_labels.plus' | t | escape | json }},
+      cart_terms_confirmation: {{ 'cart.terms.confirmation' | t | json }},
+      products_listing_from: {{ 'products.listing.from' | t | json }},
+      layout_live_search_see_all: {{ 'layout.live_search.see_all' | t | json }},
+      products_product_add_to_cart: {{ 'products.product.add_to_cart' | t | json }},
+      products_variant_no_stock: {{ 'products.variant.no_stock' | t | json }},
+      products_variant_non_existent: {{ 'products.variant.non_existent' | t | json }},
+      products_product_pick_a: {{ 'products.product.pick_a' | t | json }},
+      products_product_unit_price_separator: {{ 'products.product.unit_price_separator' | t | json }},
+      general_navigation_menu_toggle_aria_label: {{ 'general.navigation.menu_toggle_aria_label' | t | json }},
+      general_accessibility_labels_close: {{ 'general.accessibility_labels.close' | t | json }},
+      products_added_notification_title: {{ 'products.added_notification.title' | t | json }},
+      products_added_notification_item: {{ 'products.added_notification.item' | t | json }},
+      products_added_notification_unit_price: {{ 'products.added_notification.unit_price' | t | json }},
+      products_added_notification_quantity: {{ 'products.added_notification.quantity' | t | json }},
+      products_added_notification_total_price: {{ 'products.added_notification.total_price' | t | json }},
+      products_added_notification_shipping_note: {{ 'products.added_notification.shipping_note' | t | json }},
+      products_added_notification_keep_shopping: {{ 'products.added_notification.keep_shopping' | t | json }},
+      products_added_notification_cart: {{ 'products.added_notification.cart' | t | json }},
+      products_product_adding_to_cart: {{ 'products.product.adding_to_cart' | t | json }},
+      products_product_added_to_cart: {{ 'products.product.added_to_cart' | t | json }},
+      products_added_notification_subtotal: {{ 'products.added_notification.subtotal' | t | json }},
+      products_labels_sold_out: {{ 'products.labels.sold_out' | t | json }},
+      products_labels_sale: {{ 'products.labels.sale' | t | json }},
+      products_labels_percent_reduction: {{ 'products.labels.percent_reduction' | t: amount: '[[ amount ]]' | json }},
+      products_labels_value_reduction_html: {{ 'products.labels.value_reduction_html' | t: amount: '[[ amount ]]' | json }},
+      products_product_preorder: {{ 'products.product.preorder' | t | json }},
+      general_quick_search_pages: {{ 'general.quick_search.pages' | t | json }},
+      general_quick_search_no_results: {{ 'general.quick_search.no_results' | t | json }},
+      collections_general_see_all_subcollections: {{ 'collections.general.see_all_subcollections' | t | json }}
+    };
+    theme.routes = {
+      search_url: '{{ routes.search_url }}',
+      cart_url: '{{ routes.cart_url }}',
+      cart_add_url: '{{ routes.cart_add_url }}',
+      cart_change_url: '{{ routes.cart_change_url }}',
+      predictive_search_url: '{{ routes.predictive_search_url }}'
+    };
+    theme.settings = {
+      cart_type: {{ settings.cart_type | json }},
+      quickbuy_style: {{ settings.quickbuy_style | json }},
+      avoid_orphans: {{ settings.avoid_orphans | json }}
+    };
+    document.documentElement.classList.add('js');
+  </script>
+
+  {%- if settings.swatch_enabled and settings.swatch_value_list != blank -%}
+    <style>
+      {%- assign swatch_lines = settings.swatch_value_list | newline_to_br | strip_newlines | split: '<br />' -%}
+      {%- for line in swatch_lines -%}
+        {%- assign line_split = line | split: ':' -%}
+        {%- if line_split.last contains '#' -%}
+          [data-swatch="{{ line_split.first | escape | downcase }}"] { --swatch-background-color: {{- line_split.last -}} }
+        {%- else -%}
+          [data-swatch="{{ line_split.first | escape | downcase }}"] { --swatch-background-image: url({{- line_split.last | strip | file_img_url: '128x128', crop: settings.swatch_crop_align -}}) }
+        {%- endif -%}
+      {%- endfor -%}
+    </style>
+  {%- endif -%}
+
+  {{ content_for_header }}
+
+<!-- Start of LittledataLayer -->
+{% include 'LittledataLayer' %}
+<!-- End of LittledataLayer -->
+</head>
+
+<body class="template-{{ template | split: '.' | first }}
+    {%- if template.suffix %} template-suffix-{{ template.suffix }}{% endif -%}
+    {%- if settings.swatch_enabled %} swatch-method-{{ settings.swatch_method }} swatch-style-{{ settings.swatch_style }}{% endif -%}
+    " data-cc-animate-timeout="0">
+
+  {%- if settings.animations_enabled_desktop -%}
+    <script>
+      if ('IntersectionObserver' in window) {
+        document.body.classList.add("cc-animate-enabled");
+      }
+    </script>
+  {%- endif -%}
+
+  <a class="skip-link visually-hidden" href="#content">{{ 'general.accessibility_labels.skip_to_content' | t }}</a>
+
+  {% section 'announcement-bar' %}
+  {% section 'header' %}
+  {% section 'store-messages' %}
+
+  <main id="content" role="main">
+    <div class="container cf">
+
+      {{ content_for_layout }}
+
+    </div><!-- /.container -->
+  </main><!-- /#content -->
+
+  {% if request.path != '/challenge' %}
+    <div id="pagefooter">
+      {% section 'cross-page-promos' %}
+      {% section 'footer' %}
+    </div>
+
+    {% section 'popup' %}
+  {% endif %}
+
+  {{ 'vendor.min.js'  | asset_url | script_tag }}
+  {{ 'theme.js'  | asset_url | script_tag }}
+  
+  {% if settings.display_recently_viewed_products %}
+    <!-- Begin Recently Viewed Products -->
+  	{{ '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js' | script_tag }}
+  	{{ '//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js' | script_tag }}
+    {{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
+	  {{ 'jquery.products.js' | asset_url | script_tag }}
+   
+    {% if template contains 'product' %}
+        <script>
+            Shopify.Products.recordRecentlyViewed();
+        </script>
+    {% endif %}
+    <!-- End Recently Viewed Products -->
+  {% endif %}
+  
+</body>
+</html>

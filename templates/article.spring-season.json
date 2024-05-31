@@ -1,0 +1,380 @@
+{
+  "sections": {
+    "b1e0dda1-1a1d-4f99-8612-c2b9f01212e5": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 18px;}",
+        "h2 {font-size: 40px; line-height: 1.4;}",
+        ".rte p:nth-of-type(3) {font-size: 13px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/QQ_20230403101143.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Dress to Impress: What to Wear to a Garden Party",
+        "use_h1": false,
+        "text": "<p>Channeling the Glamour and Sophistication of the Roaring Twenties for Your Next Garden Party!<\/p><p> <\/p><p>April 07, 2023 | By Emily Aniston<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "f0850bbc-786a-45d8-90af-649fb241e59a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16697690292445__f0850bbc-786a-45d8-90af-649fb241e59a-168048441601449bca-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Garden parties are a delightful way to enjoy the outdoors and socialize with friends and family. They also provide a perfect opportunity to dress up in style, especially in 1920s-inspired dresses that are making a comeback in contemporary fashion. We'll show you how to wear 1920s-inspired dresses to a Garden Party and make a lasting impression.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16697690292445__f0850bbc-786a-45d8-90af-649fb241e59a-168048441601449bca-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "show_date": true,
+        "show_author": true,
+        "show_article_tags": true,
+        "show_sharing_icons": true,
+        "show_featured_image": true,
+        "full_width_image": true,
+        "featured_image_height": "huge",
+        "enable_title_overlay": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "36fc40b1-e024-4750-8b07-8365e7b244a9": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16697690292445__36fc40b1-e024-4750-8b07-8365e7b244a9-1680484333ae8ffb07-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/98dda959550b97ae14fa3129d4a1da79.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16697690292445__36fc40b1-e024-4750-8b07-8365e7b244a9-1680484333ae8ffb07-0"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "602cb22e-18fe-4b06-bc47-41467f3e4493": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16697690292445__602cb22e-18fe-4b06-bc47-41467f3e4493-16804846894def0a9d-0": {
+          "type": "heading",
+          "settings": {
+            "title": "How to Wear 1920s-Inspired Dresses to a Garden Party",
+            "use_h1": false
+          }
+        },
+        "template--16697690292445__602cb22e-18fe-4b06-bc47-41467f3e4493-16804846894def0a9d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Once you've selected the perfect 1920s-inspired dress for your garden party, it's time to accessorize and complete your look. Here are some tips for getting the perfect garden party outfit:  excitement of the Roaring Twenties.<br\/><br\/>Dress appropriately for the occasion: Garden parties are typically more formal than a casual picnic, so choose a dress that is appropriate for the occasion.<br\/><br\/>Accessorize with hats, jewelry, and footwear: Add a touch of vintage glamour to your outfit with a wide-brimmed hat, a string of pearls, and some strappy sandals. Avoid heels that are too high, as they may sink into the grass.<br\/><br\/>Style your hair and makeup: A sleek updo or soft waves will complement your vintage-inspired dress perfectly. For makeup, consider a bold lip or smoky eye.<br\/><br\/>Make the look your own: Don't be afraid to add your own personal touch to your outfit. A colorful scarf or statement necklace can make all the difference.<br\/><br\/><\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16697690292445__602cb22e-18fe-4b06-bc47-41467f3e4493-16804846894def0a9d-0",
+        "template--16697690292445__602cb22e-18fe-4b06-bc47-41467f3e4493-16804846894def0a9d-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "c5eea1ae-805e-4cba-9417-36cd373b1367": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16697690292445__c5eea1ae-805e-4cba-9417-36cd373b1367-1680484712ca3a911c-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/98dda959550b97ae14fa3129d4a1da79_d1be008c-0fd0-47a2-8316-dae6f471df48.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16697690292445__c5eea1ae-805e-4cba-9417-36cd373b1367-1680484712ca3a911c-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "a5ec16d1-507a-4d51-adc1-de2c999a4df7": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP 1920s Garden Party Dress",
+        "collection": "how-to-wear-1920s-inspired-dresses-to-a-garden-party",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "f6844c83-eca4-49d7-abdd-449697ac026f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16697690292445__f6844c83-eca4-49d7-abdd-449697ac026f-1680498070bc7f1691-0": {
+          "type": "heading",
+          "settings": {
+            "title": "How to Elevate Your Garden Party Look with Fascinators",
+            "use_h1": false
+          }
+        },
+        "template--16697690292445__f6844c83-eca4-49d7-abdd-449697ac026f-1680498070bc7f1691-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fascinators have become a popular accessory for garden parties in recent years. These decorative headpieces can add a touch of whimsy and elegance to any outfit. When choosing a fascinator for your garden party look, consider the size and style of your dress.<br\/><br\/><\/p><p>A smaller fascinator with a simple design may be more appropriate for a casual garden party, while a larger, more elaborate fascinator can make a statement at a more formal event. You can also choose a fascinator that complements the colors and textures of your dress or opt for a contrasting color for a bold look. Whatever your choice, a fascinator is a perfect finishing touch to any garden party outfit.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16697690292445__f6844c83-eca4-49d7-abdd-449697ac026f-1680498070bc7f1691-0",
+        "template--16697690292445__f6844c83-eca4-49d7-abdd-449697ac026f-1680498070bc7f1691-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "f7bce8bd-b73b-45de-8ed0-dc2d84693c66": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16697690292445__f7bce8bd-b73b-45de-8ed0-dc2d84693c66-16804982744caf850f-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/babeiond6259.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16697690292445__f7bce8bd-b73b-45de-8ed0-dc2d84693c66-16804982744caf850f-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "ca292d89-efb6-499d-919b-a418ab003bf7": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;"
+      ],
+      "settings": {
+        "title": "shop Garden Party Fascinators",
+        "collection": "how-to-elevate-your-garden-party-look-with-fascinators",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "7defc2bd-8045-48a6-bd9f-806307a90967": {
+      "type": "logo-list",
+      "blocks": {
+        "c21081ab-7c49-4d2c-8260-ac2b2d5888a6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282541_fb_social_media_facebook_facebook_logo_social_network_icon_fd6b582a-fdd0-4fbe-a3d0-aa084695ae87.png",
+            "image_width": 160,
+            "link": "https:\/\/www.facebook.com\/sharer.php?u=https%3A%2F%2Fbabeyond.com%2Fblogs%2Fstyle%2Fdress-to-impress-what-to-wear-to-a-garden-party",
+            "title": ""
+          }
+        },
+        "bfddff32-6fc5-4a75-b276-b0bcb46d25ff": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282551_tweet_twitter_twitter_logo_icon_a52bbc76-aea3-4c04-ba3c-43b881018f3f.png",
+            "image_width": 160,
+            "link": "https:\/\/www.facebook.com\/sharer.php?u=https%3A%2F%2Fbabeyond.com%2Fblogs%2Fstyle%2Fdress-to-impress-what-to-wear-to-a-garden-party",
+            "title": ""
+          }
+        },
+        "9821391c-eaa8-41fe-afbf-6b60eff70b3f": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282545_pin_pinterest_inspiration_pinterest_logo_icon_3bf23350-beb7-4fbe-9de8-a7be021dfa58.png",
+            "image_width": 160,
+            "link": "https:\/\/www.pinterest.com\/pin-builder\/?description=What+To+Wear+To+A+Garden+Party&media=%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0015%2F8937%2F9159%2Farticles%2F04_1024x1024.png%3Fv%3D1678332826&method=button&url=https:\/\/babeyond.com\/blogs\/style\/dress-to-impress-what-to-wear-to-a-garden-party",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "c21081ab-7c49-4d2c-8260-ac2b2d5888a6",
+        "bfddff32-6fc5-4a75-b276-b0bcb46d25ff",
+        "9821391c-eaa8-41fe-afbf-6b60eff70b3f"
+      ],
+      "custom_css": [
+        "h2 {font-size: 14px;}",
+        ".rimage-outer-wrapper {}"
+      ],
+      "settings": {
+        "title": "SHARE ARTICLE",
+        "image_opacity": 80,
+        "use_alt_bg": false
+      }
+    },
+    "7721c9a9-4ccb-4e29-81ff-6ef16f60f480": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "blog_bar_col": "#c9beac",
+        "blog_bar_col_mb": "#f5f2eb",
+        "title": "More in style",
+        "blog": "style",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "subtitle": "<p><\/p>",
+        "button": "<p><\/p>",
+        "crop_ratio": "1.78"
+      }
+    },
+    "2c53c09f-b1c5-4868-911f-007899a2b7e1": {
+      "type": "special-blog",
+      "blocks": {
+        "c744a652-276d-44ab-be83-41fe920664f6": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/transitioning-your-wardrobe-for-the-spring-season",
+            "image": "shopify:\/\/shop_images\/QQ_20230330144057.jpg",
+            "title": "<p>Transitioning Your Wardrobe for the Spring Season<\/p>",
+            "main_content": "<p>Spring Clothing Collection 2023: Top Trends and Wardrobe Essentials<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "3abe9907-e0c7-420e-82ed-b820ff44d21d": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/roaring-into-graduation-season-with-1920s-dresses",
+            "image": "shopify:\/\/shop_images\/323babeyond4714.jpg",
+            "title": "<p>Roaring into Graduation Season with 1920s Dresses<\/p>",
+            "main_content": "<p>Step Back in Time and Slay Graduation Season with Glamorous 1920s Dresses!<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "f6de0a09-049d-43eb-83db-dbb0eb7dedd6": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/what-did-people-wear-in-the-1920s",
+            "image": "shopify:\/\/shop_images\/image_2_74c470f9-dea5-4cf4-8d0b-5e1af08c6e58.png",
+            "title": "<p>What Did People Wear in the 1920s?<\/p>",
+            "main_content": "<p>Exploring the Fashion Trends of the Roaring Twenties.<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        }
+      },
+      "block_order": [
+        "c744a652-276d-44ab-be83-41fe920664f6",
+        "3abe9907-e0c7-420e-82ed-b820ff44d21d",
+        "f6de0a09-049d-43eb-83db-dbb0eb7dedd6"
+      ],
+      "settings": {
+        "crop_ratio": "1.0"
+      }
+    }
+  },
+  "order": [
+    "b1e0dda1-1a1d-4f99-8612-c2b9f01212e5",
+    "f0850bbc-786a-45d8-90af-649fb241e59a",
+    "main",
+    "36fc40b1-e024-4750-8b07-8365e7b244a9",
+    "602cb22e-18fe-4b06-bc47-41467f3e4493",
+    "c5eea1ae-805e-4cba-9417-36cd373b1367",
+    "a5ec16d1-507a-4d51-adc1-de2c999a4df7",
+    "f6844c83-eca4-49d7-abdd-449697ac026f",
+    "f7bce8bd-b73b-45de-8ed0-dc2d84693c66",
+    "ca292d89-efb6-499d-919b-a418ab003bf7",
+    "7defc2bd-8045-48a6-bd9f-806307a90967",
+    "7721c9a9-4ccb-4e29-81ff-6ef16f60f480",
+    "2c53c09f-b1c5-4868-911f-007899a2b7e1"
+  ]
+}

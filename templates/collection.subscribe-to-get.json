@@ -1,0 +1,178 @@
+{
+  "sections": {
+    "slideshow_f7xeHP": {
+      "type": "slideshow",
+      "blocks": {
+        "image_Bbynha": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2-04_5.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/2-03_5.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_Bbynha"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 540,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_image_behind_heading": true,
+        "heading_image_height": "medium",
+        "overlay_style": "full image-overlay--bg-shadow",
+        "coll_num_per_page_int": 32,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": false,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "show_disabled_filters": true,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "main-menu",
+        "subcoll_style": "buttons",
+        "subcoll_gall_shape": "sq",
+        "image_position": "center center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": false,
+        "subcoll_gall_overlay_style": "full",
+        "subcoll_gall_text_alignment": "center center",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    },
+    "487b346d-c858-4a5c-9ce6-0deb5fc98f36": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16588290425053__487b346d-c858-4a5c-9ce6-0deb5fc98f36-16665970344196fed9-0": {
+          "type": "heading",
+          "settings": {
+            "title": "PREVIEW OF YOUR BABEYOND MEMBERSHIP BENEFITS!",
+            "use_h1": false
+          }
+        },
+        "template--16588290425053__487b346d-c858-4a5c-9ce6-0deb5fc98f36-16665970344196fed9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover all the ways we're here to make it your moment.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16588290425053__487b346d-c858-4a5c-9ce6-0deb5fc98f36-16665970344196fed9-0",
+        "template--16588290425053__487b346d-c858-4a5c-9ce6-0deb5fc98f36-16665970344196fed9-1"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "9e6bed29-9202-4562-a4d5-c3bd59a509e1": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16588290425053__9e6bed29-9202-4562-a4d5-c3bd59a509e1-16665970342df5c388-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_0a3a1ba3-ce7b-4d65-8f56-a9240b7ca7f1.png",
+            "image_width": 160,
+            "title": "",
+            "text": "<p>Receiving up to 15% off your<br\/>first order over $120<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--16588290425053__9e6bed29-9202-4562-a4d5-c3bd59a509e1-16665970342df5c388-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Freeshipping-08_1.png",
+            "image_width": 160,
+            "title": "",
+            "text": "<p>Enjoy free expedited shipping<br\/>for orders over $100<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--16588290425053__9e6bed29-9202-4562-a4d5-c3bd59a509e1-16665970342df5c388-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_d98a9ae2-de49-452f-a3b8-96461cf37e16.png",
+            "image_width": 160,
+            "title": "",
+            "text": "<p>Get first hand information <br\/>about our new collections<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "bf9b2fb4-a69e-421b-8dfa-fe7006559ad1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/3_f0125da6-9422-43ba-b835-affe90d83284.png",
+            "image_width": 160,
+            "title": "",
+            "text": "<p>Time to time promo <br\/>code awaits for you<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16588290425053__9e6bed29-9202-4562-a4d5-c3bd59a509e1-16665970342df5c388-0",
+        "template--16588290425053__9e6bed29-9202-4562-a4d5-c3bd59a509e1-16665970342df5c388-1",
+        "template--16588290425053__9e6bed29-9202-4562-a4d5-c3bd59a509e1-16665970342df5c388-2",
+        "bf9b2fb4-a69e-421b-8dfa-fe7006559ad1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "slideshow_f7xeHP",
+    "main",
+    "487b346d-c858-4a5c-9ce6-0deb5fc98f36",
+    "9e6bed29-9202-4562-a4d5-c3bd59a509e1"
+  ]
+}

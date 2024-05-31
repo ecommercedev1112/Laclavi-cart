@@ -1,0 +1,181 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="lookbook-slider-wrap">
+  <div class="lookbook-slider">
+    {% for block in section.blocks %}
+    <div class="lookbook-slide">
+      <img src="{{ block.settings.image | img_url:'master' }}">
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .lookbook-slider-wrap{
+    padding-inline: {{section.settings.section_spacing_inline}}px;
+  }
+  
+  @media (max-width: 767px){
+    .lookbook-slider-wrap {
+      padding-inline: {{section.settings.section_spacing_inline_mobile}}px;
+    } 
+  }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+
+  
+  
+$(document).ready(function(){
+  $(".lookbook-slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: `<button type='button' class='slick-prev pull-left'><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 12L0 6L6 0L6.8003 0.800302L1.6006 6L6.8003 11.1997L6 12Z" fill="white"/></svg></button>`,
+    nextArrow: `<button type='button' class='slick-next pull-right'><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.800294 12L6.80029 6L0.800294 0L-7.62939e-06 0.800302L5.19969 6L-7.62939e-06 11.1997L0.800294 12Z" fill="white"/></svg></button>`,
+    responsive: [
+      {
+        breakpoint: 989,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          variableWidth: true,
+        },
+      },
+    ],
+  });
+
+  setTimeout(function () {
+  var $slider = $(".lookbook-slider");
+  if ($slider.length) {
+    var currentSlide;
+    var slidesCount;
+    var sliderCounter = document.createElement("div");
+    sliderCounter.classList.add("slider__counter");
+
+    var updateSliderCounter = function (slick, currentIndex) {
+      var index = currentIndex !== undefined ? currentIndex : slick.slickCurrentSlide();
+      currentSlide = index + 1;
+      if(slick.slideCount != null){
+        slidesCount = slick.slideCount;  
+      }else{
+        slidesCount = 10;  
+      }
+      
+      $(sliderCounter).text(currentSlide + "/" + slidesCount);
+    };
+
+    $slider.on("init", function (event, slick) {
+      $slider.append(sliderCounter);
+      updateSliderCounter(slick);
+    });
+
+    $slider.on("afterChange", function (event, slick, currentSlide) {
+      updateSliderCounter(slick, currentSlide);
+    });
+
+    $slider.slick({
+      waitForAnimate: true
+    });
+    
+    
+      updateSliderCounter($slider.slick("getSlick"));
+    
+  }
+    }, 500);
+  // var $slider = $(".lookbook-slider");
+  // if ($slider.length) {
+  //   var currentSlide;
+  //   var slidesCount;
+  //   var sliderCounter = document.createElement("div");
+  //   sliderCounter.classList.add("slider__counter");
+
+  //   var updateSliderCounter = function (slick, currentIndex) {
+  //     var index = currentIndex !== undefined ? currentIndex : slick.slickCurrentSlide();
+  //     currentSlide = index + 1;
+  //     slidesCount = slick.slideCount;
+  //     $(sliderCounter).text(currentSlide + "/" + slidesCount);
+  //   };
+
+  //   $slider.on("init", function (event, slick) {
+  //     $slider.append(sliderCounter);
+  //     updateSliderCounter(slick);
+  //   });
+
+  //   $slider.on("afterChange", function (event, slick, currentSlide) {
+  //     updateSliderCounter(slick, currentSlide);
+  //   });
+
+  //   $slider.slick({
+  //     waitForAnimate: true
+  //   });
+    
+  //   setTimeout(function () {
+  //     updateSliderCounter($slider.slick("getSlick"));
+  //   }, 2000);
+  // }
+  
+});
+
+</script>
+
+{% schema %}
+{
+  "name": "Lookbook Slider",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "section_spacing_inline",
+      "label": "Left Right Spacing",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "section_spacing_inline_mobile",
+      "label": "Left Right Spacing Mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lookbook Slider"
+    }
+  ]
+}
+{% endschema %}

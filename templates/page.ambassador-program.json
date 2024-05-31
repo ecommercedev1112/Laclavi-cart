@@ -1,0 +1,214 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "16626954844712b69d": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/02_b02ac8b4-8449-47a7-892f-be10dfc5c9e3.png",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "1662704256e665c26a": {
+      "type": "multi-column",
+      "blocks": {
+        "166270425629b832fa-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/singlelogo_245579_o.jpg",
+            "image_width": 700,
+            "title": "Free package",
+            "text": "<p>Free monthly packages with the latest BABEYOND collections.with the latest BABEYOND collections.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "166270425629b832fa-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/singlelogo_245579_o.jpg",
+            "image_width": 700,
+            "title": "Early access",
+            "text": "<p>New arrivals, extra coupons, limited editions…we roll out the red carpet for you!<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "166270425629b832fa-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/singlelogo_245579_o.jpg",
+            "image_width": 700,
+            "title": "Featured on @cupshe social media",
+            "text": "<p>Get featured on all @BABEYOND socials with over 2M+ followers.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166270425629b832fa-0",
+        "166270425629b832fa-1",
+        "166270425629b832fa-2"
+      ],
+      "settings": {
+        "title": "BABEYOND AMBASSADOR PROGRAM",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": true
+      }
+    },
+    "1662704040d8a1ab20": {
+      "type": "custom-row",
+      "blocks": {
+        "1662704040c9c856f3-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "What you'll do",
+            "text": "<p>Create 2 dedicated videos after receiving BABEYOND products.<\/p><p>8 - 15 seconds video of styling, dancing, honest review, try-on haul, and other creative ways you want to showcase BABEYOND!<\/p><p>Upload the content and include the soundtrack link to your BABEYOND rep.<\/p><p>Make content revisions as needed.<\/p><p>Share product review content and brand message by using tags \/ hashtags.<\/p><p>Grant BABEYOND the right to use your content on website, social media, marketing and promotional usage.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left"
+          }
+        },
+        "1662704040c9c856f3-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/06_4d4cf67c-f732-4fd5-883f-18800fe3662f.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "1662704040c9c856f3-1",
+        "1662704040c9c856f3-0"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "166270437691a3dcc5": {
+      "type": "contact-form",
+      "blocks": {
+        "a4a5afbb-4a41-49e6-9fa8-11d138729d6f": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Name",
+            "type": "text",
+            "required": true,
+            "half_width": false
+          }
+        },
+        "a302c400-ab44-443f-9128-68702ef1e982": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Email address",
+            "type": "email",
+            "required": true,
+            "half_width": false
+          }
+        },
+        "cedcc0df-7561-4879-a488-deddaa895de1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please include URL(s) to at least 1 of your social media pages to be considered.<\/p>"
+          }
+        },
+        "2999ef34-bc01-47f8-a589-2c3cad9d3496": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Instagram",
+            "type": "text",
+            "required": false,
+            "half_width": false
+          }
+        },
+        "73cc2242-eaa7-4375-b03f-80311d0274c6": {
+          "type": "custom_input",
+          "settings": {
+            "title": "YouTube",
+            "type": "text",
+            "required": false,
+            "half_width": false
+          }
+        },
+        "7bad734c-4141-4894-b5af-a8b4acc7c140": {
+          "type": "custom_input",
+          "settings": {
+            "title": "TikTok",
+            "type": "text",
+            "required": false,
+            "half_width": false
+          }
+        }
+      },
+      "block_order": [
+        "a4a5afbb-4a41-49e6-9fa8-11d138729d6f",
+        "a302c400-ab44-443f-9128-68702ef1e982",
+        "cedcc0df-7561-4879-a488-deddaa895de1",
+        "2999ef34-bc01-47f8-a589-2c3cad9d3496",
+        "73cc2242-eaa7-4375-b03f-80311d0274c6",
+        "7bad734c-4141-4894-b5af-a8b4acc7c140"
+      ],
+      "settings": {
+        "contact_title": "JOIN IN #BABE",
+        "contact_text": "<p>Leave your information and your social media page link below. We will contact you as soon as possible.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16626954844712b69d",
+    "1662704256e665c26a",
+    "1662704040d8a1ab20",
+    "166270437691a3dcc5"
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "sections": {
+    "16498308195a6b9a03": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_cab3f26c-f969-4ef7-99c5-4dbc05c454a7.png",
+        "mobile_image": "shopify:\/\/shop_images\/6_1.png",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 600,
+        "image_link": "",
+        "subheading": "ABOUT US",
+        "title": "Hi, We're Babeyond!",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "164983172156d73bc9": {
+      "type": "custom-row",
+      "blocks": {
+        "16498317213d2a44a9-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "width": "full",
+            "subheading": "",
+            "title": "",
+            "text": "<p><strong>BABEYOND<\/strong> is synonymous with dedication, passion, craft, and care. Our team combines decades of industry experience with a deep affection for the glamour of the 20th century. We're here to prove elegance is timeless and great fashion never fades.<br\/><\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "64a8eb13-6479-46db-856d-a796b852ccf2": {
+          "type": "html",
+          "settings": {
+            "width": "full",
+            "code": "<div class=\"pc_show\" style=\"text-align:center\">\n<strong>BABEYOND<\/strong> is synonymous with dedication, passion, craft, and care.<br\/>\nOur team combines decades of industry experience with a deep affection for the glamour of the 20th century.\n<br\/>We're here to prove elegance is timeless and great fashion never fades.\n<\/div>\n<div class=\"mobile_show\" style=\"text-align:center\">\n<strong>BABEYOND<\/strong> combines decades of industry experience and a deep affection for the glamorous 20th century.<br\/>\nWe're here to prove elegance is timeless and great fashion never fades.\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "16498317213d2a44a9-1",
+        "64a8eb13-6479-46db-856d-a796b852ccf2"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "1658826487f7cb7c8b": {
+      "type": "custom-row",
+      "blocks": {
+        "1658826487a36be7f4-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/1_8ddf0a49-996d-41db-8f9b-9c642511274d.png",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "0900bfbd-b54e-4dfd-9b49-83761397bd55": {
+          "type": "html",
+          "settings": {
+            "width": "half",
+            "code": "<div class=\"column align-left cc-animate-init -in cc-animate-complete\" data-cc-animate>\n        <div class=\"feature-text-paired\" style=\"margin-left: 4%;margin-right: 3%;\">\n<h2 style=\"text-align:center;margin-bottom:15px\" class=\"majortitle\">THE MUSE<\/h2>\n<div style=\"color: #000000;font-size: 15px;font-weight: normal;text-align: center;\">\n    Like the Greek myth with the magical power to inspire, <strong>BABEYOND <\/strong>is a source of ideas and inspiration that facilitates self-expression and brings fantasies to life.<br\/> \nOur brand archetype tells the story of our brand's personality and is crafted to have the same desires, ambitions, and values as our audience.\n<\/div>\n<div style=\"color: #1A1A1A;font-size: 14px;margin-top: 30px;text-align: center;\">Guided by meticulous research and attention to detail, we design, perfect, and craft our unique pieces until they flow, swish, and shimmer with unmistakable authenticity.<br\/>\nWith original designs and the highest commitment to quality and craftsmanship, we continues to delight our customers with what it means to be \"truly timeless\".\n<\/div>\n<\/div>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "1658826487a36be7f4-0",
+        "0900bfbd-b54e-4dfd-9b49-83761397bd55"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "165882734468597995": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_1143102f-1f97-4e6e-ad97-3e498bb4c75f.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "OUR MISSION",
+        "title": "Through authentic, high-quality vintage fashion, we strive to help people immerse themselves into their favorite era and shine.",
+        "title_size": 30,
+        "title_size_mobile": 20,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "1649831542999272d6": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_f92349f4-5ff9-4a1e-b2f1-625c19693d57.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "FIND YOUR VINTAGE",
+        "use_h1": false,
+        "text": "<p>Whether you're exploring ideas for a themed party, or redefining your formal look, we are committed to bringing your vision to life and transporting you to a time and place that spurs your imagination.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "center",
+        "use_alt_bg": false
+      }
+    },
+    "1649831660dc993b8b": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_fefd1fa9-7532-4bdb-94b6-588fc8b1b248.png",
+        "image_width": 700,
+        "subheading": "",
+        "title": "FASHION NEVER FADES",
+        "use_h1": false,
+        "text": "<p>We believe fashion has the power to transform. We see the past as a world full of beauty, glamour, and possibility. If you can dream it, we can make it a reality.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "center",
+        "use_alt_bg": false
+      }
+    },
+    "16588275637d0a4f61": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/5_acabe801-643e-4690-a708-a35ec0e50818.png",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Vintage Glamour for  Modern Times",
+        "use_h1": false,
+        "text": "<p>20th century fashion is a long and beautiful tapestry. No matter which era you might find yourself in, the goal is always the same: to walk into the room and feel iconic.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "center",
+        "use_alt_bg": false
+      }
+    },
+    "1649831988d961819e": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".about_social a i {margin: 0 15px; width: 25px; height: 25px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "code": "<div class=\"about_touch\">\n<h2>LET’S KEEP IN TOUCH!<\/h2>\n<p>Our brand voice is passionate, warm, and inviting.<\/br>We encourage our customers to connect with us and we go out of our way to make them the center of attention.<\/p>\n<div class=\"at_bottom\">For all PR inquiries, please email: support@babeyond.zendesk.com<\/div>\n<div class=\"about_social\">\n<a href=\"https:\/\/www.instagram.com\/babeyond_official\/\"><i class=\"insg_icon\"><\/i><\/a>\n<a href=\"https:\/\/www.facebook.com\/babeyond\"><i class=\"facebook_icon\"><\/i><\/a>\n<a href=\"https:\/\/www.tiktok.com\/@babeyond\/\"><i class=\"douyin_icon\"><\/i><\/a>\n<a href=\"https:\/\/www.pinterest.com\/BABEYOND\/\"><i class=\"pinterest_icon\"><\/i><\/a>\n<a href=\"https:\/\/twitter.com\/Babeyond_US\"><i class=\"twitter_icon\"><\/i><\/a>\n\n<\/div>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "16498308195a6b9a03",
+    "164983172156d73bc9",
+    "main",
+    "1658826487f7cb7c8b",
+    "165882734468597995",
+    "1649831542999272d6",
+    "1649831660dc993b8b",
+    "16588275637d0a4f61",
+    "1649831988d961819e"
+  ]
+}

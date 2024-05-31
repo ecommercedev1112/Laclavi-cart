@@ -1,0 +1,76 @@
+<div class="mission-image-text">
+  <div class="mission-image-text-inner">
+    <div class="container">
+      <div class="mission-image-text-row">
+        <div class="mission-image-col">
+          <div class="image">
+            <img src="{{ section.settings.image | img_url: 'master' }}">
+          </div>
+        </div>
+        <div class="mission-text-col">
+          <div class="mission-text-inner">
+            <div class="mission-content">
+              {{ section.settings.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .mission-image-text-inner {
+    margin-inline: {{section.settings.section_spacing_inline}}px;
+    margin-block: {{section.settings.section_spacing_block}}px;
+  }
+</style>
+
+{% schema %}
+  {
+  "name": "Mission Image Text",
+  "settings": [
+    {
+        "type": "range",
+        "id": "section_spacing_block",
+        "label": "Section Top Bottom Margin",
+        "min": 0,
+        "max": 150,
+        "step": 2,
+        "unit": "px",
+        "default": 88
+    },
+    {
+        "type": "range",
+        "id": "section_spacing_inline",
+        "label": "Section Left Right Spacing",
+        "min": 0,
+        "max": 150,
+        "step": 2,
+        "unit": "px",
+        "default": 54
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "image"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mission Image Text"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,219 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "3f249ccd-efd0-4ed3-80f5-9516a37caa44": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Babeyond_34a7d2d4-cf76-467e-9cb7-dae2049d16a7.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/04_395f7329-1d18-4fd0-86d9-44a1c4493f98.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "3a6493a6-d70f-4bc4-822e-0d59eb8b83b5": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Babeyond_1.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/05_d0f836dd-a8ca-44e4-8d5a-3329e67c8c8e.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "475b9ed4-780f-426c-8a62-f82eb6703d92": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<p style=\"margin:-40px\"><\/p>"
+      }
+    },
+    "053126ca-9bf9-4835-86a2-b38543578287": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Babeyond_2.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/06_cb3bf6ce-915a-416d-bc37-e0f9143471c2.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "c20ebfd0-f168-4148-9ca7-34dd16cdcca2": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/20200415123906.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/20200415123906.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "2f996825-517a-42dd-beea-e3fe589cca49": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<p style=\"margin:-8%\"><\/p>"
+      }
+    },
+    "28c736c9-3949-4ac2-894d-46d256dd244e": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16615051133149__28c736c9-3949-4ac2-894d-46d256dd244e-166910916555da2297-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20221123092513.png",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https:\/\/babeyond.com\/products\/gift-card"
+          }
+        },
+        "template--16615051133149__28c736c9-3949-4ac2-894d-46d256dd244e-166910916555da2297-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20221123092518.png",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https:\/\/www.instagram.com\/babeyond_official\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16615051133149__28c736c9-3949-4ac2-894d-46d256dd244e-166910916555da2297-0",
+        "template--16615051133149__28c736c9-3949-4ac2-894d-46d256dd244e-166910916555da2297-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "f23a1c77-4237-4f4a-84f2-799cd5f34dc1": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "GOOD FINDS TOP STYLES",
+        "collection": "best-sellers",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3f249ccd-efd0-4ed3-80f5-9516a37caa44",
+    "3a6493a6-d70f-4bc4-822e-0d59eb8b83b5",
+    "475b9ed4-780f-426c-8a62-f82eb6703d92",
+    "053126ca-9bf9-4835-86a2-b38543578287",
+    "c20ebfd0-f168-4148-9ca7-34dd16cdcca2",
+    "2f996825-517a-42dd-beea-e3fe589cca49",
+    "28c736c9-3949-4ac2-894d-46d256dd244e",
+    "f23a1c77-4237-4f4a-84f2-799cd5f34dc1"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".rte {font-size: 12px; color: #0f0f0f;}"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "custom_rich_text_WMQjUn": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "text_7GrGWG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Navigate life’s fairways with golf’s wisdom<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "text_7GrGWG"
+      ],
+      "settings": {
+        "height": "medium",
+        "section_spacing_block": 100,
+        "section_spacing_inline": 100,
+        "text_alignment": "center",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "slideshow_KLHkTg": {
+      "type": "slideshow",
+      "blocks": {
+        "image_jjQgif": {
+          "type": "image",
+          "settings": {
+            "img_btn": true,
+            "image": "shopify:\/\/shop_images\/mission-page-banner-desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mission-page-banner-mobile.jpg",
+            "video_url_btn": false,
+            "video_url": "",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_jjQgif"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": false
+      }
+    },
+    "mission_image_text_nT839p": {
+      "type": "mission-image-text",
+      "settings": {
+        "section_spacing_block": 88,
+        "section_spacing_inline": 54,
+        "image": "shopify:\/\/shop_images\/mission-image-text-img.png",
+        "content": "<p>Life is a fairway, filled with challenges and triumphs. Golf, more than just a sport, is a lens through which we can find a balance and deeper connection to ourselves and the world around us.<\/p><p>We design apparel that empowers you to connect with nature and yourself, elevating your journey on and off the course.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_rich_text_WMQjUn",
+    "slideshow_KLHkTg",
+    "mission_image_text_nT839p"
+  ]
+}

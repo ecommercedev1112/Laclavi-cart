@@ -1,0 +1,36 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "show_page_title": true,
+        "enable_cart_notes": true,
+        "show_tax_and_shipping": true,
+        "cart_terms_page": "",
+        "show_additional_checkout_buttons": true,
+        "show_backorder_text": true,
+        "show_shipping_calculator": false,
+        "shipping_calculator_default_country": "United States"
+      }
+    },
+    "1646212129cb5d6329": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "YOU MAY ALSO LIKE",
+        "collection": "new-arrivals",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": true,
+        "moreurl": "https:\/\/babeyond.com\/collections\/new-arrivals?icn=new-arrivals&ici=cart",
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1646212129cb5d6329"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "sections": {
+    "d2a13bd1-5a13-40ea-9804-538b12b379cc": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16598283354333__d2a13bd1-5a13-40ea-9804-538b12b379cc-16675466004918773e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Glam_Up_for_the_Countdown-05.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Glam_Up_for_the_Countdown-03.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16598283354333__d2a13bd1-5a13-40ea-9804-538b12b379cc-16675466004918773e-0"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 260,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "full image-overlay--bg-shadow",
+        "coll_num_per_page_int": 48,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": false,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "show_disabled_filters": true,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "main-menu",
+        "subcoll_style": "buttons",
+        "subcoll_gall_shape": "sq",
+        "image_position": "center center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": false,
+        "subcoll_gall_overlay_style": "full",
+        "subcoll_gall_text_alignment": "center center",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    }
+  },
+  "order": [
+    "d2a13bd1-5a13-40ea-9804-538b12b379cc",
+    "main"
+  ]
+}

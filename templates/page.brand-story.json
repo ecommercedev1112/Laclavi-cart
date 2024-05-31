@@ -1,0 +1,107 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".rte {font-size: 12px; color: #0f0f0f;}"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "custom_rich_text_jCNExf": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "text_cdhLmi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>BRAND STORY<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "text_cdhLmi"
+      ],
+      "settings": {
+        "height": "medium",
+        "section_spacing_block": 54,
+        "section_spacing_inline": 54,
+        "text_alignment": "left",
+        "full_width": true,
+        "use_alt_bg": false
+      }
+    },
+    "slideshow_anX46P": {
+      "type": "slideshow",
+      "blocks": {
+        "image_KiAYJB": {
+          "type": "image",
+          "settings": {
+            "img_btn": true,
+            "image": "shopify:\/\/shop_images\/banner-grey-desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/banner-grey-mobile.png",
+            "video_url_btn": false,
+            "video_url": "",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_KiAYJB"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": false
+      }
+    },
+    "brand_story_text_K9MyCK": {
+      "type": "brand-story-text",
+      "blocks": {
+        "text_XFXnr6": {
+          "type": "text",
+          "settings": {
+            "title": "<p>A passion for golf <\/p><p>provides a sanctuary <\/p><p>for our souls<\/p>",
+            "text": "<p>LACLAVI, born in Dallas, was inspired by the city’s toughest weather conditions in summer and unwavering enthusiasm for the sports. Our garments are crafted to withstand the elements, from wind and rain to sun and sweat, without compromising comfort or style. But LACLAVI is more than just clothing brand - it is a sanctuary for the soul.<\/p><p>Our journey began with a date engineer, an ardent golfer. Golf led him on a journey of inner peace and self-discovery. Fueled by this transformative experience, he set out on a mission to create golf apparel that enhances performance and embodies peace of mind.<\/p><p>At LACLAVI, we believe that true luxury lies in the freedom to live authentically, to pursue our inner harmony by following our hearts. To embrace every possibility and enjoy every moment, both on and off the green. Join us as we redefine the boundaries of golf menswear and embark on a journey of self-discovery<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_XFXnr6"
+      ],
+      "settings": {
+        "section_spacing_block": 282,
+        "section_spacing_inline": 54,
+        "section_spacing_block_mobile": 48,
+        "section_spacing_inline_mobile": 16
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_rich_text_jCNExf",
+    "slideshow_anX46P",
+    "brand_story_text_K9MyCK"
+  ]
+}

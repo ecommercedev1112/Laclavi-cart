@@ -1,0 +1,93 @@
+<div class="stories-grid-wrap">
+  <div class="stories-grid-inner">
+    <div class="stories-grid-row">
+      {%- for block in section.blocks -%}
+       <div class="stories-card">
+         <a href="{{ block.settings.card_link }}">
+         <div class="stories-card-image">
+           <img src="{{ block.settings.card_image | img_url:'master' }}">
+         </div>
+         <div class="stories-card-content">
+           <h4>{{ block.settings.card_heading }}</h4>
+           {{ block.settings.card_text }} 
+         </div>
+         </a>
+       </div> 
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+<style>
+  .stories-grid-inner{
+    margin-inline: {{section.settings.left_right_spacing}}px;
+    margin-block: {{section.settings.top_bottom_spacing}}px;
+  }
+</style>
+
+{% schema %}
+  {
+  "name": "Stories Grid",
+  "settings": [
+    {
+      "type": "range",
+      "id": "top_bottom_spacing",
+      "label": "Top Bottom Spacing",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default": 54,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "left_right_spacing",
+      "label": "Left Right Spacing",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 54,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Card",
+      "type": "card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card Image"
+        },
+        {
+          "type": "url",
+          "id": "card_link",
+          "label": "Card Link"
+        },
+        {
+          "type": "text",
+          "id": "card_heading",
+          "label": "Card Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "card_text",
+          "label": "Card Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stories Grid"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

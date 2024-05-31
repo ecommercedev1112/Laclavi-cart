@@ -1,0 +1,545 @@
+{
+  "sections": {
+    "16359276425da8ce46": {
+      "type": "slideshow",
+      "blocks": {
+        "8461df2d-9d92-4a31-a87a-40523f95430b": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_2048x1024px.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/laborday_-05.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "https:\/\/babeyond.com\/collections\/labor-day-sale-sitewide?icn=labor-day-sale-sitewide&ici=homebanner01",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "<p><\/p>",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "16359276425da8ce46-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/banner-1_bb8a87e0-f36f-43f8-8453-018d33f1fae8.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center bottom",
+            "slide_link": "https:\/\/babeyond.com\/collections\/1920s-dresses?icn=1920s-dresses&ici=homebanner02",
+            "subheading": "",
+            "title": "Timeless style for retro lovers",
+            "title_size": 66,
+            "title_size_mobile": 28,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "SHOP NOW",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "8e35dec7-daa8-4de9-90da-7713d5fb1390": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Babeyond_-07_64a20922-caf1-4d4f-96e1-21c4395a6b17.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/00.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center bottom",
+            "slide_link": "https:\/\/babeyond.com\/collections\/1920s-headpieces?icn=1920s-headpiece&ici=homebanner02",
+            "subheading": "",
+            "title": "Timeless style for retro lovers",
+            "title_size": 66,
+            "title_size_mobile": 28,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "SHOP NOW",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "16359276425da8ce46-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/banner-2_372947b5-1d2b-44c1-8588-4cf02d408e29.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center bottom",
+            "slide_link": "https:\/\/babeyond.com\/collections\/1920s-dresses?icn=1920s-dresses&ici=homebanner02",
+            "subheading": "",
+            "title": "Timeless style for retro lovers",
+            "title_size": 66,
+            "title_size_mobile": 28,
+            "text": "<p>   <\/p>",
+            "enlarge_text": true,
+            "button_label_1": "SHOP NOW",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "19d077a8-3668-4f38-a3cb-e560d92203ef": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_womenday-08.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/2024_womenday-02.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "https:\/\/babeyond.com\/collections\/womens-day-offer",
+            "subheading": "",
+            "title": "Women's Day Special",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "<p>Celebrate Her: $30 off $200+ orders with CODE: WD30. <\/p>",
+            "enlarge_text": true,
+            "button_label_1": "SHOP NOW",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "3e21e546-f44e-4323-9a7b-5409e213c550": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024_spring-05.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/2024_spring-02.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "https:\/\/babeyond.com\/collections\/1920s-dresses",
+            "subheading": "",
+            "title": "Spring Reverie",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "<p>1920s elegance in full bloom – seize the essence of spring.<\/p>",
+            "enlarge_text": true,
+            "button_label_1": "shop now",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "e47eccba-3765-4601-affa-f01ec1727052": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sensational_Ever12-08_c12fd51d-9b4c-46b1-b9e4-3672886dfd93.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Sensational_Ever12-06.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "https:\/\/babeyond.com\/collections\/sensational-ever?icn=sensational-ever&ici=homebanner01",
+            "subheading": "",
+            "title": "Sensational Ever",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "<p>The most sensational woman anyone ever saw.<\/p>",
+            "enlarge_text": true,
+            "button_label_1": "SHOP NOW",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "235d211b-f58f-4047-8a6f-cabbcce6313c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ring_in_the_New_Year-09_4f3eff30-7843-4cb3-9bed-bc0818778eb4.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Ring_in_the_New_Year-10.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "https:\/\/babeyond.com\/collections\/hot-picks?icn=hot-picks&ici=homebanner01",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "8461df2d-9d92-4a31-a87a-40523f95430b",
+        "16359276425da8ce46-1",
+        "8e35dec7-daa8-4de9-90da-7713d5fb1390",
+        "16359276425da8ce46-0",
+        "19d077a8-3668-4f38-a3cb-e560d92203ef",
+        "3e21e546-f44e-4323-9a7b-5409e213c550",
+        "e47eccba-3765-4601-affa-f01ec1727052",
+        "235d211b-f58f-4047-8a6f-cabbcce6313c"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 780,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background",
+        "slide_transition": "slide_fade",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 6
+      }
+    },
+    "df7a4fa5-867c-4c2e-a89e-869fd9a8abac": {
+      "type": "special-featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "collection": "home-new-arrivals",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": true,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "97960c53-30a1-4b77-8d02-f363e99f8d8c": {
+      "type": "special-category",
+      "blocks": {
+        "cbb3a34f-f2c5-4bcf-9b1f-ba447fec452a": {
+          "type": "main_header",
+          "settings": {
+            "alignment": "left",
+            "title": "Accessories",
+            "subtitle": "<p>Make you enchanting in a vintage setting<\/p>",
+            "image": "shopify:\/\/shop_images\/2___1_1_7e410206-2fcb-4294-93e4-be49b74476d1.jpg",
+            "category-url": "shopify:\/\/collections\/1920s-accessories"
+          }
+        },
+        "51755547-7516-4d43-80b9-e2298b1a6048": {
+          "type": "main_header",
+          "settings": {
+            "alignment": "center",
+            "title": "1920s Dresses",
+            "subtitle": "<p>Perfect vintage for your upcoming party<\/p>",
+            "image": "shopify:\/\/shop_images\/2_-02_1.jpg",
+            "category-url": "shopify:\/\/collections\/1920s-dresses"
+          }
+        },
+        "2a0f1daa-e502-478a-bae3-5c0598cc8e2e": {
+          "type": "main_header",
+          "settings": {
+            "alignment": "right",
+            "title": "Headpieces",
+            "subtitle": "<p>Deep the glamour of the 20th century<\/p>",
+            "image": "shopify:\/\/shop_images\/2_-03_1.jpg",
+            "category-url": "shopify:\/\/collections\/1920s-headpieces"
+          }
+        }
+      },
+      "block_order": [
+        "cbb3a34f-f2c5-4bcf-9b1f-ba447fec452a",
+        "51755547-7516-4d43-80b9-e2298b1a6048",
+        "2a0f1daa-e502-478a-bae3-5c0598cc8e2e"
+      ],
+      "settings": {
+      }
+    },
+    "9af074d6-b813-4c90-9359-95a2eda93039": {
+      "type": "special-featured-collection",
+      "settings": {
+        "title": "Best Sellers",
+        "collection": "home-best-sellers",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": true,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "cf8398a2-0a1d-469d-9842-8c7b8098b53d": {
+      "type": "special-minibanner",
+      "blocks": {
+        "a2a2199b-3128-4d80-9834-1aadac4171e1": {
+          "type": "main_header",
+          "settings": {
+            "subtitle": "<p>UNLOCK 50% OFF<br\/><\/p>",
+            "subtitle_price": "",
+            "button": "<p>SHOP NOW<\/p>",
+            "button-url": "shopify:\/\/collections\/clearance-sale"
+          }
+        }
+      },
+      "block_order": [
+        "a2a2199b-3128-4d80-9834-1aadac4171e1"
+      ],
+      "settings": {
+        "title": "CLEARANCE SALE",
+        "minibanner_bg_col": "#c9beac"
+      }
+    },
+    "0cec8542-139a-4e9f-a142-f069add0793a": {
+      "type": "special-blog",
+      "blocks": {
+        "cb06ae43-d081-4c55-bc6c-00c2ad8e7fb9": {
+          "type": "block",
+          "settings": {
+            "blog_url": "shopify:\/\/pages\/about-us",
+            "image": "shopify:\/\/shop_images\/Rectangle_f3af2bbb-10db-4aab-afb6-96bb45cfb51e.png",
+            "title": "<p>Through authentic <\/p><p>vintage fashion<\/p>",
+            "main_content": "<p>Guided by meticulous research and attention to detail, we design, perfect, and shimmer with unmistakable authenticity. With original designs and the highest commitment to quality and craftsmanship, we continues to delight our customers with what it means to be \"truly timeless\".  <\/p>",
+            "button": "<p>VIEW BLOG<\/p>",
+            "blog_btn_url": "shopify:\/\/pages\/about-us",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#282828",
+            "blog_content_col_mb": "#282828"
+          }
+        },
+        "c390d233-94f5-48fa-b138-7cc7283c10ae": {
+          "type": "block",
+          "settings": {
+            "blog_url": "",
+            "image": "shopify:\/\/shop_images\/4_7c2c3d25-399e-4662-a52c-4a5433dbaa85.jpg",
+            "title": "<p>Step Back in Time: A Journey through the Best 1920s Movies<\/p>",
+            "main_content": "<p>No one asks to be left behind. But in a hundred years, when you and I are both long gone, any time someone threads a frame of yours through a sprocket, you will be alive again. -- Elinor St. John, Babylon<\/p>",
+            "button": "<p>VIEW BLOG<\/p>",
+            "blog_btn_url": "shopify:\/\/blogs\/style\/step-back-in-time-a-journey-through-the-best-1920s-movies",
+            "blog_bg_col_des": "#f2efe8",
+            "blog_bg_col_mb": "#f2efe8",
+            "blog_content_col_des": "#282828",
+            "blog_content_col_mb": "#282828"
+          }
+        },
+        "cb652b7d-c35f-4b2a-a66b-707e5ce63280": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "blog_url": "shopify:\/\/blogs\/style\/the-legendary-karl-lagerfeld-a-pioneer-of-fashion",
+            "image": "shopify:\/\/shop_images\/VO090118_designer_karl01.jpg",
+            "title": "<p>The Legendary Karl Lagerfeld: A Pioneer of Fashion<\/p>",
+            "main_content": "<p>Fashion is a language that creates itself in clothes to interpret reality. ― Karl Lagerfeld<\/p>",
+            "button": "<p>VIEW BLOG<\/p>",
+            "blog_btn_url": "shopify:\/\/blogs\/style\/the-legendary-karl-lagerfeld-a-pioneer-of-fashion",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#282828",
+            "blog_content_col_mb": "#282828"
+          }
+        }
+      },
+      "block_order": [
+        "cb06ae43-d081-4c55-bc6c-00c2ad8e7fb9",
+        "c390d233-94f5-48fa-b138-7cc7283c10ae",
+        "cb652b7d-c35f-4b2a-a66b-707e5ce63280"
+      ],
+      "settings": {
+        "crop_ratio": "1.0"
+      }
+    },
+    "ec39d9b7-ec83-48b6-8aa5-441e89c00ca2": {
+      "type": "special-home-review",
+      "blocks": {
+        "95864e5c-0421-45ac-a7a1-174edc2fa5a3": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Taylor Swift Delicate Dupe",
+            "review_content": "I absolutely love this dress, it’s almost an exact match to the dress that Taylor Swift wears in her Delicate video which is why I got it. It’s such a beautiful dress and I can’t wait to wear it for my 21st wedding anniversary.",
+            "author": "--A***m",
+            "review_date": "26 \/ 09 \/ 2023"
+          }
+        },
+        "8acdd0db-840c-4f16-a883-96c0417ef3c7": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Impressing dress",
+            "review_content": "I absolutely adore this dress! I wore it to a gala and received so many compliments.",
+            "author": "--C***e",
+            "review_date": "06 \/ 10 \/ 2023"
+          }
+        },
+        "f9f71a2f-5448-4b0e-b140-7ebefbefcb73": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Loved!!",
+            "review_content": "This dress is everything I wanted for my Halloween flapper costume, will get the headpiece and gloves too.",
+            "author": "--J***y",
+            "review_date": "07 \/ 10 \/ 2023"
+          }
+        },
+        "0483f1d5-3595-4e39-ae86-adcace208bf3": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Beautiful",
+            "review_content": "Absolutely obsessed with this dress! Form fitting with some stretch, and unique. I don’t wear a lot of green but this is beautiful and I love the iridescent bottom! I’m 5’11” and it was a great length for me!",
+            "author": "--A***t",
+            "review_date": "10 \/ 10 \/ 2023"
+          }
+        },
+        "90d9c61f-6b10-4f04-a225-4b4575d76669": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Beautiful and comfortable!",
+            "review_content": "This was such a fun dress to wear to an Old Hollywood themed event. I got many compliments on it and it was pretty comfortable overall considering the potential for scratchy sequins. It is nice that the straps are adjustable. Great quality for the money!",
+            "author": "--J***s",
+            "review_date": "15 \/ 10 \/ 2023"
+          }
+        },
+        "7be651ea-1ea0-43cd-bea3-7747233efa92": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating2": 5,
+            "review_title": "Love it!",
+            "review_content": "I wore this dress to the Great Gatsby Party in Dallas. Received a ton of compliments. Great fit and length. Hugs the body without being to tight. Easy to dance and sit in.",
+            "author": "--E***b",
+            "review_date": "16 \/ 10 \/ 2023"
+          }
+        }
+      },
+      "block_order": [
+        "95864e5c-0421-45ac-a7a1-174edc2fa5a3",
+        "8acdd0db-840c-4f16-a883-96c0417ef3c7",
+        "f9f71a2f-5448-4b0e-b140-7ebefbefcb73",
+        "0483f1d5-3595-4e39-ae86-adcace208bf3",
+        "90d9c61f-6b10-4f04-a225-4b4575d76669",
+        "7be651ea-1ea0-43cd-bea3-7747233efa92"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Reviews",
+        "allreview": "7723 Reviews"
+      }
+    },
+    "8db9b0ad-a4fb-406b-831f-2f29d56f23ea": {
+      "type": "special-ins-gallery",
+      "blocks": {
+        "4e5b8913-fa7b-4d70-a2d1-f3b3d1c3677d": {
+          "type": "Insgallery",
+          "settings": {
+            "ins_image": "shopify:\/\/shop_images\/d938bab2cb1e9adbfa383f3938412fab_b157bb1b-2dc3-475e-b569-715dc3de870c.jpg",
+            "ins_image2": "shopify:\/\/shop_images\/d938bab2cb1e9adbfa383f3938412fab_b157bb1b-2dc3-475e-b569-715dc3de870c.jpg",
+            "product": "modern-20s-beaded-sequin-evening-dress",
+            "pro_info": "<p>✨1920s but make it plus size✨<\/p><p>If you had ever asked me if there was an era I didn’t think I’d style, it would be 1920s. I’ve been living with the (wrong) assumption that the lines of the 20s wouldn’t suit my hips and belly and curves, especially because those tend to be the things on display in the wrong way when I try on straighter lines that just hit funny.<\/p>",
+            "ins_date": "kristinawithlove \/\/ INSTAGRAM \/\/ 28 DECEMBER 2023",
+            "btn_text": "SHOP NOW"
+          }
+        },
+        "d3f1e0d2-ae0f-458f-b130-2e63f77ad4db": {
+          "type": "Insgallery",
+          "settings": {
+            "ins_image": "shopify:\/\/shop_images\/098-03_1.jpg",
+            "ins_image2": "shopify:\/\/shop_images\/098-03_1.jpg",
+            "product": "the-story-of-an-awakening-fringe-crape-evening-gowns",
+            "pro_info": "<p>📸: @charmstudiopro<br\/>Make up: @make_up_by_kato<\/p>",
+            "ins_date": "rusas.cooking \/\/ INSTAGRAM \/\/ 19 JANUARY 2024",
+            "btn_text": "SHOP NOW"
+          }
+        },
+        "702a13e9-cadb-4bb3-8726-40ae31dbcf49": {
+          "type": "Insgallery",
+          "settings": {
+            "ins_image": "shopify:\/\/shop_images\/098__1_1.jpg",
+            "ins_image2": "shopify:\/\/shop_images\/098__1_1.jpg",
+            "product": "1920s-sheer-angel-sleeve-maxi-dress",
+            "pro_info": "<p>I hate to lose all the sweet comments from the first time I shared this photo, but I’ll keep them in my heart. ♥️ I wasn’t satisfied with the original edit that I posted, it looked a bit too washed out to me and it was really bothering me. 😵‍💫<\/p><p>It could still be better, I’m not a professional photographer or editor, just a girl with an iPhone, some lights and a dream lol.<br\/><br\/>Thank you for all the love the first time around, and of course thank you for any new love — Love you ♥️<\/p>",
+            "ins_date": "xandramarie_ \/\/ INSTAGRAM \/\/ 12 JANUARY 2024",
+            "btn_text": "SHOP NOW"
+          }
+        },
+        "958bdd54-4168-46e7-aa0c-75b5cbde76a9": {
+          "type": "Insgallery",
+          "settings": {
+            "ins_image": "shopify:\/\/shop_images\/2-04.jpg",
+            "ins_image2": "shopify:\/\/shop_images\/2-04.jpg",
+            "product": "la-revue-negre-feather-embroidery-flapper-dress",
+            "pro_info": "<p>collecting 💟💟💟<\/p>",
+            "ins_date": "_boringbb_ \/\/ INSTAGRAM \/\/ 28 JANUARY 2024",
+            "btn_text": "SHOP NOW"
+          }
+        },
+        "52eb5b0a-ef93-40fe-b463-1f4fd61b93ea": {
+          "type": "Insgallery",
+          "settings": {
+            "ins_image": "shopify:\/\/shop_images\/2__1.jpg",
+            "ins_image2": "shopify:\/\/shop_images\/2__1.jpg",
+            "product": "classic-sleeveless-flapper-dress",
+            "pro_info": "<p>🎞️1922, Amsterdam🎞️<\/p>",
+            "ins_date": "fiorevanil \/\/ INSTAGRAM \/\/ 9 JANUARY 2024",
+            "btn_text": "SHOP NOW"
+          }
+        },
+        "48bc5e58-716f-4d12-83a0-4fc124b97e34": {
+          "type": "Insgallery",
+          "settings": {
+            "ins_image": "shopify:\/\/shop_images\/2-06_cfd2523f-c679-49b1-89e8-251beff9de13.jpg",
+            "ins_image2": "shopify:\/\/shop_images\/2-06_cfd2523f-c679-49b1-89e8-251beff9de13.jpg",
+            "product": "the-story-of-an-awakening-velvet-evening-gowns",
+            "pro_info": "<p>01.02.2024... the first two pages of a new chapter 📖🕊️<\/p>",
+            "ins_date": "victoriakashkin \/\/ INSTAGRAM \/\/ 2 JANUARY 2024",
+            "btn_text": "SHOP NOW"
+          }
+        },
+        "070bf63a-b8e3-444f-9f5c-235fa47d097f": {
+          "type": "Insgallery",
+          "settings": {
+            "ins_image": "shopify:\/\/shop_images\/098-04_1.jpg",
+            "ins_image2": "shopify:\/\/shop_images\/098-04_1.jpg",
+            "product": "1920s-sequin-maxi-dress",
+            "pro_info": "<p>Happy 2024 ✨🥂<\/p>",
+            "ins_date": "ritasalome.f \/\/ INSTAGRAM \/\/ 3 JANUARY 2024",
+            "btn_text": "SHOP NOW"
+          }
+        }
+      },
+      "block_order": [
+        "4e5b8913-fa7b-4d70-a2d1-f3b3d1c3677d",
+        "d3f1e0d2-ae0f-458f-b130-2e63f77ad4db",
+        "702a13e9-cadb-4bb3-8726-40ae31dbcf49",
+        "958bdd54-4168-46e7-aa0c-75b5cbde76a9",
+        "52eb5b0a-ef93-40fe-b463-1f4fd61b93ea",
+        "48bc5e58-716f-4d12-83a0-4fc124b97e34",
+        "070bf63a-b8e3-444f-9f5c-235fa47d097f"
+      ],
+      "settings": {
+        "title": "Find Us on Instagram",
+        "subtitle": "@ babeyond_official",
+        "ins_url": "https:\/\/www.instagram.com\/babeyond_official\/?icn=instagram&ici=instagramhome"
+      }
+    }
+  },
+  "order": [
+    "16359276425da8ce46",
+    "df7a4fa5-867c-4c2e-a89e-869fd9a8abac",
+    "97960c53-30a1-4b77-8d02-f363e99f8d8c",
+    "9af074d6-b813-4c90-9359-95a2eda93039",
+    "cf8398a2-0a1d-469d-9842-8c7b8098b53d",
+    "0cec8542-139a-4e9f-a142-f069add0793a",
+    "ec39d9b7-ec83-48b6-8aa5-441e89c00ca2",
+    "8db9b0ad-a4fb-406b-831f-2f29d56f23ea"
+  ]
+}

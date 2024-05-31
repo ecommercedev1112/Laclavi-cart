@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".rte {font-size: 12px; color: #0f0f0f;}"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "return_policy_text_ewyznK": {
+      "type": "return-policy-text",
+      "settings": {
+        "heading": "Return Policy",
+        "content_one": "<h2>HOW DOES YOUR RETURN POLICY WORK?<\/h2><p>You have 14 days upon receipt of your order to return your item(s). Once you open your return request, you have 15 days to send your item(s) back to us.<\/p><p>Please note that:<br\/>All returned items must be unworn, unwashed, complete with original tags and\/or packaging. Items returned in non-resalable conditions, won't be eligible for a refund and we will need to send them back to you.<\/p><p>You will need to use an outer packaging to protect the shoe box when returning footwear. Since it is part of the product, any damage to the shoe box may result in the return being refused.<br\/>Due to hygiene reasons, underwear cannot be returned. Of course, if there is a manufacturing issue with your garment, you are eligible for return and full refund.<\/p>",
+        "content_two": "<h3>HOW I CAN OPEN A RETURN REQUEST?<\/h3><p>You can either use the Returns link in the footer of the website - you just need to enter your Order ID and<br\/>the email address used for your order - or you can log in to your account Order History.<\/p>",
+        "content_three": "<h3>HOW CAN I SEND MY ITEM BACK TO YOU?<\/h3><p>We provide two methods to return your items back to us. You can pick the one you prefer when opening your return request (RMA).<\/p><p>1. Automatic Method: contact us to arrange the shipment and print the shipping label you will receive. You will need to pack the items in their original box (or any rigid carton box), stick the shipping label on the box and wait for the courier. Before collecting your parcel, the courier will get in touch to confirm the pick up time.<\/p><p>2. Own Method: you will take care of shipping your items back to us, picking the courier and shipping service you prefer - we recommend using a trackable shipping service. Below is our shipping address for returns:<br\/>ROA-Slam Jam Srl c\/o Snatt Logistica<br\/>Online Returns<br\/>Via Degli Scudai 32<br\/>40050 Funo di Argelato (BO)<br\/>Italy<br\/>info@roa-hiking.com<\/p>",
+        "content_four": "<h3>ARE RETURNS FREE?<\/h3><p>No, they're not, unless otherwise notified.<br\/>If you pick your own method to send your items back to us, you will choose the shipping service you prefer.<br\/>If you pick our automatic method, we will deduct the return shipping costs from your refund. Please note that we use DHL Standard Shipping and FedEx Standard Shipping for returns worldwide.<\/p><p>Please find below the estimated delivery times and costs:<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "return_policy_text_ewyznK"
+  ]
+}

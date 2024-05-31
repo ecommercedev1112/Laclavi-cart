@@ -1,0 +1,605 @@
+{
+  "sections": {
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 18px;}",
+        "h2 {font-size: 40px; line-height: 1.4;}",
+        ".rte p:nth-of-type(3) {font-size: 13px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3d79d3cc2261d43be60ec61d18bd1498.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Holiday Glam: Dressing for Festive Party Vibes",
+        "use_h1": false,
+        "text": "<p>Join the celebration of style! Dive into a world of festive fashion inspiration with us.<\/p><p> <\/p><p>November 15, 2023 | By Emily Aniston<br\/>© Marilyn Monroe, <a href=\"https:\/\/www.pinterest.com\/pin\/131167407889088951\/\" title=\"https:\/\/www.pinterest.com\/pin\/131167407889088951\/\">Pinterest<\/a><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The holiday season is upon us, and it's the perfect time to embrace the festive spirit and show off your style at those glamorous parties. Whether you're attending a Gatsby-themed soirée, a glitzy New Year's bash, or a cozy winter gathering, your outfit should sparkle with the magic of the season. Let's explore some dazzling wardrobe options to ensure you're the star of the show at any holiday celebration.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "f9e03650-258b-4f21-be30-118977b95a74": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-04.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Gatsby Glamour Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Gatsby Glamour Prom Dresses are the epitome of 1920s style. These dresses feature intricate beading, sequins, and fringe details that add a touch of glamour to your outfit. They come in a variety of colors, including classic black and gold, and can be worn in long or short lengths. Pair your Gatsby Glamour dress with a pair of strappy heels and a vintage-inspired clutch for a truly authentic look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/47def7a744831b4f782c91339f19fb8a.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>© Café Society by Karl Lagerfeld, <a href=\"https:\/\/www.pinterest.com\/pin\/760686193329433869\/\" title=\"https:\/\/www.pinterest.com\/pin\/760686193329433869\/\">Pinterest<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "4b663300-f0bb-487a-8b94-03a9214c241d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Chic Gatsby Party Dresses",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Step back in time to the roaring 20s with a Gatsby party dress. The Great Gatsby era was known for its opulence and extravagance, and you can capture the essence of this era with a dress that exudes Art Deco charm. Look for dresses adorned with intricate beadwork, fringe, and metallic embellishments. Opt for a classic flapper dress for a sophisticated look or go for bold, jewel-toned hues to make a statement. Pair your Gatsby dress with a headband or feathered accessories to complete the look. You'll be transported to a world of glitz and glamour, perfect for a holiday soirée.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0",
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "a6837111-fc06-4307-a150-40a02baed26a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-03.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Backless Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Backless Prom Dresses were also a popular choice in the 1920s, and they continue to be a fashionable option for prom parties today. These dresses feature an open back, often adorned with beading or lace, and come in a variety of colors and lengths. Backless dresses can be paired with statement earrings and a sleek updo to showcase the intricate details on the back of the dress.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20231113161334.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "216ff3dd-c87d-46ff-9f9b-ffdce0a76249": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "Shop Gatsby Party Dresses",
+        "collection": "chic-gatsby-party-dresses",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP Graduation DRESSES",
+        "collection": "choosing-a-1920s-inspired-graduation-dress",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "b57a0a43-c9be-45eb-867f-57c71542fa67": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Say \"Yes\" to Sequin Dresses",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As celebrity stylist Tiffany Briseno aptly puts it, \"Nothing says festive like sequins.\" If you want to shimmer and shine at your next holiday gathering, a sequin dress is the way to go. Sequins are the ultimate holiday embellishment, and they catch the light beautifully, making you the center of attention. You can choose from various styles, from elegant long gowns to flirty mini dresses, all covered in sequins. Classic gold and silver are always a hit, but don't be afraid to explore bold, jewel-toned sequin dresses. Add some statement jewelry and stilettos, and you're ready to dazzle on the local dance floor. A sequin dress is perfect for any glamorous holiday party, from Christmas and New Year's Eve to festive galas.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0",
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "5059d91b-1533-45cd-aa15-18a4df2a0459": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-02.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Retro Prom Accessories",
+        "use_h1": false,
+        "text": "<p>No prom outfit is complete without the perfect accessories, and for a 1920s-inspired look, retro accessories are a must. Think feathered headbands, long pearl necklaces, and vintage-inspired clutch bags. These accessories add a touch of sophistication and glamour to any outfit and are the perfect finishing touch for your prom party look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20231113161338.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP Sequin DRESSES",
+        "collection": "say-yes-to-sequin-dresses",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "63c9a312-d076-4d40-b804-da9e92b883bc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Cozy Elegance with Faux Fur",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As the temperatures drop, staying warm and stylish is a must. Hollywood stars have long recognized the allure of winter faux fur. Take, for example, the iconic Marilyn Monroe, who graced the premiere of \"Call Me Madam\" in 1953 in a stunning White Fur ensemble.<br\/><br\/>Entering the winter faux fur trend, you'll discover that a faux fur coat or stole not only keeps you cozy but also adds a touch of Hollywood glamour to your holiday ensemble. Choose a faux fur piece in a classic shade like white or black for an elegant look, or go for a bold color to make a statement. Pair your faux fur with a sleek dress or tailored pants for a chic and glamorous local winter party outfit. You'll exude sophistication and stay snug while enjoying the local festivities.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0",
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "58244b0b-bced-4733-8779-c3b063da139f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16707364880605__58244b0b-bced-4733-8779-c3b063da139f-168170914237882cb6-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/photo_collage_2022_b47e37c0-be4c-417d-85c9-82da1f62e4b3.png",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>© Marilyn Monroe, Pinterest<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16707364880605__58244b0b-bced-4733-8779-c3b063da139f-168170914237882cb6-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "6d92fca3-47b2-49d8-9a73-34cbc37867c9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16707364880605__6d92fca3-47b2-49d8-9a73-34cbc37867c9-16817090798e3d67e7-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Drawing Inspiration from 1920s Movies",
+            "use_h1": false
+          }
+        },
+        "template--16707364880605__6d92fca3-47b2-49d8-9a73-34cbc37867c9-16817090798e3d67e7-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>The legacy of 1920s movies can still be seen in popular culture today. These films marked a pivotal moment in the history of cinema and also had a significant impact on the fashion of the time. From the flapper dresses and cloche hats worn by actresses like Clara Bow and Louise Brooks to the sharp suits and fedoras sported by leading men like Clark Gable and Cary Grant, 1920s fashion has become iconic and timeless. So, if you're looking for inspiration for your next outfit, why not take a cue from the glamour and sophistication of 1920s movies? Whether you're attending a vintage-themed party or just want to add some old Hollywood charm to your everyday style, incorporating elements of 1920s fashion is a surefire way to make a statement.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16707364880605__6d92fca3-47b2-49d8-9a73-34cbc37867c9-16817090798e3d67e7-0",
+        "template--16707364880605__6d92fca3-47b2-49d8-9a73-34cbc37867c9-16817090798e3d67e7-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "de1684a0-b7a3-450f-8279-79d3c62915b9": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16707364880605__de1684a0-b7a3-450f-8279-79d3c62915b9-168170914237882cb6-2": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/323babeyond3663.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16707364880605__de1684a0-b7a3-450f-8279-79d3c62915b9-168170914237882cb6-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "67e89375-003f-4303-90a6-7458465553c3": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP winter Faux Fur",
+        "collection": "cozy-elegance-with-faux-fur",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        ".back {display: none;}"
+      ],
+      "settings": {
+        "show_date": false,
+        "show_author": false,
+        "show_article_tags": false,
+        "show_sharing_icons": true,
+        "show_featured_image": false,
+        "full_width_image": false,
+        "featured_image_height": "natural",
+        "enable_title_overlay": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef": {
+      "type": "logo-list",
+      "blocks": {
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282541_fb_social_media_facebook_facebook_logo_social_network_icon_fd6b582a-fdd0-4fbe-a3d0-aa084695ae87.png",
+            "image_width": 40,
+            "link": "https:\/\/www.facebook.com\/sharer.php?u=https:\/\/babeyond.com\/blogs\/style\/roaring-into-graduation-season-with-1920s-dresses",
+            "title": ""
+          }
+        },
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282551_tweet_twitter_twitter_logo_icon_a52bbc76-aea3-4c04-ba3c-43b881018f3f.png",
+            "image_width": 40,
+            "link": "https:\/\/twitter.com\/intent\/tweet?text=Roaring+into+graduation+season+with+1920s+dresses&url=https:\/\/babeyond.com\/blogs\/style\/roaring-into-graduation-season-with-1920s-dresses",
+            "title": ""
+          }
+        },
+        "63791460-50c7-440c-bc47-9861f9327ee8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282545_pin_pinterest_inspiration_pinterest_logo_icon_3bf23350-beb7-4fbe-9de8-a7be021dfa58.png",
+            "image_width": 40,
+            "link": "https:\/\/www.pinterest.com\/pin-builder\/?description=A+journey+through+the+best+1920s+movies&media=%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0015%2F8937%2F9159%2Farticles%2F04_1024x1024.png%3Fv%3D1678332826&method=button&url=https:\/\/babeyond.com\/blogs\/style\/step-back-in-time-a-journey-through-the-best-1920s-movies",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9",
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131",
+        "63791460-50c7-440c-bc47-9861f9327ee8"
+      ],
+      "custom_css": [
+        "h2 {font-size: 14px;}",
+        ".rimage-outer-wrapper {}"
+      ],
+      "settings": {
+        "title": "SHARE ARTICLE",
+        "image_opacity": 80,
+        "use_alt_bg": false
+      }
+    },
+    "06b1fff1-7390-4d06-818d-505593e9ab90": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "blog_bar_col": "#c9beac",
+        "blog_bar_col_mb": "#f5f2eb",
+        "title": "MORE IN STYLE",
+        "blog": "style",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "subtitle": "<p><\/p>",
+        "button": "<p><\/p>",
+        "crop_ratio": "1.78"
+      }
+    },
+    "6cf3f091-abf6-4e24-8a06-50f6dc29fe1c": {
+      "type": "special-blog",
+      "blocks": {
+        "9aff35c4-491e-42ad-befc-afb50f9c26a9": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/prom-party-outline",
+            "image": "shopify:\/\/shop_images\/323babeyond3663.jpg",
+            "title": "<p>1920s Glam for Prom Season<\/p>",
+            "main_content": "<p>Time-travel to the 1920s for a stylish graduation party!<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "d5ca089b-c79d-47a8-ab81-10453dfd964c": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/dress-to-impress-what-to-wear-to-a-garden-party",
+            "image": "shopify:\/\/shop_images\/98dda959550b97ae14fa3129d4a1da79_d1be008c-0fd0-47a2-8316-dae6f471df48.jpg",
+            "title": "<p>Dress to Impress: What to Wear to a Garden Party<\/p>",
+            "main_content": "<p>Channeling the Glamour and Sophistication of the Roaring Twenties for Your Next Garden Party!<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "59da1272-4e3c-44f7-bdfd-fbd4e6c08b68": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/transitioning-your-wardrobe-for-the-spring-season",
+            "image": "shopify:\/\/shop_images\/QQ_20230330144057.jpg",
+            "title": "<p>Transitioning Your Wardrobe for the Spring Season<\/p>",
+            "main_content": "<p>Spring Clothing Collection 2023: Top Trends and Wardrobe Essentials.<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        }
+      },
+      "block_order": [
+        "9aff35c4-491e-42ad-befc-afb50f9c26a9",
+        "d5ca089b-c79d-47a8-ab81-10453dfd964c",
+        "59da1272-4e3c-44f7-bdfd-fbd4e6c08b68"
+      ],
+      "settings": {
+        "crop_ratio": "1.0"
+      }
+    }
+  },
+  "order": [
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3",
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a",
+    "f9e03650-258b-4f21-be30-118977b95a74",
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6",
+    "4b663300-f0bb-487a-8b94-03a9214c241d",
+    "a6837111-fc06-4307-a150-40a02baed26a",
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f",
+    "216ff3dd-c87d-46ff-9f9b-ffdce0a76249",
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab",
+    "b57a0a43-c9be-45eb-867f-57c71542fa67",
+    "5059d91b-1533-45cd-aa15-18a4df2a0459",
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9",
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84",
+    "63c9a312-d076-4d40-b804-da9e92b883bc",
+    "58244b0b-bced-4733-8779-c3b063da139f",
+    "6d92fca3-47b2-49d8-9a73-34cbc37867c9",
+    "de1684a0-b7a3-450f-8279-79d3c62915b9",
+    "67e89375-003f-4303-90a6-7458465553c3",
+    "main",
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef",
+    "06b1fff1-7390-4d06-818d-505593e9ab90",
+    "6cf3f091-abf6-4e24-8a06-50f6dc29fe1c"
+  ]
+}

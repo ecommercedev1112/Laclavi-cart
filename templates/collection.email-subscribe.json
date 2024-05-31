@@ -1,0 +1,80 @@
+{
+  "sections": {
+    "1663208671b55333d4": {
+      "type": "custom-row",
+      "blocks": {
+        "03253fa7-8eb4-40f7-8c45-7ccd11264947": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/Collection_03.jpg",
+            "image_position": "center center",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "7a174369-429f-42ad-a280-9504df2c921c": {
+          "type": "html",
+          "settings": {
+            "width": "half",
+            "code": "<div style=\"width:80%; text-align:center; margin :10%\" >\n<h2 class=\"edm_title\">UNLOCK UP TO 15% OFF<\/h2>\n<!-- Begin Mailchimp Signup Form -->\n<div id=\"mc_embed_signup\">\n<form action=\"https:\/\/outlook.us14.list-manage.com\/subscribe\/post?u=dc8c7fbc123a5d1c578b1740e&amp;id=50de482643\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n    <div id=\"mc_embed_signup_scroll\">\n\t\n<div class=\"mc-field-group\">\n<\/label>\n\t<input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" placeholder=\"Email Address\">\n\t<input type=\"submit\" value=\"SUBSCRIBE\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\">\n<\/div>\n\t<div id=\"mce-responses\" class=\"clear\">\n\t\t<div class=\"response\" id=\"mce-error-response\" style=\"display:none\"><\/div>\n\t\t<div class=\"response\" id=\"mce-success-response\" style=\"display:none\"><\/div>\n\t<\/div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_dc8c7fbc123a5d1c578b1740e_50de482643\" tabindex=\"-1\" value=\"\"><\/div>\n    <\/div>\n<\/form>\n<\/div>\n<script type='text\/javascript' src='\/\/s3.amazonaws.com\/downloads.mailchimp.com\/js\/mc-validate.js'><\/script><script type='text\/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[8]='MMERGE8';ftypes[8]='radio';fnames[9]='MMERGE9';ftypes[9]='imageurl';}(jQuery));var $mcj = jQuery.noConflict(true);<\/script>\n<!--End mc_embed_signup-->\n<div class=\"edm_ps\"> * By filling your email address, and clicking submit, you are giving us consent to send you offers and promotion emails and can unsubscribe at any time. Visit Our Privacy Policy.<\/div>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "03253fa7-8eb4-40f7-8c45-7ccd11264947",
+        "7a174369-429f-42ad-a280-9504df2c921c"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_image_behind_heading": false,
+        "heading_image_height": "medium",
+        "overlay_style": "shadow",
+        "coll_num_per_page_int": 30,
+        "grid": 5,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": false,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "show_disabled_filters": true,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "main-menu",
+        "subcoll_style": "buttons",
+        "subcoll_gall_shape": "sq",
+        "image_position": "center center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": false,
+        "subcoll_gall_overlay_style": "full",
+        "subcoll_gall_text_alignment": "center center",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    }
+  },
+  "order": [
+    "1663208671b55333d4",
+    "main"
+  ]
+}

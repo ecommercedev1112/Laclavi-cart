@@ -1,0 +1,327 @@
+{
+  "sections": {
+    "3c663519-8271-4d9a-8726-eb052e8f9f22": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Babeyond_a385b7f1-8e98-4595-892a-feaddf3068e5.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/04_6346ec87-a3e2-45d6-8e11-2faebf8a7873.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "f38b15f7-3dff-41eb-b289-3feda98734bb": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16615898513629__f38b15f7-3dff-41eb-b289-3feda98734bb-1671437383205d36e3-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/happy_new_year_Rejoice_at_the_Party__1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/happy_new_year_Rejoice_at_the_Party-05.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "https:\/\/babeyond.com\/collections\/new-year-sale?icn=new-year-sale&ici=venue01",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "template--16615898513629__f38b15f7-3dff-41eb-b289-3feda98734bb-1671437383205d36e3-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Homebanner_PC_2b2941d4-a8f8-42d2-994a-cfac83c044b5.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Homebanner_Mobile_c2fd51cf-4946-4f66-a55e-479ef9eb9f71.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "https:\/\/babeyond.com\/collections\/christmas-sale?icn=christmas-sale&ici=venue02",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16615898513629__f38b15f7-3dff-41eb-b289-3feda98734bb-1671437383205d36e3-0",
+        "template--16615898513629__f38b15f7-3dff-41eb-b289-3feda98734bb-1671437383205d36e3-1"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "slide_transition": "slide_fade",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "a1617f9b-ece9-4c02-8c2d-c6cce9f69b3e": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Homebanner_PC_71301b11-4590-4e5e-88d3-fe0fdace4097.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Homebanner_Mobile_95357585-cf22-4446-9947-9f6f53d604a2.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "https:\/\/babeyond.com\/collections\/christmas-sale?icn=christmas-sale&ici=venue01",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "e4dc6f79-4cc2-471a-839d-c837b3fdfafa": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<p style = \"margin:-60px\"><\/ p>"
+      }
+    },
+    "18cbe78b-5a39-4310-834f-28b4444315d5": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Babeyond_2-11.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/2-06.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "https:\/\/babeyond.com\/collections\/new-year-sale?icn=new-year-sale&ici=venue01",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "a07ad45f-521d-4084-a17b-c5be422f7d99": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/20200415123906_000bffe6-4126-46e9-bf64-7538170ed93f.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/QQ_20221123131656.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "e9b642b0-10a4-45f7-b314-781192d7e74d": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<p style = \"margin:-70px\"><\/ p>"
+      }
+    },
+    "2186c43f-c1fd-48c8-b026-7de480df84ab": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16615898513629__2186c43f-c1fd-48c8-b026-7de480df84ab-16691705748fa72266-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20221123154627.png",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https:\/\/babeyond.com\/products\/gift-card"
+          }
+        },
+        "template--16615898513629__2186c43f-c1fd-48c8-b026-7de480df84ab-16691705748fa72266-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/QQ_20221123154631.png",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https:\/\/www.instagram.com\/babeyond_official\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16615898513629__2186c43f-c1fd-48c8-b026-7de480df84ab-16691705748fa72266-0",
+        "template--16615898513629__2186c43f-c1fd-48c8-b026-7de480df84ab-16691705748fa72266-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "e8574d69-95dc-4d53-b1d7-9893f65e5915": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<p style = \"margin:-8%\"><\/ p>"
+      }
+    },
+    "5ba6079b-3724-4c87-9288-8b6b3801efea": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "GOOD FINDS TOP STYLES",
+        "collection": "1920s-fit-flare-dresses",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": true
+      }
+    },
+    "b43a0003-5d5b-47f6-9880-7227e4a1457c": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<p style = \"margin:-60PX\"><\/ p>"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_image_behind_heading": true,
+        "heading_image_height": "small",
+        "overlay_style": "box",
+        "coll_num_per_page_int": 32,
+        "grid": 4,
+        "show_vendor": false,
+        "show_total": false,
+        "coll_desc_pos": "above",
+        "enable_filtering": false,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "show_disabled_filters": true,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false,
+        "enable_subcoll": false,
+        "subcoll_menu": "main-menu",
+        "subcoll_style": "buttons",
+        "subcoll_gall_shape": "sq",
+        "image_position": "center center",
+        "subcoll_gall_enable_margin": true,
+        "subcoll_gall_full_width": false,
+        "subcoll_gall_overlay_style": "full",
+        "subcoll_gall_text_alignment": "center center",
+        "subcoll_gall_mobile_layout": "2"
+      }
+    }
+  },
+  "order": [
+    "3c663519-8271-4d9a-8726-eb052e8f9f22",
+    "f38b15f7-3dff-41eb-b289-3feda98734bb",
+    "a1617f9b-ece9-4c02-8c2d-c6cce9f69b3e",
+    "e4dc6f79-4cc2-471a-839d-c837b3fdfafa",
+    "18cbe78b-5a39-4310-834f-28b4444315d5",
+    "a07ad45f-521d-4084-a17b-c5be422f7d99",
+    "e9b642b0-10a4-45f7-b314-781192d7e74d",
+    "2186c43f-c1fd-48c8-b026-7de480df84ab",
+    "e8574d69-95dc-4d53-b1d7-9893f65e5915",
+    "5ba6079b-3724-4c87-9288-8b6b3801efea",
+    "b43a0003-5d5b-47f6-9880-7227e4a1457c",
+    "main"
+  ]
+}

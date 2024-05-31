@@ -1,0 +1,1598 @@
+{
+  "store": {
+    "id": 1589379159,
+    "plan": "plus",
+    "theme": "23 AW: Sensational Ever - 23.9.27",
+    "primaryLocale": "en",
+    "adminMode": false
+  },
+  "tsPublished": 1712129051,
+  "declaration": {
+    "showPurpose": false,
+    "showProvider": false,
+    "declIntroText": "We use cookies to optimize website functionality, analyze the performance, and provide personalized experience to you. Some cookies are essential to make the website operate and function correctly. Those cookies cannot be disabled. In this window you can manage your preference of cookies.",
+    "showDateGenerated": true
+  },
+  "language": {
+    "languageMode": "Single",
+    "fallbackLanguage": "en",
+    "languageDetection": "browser",
+    "languagesSupported": [
+
+    ]
+  },
+  "texts": {
+    "managed": {
+      "headerText": {
+        "en": "We respect your privacy"
+      },
+      "consentText": {
+        "en": "This website uses cookies to ensure you get the best experience."
+      },
+      "dismissButtonText": {
+        "en": "Ok"
+      },
+      "linkText": {
+        "en": "Learn more"
+      },
+      "imprintText": {
+        "en": "Imprint"
+      },
+      "preferencesButtonText": {
+        "en": "Preferences"
+      },
+      "allowButtonText": {
+        "en": "Accept"
+      },
+      "denyButtonText": {
+        "en": "Decline"
+      },
+      "leaveSiteButtonText": {
+        "en": "Leave this site"
+      },
+      "cookiePolicyText": {
+        "en": "Cookie policy"
+      },
+      "preferencesPopupTitleText": {
+        "en": "Manage consent preferences"
+      },
+      "preferencesPopupIntroText": {
+        "en": "We use cookies to optimize website functionality, analyze the performance, and provide personalized experience to you. Some cookies are essential to make the website operate and function correctly. Those cookies cannot be disabled. In this window you can manage your preference of cookies."
+      },
+      "preferencesPopupCloseButtonText": {
+        "en": "Close"
+      },
+      "preferencesPopupAcceptAllButtonText": {
+        "en": "Accept all"
+      },
+      "preferencesPopupRejectAllButtonText": {
+        "en": "Reject all"
+      },
+      "preferencesPopupSaveButtonText": {
+        "en": "Save preferences"
+      },
+      "accessSectionTitleText": {
+        "en": "Data portability"
+      },
+      "accessSectionParagraphText": {
+        "en": "You have the right to request access to your data at any time."
+      },
+      "rectificationSectionTitleText": {
+        "en": "Data Rectification"
+      },
+      "rectificationSectionParagraphText": {
+        "en": "You have the right to request your data to be updated whenever you think it is appropriate."
+      },
+      "erasureSectionTitleText": {
+        "en": "Right to be forgotten"
+      },
+      "erasureSectionParagraphText": {
+        "en": "You have the right to ask all your data to be erased. After that, you will no longer be able to access your account."
+      },
+      "declIntroText": {
+        "en": "We use cookies to optimize website functionality, analyze the performance, and provide personalized experience to you. Some cookies are essential to make the website operate and function correctly. Those cookies cannot be disabled. In this window you can manage your preference of cookies."
+      }
+    },
+    "categories": {
+      "strictlyNecessaryCookiesTitleText": {
+        "en": "Strictly necessary cookies"
+      },
+      "functionalityCookiesTitleText": {
+        "en": "Functional cookies"
+      },
+      "performanceCookiesTitleText": {
+        "en": "Performance cookies"
+      },
+      "targetingCookiesTitleText": {
+        "en": "Targeting cookies"
+      },
+      "unclassifiedCookiesTitleText": {
+        "en": "Unclassified cookies"
+      },
+      "strictlyNecessaryCookiesDescriptionText": {
+        "en": "These cookies are essential in order to enable you to move around the website and use its features, such as accessing secure areas of the website. The website cannot function properly without these cookies."
+      },
+      "functionalityCookiesDescriptionText": {
+        "en": "These cookies enable the site to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly."
+      },
+      "performanceCookiesDescriptionText": {
+        "en": "These cookies enable us to monitor and improve the performance of our website. For example, they allow us to count visits, identify traffic sources and see which parts of the site are most popular."
+      },
+      "targetingCookiesDescriptionText": {
+        "en": "These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.    They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising."
+      },
+      "unclassifiedCookiesDescriptionText": {
+        "en": "Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies."
+      }
+    },
+    "auto": {
+      "declName": {
+        "en": "Name"
+      },
+      "declPath": {
+        "en": "Path"
+      },
+      "declType": {
+        "en": "Type"
+      },
+      "declDomain": {
+        "en": "Domain"
+      },
+      "declPurpose": {
+        "en": "Purpose"
+      },
+      "declProvider": {
+        "en": "Provider"
+      },
+      "declRetention": {
+        "en": "Retention"
+      },
+      "declFirstParty": {
+        "en": "First-party"
+      },
+      "declThirdParty": {
+        "en": "Third-party"
+      },
+      "declSeconds": {
+        "en": "seconds"
+      },
+      "declMinutes": {
+        "en": "minutes"
+      },
+      "declHours": {
+        "en": "hours"
+      },
+      "declDays": {
+        "en": "days"
+      },
+      "declMonths": {
+        "en": "months"
+      },
+      "declYears": {
+        "en": "years"
+      },
+      "declSession": {
+        "en": "Session"
+      },
+      "cookiesDetailsText": {
+        "en": "Cookies details"
+      },
+      "preferencesPopupAlwaysAllowedText": {
+        "en": "Always allowed"
+      },
+      "submitButton": {
+        "en": "Submit"
+      },
+      "submittingButton": {
+        "en": "Submitting..."
+      },
+      "cancelButton": {
+        "en": "Cancel"
+      },
+      "guestsSupportInfoText": {
+        "en": "Please login with your customer account to further proceed."
+      },
+      "guestsSupportEmailPlaceholder": {
+        "en": "E-mail address"
+      },
+      "guestsSupportEmailValidationError": {
+        "en": "Email is not valid"
+      },
+      "guestsSupportEmailSuccessTitle": {
+        "en": "Thank you for your request"
+      },
+      "guestsSupportEmailFailureTitle": {
+        "en": "A problem occurred"
+      },
+      "guestsSupportEmailSuccessMessage": {
+        "en": "If you are registered as a customer of this store, you will soon receive an email with instructions on how to proceed."
+      },
+      "guestsSupportEmailFailureMessage": {
+        "en": "Your request was not submitted. Please try again and if problem persists, contact store owner for assistance."
+      },
+      "confirmationSuccessTitle": {
+        "en": "Your request is verified"
+      },
+      "confirmationFailureTitle": {
+        "en": "A problem occurred"
+      },
+      "confirmationSuccessMessage": {
+        "en": "We will soon get back to you as to your request."
+      },
+      "confirmationFailureMessage": {
+        "en": "Your request was not verified. Please try again and if problem persists, contact store owner for assistance"
+      },
+      "consentSectionTitleText": {
+        "en": "Your cookie consent"
+      },
+      "consentSectionNoConsentText": {
+        "en": "You have not consented to the cookies policy of this website."
+      },
+      "consentSectionConsentedText": {
+        "en": "You consented to the cookies policy of this website on"
+      },
+      "consentStatus": {
+        "en": "Consent preference"
+      },
+      "consentDate": {
+        "en": "Consent date"
+      },
+      "consentId": {
+        "en": "Consent ID"
+      },
+      "consentSectionChangeConsentActionText": {
+        "en": "Change consent preference"
+      },
+      "accessSectionGDPRRequestsActionText": {
+        "en": "Data subject requests"
+      },
+      "accessSectionAccountInfoActionText": {
+        "en": "Personal data"
+      },
+      "accessSectionOrdersRecordsActionText": {
+        "en": "Orders"
+      },
+      "accessSectionDownloadReportActionText": {
+        "en": "Request export"
+      },
+      "rectificationCommentPlaceholder": {
+        "en": "Describe what you want to be updated"
+      },
+      "rectificationCommentValidationError": {
+        "en": "Comment is required"
+      },
+      "rectificationSectionEditAccountActionText": {
+        "en": "Request an update"
+      },
+      "erasureSectionRequestDeletionActionText": {
+        "en": "Request personal data deletion"
+      }
+    }
+  },
+  "library": {
+    "previewMode": false,
+    "fadeInTimeout": 0,
+    "defaultBlocked": 7,
+    "showLink": true,
+    "showImprintLink": false,
+    "enabled": true,
+    "cookie": {
+      "name": "_pandectes_gdpr",
+      "expiryDays": 365,
+      "secure": true,
+      "domain": ""
+    },
+    "dismissOnScroll": false,
+    "dismissOnWindowClick": false,
+    "dismissOnTimeout": false,
+    "palette": {
+      "popup": {
+        "background": "#FFFFFF",
+        "backgroundForCalculations": {
+          "a": 1,
+          "b": 255,
+          "g": 255,
+          "r": 255
+        },
+        "text": "#000000"
+      },
+      "button": {
+        "background": "transparent",
+        "backgroundForCalculations": {
+          "a": 1,
+          "b": 255,
+          "g": 255,
+          "r": 255
+        },
+        "text": "#000000",
+        "textForCalculation": {
+          "a": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "border": "#000000"
+      }
+    },
+    "content": {
+      "href": "https:\/\/flapperstyle.myshopify.com\/policies\/privacy-policy",
+      "imprintHref": "\/",
+      "close": "&#10005;",
+      "target": "",
+      "logo": "<img class=\"cc-banner-logo\" height=\"40\" width=\"40\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0015\/8937\/9159\/t\/91\/assets\/pandectes-logo.png?v=1712037872\" alt=\"BABEYOND\" \/>"
+    },
+    "window": "<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-top-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--><\/div><\/div>",
+    "compliance": {
+      "custom": "<div class=\"cc-compliance cc-highlight\">{{preferences}}{{allow}}<\/div>"
+    },
+    "type": "custom",
+    "layouts": {
+      "basic": "{{logo}}{{messagelink}}{{compliance}}{{close}}"
+    },
+    "position": "top",
+    "theme": "wired",
+    "revokable": true,
+    "animateRevokable": false,
+    "revokableReset": false,
+    "revokableLogoUrl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0015\/8937\/9159\/t\/91\/assets\/pandectes-reopen-logo.png?v=1712037873",
+    "revokablePlacement": "bottom-left",
+    "revokableMarginHorizontal": 15,
+    "revokableMarginVertical": 15,
+    "static": false,
+    "autoAttach": true,
+    "hasTransition": true,
+    "blacklistPage": [
+      ""
+    ]
+  },
+  "geolocation": {
+    "brOnly": false,
+    "caOnly": false,
+    "chOnly": false,
+    "euOnly": true,
+    "jpOnly": false,
+    "thOnly": false,
+    "zaOnly": false,
+    "canadaOnly": false,
+    "globalVisibility": false
+  },
+  "dsr": {
+    "guestsSupport": false,
+    "accessSectionDownloadReportAuto": false
+  },
+  "banner": {
+    "resetTs": 1712037871,
+    "extraCss": "        .cc-banner-logo {max-width: 24em!important;}    @media(min-width: 768px) {.cc-window.cc-floating{max-width: 24em!important;width: 24em!important;}}    .cc-message, .pd-cookie-banner-window .cc-header, .cc-logo {text-align: left}    .cc-window-wrapper{z-index: 2147483647;}    .cc-window{z-index: 2147483647;font-family: inherit;}    .pd-cookie-banner-window .cc-header{font-family: inherit;}    .pd-cp-ui{font-family: inherit; background-color: #FFFFFF;color:#000000;}    button.pd-cp-btn, a.pd-cp-btn{}    input + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 0.3)}    .pd-cp-scrolling-section::-webkit-scrollbar{background-color: rgba(0, 0, 0, 0.3)}    input:checked + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 1)}    .pd-cp-scrolling-section::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 1)}    .pd-cp-ui-close{color:#000000;}    .pd-cp-preferences-slider:before{background-color: #FFFFFF}    .pd-cp-title:before {border-color: #000000!important}    .pd-cp-preferences-slider{background-color:#000000}    .pd-cp-toggle{color:#000000!important}    @media(max-width:699px) {.pd-cp-ui-close-top svg {fill: #000000}}    .pd-cp-toggle:hover,.pd-cp-toggle:visited,.pd-cp-toggle:active{color:#000000!important}    .pd-cookie-banner-window {box-shadow: 0 0 18px rgb(0 0 0 \/ 20%);}  ",
+    "customJavascript": null,
+    "showPoweredBy": false,
+    "revokableTrigger": false,
+    "hybridStrict": false,
+    "cookiesBlockedByDefault": "7",
+    "isActive": false,
+    "implicitSavePreferences": false,
+    "cookieIcon": false,
+    "blockBots": false,
+    "showCookiesDetails": true,
+    "hasTransition": true,
+    "blockingPage": false,
+    "showOnlyLandingPage": false,
+    "leaveSiteUrl": "https:\/\/www.google.com",
+    "linkRespectStoreLang": false
+  },
+  "cookies": {
+    "0": [
+      {
+        "name": "keep_alive",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "en": "Used in connection with buyer localization."
+        }
+      },
+      {
+        "name": "secure_customer_sig",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used in connection with customer login."
+        }
+      },
+      {
+        "name": "localization",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Shopify store localization"
+        }
+      },
+      {
+        "name": "_cmp_a",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "en": "Used for managing customer privacy settings."
+        }
+      },
+      {
+        "name": "_tracking_consent",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Tracking preferences."
+        }
+      },
+      {
+        "name": "cart",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "2 ",
+        "expires": 2,
+        "unit": "declSession",
+        "purpose": {
+          "en": "Necessary for the shopping cart functionality on the website."
+        }
+      },
+      {
+        "name": "cart_ts",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "2 ",
+        "expires": 2,
+        "unit": "declSession",
+        "purpose": {
+          "en": "Used in connection with checkout."
+        }
+      },
+      {
+        "name": "cart_sig",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "2 ",
+        "expires": 2,
+        "unit": "declSession",
+        "purpose": {
+          "en": "Shopify analytics."
+        }
+      },
+      {
+        "name": "cart_currency",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "2 ",
+        "expires": 2,
+        "unit": "declSession",
+        "purpose": {
+          "en": "The cookie is necessary for the secure checkout and payment function on the website. This function is provided by shopify.com."
+        }
+      },
+      {
+        "name": "_secure_session_id",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 month(s)",
+        "expires": 1,
+        "unit": "declMonths",
+        "purpose": {
+          "en": "Used in connection with navigation through a storefront."
+        }
+      }
+    ],
+    "1": [
+      {
+        "name": "_pinterest_ct_ua",
+        "domain": ".ct.pinterest.com",
+        "path": "\/",
+        "provider": "Pinterest",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used to group actions across pages."
+        }
+      },
+      {
+        "name": "locale_bar_accepted",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "GrizzlyAppsSRL",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": -55,
+        "unit": "declYears",
+        "purpose": {
+          "en": "This cookie is provided by the app (BEST Currency Converter) and is used to secure the currency chosen by the customer."
+        }
+      },
+      {
+        "name": "wpm-domain-test",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declSeconds",
+        "purpose": {
+          "en": "Used to test the storage of parameters about products added to the cart or payment currency"
+        }
+      },
+      {
+        "name": "wpm-domain-test",
+        "domain": "com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": false,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declSeconds",
+        "purpose": {
+          "en": "Used to test the storage of parameters about products added to the cart or payment currency"
+        }
+      }
+    ],
+    "2": [
+      {
+        "name": "_ga",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Cookie is set by Google Analytics with unknown functionality"
+        }
+      },
+      {
+        "name": "_landing_page",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "2 ",
+        "expires": 2,
+        "unit": "declSession",
+        "purpose": {
+          "en": "Tracks landing pages."
+        }
+      },
+      {
+        "name": "_clck",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Microsoft",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used by Microsoft Clarity to store a unique user ID."
+        }
+      },
+      {
+        "name": "_orig_referrer",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "2 ",
+        "expires": 2,
+        "unit": "declSession",
+        "purpose": {
+          "en": "Tracks landing pages."
+        }
+      },
+      {
+        "name": "_shopify_s",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "en": "Shopify analytics."
+        }
+      },
+      {
+        "name": "_shopify_y",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Shopify analytics."
+        }
+      },
+      {
+        "name": "_clsk",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Microsoft",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "en": "Used by Microsoft Clarity to store a unique user ID.\t"
+        }
+      },
+      {
+        "name": "_shopify_sa_t",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "en": "Shopify analytics relating to marketing & referrals."
+        }
+      },
+      {
+        "name": "_shopify_sa_p",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "30 minute(s)",
+        "expires": 30,
+        "unit": "declMinutes",
+        "purpose": {
+          "en": "Shopify analytics relating to marketing & referrals."
+        }
+      },
+      {
+        "name": "_shopify_s",
+        "domain": "com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": false,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declSeconds",
+        "purpose": {
+          "en": "Shopify analytics."
+        }
+      },
+      {
+        "name": "_boomr_clss",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Shopify",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used to monitor and optimize the performance of Shopify stores."
+        }
+      },
+      {
+        "name": "_ga_CFLN2V6QZP",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "_ga_QC9VY9B0P3",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      }
+    ],
+    "4": [
+      {
+        "name": "_gcl_au",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": true,
+        "retention": "3 month(s)",
+        "expires": 3,
+        "unit": "declMonths",
+        "purpose": {
+          "en": "Cookie is placed by Google Tag Manager to track conversions."
+        }
+      },
+      {
+        "name": "_uetvid",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Bing",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences."
+        }
+      },
+      {
+        "name": "MUID",
+        "domain": ".bing.com",
+        "path": "\/",
+        "provider": "Microsoft",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Cookie is placed by Microsoft to track visits across websites."
+        }
+      },
+      {
+        "name": "_uetsid",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Bing",
+        "firstParty": true,
+        "retention": "1 day(s)",
+        "expires": 1,
+        "unit": "declDays",
+        "purpose": {
+          "en": "This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site."
+        }
+      },
+      {
+        "name": "_pin_unauth",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Pinterest",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used to group actions for users who cannot be identified by Pinterest."
+        }
+      },
+      {
+        "name": "_ttp",
+        "domain": ".tiktok.com",
+        "path": "\/",
+        "provider": "TikTok",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "To measure and improve the performance of your advertising campaigns and to personalize the user's experience (including ads) on TikTok."
+        }
+      },
+      {
+        "name": "_ttp",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "TikTok",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "To measure and improve the performance of your advertising campaigns and to personalize the user's experience (including ads) on TikTok."
+        }
+      },
+      {
+        "name": "_fbp",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Facebook",
+        "firstParty": true,
+        "retention": "3 month(s)",
+        "expires": 3,
+        "unit": "declMonths",
+        "purpose": {
+          "en": "Cookie is placed by Facebook to track visits across websites."
+        }
+      },
+      {
+        "name": "_tt_enable_cookie",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "TikTok",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used to identify a visitor."
+        }
+      },
+      {
+        "name": "MUID",
+        "domain": ".clarity.ms",
+        "path": "\/",
+        "provider": "Microsoft",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Cookie is placed by Microsoft to track visits across websites."
+        }
+      },
+      {
+        "name": "po_visitor",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Pushowl",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used by Pushowl to monitor related user activity on the store."
+        }
+      },
+      {
+        "name": "lastExternalReferrer",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Facebook",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Detects how the user reached the website by registering their last URL-address."
+        }
+      },
+      {
+        "name": "IDE",
+        "domain": ".doubleclick.net",
+        "path": "\/",
+        "provider": "Google",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "To measure the visitors’ actions after they click through from an advert. Expires after 1 year."
+        }
+      },
+      {
+        "name": "lastExternalReferrerTime",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Facebook",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Contains the timestamp of the last update of the lastExternalReferrer cookie."
+        }
+      },
+      {
+        "name": "tt_appInfo",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "TikTok",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used by the social networking service, TikTok, for tracking the use of embedded services."
+        }
+      },
+      {
+        "name": "tt_sessionId",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "TikTok",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used by the social networking service, TikTok, for tracking the use of embedded services."
+        }
+      },
+      {
+        "name": "tt_pixel_session_index",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "TikTok",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used by the social networking service, TikTok, for tracking the use of embedded services."
+        }
+      }
+    ],
+    "8": [
+      {
+        "name": "_uetvid",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences."
+        }
+      },
+      {
+        "name": "_uetsid",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": "This cookie is used by Bing to determine what ads should be shown that may be relevant to the end user perusing the site."
+        }
+      },
+      {
+        "name": "pageviewCount",
+        "domain": ".babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "1 month(s)",
+        "expires": 1,
+        "unit": "declMonths",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "ex_id",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "2 ",
+        "expires": 2,
+        "unit": "declSession",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "OT_FBPLID",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "2 ",
+        "expires": 2,
+        "unit": "declSession",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "CLID",
+        "domain": "www.clarity.ms",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "ar_debug",
+        "domain": ".pinterest.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "MR",
+        "domain": ".c.bing.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": false,
+        "retention": "1 ",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "SRM_B",
+        "domain": ".c.bing.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "SM",
+        "domain": ".c.clarity.ms",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": false,
+        "retention": "Session",
+        "expires": -55,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "MR",
+        "domain": ".c.clarity.ms",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": false,
+        "retention": "1 ",
+        "expires": 1,
+        "unit": "declSession",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "ANONCHK",
+        "domain": ".c.clarity.ms",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": false,
+        "retention": "10 minute(s)",
+        "expires": 10,
+        "unit": "declMinutes",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "MSPTC",
+        "domain": ".bing.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": false,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_original_url_params",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "_ld_googleAnalytics4_clientIDs",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "ot_fb_shop",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "_shopify_essential",
+        "domain": "babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "1 year(s)",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "_uetvid_exp",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "_ld_id",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "_uetsid_exp",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "ot_omega_px",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_shopify_config-1.5-ef4221fc-1162-43ec-8d05-5e106ad66e00",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "_cltk",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_permission_not_granted-1.5-ef4221fc-1162-43ec-8d05-5e106ad66e00",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_landing_page_url_params",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_landing_page_url",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_optin_seen_count",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "_ld_sticky_clientIDs",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_permission_not_granted-1.5-ef4221fc-1162-43ec-8d05-5e106ad66e00",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "littledata_ip_address",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_referrer",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "is_eu",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_task_type",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_session_token",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_subdomain",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "pushowl_visitor_token",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "ld_registering",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "OTPXADDED",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "OTPX",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "test",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "local-storage-test",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Persistent",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      },
+      {
+        "name": "littledata_fetching_ip",
+        "domain": "https:\/\/babeyond.com",
+        "path": "\/",
+        "provider": "Unknown",
+        "firstParty": true,
+        "retention": "Session",
+        "expires": 1,
+        "unit": "declYears",
+        "purpose": {
+          "en": ""
+        }
+      }
+    ]
+  },
+  "blocker": {
+    "isActive": false,
+    "googleConsentMode": {
+      "id": "",
+      "analyticsId": "",
+      "adwordsId": "",
+      "isActive": true,
+      "adStorageCategory": 4,
+      "analyticsStorageCategory": 2,
+      "personalizationStorageCategory": 1,
+      "functionalityStorageCategory": 1,
+      "customEvent": false,
+      "securityStorageCategory": 0,
+      "redactData": false,
+      "urlPassthrough": false,
+      "dataLayerProperty": "dataLayer",
+      "waitForUpdate": 0,
+      "useNativeChannel": false
+    },
+    "facebookPixel": {
+      "id": "",
+      "isActive": false,
+      "ldu": false
+    },
+    "rakuten": {
+      "isActive": false,
+      "cmp": false,
+      "ccpa": false
+    },
+    "klaviyoIsActive": false,
+    "gpcIsActive": false,
+    "defaultBlocked": 7,
+    "patterns": {
+      "whiteList": [
+
+      ],
+      "blackList": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "4": [
+
+        ],
+        "8": [
+
+        ]
+      },
+      "iframesWhiteList": [
+
+      ],
+      "iframesBlackList": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "4": [
+
+        ],
+        "8": [
+
+        ]
+      },
+      "beaconsWhiteList": [
+
+      ],
+      "beaconsBlackList": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "4": [
+
+        ],
+        "8": [
+
+        ]
+      }
+    }
+  }
+}

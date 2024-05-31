@@ -1,0 +1,525 @@
+<div data-section-type="footer">
+  {% if section.blocks != blank %}
+    <div class="container container--no-max section-footer__row-container">
+      <div class="custom-newsletter">
+          <div class="section-footer__newsletter-block--sp">
+              <div class="section-footer__row__col section-footer__newsletter-block" {{ block.shopify_attributes }}>
+                  {% if block.settings.title != blank %}
+                    {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
+                    <h5 class="section-footer__title{% if title_word_count < 4 %} no-wrap{% endif %}">
+                      {{- block.settings.title | escape -}}
+                    </h5>
+                  {% endif %}
+
+                  {% if block.settings.text != blank %}
+                    <div class="section-footer__text">
+                      {{ block.settings.text }}
+                    </div>
+                  {% endif %}
+
+                  <div class="signup-form">
+                    {% form 'customer', id: 'footer_newsletter_signup',name:'frmfooter'%}
+                      <div class="form-left">
+                      {% if form.posted_successfully? %}
+                        <div class="section-footer__newsletter-block__message signup-form__response signup-form__response--success">
+                          <h6>{{ 'layout.signup.post_success' | t }}</h6>
+                        </div>
+                      {% else %}
+                        {% if form.errors %}
+                          {% for field in form.errors %}
+                            <p class="section-footer__newsletter-block__message--error signup-form__response signup-form__response--error">
+                              {{ field | capitalize }} - {{ form.errors.messages[field] }}
+                            </p>
+                          {% endfor %}
+                        {% endif %}
+                        <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
+                        <p class="footer_input">
+                          <input type="email"
+                            placeholder="Enter your email address..."
+                            class="signup-form__email newsletter_input_checking"
+                            value="{{ form.email }}"
+                            id="myInput"
+                            name="contact[email]"
+                            aria-label="{{ 'layout.signup.input_label' | t | escape }}"
+                            required autocomplete="off"
+                              />
+                        </p>
+                        <div id="empty-error-message">This field is required</div>
+                        </div>
+                        <div class="form-right">
+                        <div class="checkbox-wrap">
+                          <div class="input-div">
+                            <input type="checkbox" name="accept" id="accept" required>
+                          </div>
+                          <label for="accept">I accept the <a href="#">Privacy Policy.</a></label>
+                        </div>
+                        <button id="mySubmit" class="btn btn--{{ block.settings.button_style }} signup-form__button" type="submit">
+                          Join Newsletter
+                          <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.94625 1.11274L9.06104 4.66819L4.94625 8.22363" stroke="#565656" stroke-width="0.243191" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M9.06104 4.66797L0.938461 4.66797" stroke="#565656" stroke-width="0.243191" stroke-miterlimit="10" stroke-linecap="round"/>
+                          </svg>
+                        </button>
+                      {% endif %}
+                        </div>
+                    {% endform %}
+                  </div>
+                </div>
+              </div>
+        </div>
+      <div class="section-footer__row section-footer__row--blocks" data-num-blocks="{{ section.blocks.size }}">
+        
+        {% for block in section.blocks %}
+          {% case block.type %}
+          {% when '@app' %}
+            <div class="section-footer__row__col">
+              {% render block %}
+            </div>
+
+          {% when 'menu' %}
+            <div class="section-footer__row__col section-footer__menu-block" role="navigation" aria-label="{{ 'layout.footer.navigation_aria_label' | t | escape }}" {{ block.shopify_attributes }}>
+              {% if block.settings.title != blank %}
+                {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
+                <h5 class="section-footer__title{% if title_word_count < 4 %} no-wrap{% endif %}">
+                  {{- block.settings.title | escape -}}
+                </h5>
+              {% endif %}
+
+              {% if block.settings.menu != blank %}
+                <ul class="section-footer__menu-block__menu" {{ block.shopify_attributes }}>
+                  {% for link in linklists[block.settings.menu].links %}
+                    <li>
+                      <a href="{{ link.url }}" {% if link.title.size < 25 %}class="no-wrap"{% endif %}>
+                        {{- link.title -}}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+
+            
+
+          {% when 'text' %}
+            <div class="section-footer__menu-block section-footer__row__col section-footer__text-block {% if block.settings.text != blank %}section-footer__text-block--with-text{% endif %}" {{ block.shopify_attributes }}>
+              {% if block.settings.title != blank %}
+                {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
+                <h5 class="section-footer__title{% if title_word_count < 4 %} no-wrap{% endif %}">
+                  {{- block.settings.title | escape -}}
+                </h5>
+              {% endif %}
+
+              {% if block.settings.text != blank %}
+                <div class="section-footer__text section-footer__menu-block__menu" >
+                  {{- block.settings.text -}}
+                </div>
+              {% endif %}
+
+              {% if block.settings.image != blank %}
+                <span class="section-footer__text-block__image">
+                  {%- capture double_image_width -%}{{ block.settings.image_width | times: 2 }}x{%- endcapture -%}
+                  <div class="rimage-outer-wrapper" style="width: {{ block.settings.image_width }}px">
+                    <div class="rimage-wrapper lazyload--placeholder" style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%">
+                      <img class="rimage__image lazyload fade-in" data-src="{{ block.settings.image | img_url: double_image_width }}" alt="{{ shop.name | escape }}" />
+                    </div>
+                  </div>
+                </span>
+              {% endif %}
+
+              {% if block.settings.show_social_icons != blank %}
+                <div class="section-footer__text-block__social">
+                  {% capture icon_size %}{% if block.settings.soc_icons_large %}x46{% else %}x30{% endif %}{% endcapture %}
+                  {% capture container_class %}{% if block.settings.soc_icons_large %}social-links--large{% else %}{% endif %}{% endcapture %}
+                  {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: icon_size, container_class: container_class %}
+                </div>
+              {% endif %}
+            </div>
+
+          {% when 'newsletter' %}
+            <div class="section-footer__newsletter-block--sp">
+              <div class="section-footer__row__col section-footer__newsletter-block" {{ block.shopify_attributes }}>
+                  {% if block.settings.title != blank %}
+                    {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
+                    <h5 class="section-footer__title{% if title_word_count < 4 %} no-wrap{% endif %}">
+                      {{- block.settings.title | escape -}}
+                    </h5>
+                  {% endif %}
+
+                  {% if block.settings.text != blank %}
+                    <div class="section-footer__text">
+                      {{ block.settings.text }}
+                    </div>
+                  {% endif %}
+
+                  <div class="signup-form">
+                    {% form 'customer', id: 'footer_newsletter_signup',name:'frmfooter'%}
+                      {% if form.posted_successfully? %}
+                        <div class="section-footer__newsletter-block__message signup-form__response signup-form__response--success">
+                          <h6>{{ 'layout.signup.post_success' | t }}</h6>
+                        </div>
+                      {% else %}
+                        {% if form.errors %}
+                          {% for field in form.errors %}
+                            <p class="section-footer__newsletter-block__message--error signup-form__response signup-form__response--error">
+                              {{ field | capitalize }} - {{ form.errors.messages[field] }}
+                            </p>
+                          {% endfor %}
+                        {% endif %}
+                        <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
+                        <p class="footer_input">
+                          <input type="email"
+                            placeholder="{{ 'layout.signup.placeholder' | t }}"
+                            class="signup-form__email newsletter_input_checking"
+                            value="{{ form.email }}"
+                            id="myInput"
+                            name="contact[email]"
+                            aria-label="{{ 'layout.signup.input_label' | t | escape }}"
+                            required 
+                              />
+                        </p>
+                        <div id="empty-error-message">This field is required</div>
+                        <button id="mySubmit" class="btn btn--{{ block.settings.button_style }} signup-form__button" type="submit">
+                          {{- 'layout.signup.submit' | t -}}
+                          <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.94625 1.11274L9.06104 4.66819L4.94625 8.22363" stroke="#565656" stroke-width="0.243191" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M9.06104 4.66797L0.938461 4.66797" stroke="#565656" stroke-width="0.243191" stroke-miterlimit="10" stroke-linecap="round"/>
+                          </svg>
+                        </button>
+                      {% endif %}
+                    {% endform %}
+                  </div>
+
+                  <style>
+                    #footer_newsletter_signup .footer_input  input:-webkit-autofill,
+                    #footer_newsletter_signup .footer_input  input:-webkit-autofill:hover, 
+                    #footer_newsletter_signup .footer_input  input:-webkit-autofill:focus,
+                    #footer_newsletter_signup .footer_input  textarea:-webkit-autofill,
+                    #footer_newsletter_signup .footer_input textarea:-webkit-autofill:hover,
+                    #footer_newsletter_signup .footer_input textarea:-webkit-autofill:focus,
+                    #footer_newsletter_signup .footer_input select:-webkit-autofill,
+                    #footer_newsletter_signup .footer_input select:-webkit-autofill:hover,
+                    #footer_newsletter_signup .footer_input select:-webkit-autofill:focus {
+                      -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+                      transition: background-color 5000s ease-in-out 0s;
+                    }
+                    #footer_newsletter_signup #empty-error-message,
+                    #footer_newsletter_signup #error-message{
+                      display: none;
+                    }
+                    #footer_newsletter_signup #empty-error-message.active,
+                    #footer_newsletter_signup #error-message.active{
+                      color:rgb(189, 15, 15);
+                      display: block!important;
+                      font-size: 11px;
+                    }
+                  </style>
+
+                  <script>
+                    function validateEmailFooter() {
+                      const emailInput = document.getElementById("myInput");
+                      const submitBtn = document.getElementById("mySubmit");
+                      const errorBlank = document.getElementById("empty-error-message");
+                      if (emailInput.value.trim() === "") {
+                        submitBtn.classList.add("blur");
+                        errorBlank.classList.add("active");
+                      } else {
+                        submitBtn.classList.remove("blur"); 
+                        errorBlank.classList.remove("active");
+                        errorWrong.classList.remove("active");
+                      }
+                    }
+                    const emailInput = document.getElementById("myInput");
+                    emailInput.addEventListener("input", validateEmailFooter);
+                    const submitBtncheck = document.getElementById("mySubmit");
+                    submitBtncheck.addEventListener("click", validateEmailFooter);
+                  </script>
+
+                  {% if block.settings.show_social_icons != blank %}
+                    <div class="section-footer__newsletter-block__social">
+                      {% capture icon_size %}{% if block.settings.soc_icons_large %}x46{% else %}x30{% endif %}{% endcapture %}
+                      {% capture container_class %}{% if block.settings.soc_icons_large %}social-links--large{% else %}{% endif %}{% endcapture %}
+                      {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: icon_size, container_class: container_class %}
+                    </div>
+                  {% endif %}
+              </div>
+            </div>
+
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  {%- assign showing_localization = false -%}
+  {%- if section.settings.show_language_selector and localization.available_languages.size > 1 -%}{%- assign showing_localization = true -%}{%- endif -%}
+  {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}{%- assign showing_localization = true -%}{%- endif -%}
+  <div class="container container--no-max section-footer__row-container {% if showing_localization %}section-footer__row-container--with-localization{% endif %}">
+    <div class="section-footer__row section-footer__row-lower">
+      {% if section.settings.show_payment_icons %}
+        <div class="section-footer__payment-icons">
+          {% for type in shop.enabled_payment_types %}
+            {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
+          {% endfor %}
+        </div>
+
+      {% endif %}
+      {% if section.settings.lower_menu != blank %}
+        <div class="section-footer__lower-menu" role="navigation">
+          <ul class="section-footer__lower-menu__list" aria-label="{{ 'layout.footer.navigation_aria_label' | t | escape }}">
+            {% for link in linklists[section.settings.lower_menu].links %}
+              <li>
+                <a href="{{ link.url }}">
+                  {{- link.title -}}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      <div class="footer-social">
+        <div class="section-footer__menu-block">
+        {% if section.settings.title != blank %}
+          <h5 class="section-footer__title">
+            {{ section.settings.title | escape }}
+          </h5>
+        {% endif %}
+        {% if section.settings.show_social_icons != blank %}
+          <div class="section-footer__text-block__social section-footer__menu-block__menu">
+            {% capture icon_size %}{% if section.settings.soc_icons_large %}x46{% else %}x30{% endif %}{% endcapture %}
+            {% capture container_class %}{% if section.settings.soc_icons_large %}social-links--large{% else %}{% endif %}{% endcapture %}
+            {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: icon_size, container_class: container_class %}
+          </div>
+        {% endif %}
+        </div>
+      </div>
+
+      {% if section.settings.image != blank %}
+        <span class="section-footer__text-block__image">
+          {%- capture double_image_width -%}{{ section.settings.image_width | times: 2 }}x{%- endcapture -%}
+          <a href="/" class="rimage-outer-wrapper" style="width: {{ section.settings.image_width }}px">
+            <div class="rimage-wrapper lazyload--placeholder" style="padding-top:{{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%">
+              <img class="rimage__image lazyload fade-in" data-src="{{ section.settings.image | img_url: double_image_width }}" alt="{{ shop.name | escape }}" />
+            </div>
+          </a>
+        </span>
+      {% endif %}
+
+      <div class="section-footer__row__col">
+        {% if section.settings.show_language_selector or section.settings.show_country_selector %}
+          <div class="section-footer__localization">
+            {% render 'localization', input_prefix: 'footer' %}
+          </div>
+        {% endif %}
+
+        <div class="copyright">
+          <span class="copy">&copy; {{ "now" | date: "%Y" }} <a href="{{ routes.root_url }}">{{ shop.name }}</a></span>
+
+          {{ powered_by_link }}
+
+        </div>
+        {% comment %} <a href="//www.dmca.com/Protection/Status.aspx?ID=d49e5163-a133-457e-94d7-75fb965d0cd8" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120d.png?ID=d49e5163-a133-457e-94d7-75fb965d0cd8"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script> {% endcomment %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Footer",
+    "class": "section-footer",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "lower_menu",
+        "label": "Lower footer menu"
+      },
+      {
+        "type": "header",
+        "content": "Social media links",
+        "info": "These are shown inside text and newsletter blocks. Add to the footer and enable inside."
+      },
+      {
+        "type": "header",
+        "content": "Payment methods"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_payment_icons",
+        "label": "Show payment icons",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Country/Region Selector",
+        "info": "To add a country/region, go to your [payment settings.](/admin/settings/payments)"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_country_selector",
+        "label": "Enable country/region selector",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Language Selector",
+        "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "title social",
+        "default": "FOLLOW US"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_social_icons",
+        "label": "Show social media links",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "range",
+        "id": "image_width",
+        "min": 30,
+        "max": 200,
+        "step": 5,
+        "unit": "px",
+        "label": "Footer image width",
+        "default": 100
+      },
+      {
+        "type": "checkbox",
+        "id": "show_language_selector",
+        "label": "Enable language selector",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "@app"
+      },
+      {
+        "type": "menu",
+        "name": "Links",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Quick links"
+          },
+          {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Menu",
+            "info": "This menu won't show dropdown items",
+            "default": "footer"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Text and social media",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Talk about your store"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "range",
+            "id": "image_width",
+            "min": 30,
+            "max": 200,
+            "step": 5,
+            "unit": "px",
+            "label": "Footer image width",
+            "default": 100
+          },
+          {
+            "type": "checkbox",
+            "id": "show_social_icons",
+            "label": "Show social media links",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "soc_icons_large",
+            "label": "Use large social media icons",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "newsletter",
+        "limit": 1,
+        "name": "Newsletter",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Newsletter"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Sign up for exclusive offers, original stories, events and more.</p>"
+          },
+          {
+            "type": "paragraph",
+            "content": "Customers who subscribe will have their email address added to the “accepts marketing” [customer list](/admin/customers?query=&accepts_marketing=1)"
+          },
+          {
+            "type": "select",
+            "id": "button_style",
+            "label": "Button style",
+            "default": "primary",
+            "options": [
+              {
+                "label": "Primary",
+                "value": "primary"
+              },
+              {
+                "label": "Secondary",
+                "value": "secondary"
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "show_social_icons",
+            "label": "Show social media links",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "soc_icons_large",
+            "label": "Use large social media icons",
+            "default": false
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

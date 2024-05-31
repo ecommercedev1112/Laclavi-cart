@@ -1,0 +1,205 @@
+{%- liquid
+  if section.settings.enable_carousel
+    assign product_limit = 20
+  else
+    assign product_limit = section.settings.grid | times: section.settings.rows
+  endif
+  assign collection = collections[section.settings.collection]
+-%}
+
+<div class="section-id-{{ section.id }} collection-slider-row {% if section.settings.use_alt_bg %}use-alt-bg{% endif %}" data-section-type="featured-collection" data-components="accordion,modal,price-range">
+  <div class="container{% if section.settings.enable_carousel %} container--not-mobile{% endif %}{% if section.settings.full_width %} container--no-max{% endif %}">
+    <div class="{% if section.settings.enable_carousel %}collection-slider{% endif %}">
+      <div class="special-collection-top">
+      <h1 class="hometitle h1-style align-center has-paging">
+        <a class="has-paging__title" href="{{ section.settings.collection.url }}"><span>{{ section.settings.title | escape }}</span></a>
+      </h1>
+
+      {%- if section.settings.show_view_all -%}
+        <div class="view-all align-center" data-cc-animate data-cc-animate-delay="0.3s">
+          <div class="view-all-text">
+            <a class="small-feature-link" href="{{ section.settings.collection.url }}">{{ 'collections.general.view_all' | t }}<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.772 10.6667L9.04937 18.3894L10 19.3334L19.3334 10.0001L10 0.666748L9.04937 1.61075L16.772 9.33342H0.666706V10.6667H16.772Z" fill="black"/></svg></a>
+          </div>
+          {% if section.settings.enable_carousel %}
+          <div class="btn-move-sp">
+            <a class="prev" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                <path d="M4.87988 10.1801L0.399902 6.5L4.87988 2.82007" stroke="#565656" stroke-width="0.5" stroke-miterlimit="10"/>
+                <path d="M0.400024 6.5H12" stroke="#565656" stroke-width="0.5" stroke-miterlimit="10"/>
+              </svg>
+            </a>
+            <a class="next" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                <path d="M7.12012 10.1801L11.6001 6.5L7.12012 2.82007" stroke="#666666" stroke-width="0.5" stroke-miterlimit="10"/>
+                <path d="M11.6 6.5H0" stroke="#666666" stroke-width="0.5" stroke-miterlimit="10"/>
+              </svg>
+            </a>
+          </div>
+          {% endif %}
+        </div>
+      {%- endif -%}
+      </div>
+
+      <div class="collection-listing" data-cc-animate="cc-fade-in-up">
+        <div class="product-list product-list--per-row-{{ section.settings.grid }} product-list--per-row-mob-{{ settings.prod_thumb_mob_per_row }} product-list--image-shape-{{ settings.prod_thumb_shape }} {% if section.settings.enable_carousel %}carousel{% endif %}">
+          {% if section.settings.collection == blank %}
+            {% for i in (1..20) %}
+              {% render 'onboarding-product-block', forloop: forloop %}
+            {% endfor %}
+          {% else %}
+            {%- liquid
+              if settings.prod_thumb_shape == 'portrait-23'
+                assign chosen_aspect_ratio = 0.67
+              elsif settings.prod_thumb_shape == 'portrait-45'
+                assign chosen_aspect_ratio = 0.8
+              elsif settings.prod_thumb_shape == 'square'
+                assign chosen_aspect_ratio = 1.0
+              elsif settings.prod_thumb_shape == 'landscape-54'
+                assign chosen_aspect_ratio = 1.25
+              elsif settings.prod_thumb_shape == 'landscape-32'
+                assign chosen_aspect_ratio = 1.50
+              elsif settings.prod_thumb_shape == 'tallest'
+                assign chosen_aspect_ratio = 99
+                for product in collection.products limit: 20
+                  if product.featured_media.preview_image.aspect_ratio < chosen_aspect_ratio
+                    assign chosen_aspect_ratio = product.featured_media.preview_image.aspect_ratio
+                  endif
+                endfor
+              else
+                assign chosen_aspect_ratio = 0
+                for product in collection.products limit: 20
+                  if product.featured_media.preview_image.aspect_ratio > chosen_aspect_ratio
+                    assign chosen_aspect_ratio = product.featured_media.preview_image.aspect_ratio
+                  endif
+                endfor
+              endif
+            -%}
+            {% for product in collection.products limit: 20 %}
+              {% render 'product-block', product: product, manual_image_load: section.settings.enable_carousel, custom_aspect_ratio: chosen_aspect_ratio, no_swiping: section.settings.enable_carousel, no_quick_buy_markup: section.settings.enable_carousel %}
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+      <div class="special-collection-top mobile-only" style="display: none;">
+      {%- if section.settings.show_view_all -%}
+        <div class="view-all align-center" data-cc-animate data-cc-animate-delay="0.3s">
+          <div class="view-all-text">
+            <a class="small-feature-link" href="{{ section.settings.collection.url }}">{{ 'collections.general.view_all' | t }}<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.772 10.6667L9.04937 18.3894L10 19.3334L19.3334 10.0001L10 0.666748L9.04937 1.61075L16.772 9.33342H0.666706V10.6667H16.772Z" fill="black"/></svg></a>
+          </div>
+          {% if section.settings.enable_carousel %}
+          <div class="btn-move-sp">
+            <a class="prev" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                <path d="M4.87988 10.1801L0.399902 6.5L4.87988 2.82007" stroke="#565656" stroke-width="0.5" stroke-miterlimit="10"/>
+                <path d="M0.400024 6.5H12" stroke="#565656" stroke-width="0.5" stroke-miterlimit="10"/>
+              </svg>
+            </a>
+            <a class="next" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                <path d="M7.12012 10.1801L11.6001 6.5L7.12012 2.82007" stroke="#666666" stroke-width="0.5" stroke-miterlimit="10"/>
+                <path d="M11.6 6.5H0" stroke="#666666" stroke-width="0.5" stroke-miterlimit="10"/>
+              </svg>
+            </a>
+          </div>
+          {% endif %}
+        </div>
+      {%- endif -%}
+      </div>
+                    
+  </div>
+
+  {% if settings.quickbuy_style != 'off' and section.settings.enable_carousel %}
+    <div class="quickbuy-container">
+      <a href="#" class="close-detail" aria-label="{{ 'products.quick_buy.close' | t }}" tabindex="-1">{% render 'svg-x' %}</a>
+      <div class="inner"></div>
+    </div>
+  {% endif %}
+</div>
+
+
+{% schema %}
+  {
+    "name": "Special collection",
+    "class": "section-special-featured-collection",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Featured collection"
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show product vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_carousel",
+        "label": "Enable carousel",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Products per row",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "default": 4
+      },
+      {
+        "type": "range",
+        "id": "rows",
+        "label": "Rows",
+        "info": "Does not apply to carousel layout",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "default": 1
+      },
+      {
+        "type": "checkbox",
+        "id": "use_alt_bg",
+        "label": "Use alternate section color",
+        "default": true
+      },
+	{
+        "type": "checkbox",
+        "id": "show_view_all",
+        "label": "Show 'View all' link",
+        "default": true
+      },
+		{
+		"type": "url",
+        "id": "moreurl",
+        "label": "View all link"
+      },
+
+      {
+        "id": "full_width",
+        "type": "checkbox",
+        "label": "Full page width",
+        "default": true
+      }
+    ],
+    "presets": [
+      {
+        "name": "Special collection",
+        "settings": {
+          "title": "New Arrivals"
+        }
+      }
+    ]
+  }
+{% endschema %}
+
+      

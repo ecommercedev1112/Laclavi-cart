@@ -1,0 +1,62 @@
+<div class="return-policy-text-wrap">
+  <div class="return-policy-container">
+    <div class="return-policy-row">
+      <div class="left-col">
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+      <div class="right-col">
+        <div class="order-text-block-one">{{ section.settings.content_one }}</div>
+        <div class="order-text-block-two">{{ section.settings.content_two }}</div>
+        <div class="order-text-block-three">{{ section.settings.content_three }}</div>
+        <div class="order-text-block-four">{{ section.settings.content_four }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Return Policy Text",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "content_one"
+    },
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "content_two"
+    },
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "content_three"
+    },
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "content_four"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Return Policy Text"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,298 @@
+{% if settings.display_recently_viewed_products %}
+{{ '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js' | script_tag }}
+{{ '//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js' | script_tag }}
+{{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
+{{ 'jquery.products.js' | asset_url | script_tag }}
+
+  <div style="" class="container container--no-max fully-spaced-row recentlyboxcx cs-recently-viewed-product hidden-recently">
+    <h4 class="align-center hometitle">{{ section.settings.title }}</h4>
+    <div class="collection-listing related-collection">
+        <div id="recently-viewed-products" class="product-list product-list--per-row-{{ section.settings.grid }} product-list--image-shape-{{ settings.prod_thumb_shape }}">
+        </div>
+      </div>
+  </div>
+ 
+  {% raw %}
+  	<script id="recently-viewed-product-template" type="text/x-jquery-tmpl">
+  {% endraw %}
+  <div class="product-block {% if settings.product_image_border %}grid-item-border {% endif %}{% if settings.product_image_crop%}crop_image {% else %}no_crop_image {% endif %}grid-item {% raw %}{{if !available}}sold-out {{/if}}{{if compare_at_price_min > price_min}}on-sale{{/if}}" data-product-id="product-${id}" data-recently-id="${handle}">
+    <div class="product-item" id="product-${id}">
+      <div class="product-top">
+      <div class="image-cont image-recently image-cont--with-secondary-image image-cont--same-aspect-ratio">
+      </div>
+      
+      <!--
+      <div class="product-des">
+        <div class="action">
+          <form action="/cart/add" method="post" class="variants" id="product-actions-${id}" enctype="multipart/form-data" style="padding:0px;">    
+            {{if !available}}
+            <button class="btn add-to-cart-btn" type="submit" disabled="disabled"><span {% endraw %}>{{ 'products.product.sold_out' | t }}{% raw %}</span></button>
+            {{else}}
+            <input type="hidden" name="id" value="${variants[0].id}" />      
+            <button class="btn add-to-cart-btn" type="submit"><span {% endraw %}>{{ 'products.product.add_to_cart' | t }}{% raw %}</span></button>
+            {{/if}}
+          </form>
+        </div>
+      </div>
+      -->
+    </div>
+
+    <div class="product-info">
+      {% endraw %}
+      <a class="product-block__title" href="${url}">${title}</a>
+      {% raw %}
+      <span class="shopify-product-reviews-badge" data-id="${id}"></span>
+
+      <div class="template-sale-price"></div>
+      <div class="swatch-template"></div>
+    
+    </div>    
+  </div>
+</div>
+</script>
+  {% endraw %}
+
+ <script>
+  Shopify.Products.showRecentlyViewed({ 
+    howManyToShow: {{ section.settings.grid }}, 
+  });
+  </script>
+
+  {% if template contains 'product' %}
+  <script>
+    Shopify.Products.recordRecentlyViewed({ 
+      onComplete: function() {
+        $( ".currency-price" ).each(function( index ) {
+          $(this).removeClass('opacity-0');
+          $(this).text(Math.floor($(this).text() / 100) + '.00');
+        });
+          var recentlyProductEls = document.querySelectorAll("div[data-recently-id]");
+          if(recentlyProductEls[0] != undefined){
+            recentlyProductEls.forEach(async prod => {
+
+              let prodHandle = prod.getAttribute("data-recently-id");
+              let swatchTemplateUrl = "/products/" + prodHandle + "?view=swatch";
+              await fetch(swatchTemplateUrl,{
+                method: 'GET',
+                credentials: 'include',
+                mode: 'no-cors',
+                }).then(response=> response.text()).then(data => {
+                  let parser = new DOMParser();
+                  let htmlDocument = parser.parseFromString(data, "text/html");
+                  var swatchHtml = htmlDocument.querySelector(".swatch-template");
+                  let imgHtml = htmlDocument.querySelector(".image-cont.image-recently");
+                  let swatchTemplateEl = prod.querySelector(".swatch-template");
+                  prod.querySelector(".image-cont.image-recently").innerHTML = imgHtml.innerHTML;
+                  swatchTemplateEl.innerHTML = swatchHtml.innerHTML;
+                  let swatchScripts = swatchTemplateEl.querySelectorAll("script");
+                  swatchScripts.forEach(script => {
+                    jQuery.globalEval(script.innerHTML);
+                  });
+                  prod.querySelector(".template-sale-price").innerHTML = htmlDocument.querySelector(".template-sale-price").innerHTML;
+              });
+
+            })
+          }
+          var productRecentlySection = document.querySelector(".recentlyboxcx");
+          theme.ProductBlockManager.loadImages(productRecentlySection);
+          if (recentlyProductEls.length > 0) {
+              var containerDivs = document.querySelector('.cs-recently-viewed-product');
+              containerDivs.classList.remove('hidden-recently');
+          }
+      }
+    });
+
+
+
+
+  </script>
+  {% endif %}
+
+{% endif %}
+
+{% style %}
+  .hidden-recently{
+    display: none;
+  }
+  #recently-viewed-products img {
+    display: block;
+  }
+  #recently-viewed-products .product-price {
+      flex-direction: column;
+  }
+  #recently-viewed-products .collection-listing .product-block {
+      padding-left: 9px;
+  }
+  #recently-viewed-products .collection-listing .product-list {
+      margin-left: -9px;
+  }
+  #recently-viewed-products .product-block__title {
+      margin-bottom: 4px;
+      display: block;
+  }
+  #recently-viewed-products .product-block .block-inner {
+      margin-bottom: 18px;
+  }
+  #recently-viewed-products .hometitle {
+      margin: 80px 0 26px;
+      font-family: MADE Saonara;
+      text-transform: unset;
+      letter-spacing: 0;
+  }
+  #recently-viewed-products .product-block__title {
+      letter-spacing: 0;
+      font-weight: 300;
+      color: #282828;
+  }
+  #recently-viewed-products .product-price__amount{
+      color: #282828;
+      font-size: 12px;
+      font-weight: 325;
+      letter-spacing: 0; 
+      margin-right: 4px;
+      font-family: 'Gotham';
+  }
+  #recently-viewed-products .product-block .product-info {
+    font-size: unset;
+    margin-top: 12px;
+    line-height: 1;
+  }
+  .section-product-recently .collection-listing .product-list {
+    margin-left: -9px;
+  }
+  .section-product-recently .collection-listing .product-block {
+    padding-left: 9px;
+  }
+  .section-product-recently .hometitle {
+    margin: 40px 0 24px;
+    font-family: MADE Saonara;
+    text-transform: unset;
+    letter-spacing: 0;
+    color: #282828;
+  } 
+  #recently-viewed-products .product-price__amount,
+  #recently-viewed-products .product-price__compare {
+    color: #282828;
+  }
+  #recently-viewed-products .product-price__amount {
+    margin-top: 8px;
+    line-height: 1;
+  }
+  #recently-viewed-products .product-info .product-block-options--swatch .product-block-options__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #recently-viewed-products .product-info .product-block-options__more-label {
+    margin: 0 0 0 4px;
+  }
+  #recently-viewed-products .product-block[data-recently-id="beaded-peacock-headdress"] .product-block-options__item {
+    background-size: cover;
+  }
+  @media (min-width: 768px) {
+    .section-product-recently .collection-listing .product-block {
+      padding-left: 24px;
+    }
+    .section-product-recently .collection-listing .product-list {
+      margin-left: -24px;
+    }
+    .section-product-recently .container {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+    .section-product-recently .hometitle {
+        margin: 80px 0 48px;
+        font-size: 40px;
+        color: #494949;
+    }
+    #recently-viewed-products .product-block .product-info {
+      margin-top: 16px;
+    }
+    #recently-viewed-products .product-block .product-info {
+      text-align: center;
+    }
+    #recently-viewed-products .container {
+        padding: 0 48px;
+    }
+    #recently-viewed-products .collection-listing .product-block {
+        padding-left: 24px;
+    }
+    #recently-viewed-products .collection-listing .product-list {
+        margin-left: -24px;
+    }
+    #recently-viewed-products .hometitle {
+        margin: 80px 0 54px;
+        font-size: 40px;
+    }
+    #recently-viewed-products  .product-block__title {
+        text-align: center;
+    }
+    #recently-viewed-products .product-price {
+        justify-content: center;
+        align-items: center;
+    }
+    #recently-viewed-products .product-block__title {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 4px;
+        color: #000;
+    }
+    #recently-viewed-products .here-is-sale
+    {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    #recently-viewed-products .product-block .block-inner {
+        margin-bottom: 24px;
+    }
+    #recently-viewed-products .product-price__amount,
+    #recently-viewed-products .product-price__compare {
+        font-size: 14px;
+        color: #000;
+    }
+    #recently-viewed-products .product-price__amount {
+      margin-top: 4px;
+    }
+  }
+  @media (max-width: 767px) {
+    #recently-viewed-products .product-block__title {
+      margin-bottom: 8px;
+    }
+    #recently-viewed-products .here-is-sale {
+      margin-top: 8px;
+    } 
+    .swatch-method-image #recently-viewed-products .product-block-options {
+      margin-top: 12px;
+    }
+  }
+{% endstyle %}
+
+{% schema %}
+  {
+    "name": "Recently Viewed Products",
+    "class": "section-product-recently",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "You recently viewed"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show product vendor",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Products per row",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "default": 4
+      }
+    ]
+  }
+{% endschema %}

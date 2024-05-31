@@ -1,0 +1,660 @@
+{
+  "sections": {
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 18px;}",
+        "h2 {font-size: 40px; line-height: 1.4;}",
+        ".rte p:nth-of-type(3) {font-size: 13px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/9fd5652b50c7277b0d5dfea532512a7d.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "From Struggles to Stardom: Josephine Baker's Story",
+        "use_h1": false,
+        "text": "<p>“When I found my voice, I also found the power to change the world.”  ― Josephine Baker<br\/><br\/><br\/><\/p><p>September 29, 2023 | By Emily Aniston<br\/>Image: ©Photo by Hulton Archive on <a href=\"https:\/\/www.gettyimages.com\/detail\/news-photo\/singer-and-dancer-josephine-baker-sitting-on-a-tiger-rug-news-photo\/2667409\" title=\"https:\/\/www.gettyimages.com\/detail\/news-photo\/singer-and-dancer-josephine-baker-sitting-on-a-tiger-rug-news-photo\/2667409\">Getty Images<\/a><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Picturing the stars of the Roaring Twenties, who springs to mind? Is it the vivacious Clara Bow, the enigmatic Greta Garbo, or perhaps the sensational Josephine Baker? In the words of Ernest Hemingway, Josephine Baker was \"the most sensational woman anyone ever laid eyes on,\" capturing the fancy and devotion of people worldwide. We will turn our spotlight on Josephine Baker, a luminary whose life journey from struggles to stardom exemplified the spirit of the Jazz Age.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "f9e03650-258b-4f21-be30-118977b95a74": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-04.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Gatsby Glamour Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Gatsby Glamour Prom Dresses are the epitome of 1920s style. These dresses feature intricate beading, sequins, and fringe details that add a touch of glamour to your outfit. They come in a variety of colors, including classic black and gold, and can be worn in long or short lengths. Pair your Gatsby Glamour dress with a pair of strappy heels and a vintage-inspired clutch for a truly authentic look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/55edd8e3db9ae684d4d53cef9f4c4711.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>© Baker in her banana costume, <a href=\"https:\/\/www.pinterest.com\/pin\/163959242677077838\/\" title=\"https:\/\/www.pinterest.com\/pin\/163959242677077838\/\">1927<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__faf5e14d-6bc6-44e8-b2b8-a2010047bbb6-1678330949fb6a2ac9-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "4b663300-f0bb-487a-8b94-03a9214c241d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "A Bold Leap Across the Atlantic",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Josephine Baker, born Freda Josephine McDonald on June 3, 1906, in St. Louis, Missouri, entered the world into humble circumstances. She was raised in a struggling African American family, facing the harsh realities of racial segregation and poverty from a young age. The horrifying scenes of African Americans fleeing across the Eads bridge in July 1917, a sight young Josephine Baker could never forget, marked the beginning of her awareness of the profound racial injustices and hardships of her time.<br\/><br\/>At 16, she left home and her husband to pursue a career in New York, initially working as a dressmaker on Broadway. Her talent shone when she filled in for an ill dancer in the successful revue \"Shuffle Along,\" captivating audiences with her comedic expressions and bold moves. Caroline Dudley Reagan, the wife of the US commercial attaché in Paris, noticed her and offered Baker double her Broadway pay to star in the upcoming show \"La Revue nègre\" in France.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0",
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP GATSBY PROM DRESSES",
+        "collection": "gatsby-glamour-prom-dresses",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "a6837111-fc06-4307-a150-40a02baed26a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-03.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Backless Prom Dresses",
+        "use_h1": false,
+        "text": "<p>Backless Prom Dresses were also a popular choice in the 1920s, and they continue to be a fashionable option for prom parties today. These dresses feature an open back, often adorned with beading or lace, and come in a variety of colors and lengths. Backless dresses can be paired with statement earrings and a sleek updo to showcase the intricate details on the back of the dress.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/JOSbak_5.png",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>© Photo by Gaston Paris, <a href=\"https:\/\/www.pinterest.com\/pin\/194006696426639027\/\" title=\"https:\/\/www.pinterest.com\/pin\/194006696426639027\/\">Getty Images<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__749871a5-7ae7-4155-ae99-9d8b5fbae00f-1678331546cc440f1b-0"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "b57a0a43-c9be-45eb-867f-57c71542fa67": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Paris: The City of Dreams",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Josephine Baker's performance in \"La Revue nègre\" was nothing short of sensational. Her electrifying dances, including the iconic \"Danse Sauvage,\" enthralled audiences and made her an instant star. It was a transformative experience for Baker herself, as she later recalled, 'For the first time in my life, I felt beautiful.' <br\/><br\/>In 1927, she headlined her own show at the renowned Folies Bergère dance hall, where she performed her sensational \"dance sauvage\" in an iconic banana tutu. Capitalizing on this success, Baker secured film roles as a singer in movies like \"Zou-Zou\" and \"Princesse Tam-Tam.\" It was in Paris, the City of Dreams, that Josephine Baker's star truly ascended, solidifying her status as an international sensation and a trailblazer in the world of performing arts.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0",
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP BACKLESS DRESSES",
+        "collection": "backless-prom-dresses",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "5059d91b-1533-45cd-aa15-18a4df2a0459": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/11-02.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "Retro Prom Accessories",
+        "use_h1": false,
+        "text": "<p>No prom outfit is complete without the perfect accessories, and for a 1920s-inspired look, retro accessories are a must. Think feathered headbands, long pearl necklaces, and vintage-inspired clutch bags. These accessories add a touch of sophistication and glamour to any outfit and are the perfect finishing touch for your prom party look.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Baker_Charleston.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>© Josephine Baker dances the Charleston at the Folies-Bergère in Paris, <a href=\"https:\/\/fr.wikipedia.org\/wiki\/Revue_n%C3%A8gre\" title=\"https:\/\/fr.wikipedia.org\/wiki\/Revue_n%C3%A8gre\">Wikipedia<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a12918a4-a89e-4c6b-8669-1c99038a5ee9-1678331546cc440f1b-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "63c9a312-d076-4d40-b804-da9e92b883bc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Civil Rights and World War II",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>While Baker thrived in Europe, she did not forget her roots. She used her platform to advocate for civil rights in the United States. She refused to perform for segregated audiences and was outspoken in her support for the Civil Rights Movement. In 1963, Baker's dedication to civil rights reached a historic moment when she spoke just before Dr. Martin Luther King delivered his iconic “I Have a Dream” speech. <br\/><br\/>During World War II, Baker went further and served as a spy for the French Resistance. Her courageous efforts helped the Allies in their fight against Nazi Germany, earning her the Croix de Guerre and the Legion of Honour.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0",
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "58244b0b-bced-4733-8779-c3b063da139f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16707364880605__58244b0b-bced-4733-8779-c3b063da139f-168170914237882cb6-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/josnwas88.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>© <a href=\"https:\/\/samepassage.org\/josephine-baker-speech-at-the-march-on-washington\/\" title=\"https:\/\/samepassage.org\/josephine-baker-speech-at-the-march-on-washington\/\">Josephine Baker<\/a>, shows her support for American civil rights at the March on Washington on August 28, 1963.<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16707364880605__58244b0b-bced-4733-8779-c3b063da139f-168170914237882cb6-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "6d92fca3-47b2-49d8-9a73-34cbc37867c9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16707364880605__6d92fca3-47b2-49d8-9a73-34cbc37867c9-16817090798e3d67e7-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Josephine Baker's Enduring Legacy",
+            "use_h1": false
+          }
+        },
+        "template--16707364880605__6d92fca3-47b2-49d8-9a73-34cbc37867c9-16817090798e3d67e7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Josephine Baker's enduring legacy extends far beyond her own time, influencing countless individuals from the past to the present. Baker, hailed as the most successful American entertainer in France during her era, left an indelible mark on the world of entertainment. Renowned writer Ernest Hemingway once exclaimed, \"the most sensational woman anyone ever saw\" when describing her captivating presence. Even the legendary artist Picasso was inspired to create paintings that captured her alluring beauty, further immortalizing her image in art.<br\/><br\/>Her magnetic charisma and talent also caught the attention of esteemed figures like Jean Cocteau, Christian Dior and Pierre Balmain, who not only befriended her but also played a pivotal role in catapulting her to international stardom. As the years passed, Josephine Baker's influence continued to resonate, transcending time and borders. Contemporary icons such as Zendaya, Beyoncé, and Rihanna have paid homage to her legacy by incorporating her iconic silhouette into their performances. Lynn Whitfield won an Emmy when she starred in HBO’s “The Josephine Baker Story” (1991) stands as a testament to the lasting impact of Baker's life story. Even in films like \"Midnight in Paris\" (2011), her spirit and influence continue to rumba through the world of entertainment, reminding us of her enduring and inspirational presence.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16707364880605__6d92fca3-47b2-49d8-9a73-34cbc37867c9-16817090798e3d67e7-0",
+        "template--16707364880605__6d92fca3-47b2-49d8-9a73-34cbc37867c9-16817090798e3d67e7-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "de1684a0-b7a3-450f-8279-79d3c62915b9": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16707364880605__de1684a0-b7a3-450f-8279-79d3c62915b9-168170914237882cb6-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/d32bf55caff349f0fbe4b03d3c528928.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>© Steve Pseno, <a href=\"https:\/\/www.pinterest.com\/pin\/281543715739408\/\" title=\"https:\/\/www.pinterest.com\/pin\/281543715739408\/\">Pinterest<\/a><\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16707364880605__de1684a0-b7a3-450f-8279-79d3c62915b9-168170914237882cb6-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "67e89375-003f-4303-90a6-7458465553c3": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP Clara Bow inspired outfits",
+        "collection": "clara-bows-timeless-influence-on-fashion",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        ".back {display: none;}"
+      ],
+      "settings": {
+        "show_date": false,
+        "show_author": false,
+        "show_article_tags": false,
+        "show_sharing_icons": true,
+        "show_featured_image": false,
+        "full_width_image": false,
+        "featured_image_height": "natural",
+        "enable_title_overlay": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef": {
+      "type": "logo-list",
+      "blocks": {
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282541_fb_social_media_facebook_facebook_logo_social_network_icon_fd6b582a-fdd0-4fbe-a3d0-aa084695ae87.png",
+            "image_width": 40,
+            "link": "https:\/\/www.facebook.com\/sharer.php?u=https:\/\/babeyond.com\/blogs\/style\/clara-bow-the-flapper-icon-of-the-roaring-twenties",
+            "title": ""
+          }
+        },
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282551_tweet_twitter_twitter_logo_icon_a52bbc76-aea3-4c04-ba3c-43b881018f3f.png",
+            "image_width": 40,
+            "link": "https:\/\/twitter.com\/intent\/tweet?text=Clara+Bow:+the+flapper+icon+of+the+roaring+twenties&url=https:\/\/babeyond.com\/blogs\/style\/clara-bow-the-flapper-icon-of-the-roaring-twenties",
+            "title": ""
+          }
+        },
+        "63791460-50c7-440c-bc47-9861f9327ee8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282545_pin_pinterest_inspiration_pinterest_logo_icon_3bf23350-beb7-4fbe-9de8-a7be021dfa58.png",
+            "image_width": 40,
+            "link": "https:\/\/www.pinterest.com\/pin-builder\/?description=A+journey+through+the+best+1920s+movies&media=%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0015%2F8937%2F9159%2Farticles%2F04_1024x1024.png%3Fv%3D1678332826&method=button&url=https:\/\/babeyond.com\/blogs\/style\/step-back-in-time-a-journey-through-the-best-1920s-movies",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9",
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131",
+        "63791460-50c7-440c-bc47-9861f9327ee8"
+      ],
+      "custom_css": [
+        "h2 {font-size: 14px;}",
+        ".rimage-outer-wrapper {}"
+      ],
+      "settings": {
+        "title": "SHARE ARTICLE",
+        "image_opacity": 80,
+        "use_alt_bg": false
+      }
+    },
+    "06b1fff1-7390-4d06-818d-505593e9ab90": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "blog_bar_col": "#c9beac",
+        "blog_bar_col_mb": "#f5f2eb",
+        "title": "MORE IN STYLE",
+        "blog": "style",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "subtitle": "<p><\/p>",
+        "button": "<p><\/p>",
+        "crop_ratio": "1.78"
+      }
+    },
+    "0def61de-a029-4927-97ab-94303250c30d": {
+      "type": "special-blog",
+      "blocks": {
+        "fa25ab7c-d3da-401d-9df0-74e2ae86d230": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/what-did-people-wear-in-the-1920s",
+            "image": "shopify:\/\/shop_images\/image_1_1778f758-d54a-4ba5-89ca-f4b786417b4b.png",
+            "title": "<p>What Did People Wear in the 1920s?<\/p>",
+            "main_content": "<p>Exploring the Fashion Trends of the Roaring Twenties.<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "22798b8f-305b-47ed-bd8d-36d1d27def44": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/step-back-in-time-a-journey-through-the-best-1920s-movies",
+            "image": "shopify:\/\/shop_images\/banner_326d12f5-af81-47e9-a0af-36ba32c1149b.jpg",
+            "title": "<p>Step Back in Time: A Journey through the Best 1920s Movies<\/p>",
+            "main_content": "<p>No one asks to be left behind. But in a hundred years, when you and I are both long gone, any time someone threads a frame of yours through a sprocket, you will be alive again. -- Elinor St. John, Babylon<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "9935a93d-2e56-4ae9-b9c6-459560049211": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/1920s-inspired-outfits-for-movie-night",
+            "image": "shopify:\/\/shop_images\/QQ_20230419155942.jpg",
+            "title": "<p>1920s-Inspired Outfits for Movie Night<\/p>",
+            "main_content": "<p>Lights, camera, action! You've got your popcorn, your favorite movie, and the perfect movie night setup, but what about your outfit?<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#c9beac",
+            "blog_bg_col_mb": "#c9beac",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        }
+      },
+      "block_order": [
+        "fa25ab7c-d3da-401d-9df0-74e2ae86d230",
+        "22798b8f-305b-47ed-bd8d-36d1d27def44",
+        "9935a93d-2e56-4ae9-b9c6-459560049211"
+      ],
+      "settings": {
+        "crop_ratio": "1.0"
+      }
+    },
+    "50fa811a-dd59-4477-8405-fd677f910e38": {
+      "type": "gallery",
+      "blocks": {
+        "template--16779055136989__50fa811a-dd59-4477-8405-fd677f910e38-image-1": {
+          "type": "image",
+          "settings": {
+            "alignment": "center center",
+            "enlarge_image": true,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--16779055136989__50fa811a-dd59-4477-8405-fd677f910e38-image-2": {
+          "type": "image",
+          "settings": {
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--16779055136989__50fa811a-dd59-4477-8405-fd677f910e38-image-3": {
+          "type": "image",
+          "settings": {
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--16779055136989__50fa811a-dd59-4477-8405-fd677f910e38-image-4": {
+          "type": "image",
+          "settings": {
+            "alignment": "center center",
+            "enlarge_image": true,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "template--16779055136989__50fa811a-dd59-4477-8405-fd677f910e38-image-1",
+        "template--16779055136989__50fa811a-dd59-4477-8405-fd677f910e38-image-2",
+        "template--16779055136989__50fa811a-dd59-4477-8405-fd677f910e38-image-3",
+        "template--16779055136989__50fa811a-dd59-4477-8405-fd677f910e38-image-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 460,
+        "mobile_image_height": 400,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "use_alt_bg": false,
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    }
+  },
+  "order": [
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3",
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a",
+    "f9e03650-258b-4f21-be30-118977b95a74",
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6",
+    "4b663300-f0bb-487a-8b94-03a9214c241d",
+    "379fd7e4-cf10-4d4b-9d8b-ae764c35f6ab",
+    "a6837111-fc06-4307-a150-40a02baed26a",
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f",
+    "b57a0a43-c9be-45eb-867f-57c71542fa67",
+    "2af9bb33-405e-4e74-bb4a-41fd905b5a84",
+    "5059d91b-1533-45cd-aa15-18a4df2a0459",
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9",
+    "63c9a312-d076-4d40-b804-da9e92b883bc",
+    "58244b0b-bced-4733-8779-c3b063da139f",
+    "6d92fca3-47b2-49d8-9a73-34cbc37867c9",
+    "de1684a0-b7a3-450f-8279-79d3c62915b9",
+    "67e89375-003f-4303-90a6-7458465553c3",
+    "main",
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef",
+    "06b1fff1-7390-4d06-818d-505593e9ab90",
+    "0def61de-a029-4927-97ab-94303250c30d",
+    "50fa811a-dd59-4477-8405-fd677f910e38"
+  ]
+}

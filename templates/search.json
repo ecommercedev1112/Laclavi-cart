@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "settings": {
+        "show_vendor": false,
+        "coll_num_per_page_int": 24,
+        "grid": 4,
+        "enable_filtering": false,
+        "collapse_tag_sidebar_by_default": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "show_disabled_filters": true,
+        "ajax_products": true,
+        "enable_sticky_filter": true,
+        "filter_two_columns": false,
+        "coll_show_sort": true,
+        "coll_show_feat": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,122 @@
+<div id="section-id-{{ section.id }}" class="category-container swiper categorySlider">
+  <div class="category-row swiper-wrapper">
+  {%- for block in section.blocks -%}
+    <div class="category--{{ block.settings.alignment }} swiper-slide">
+      <a href="{{ block.settings.category-url }}" class="category--item">
+        <div class="category--title">{{ block.settings.title }}</div>
+        <div class="category--subtitle">{{ block.settings.subtitle }}</div>
+        <div class="img_inner--{{ block.settings.alignment }}">
+          {% if block.settings.image != blank %}
+            <img class="cate-img--{{ block.settings.alignment }}" loading="lazy" src="{{ block.settings.image | img_url:'master' }}" data-src="{{ block.settings.image | img_url:'master' }}">
+          {% endif %}  
+        </div>
+      </a>
+    </div>
+  {%- endfor -%}
+  </div>
+<div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<link href="https://cdn.shopifycdn.net/s/files/1/0015/8937/9159/files/swiper-bundle.min.css?v=1648020578" rel="stylesheet" type="text/css" media="all">
+
+{% stylesheet %}
+{% endstylesheet %}
+<script src="https://cdn.shopifycdn.net/s/files/1/0015/8937/9159/files/swiper-bundle.min.js?v=1648020579"></script>
+
+
+{% javascript %}
+
+(function() {
+
+'use strict';
+
+const breakpoint = window.matchMedia( '(min-width:767px)' );
+
+let mySwiper;
+
+const breakpointChecker = function() {
+  if ( breakpoint.matches === true ) {
+  if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+  return;
+    } else if ( breakpoint.matches === false ) {
+      return enableSwiper();
+    }
+
+};
+
+const enableSwiper = function() {
+  mySwiper = new Swiper ('.categorySlider', {
+    slidesPerView: 1.167,
+    slidesPerGroup: 1,
+    loop: true,
+  });
+
+};
+breakpoint.addListener(breakpointChecker);
+breakpointChecker();
+
+})();
+
+{% endjavascript %}
+
+
+
+{% schema %}
+  {
+    "name": "Category",
+    "tag": "section",
+    "presets": [
+      {
+        "name": "Category"
+      }
+    ],
+    "settings": [
+      {
+          "type": "header",
+          "content": "Category"
+      }
+    ],
+    "blocks":[
+      {
+        "type": "main_header",
+        "name": "Section Header",
+        "settings": [
+          {
+            "type": "select",
+            "id": "alignment",
+                "label": "Alignment",
+                "options": [
+                {"value": "left","label": "Left"},
+                {"value": "center","label": "Center"},
+                {"value": "right","label": "Right"}
+            ],
+                "default": "center"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "<p></p>"
+          },
+          {
+            "type": "richtext",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "<p></p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "category-url",
+            "label": "Category url"
+          }
+        ]
+      }
+    ] 
+  }
+{% endschema %}

@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "acf5418c-5e78-4749-817e-6f3e3f6f9597": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/04_be2567b8-43b1-4503-b6ab-b3bb6df6e242.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/390x300-2.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "fixed",
+        "height_desktop": 320,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "EASY RETURNS",
+        "title_size": 84,
+        "title_size_mobile": 46,
+        "use_h1": false,
+        "text": "<p><strong>Please enter your order information to get started.<\/strong><\/p><p>We want our customers to be satisfied with their purchases. However, if you change your mind, please return the item(s) within 14 days of delivery, and we will refund you.<\/p>",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "button_label_3": "",
+        "button_url_3": "",
+        "button_label_4": "",
+        "button_url_4": "",
+        "text_alignment": "center center",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "full_width": false
+      }
+    },
+    "dc0b4ca7-6ccc-4efd-943f-4f7b9c4e7044": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "code": "<h2 style=\"text-align: center;margin-bottom: -80px;\"><\/h2>"
+      }
+    },
+    "16715059413ccf5741": {
+      "type": "apps",
+      "settings": {
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "acf5418c-5e78-4749-817e-6f3e3f6f9597",
+    "main",
+    "dc0b4ca7-6ccc-4efd-943f-4f7b9c4e7044",
+    "16715059413ccf5741"
+  ]
+}

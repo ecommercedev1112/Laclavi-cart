@@ -1,0 +1,487 @@
+{
+  "sections": {
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 18px;}",
+        "h2 {font-size: 40px; line-height: 1.4;}",
+        ".rte p:nth-of-type(3) {font-size: 13px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/QQ_20230330131026.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "What Did People Wear in the 1920s?",
+        "use_h1": false,
+        "text": "<p>Exploring the Fashion Trends of the Roaring Twenties.<\/p><p> <\/p><p>March 30, 2023 | By Emily Aniston<br\/>Image: ©Glamourdaze-Pinterest<br\/><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The 1920s was a period of significant historical and cultural changes, marked by the end of World War I, the emergence of new technologies, and the rise of consumer culture, these changes greatly influenced the fashion industry.<\/p><p> <\/p><p> <\/p><p>In 1920, women in the United States were granted the right to vote, which further advanced their status and influence. As a result, fashion designers began to move away from conservative styles and instead embraced more daring and liberating designs that allowed women to express themselves more freely.<br\/><\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__a0bd9941-dfdc-4b7b-970e-0055d56b945a-16783328893fe68b84-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "f2d6a5a0-1fa6-4cea-8afc-3dba3d7bd238": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_1_42d86e81-25a7-4e2b-b8ec-ec9a9e6ab267.png",
+        "image_width": 700,
+        "subheading": "",
+        "title": "What Did Women Wear in the 1920s?",
+        "use_h1": false,
+        "text": "<p>1920s women's fashion underwent a significant shift as the \"flapper\" style emerged, symbolizing women's newfound freedom and independence. This style was characterized by short, loose-fitting dresses that exposed arms and legs, and accentuated the natural curves of the body. <br\/><br\/><br\/>As fashion designers sought inspiration for new designs, the discovery of ancient Egyptian ruler Tutankhamun's tomb in 1922 by Howard Carter and the Earl of Carnarvon proved influential. Fashion designers began incorporating typical Egyptian patterns, such as snakes, birds, and lotus flowers, into their creations. To complete the iconic \"flapper\" look, women accessorized with cloche hats, long beads, and feather boas.<br\/><br\/>Image: A flapper in a dance hall in the 1920s. ©WWMedia<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6": {
+      "type": "multi-column",
+      "blocks": {
+        "5b77a5c6-25a1-4800-a85b-6b7d07767c57": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/image_1.png",
+            "image_width": 580,
+            "title": "",
+            "text": "<p>A flapper in a dance hall in the 1920s. ©WWMedia<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5b77a5c6-25a1-4800-a85b-6b7d07767c57"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "4b663300-f0bb-487a-8b94-03a9214c241d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "What Did Women Wear in the 1920s?",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>1920s women's fashion underwent a significant shift as the \"flapper\" style emerged, symbolizing women's newfound freedom and independence. This style was characterized by short, loose-fitting dresses that exposed arms and legs, and accentuated the natural curves of the body. <br\/><br\/><br\/>As fashion designers sought inspiration for new designs, the discovery of ancient Egyptian ruler Tutankhamun's tomb in 1922 by Howard Carter and the Earl of Carnarvon proved influential. Fashion designers began incorporating typical Egyptian patterns, such as snakes, birds, and lotus flowers, into their creations. To complete the iconic \"flapper\" look, women accessorized with cloche hats, long beads, and feather boas.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-0",
+        "template--16685287112925__4b663300-f0bb-487a-8b94-03a9214c241d-1678328687846ae4c8-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "6c5a9da8-3305-4881-9476-664afafe11d9": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_3.png",
+        "image_width": 700,
+        "subheading": "",
+        "title": "What Did Men Wear in the 1920s?",
+        "use_h1": false,
+        "text": "<p>The 1920s also saw significant changes in men's fashion. The traditional three-piece suit gave way to the more relaxed double-breasted suits, paired with newsboy caps and two-tone shoes. This style was influenced by the rise of jazz music and the popularity of sports, which called for more comfortable and casual attire.<br\/><br\/>Image: ©Indiana State Library and Historical Bureau, Public domain <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f": {
+      "type": "multi-column",
+      "blocks": {
+        "76d248fe-7dd5-40f6-97ec-2f2b4a53af6c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/image_2.png",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>Dance Charleston, 1920s poster ©Granger<\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "76d248fe-7dd5-40f6-97ec-2f2b4a53af6c"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "b57a0a43-c9be-45eb-867f-57c71542fa67": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "What Did Men Wear in the 1920s?",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The 1920s also saw significant changes in men's fashion. The traditional three-piece suit gave way to the more relaxed double-breasted suits, paired with newsboy caps and two-tone shoes. This style was influenced by the rise of jazz music and the popularity of sports, which called for more comfortable and casual attire.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-0",
+        "template--16685287112925__b57a0a43-c9be-45eb-867f-57c71542fa67-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9": {
+      "type": "multi-column",
+      "blocks": {
+        "327d71ce-c126-430f-a437-24163d2cc6a2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/image_3.png",
+            "image_width": 700,
+            "title": "",
+            "text": "<p>©Indiana State Library and Historical Bureau, Public domain  <\/p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "327d71ce-c126-430f-a437-24163d2cc6a2"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "62e7601a-cc09-4197-9dd4-d579474fd7e9": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image.jpg",
+        "image_width": 700,
+        "subheading": "",
+        "title": "1920s Inspired dress",
+        "use_h1": false,
+        "text": "<p>The fashion of the 1920s continues to inspire designers today. From the iconic \"flapper\" dress to the long beads and feather boas, many elements of 1920s fashion have become timeless classics. Fashion designers continue to incorporate these elements into their designs, paying tribute to the glamour and freedom of the Roaring Twenties.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "image_position": "left",
+        "text_alignment": "left",
+        "use_alt_bg": false
+      }
+    },
+    "63c9a312-d076-4d40-b804-da9e92b883bc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0": {
+          "type": "heading",
+          "settings": {
+            "title": "1920s Inspired dress",
+            "use_h1": false
+          }
+        },
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The fashion of the 1920s continues to inspire designers today. From the iconic \"flapper\" dress to the long beads and feather boas, many elements of 1920s fashion have become timeless classics. Fashion designers continue to incorporate these elements into their designs, paying tribute to the glamour and freedom of the Roaring Twenties.<br\/><\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-0",
+        "template--16685287112925__63c9a312-d076-4d40-b804-da9e92b883bc-16783316849590a318-1"
+      ],
+      "custom_css": [
+        "p {font-size: 17px; margin: 0 auto; text-align: center; line-height: 1.5;}",
+        "h2 {margin: 0 auto; text-align: center; line-height: 2;}",
+        "img {display: block; margin: 0 auto;}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "left",
+        "full_width": false,
+        "use_alt_bg": false
+      }
+    },
+    "68232a87-e401-479b-845d-1a62324bdeeb": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16695019372765__68232a87-e401-479b-845d-1a62324bdeeb-1679634605b3e03a26-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/image.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16695019372765__68232a87-e401-479b-845d-1a62324bdeeb-1679634605b3e03a26-1"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "use_alt_bg": false
+      }
+    },
+    "67e89375-003f-4303-90a6-7458465553c3": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".has-paging__title {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "SHOP 1920s Inspired dress",
+        "collection": "1920s-inspired-gatsby-dress-9",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": false,
+        "moreurl": "",
+        "full_width": false
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}",
+        ".back {display: none;}"
+      ],
+      "settings": {
+        "show_date": false,
+        "show_author": false,
+        "show_article_tags": false,
+        "show_sharing_icons": true,
+        "show_featured_image": false,
+        "full_width_image": false,
+        "featured_image_height": "natural",
+        "enable_title_overlay": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef": {
+      "type": "logo-list",
+      "blocks": {
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282541_fb_social_media_facebook_facebook_logo_social_network_icon_fd6b582a-fdd0-4fbe-a3d0-aa084695ae87.png",
+            "image_width": 40,
+            "link": "https:\/\/www.facebook.com\/sharer.php?u=https%3A%2F%2Fbabeyond.com%2Fblogs%2Fstyle%2Fwhat-did-people-wear-in-the-1920s",
+            "title": ""
+          }
+        },
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282551_tweet_twitter_twitter_logo_icon_a52bbc76-aea3-4c04-ba3c-43b881018f3f.png",
+            "image_width": 40,
+            "link": "https:\/\/twitter.com\/intent\/tweet?text=1920s%20Fashion%20%20Whatn%20Didn%20%20People%20Wear%20in%20the1920s?&url=https:\/\/babeyond.com\/blogs\/style\/what-did-people-wear-in-the-1920s",
+            "title": ""
+          }
+        },
+        "63791460-50c7-440c-bc47-9861f9327ee8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5282545_pin_pinterest_inspiration_pinterest_logo_icon_3bf23350-beb7-4fbe-9de8-a7be021dfa58.png",
+            "image_width": 40,
+            "link": "https:\/\/www.pinterest.com\/pin-builder\/?description=What+ Did+People+Wear+in+the+1920s&media=%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0015%2F8937%2F9159%2Farticles%2F04_1024x1024.png%3Fv%3D1678332826&method=button&url=https:\/\/babeyond.com\/blogs\/style\/what-did-people-wear-in-the-1920s",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "2852e04c-382a-41c8-ba50-7ea1f1a344e9",
+        "5f8cdce6-2ad2-476f-829c-7c409a53a131",
+        "63791460-50c7-440c-bc47-9861f9327ee8"
+      ],
+      "custom_css": [
+        "h2 {font-size: 14px;}",
+        ".rimage-outer-wrapper {}"
+      ],
+      "settings": {
+        "title": "SHARE ARTICLE",
+        "image_opacity": 80,
+        "use_alt_bg": false
+      }
+    },
+    "06b1fff1-7390-4d06-818d-505593e9ab90": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "blog_bar_col": "#c9beac",
+        "blog_bar_col_mb": "#f5f2eb",
+        "title": "MORE IN STYLE",
+        "blog": "style",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "subtitle": "<p><\/p>",
+        "button": "<p><\/p>",
+        "crop_ratio": "1.78"
+      }
+    },
+    "3568729d-44e7-4b0d-b1de-d54efbc49a02": {
+      "type": "special-blog",
+      "blocks": {
+        "bdd63748-8dbd-498c-8a15-32132d716dad": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/clara-bow-the-flapper-icon-of-the-roaring-twenties",
+            "image": "shopify:\/\/shop_images\/4f034d0903d1b1b45dda928540c8137c.jpg",
+            "title": "<p>Clara Bow: The Flapper Icon of the Roaring Twenties<\/p>",
+            "main_content": "<p>Discover the Captivating Tale of Clara Bow: From Adversity to Flapper Extraordinaire, Her Story Transcends Time.<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "8cf5dfe7-eff5-4891-8ef5-ce08e7e08f5a": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/step-back-in-time-a-journey-through-the-best-1920s-movies",
+            "image": "shopify:\/\/shop_images\/c9ebf776602493aa6fc17cc7eb4b8bb6.jpg",
+            "title": "<p>Step Back in Time: A Journey through the Best 1920s Movies<\/p>",
+            "main_content": "<p>No one asks to be left behind. But in a hundred years, when you and I are both long gone, any time someone threads a frame of yours through a sprocket, you will be alive again. -- Elinor St. John, Babylon<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        },
+        "84fb46e4-ae90-4b94-b51f-10ab2a1582a0": {
+          "type": "block",
+          "settings": {
+            "blog_url": "https:\/\/babeyond.com\/blogs\/style\/wedding-season-in-1920s-gatsby-style",
+            "image": "shopify:\/\/shop_images\/800px-StateLibQld_1_80359_Queensland_wedding_party__ca._1920s.jpg",
+            "title": "<p>Wedding Season in 1920s Gatsby Style<\/p>",
+            "main_content": "<p>Step into the Timeless Glamour of the Gatsby Era, unveiling Wedding Fashion That Transcends Decades!<\/p>",
+            "button": "",
+            "blog_btn_url": "",
+            "blog_bg_col_des": "#C9BEAC",
+            "blog_bg_col_mb": "#C9BEAC",
+            "blog_content_col_des": "#171717",
+            "blog_content_col_mb": "#676869"
+          }
+        }
+      },
+      "block_order": [
+        "bdd63748-8dbd-498c-8a15-32132d716dad",
+        "8cf5dfe7-eff5-4891-8ef5-ce08e7e08f5a",
+        "84fb46e4-ae90-4b94-b51f-10ab2a1582a0"
+      ],
+      "settings": {
+        "crop_ratio": "1.0"
+      }
+    }
+  },
+  "order": [
+    "764069ad-b66b-4fd9-a8d2-c15b76a0a2a3",
+    "a0bd9941-dfdc-4b7b-970e-0055d56b945a",
+    "f2d6a5a0-1fa6-4cea-8afc-3dba3d7bd238",
+    "faf5e14d-6bc6-44e8-b2b8-a2010047bbb6",
+    "4b663300-f0bb-487a-8b94-03a9214c241d",
+    "6c5a9da8-3305-4881-9476-664afafe11d9",
+    "749871a5-7ae7-4155-ae99-9d8b5fbae00f",
+    "b57a0a43-c9be-45eb-867f-57c71542fa67",
+    "a12918a4-a89e-4c6b-8669-1c99038a5ee9",
+    "62e7601a-cc09-4197-9dd4-d579474fd7e9",
+    "63c9a312-d076-4d40-b804-da9e92b883bc",
+    "68232a87-e401-479b-845d-1a62324bdeeb",
+    "67e89375-003f-4303-90a6-7458465553c3",
+    "main",
+    "85213834-7e4c-4dd6-b27c-76560fd3eaef",
+    "06b1fff1-7390-4d06-818d-505593e9ab90",
+    "3568729d-44e7-4b0d-b1de-d54efbc49a02"
+  ]
+}

@@ -1,0 +1,281 @@
+/* accordion */
+.product-detail-accordion .cc-accordion-item__title {
+    padding: 8px 20px 8px 0;
+}
+.product-detail-accordion .cc-accordion,
+.product-detail-accordion .cc-accordion-item {
+    border: unset;
+}
+.product-detail .product-detail-accordion .cc-accordion-item__title {
+    border-bottom: 0.5px solid #666666;
+    font-size: 12px;
+    font-weight: 325;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: #282828;
+}
+.js .cc-accordion-item__content {
+    font-size: 12px;
+    font-weight: 300;
+    color: #565656;
+    padding-bottom: 12px;
+}
+.js .cc-accordion-item__content p,
+.js .cc-accordion-item__content p span {
+    letter-spacing: 1px;
+    padding-bottom: 0;
+}
+.cc-accordion-item__title:before, .cc-accordion-item__title:after {
+    width: 9px;
+    background-color: black;
+}
+/* related product */
+.product-form .related_items_product .label {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 325;
+    margin-bottom: 18px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #282828;
+}
+.flexible-layout, .fixed-layout {
+    margin-left: -12px;
+}
+.flexible-layout .column, .fixed-layout .column {
+    padding-left: 12px;
+    margin-bottom: 0;
+}
+.related_items_product .product-block .product-info {
+    margin-top: 15px;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+.related_items_product .product-block__title {
+    letter-spacing: 0;
+    line-height: normal;
+    color: #282828;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.related_items_product .product-price .product-price__amount,
+.product-recommendations .product-price__amount{
+    color: #282828;
+    font-size: 12px;
+    font-weight: 325;
+    letter-spacing: 0; 
+    margin-right: 4px;
+    font-family: 'Gotham';
+}
+.related_items_product .product-price .product-price__compare,
+.product-recommendations .product-price__compare  {
+    color: #A1A1A1;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0; 
+    font-family: 'Gotham';
+}
+.related_items_product .product-price {
+    flex-direction: column;
+}
+.related_items_product .product-price .here-is-sale,
+.product-recommendations .here-is-sale,
+#recently-viewed-products .here-is-sale
+ {
+    color: #282828;
+    font-size: 12px;
+    font-weight: 325;
+    margin-top: 2px;
+}
+.related_items_product .swatch-desktop,
+.related_items_product .swatch-small-desktop,
+.related_items_product .swatch-mobile {
+    justify-content: flex-start;
+}
+.swatch-method-image .related_items_product .product-block-options--swatch .product-block-options__item {
+    width: 32px;
+    height: 32px;
+    min-height: 32px;
+}
+.related_items_product .product-block__image-dots,
+.product-recommendations .product-block__image-dots {
+    display: none;
+}
+.related_items_product .product-block-options__more-label {
+    color: black;
+    font-size: 12px;
+    font-weight: 325;
+}
+.related_items_product .product-block .product-info .innerer .product-block-options--swatch {
+    margin-top: 8px;
+}
+/* product-recommendations */
+.swatch-method-image .product-recommendations .product-block-options--swatch .img_headpiece.product-block-options__item,
+.swatch-method-image .product-recommendations .product-block-options--swatch .product-block-options__item {
+    width: 32px;
+    height: 32px;
+    min-height: 32px;
+}
+.product-recommendations .product-price {
+    flex-direction: column;
+}
+.product-recommendations .collection-listing .product-block {
+    padding-left: 9px;
+}
+.product-recommendations .collection-listing .product-list {
+    margin-left: -9px;
+}
+.product-recommendations .product-block__title {
+    margin-bottom: 8px;
+}
+.product-recommendations .product-block .block-inner {
+    margin-bottom: 18px;
+}
+.product-recommendations .hometitle {
+    margin: 80px 0 24px;
+    font-family: MADE Saonara;
+    text-transform: unset;
+    letter-spacing: 0;
+    color: #282828;
+}
+.product-recommendations .product-block__title {
+    letter-spacing: 0;
+    font-weight: 300;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+    line-height: 14px;
+    max-height: 28px; 
+}
+.product-recommendations .product-info .product-block-options--swatch .product-block-options__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.product-recommendations .product-block-options__more-label {
+    color: #000;
+}
+body.template-product .section-main-product .jdgm-widget.jdgm-widget {
+    margin-bottom: 8px;
+}
+.product-recommendations .product-block .product-info {
+    margin-top: 12px;
+}
+#recently-viewed-products .product-info span.product-block-options__more-label {
+  color:#000;
+  margin-bottom:8px;
+}
+@media (min-width:768px) {
+    /* product-recommendations */
+    .product-recommendations .container {
+        padding: 0 48px;
+    }
+    .related_items_product .product-block-options__more-label {
+        font-size: 14px;
+    }
+    .related_items_product .product-price .product-price__amount {
+        font-size: 14px;
+    }
+    .product-recommendations .collection-listing .product-block {
+        padding-left: 24px;
+    }
+    .product-recommendations .collection-listing .product-list {
+        margin-left: -24px;
+    }
+    .product-recommendations .hometitle {
+        margin: 80px 0 48px;
+        font-size: 40px;
+        color: #494949;
+    }
+    .product-recommendations .product-block .product-info {
+        margin-top: 16px;
+    }
+    .product-recommendations  .product-block__title {
+        text-align: center;
+    }
+    .product-recommendations .product-price {
+        justify-content: center;
+        align-items: center;
+    }
+    .product-recommendations .product-block__title {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    .related_items_product .product-price .here-is-sale,
+    .product-recommendations .here-is-sale
+    {
+        font-size: 14px;
+    }
+    .swatch-method-image .product-recommendations .product-block-options--swatch .img_headpiece.product-block-options__item,
+    .swatch-method-image .product-recommendations .product-block-options--swatch .product-block-options__item {
+        width: 40px;
+        height: 40px;
+        min-height: 40px;
+        background-size: contain;
+    }
+    /* related product */
+    .swatch-method-image #recently-viewed-products .product-block-options--swatch .product-block-options__item {
+        width: 40px;
+        height: 40px;
+        min-height: 40px;
+        background-size: contain;
+    }
+    #recently-viewed-products .product-block .product-info,
+    .related_items_product .product-block .product-info {
+        margin-top: 12px;
+    }
+    .swatch-method-image .related_items_product .product-block-options {
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+
+    .swatch-method-image #recently-viewed-products .product-block-options {
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-top: 12px !important;
+    }
+    .swatch-method-image .product-block-options__item {
+        margin: 0 4px 10px;
+    }
+    .product-block .block-inner {
+        margin-bottom: 24px;
+    }
+    .related_items_product .product-price .product-price__amount,
+    .related_items_product .product-price .product-price__compare,
+    #recently-viewed-products .product-price .product-price__amount,
+    #recently-viewed-products .product-price .product-price__compare,
+    .product-recommendations .product-price__amount,
+    .product-recommendations .product-price__compare {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1140px) {
+    .swatch-method-image .related_items_product .product-block-options--swatch .product-block-options__item {
+        width: 40px;
+        height: 40px;
+        min-height: 40px;
+        background-size: cover;
+    }
+}
+@media (max-width: 767px) {
+  .product-recommendations .here-is-sale,
+  .product-recommendations .product-price-custom {
+    line-height: 1;
+  }
+  .product-recommendations .here-is-sale {
+    margin-top: 8px
+  }
+  .product-recommendations .product-block .product-info .innerer .product-block-options--swatch {
+    margin-top: 12px;
+    margin-bottom: 4px;
+  }
+}
