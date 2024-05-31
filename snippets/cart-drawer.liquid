@@ -13,7 +13,7 @@
   }
   .draw-product-wrapper {
     display: flex;
-    gap: 15px;
+    gap: 12px;
   }
   .recommend-product-wrapper h2 {
     text-transform: capitalize;
@@ -25,12 +25,13 @@
   }
   .recommend-product-wrapper {
     padding: 24px 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
   }
   .recommend-product-wrapper .prod-details h4 {
     font-size: 14px;
     margin: 0;
+    text-transform: capitalize;
   }
   .recommend-product-wrapper .look-details {
     margin-top: 5px;
@@ -50,6 +51,7 @@
   .recommend-product-wrapper .prod-btn a {
     color: #fff;
     font-size: 16px;
+    font-family: Halyard Display;
   }
   .recommend-product-wrapper .look-img img {
     width: 134px;
@@ -72,6 +74,7 @@
     margin: 0;
     font-size: 18px !important;
     color: #fff !important;
+    font-family: Halyard Display !important; 
   }
   #cart-drawer-right .custom-drawer-checkout .cart-payment-buttons{
     margin: 0 !important;
@@ -81,6 +84,7 @@
     border: unset;
     font-size: 18px !important;
     line-height: 20px;
+    font-family: Halyard Display !important;
   }
   .custom-drawer-shopping {
     height: 80px;
@@ -116,7 +120,8 @@
       gap: 8px;
     }
     .recommend-product-wrapper .look-img img {
-      width: 100%;
+      width: 175px;
+      height: 220px;
     }
     .recommend-product-wrapper .prod-details h4 {
       font-size: 12px;
@@ -129,9 +134,6 @@
     .recommend-product-wrapper .prod-btn a {
       font-size: 14px;
     }
-    #cart-drawer-right .drawer__footer {
-      margin-top: 16px;
-    }
     .custom-drawer-checkout {
       height: 66px;
       padding: 0 24px;
@@ -139,7 +141,7 @@
     #cart-drawer-right .custom-drawer-checkout .totals__subtotal span {
       font-size: 16px !important;
     }
-    #cart-drawer-right .custom-drawer-checkout .cart__checkout-button {
+    #cart-drawer-right .custom-drawer-checkout .cart__checkout-button #text-before-submit{
       font-size: 16px !important;
     }
     #cart-drawer-right.drawer .drawer__header {
@@ -149,7 +151,7 @@
       display: none;
     }
     #cart-drawer-right .drawer__footer {
-      margin-top: 16px;
+      margin-top: 16px !important;
     }
     #cart-drawer-right .cart-drawer__footer {
       margin-bottom: 20px;
@@ -261,6 +263,18 @@
                                class="cart-item__name">
                               {{ item.product.title }}
                             </a>
+                          </div>                          
+
+                          <div class="cart-item-swatch">
+                            {%- for option in item.options_with_values -%}
+                              {%- if option.name == "Size" -%}
+                                <div class="product-option-size">
+                                  <dt class="">SIZE:{{ option.value -}}</dt>
+                                </div>
+                              {%- endif -%}
+                            {%- endfor -%}
+
+
                           </div>
 
                           <div class="cart-item-price">
@@ -303,17 +317,6 @@
 
                           </div>
 
-                          <div class="cart-item-swatch">
-                            {%- for option in item.options_with_values -%}
-                              {%- if option.name == "Size" -%}
-                                <div class="product-option-size">
-                                  <dt class="">SIZE:{{ option.value -}}</dt>
-                                </div>
-                              {%- endif -%}
-                            {%- endfor -%}
-
-
-                          </div>
                         </div>
 
                         <div class="loading-overlay hidden">

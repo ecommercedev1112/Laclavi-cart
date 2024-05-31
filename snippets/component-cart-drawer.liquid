@@ -476,6 +476,7 @@ cart-drawer#cart-drawer-right {
         font-weight: 325;
         font-family: Gotham;
         letter-spacing: 0;
+        display: none;
     }
 
     #cart-drawer-right .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(2),
@@ -640,8 +641,19 @@ cart-drawer#cart-drawer-right {
 #cart-drawer-right .info-product-cart .product-option-size {
     color: #565656;
     display: flex;
-    text-transform: uppercase;
+    margin-bottom: 2px;
 }
+#cart-drawer-right .info-product-cart .product-option-size dt{
+    font-size: 17px;
+    line-height: 24px;
+    font-family: Halyard Display;
+    text-transform: capitalize;
+}
+
+
+
+
+
 #cart-drawer-right .cart-item__quantity-wrapper .quantity__button,
 #cart-drawer-right .cart-item__quantity-wrapper .quantity__input {
     padding: 0;
@@ -666,6 +678,7 @@ cart-drawer#cart-drawer-right {
 }
 #cart-drawer-right .cart-item__quantity-wrapper {
     width: fit-content;
+    display: none;
 }
 #cart-drawer-right .cart-quantity .quantity__input {
     text-align: center;
@@ -678,12 +691,38 @@ cart-drawer#cart-drawer-right {
     align-items: flex-end;
 }
 #cart-drawer-right .cart-item-name {
-    margin-bottom: 16px;
-    text-transform: uppercase;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+#cart-drawer-right .cart-item-name a {
+    font-size: 17px;
+    line-height: 24px;
+    font-family: Halyard Display;
 }
 #cart-drawer-right .cart-item-price {
-    margin-bottom: 12px;
+    margin-bottom: 2px;
 }
+#cart-drawer-right .cart-item-price span{
+    font-size: 14px;
+    line-height: 21px;
+    font-family: Halyard Display;
+}
+@media(max-width: 768px) {
+    #cart-drawer-right .cart-item-name a {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    #cart-drawer-right .info-product-cart .product-option-size dt{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    #cart-drawer-right .cart-item-price span{
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+
 #cart-drawer-right .cart-item__price-wrapper,
 #cart-drawer-right .cart-remove-button {
     line-height: 1;
@@ -703,6 +742,7 @@ cart-drawer#cart-drawer-right {
     width: 10px;
     height: 10px;
     color: #282828;
+    display: none;
 }
 #cart-drawer-right .cart-item__error {
     width: 100%;
