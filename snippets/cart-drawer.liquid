@@ -11,6 +11,150 @@
   .drawer {
     visibility: hidden;
   }
+  .draw-product-wrapper {
+    display: flex;
+    gap: 15px;
+  }
+  .recommend-product-wrapper h2 {
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 24px;
+    font-family: IvyOra Display;
+    color: #000;
+  }
+  .recommend-product-wrapper {
+    padding: 24px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .recommend-product-wrapper .prod-details h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+  .recommend-product-wrapper .look-details {
+    margin-top: 5px;
+  }
+  .recommend-product-wrapper .prod-details .prod-price {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+  }
+  .recommend-product-wrapper .prod-btn {
+    background: #1F512C;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .recommend-product-wrapper .prod-btn a {
+    color: #fff;
+    font-size: 16px;
+  }
+  .recommend-product-wrapper .look-img img {
+    width: 134px;
+    height: 174px;
+  }
+  .custom-drawer-checkout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background: #1F512C;
+    border-radius: 5px;
+    padding: 0 32px;
+  }
+  #cart-drawer-right .custom-drawer-checkout .totals__subtotal {
+    margin: 0 !important;
+
+  }
+  #cart-drawer-right .custom-drawer-checkout .totals__subtotal span {
+    margin: 0;
+    font-size: 18px !important;
+    color: #fff !important;
+  }
+  #cart-drawer-right .custom-drawer-checkout .cart-payment-buttons{
+    margin: 0 !important;
+  }
+  #cart-drawer-right .custom-drawer-checkout .cart__checkout-button {
+    background-color: unset !important;
+    border: unset;
+    font-size: 18px !important;
+    line-height: 20px;
+  }
+  .custom-drawer-shopping {
+    height: 80px;
+    border: 1px solid #000;
+    padding: 30px 32px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .custom-drawer-shopping a {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 500;
+    font-family: Halyard Display;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .recommend-product-wrapper h2 {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 16px;
+    }
+    .recommend-product-wrapper {
+      padding: 16px 0;
+    } 
+    .draw-product-wrapper {
+      gap: 8px;
+    }
+    .recommend-product-wrapper .look-img img {
+      width: 100%;
+    }
+    .recommend-product-wrapper .prod-details h4 {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .recommend-product-wrapper .prod-details .prod-price {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .recommend-product-wrapper .prod-btn a {
+      font-size: 14px;
+    }
+    #cart-drawer-right .drawer__footer {
+      margin-top: 16px;
+    }
+    .custom-drawer-checkout {
+      height: 66px;
+      padding: 0 24px;
+    }
+    #cart-drawer-right .custom-drawer-checkout .totals__subtotal span {
+      font-size: 16px !important;
+    }
+    #cart-drawer-right .custom-drawer-checkout .cart__checkout-button {
+      font-size: 16px !important;
+    }
+    #cart-drawer-right.drawer .drawer__header {
+      margin-top: 50px;
+    }
+    .custom-drawer-shopping {
+      display: none;
+    }
+    #cart-drawer-right .drawer__footer {
+      margin-top: 16px;
+    }
+    #cart-drawer-right .cart-drawer__footer {
+      margin-bottom: 20px;
+    }
+  }
 </style>
 <script>
   function triggerBtn(target, className) {
@@ -241,6 +385,40 @@
           </p>
         </form>
       </cart-drawer-items>
+
+      <div class="recommend-product">
+        {% for item in cart.items %}
+          {% if forloop.last %}
+          <div class="recommend-product-wrapper">
+            <h2>{{ settings.cart_draw_title }}</h2>
+            <div class="draw-product-wrapper">
+              <script>console.log({{ item.product.metafields.custom.product_list.value | json}},"here")</script>
+              {% for item_product in item.product.metafields.custom.product_list.value %}
+                <div class="product-item">
+                  <div class="complete-look-col">
+                    <div class="look-img">
+                      <img src="{{ item_product.featured_image.src | product_img_url: 'master' }}" alt="{{ product.title }}">
+                    </div>
+                    <div class="look-details">
+                      <div class="look-inner">
+                        <div class="prod-details">
+                          <h4>{{ item_product.title }}</h4>
+                          <div class="prod-price">{{ item_product.price | money}}</div>
+                        </div>
+                        <div class="prod-btn">
+                          <a href="javascript:void(0)" class="quick-btn quick-add-to-cart" data-variant-id="{{ item_product.selected_or_first_available_variant.id }}">ADD</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      
       <div class="drawer__footer">
         <div class="drawer__footer--container">
 
@@ -248,8 +426,8 @@
           <!-- Subtotals -->
           <div class="cart-drawer__footer " {{ block.shopify_attributes }}>
             <div class="totals" role="status">
-              <div class="">
-                <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}
+              <div class="custom-drawer-checkout">
+                <h2 class="totals__subtotal">
 
                   {% liquid
                     assign total_price = cart.total_price | money_without_trailing_zeros
@@ -278,10 +456,13 @@
 
                 </div>
               </div>
+              <div class="custom-drawer-shopping">
+                <a href="{{ item.url }}">continue shopping</a>
+              </div>
 
-              <small class="tax-note caption-large rte">
+              {% comment %} <small class="tax-note caption-large rte">
                 {{ 'cart.general.taxes_and_shipping_at_checkout' | t }}
-              </small>
+              </small> {% endcomment %}
             </div>
           </div>
           <div>

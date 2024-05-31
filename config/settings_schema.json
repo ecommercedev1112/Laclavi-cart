@@ -1319,7 +1319,7 @@
           {
             "value": "page",
             "label": "Page"
-          }
+          }          
         ],
         "default": "drawer"
       },
@@ -1328,7 +1328,13 @@
         "label": "Enable Dynamic Checkout In Cart Drawer",
         "id": "enable_dynamic_checkout",
         "default": true
-      }
+      },
+      {
+        "type": "text",
+        "label": "title",
+        "id": "cart_draw_title",
+        "default": "Other People Also Buy"
+      }      
     ]
   },
   {
