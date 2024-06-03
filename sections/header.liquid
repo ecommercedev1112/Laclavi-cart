@@ -415,7 +415,7 @@
               {% endif %}
               {% endcomment %}
     
-                {% if section.settings.enable_search %}
+              {% if section.settings.enable_search %}
                 <a class="show-search-link" href="{{ routes.search_url }}">
                   <span class="show-search-link__text">
                     {{- 'layout.search.open' | t -}}
@@ -427,36 +427,41 @@
                   {% endcomment %}
                 </a>
               {% endif %}
-                {% if customer %}
-                  <a class="header-account-link" href="{{ routes.account_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
-                    <span class="desktop-only">{{ 'layout.customer.account' | t | escape }}</span>
-                    {% comment %}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1.52881 15.0711C1.52881 11.9211 4.10878 9.34106 7.25875 9.34106H8.74072C11.8907 9.34106 14.4707 11.9211 14.4707 15.0711" stroke="#282828" stroke-width="0.599998" stroke-miterlimit="10" stroke-linecap="round"/><path d="M7.9967 8.69298C10.1406 8.69298 11.8787 6.95494 11.8787 4.81097C11.8787 2.66699 10.1406 0.928955 7.9967 0.928955C5.85274 0.928955 4.11475 2.66699 4.11475 4.81097C4.11475 6.95494 5.85274 8.69298 7.9967 8.69298Z" stroke="#282828" stroke-width="0.599998" stroke-miterlimit="10" stroke-linecap="round"/></svg>
-                    {% endcomment %}
-                  </a>
-                {% else %}
-                  <a class="header-account-link" href="{{ routes.account_login_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
-                    <span class="desktop-only">{{ 'layout.customer.account' | t | escape }}</span>
-                    {% comment %}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1.52881 15.0711C1.52881 11.9211 4.10878 9.34106 7.25875 9.34106H8.74072C11.8907 9.34106 14.4707 11.9211 14.4707 15.0711" stroke="#282828" stroke-width="0.599998" stroke-miterlimit="10" stroke-linecap="round"/><path d="M7.9967 8.69298C10.1406 8.69298 11.8787 6.95494 11.8787 4.81097C11.8787 2.66699 10.1406 0.928955 7.9967 0.928955C5.85274 0.928955 4.11475 2.66699 4.11475 4.81097C4.11475 6.95494 5.85274 8.69298 7.9967 8.69298Z" stroke="#282828" stroke-width="0.599998" stroke-miterlimit="10" stroke-linecap="round"/></svg>
-                    {% endcomment %}
-                  </a>
-                {% endif %}
+              {% if customer %}
+                <a class="header-account-link" href="{{ routes.account_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
+                  <span class="desktop-only">{{ 'layout.customer.account' | t | escape }}</span>
+                  {% comment %}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1.52881 15.0711C1.52881 11.9211 4.10878 9.34106 7.25875 9.34106H8.74072C11.8907 9.34106 14.4707 11.9211 14.4707 15.0711" stroke="#282828" stroke-width="0.599998" stroke-miterlimit="10" stroke-linecap="round"/><path d="M7.9967 8.69298C10.1406 8.69298 11.8787 6.95494 11.8787 4.81097C11.8787 2.66699 10.1406 0.928955 7.9967 0.928955C5.85274 0.928955 4.11475 2.66699 4.11475 4.81097C4.11475 6.95494 5.85274 8.69298 7.9967 8.69298Z" stroke="#282828" stroke-width="0.599998" stroke-miterlimit="10" stroke-linecap="round"/></svg>
+                  {% endcomment %}
+                </a>
+              {% else %}
+                <a class="header-account-link" href="{{ routes.account_login_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
+                  <span class="desktop-only">{{ 'layout.customer.account' | t | escape }}</span>
+                  {% comment %}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1.52881 15.0711C1.52881 11.9211 4.10878 9.34106 7.25875 9.34106H8.74072C11.8907 9.34106 14.4707 11.9211 14.4707 15.0711" stroke="#282828" stroke-width="0.599998" stroke-miterlimit="10" stroke-linecap="round"/><path d="M7.9967 8.69298C10.1406 8.69298 11.8787 6.95494 11.8787 4.81097C11.8787 2.66699 10.1406 0.928955 7.9967 0.928955C5.85274 0.928955 4.11475 2.66699 4.11475 4.81097C4.11475 6.95494 5.85274 8.69298 7.9967 8.69298Z" stroke="#282828" stroke-width="0.599998" stroke-miterlimit="10" stroke-linecap="round"/></svg>
+                  {% endcomment %}
+                </a>
+              {% endif %}
               
-              
-               <a href="{{ routes.cart_url }}" class="cart-link" title="cart" aria-label="cart link" id="cart-icon-bubble-mid">
-          <span class="cart-link__label">{{ 'layout.header.cart' | t | escape }} ({{ cart.item_count }})</span>
-                {% comment %}
-                <span class="cart-link__icon">
-                  
-                  {%- render 'svg-cart' -%}
-                  
-                    <span class="cart-link__count">({{ cart.item_count }})</span>
-                  
-                </span>
-                {% endcomment %}
-                
-              </a>
+              {% if settings.cart_type == "drawer" %}
+                <a href="#" class="cart-drawer-icon cart-link" title="cart" aria-label="cart link" id="cart-icon-bubble-mid">
+                  <span class="cart-link__label">{{ 'layout.header.cart' | t | escape }} ({{ cart.item_count }})</span>
+                </a>
+              {% else %}
+                <a href="{{ routes.cart_url }}" class="cart-link" title="cart" aria-label="cart link" id="cart-icon-bubble-mid">
+                  <span class="cart-link__label">{{ 'layout.header.cart' | t | escape }} ({{ cart.item_count }})</span>
+                   {% comment %}
+                     <span class="cart-link__icon">
+                       
+                       {%- render 'svg-cart' -%}
+                       
+                         <span class="cart-link__count">({{ cart.item_count }})</span>
+                       
+                     </span>
+                   {% endcomment %}
+                   
+                </a>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -488,6 +493,7 @@
             </span>
           </a>
         {% endif %}
+
         <a href="{{ routes.cart_url }}" class="cart-link" title="cart" aria-label="cart link" id="cart-icon-bubble-mid">
           <span class="cart-link__label">{{ 'layout.header.cart' | t | escape }} ({{ cart.item_count }})</span>
           {% comment %}
@@ -931,6 +937,7 @@
     $('.middle-logo-header').attr("style", "width:" + ab +"px");
   });
 </script>
+
 
 {% schema %}
   {

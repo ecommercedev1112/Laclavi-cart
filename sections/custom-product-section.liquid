@@ -354,7 +354,7 @@
                             {{ 'products.product.add_to_cart' | t }}
                           {%- endif -%}
                         {%- endcapture -%}
-                        <div class="visible-button" onclick="validateVariant()"></div>
+                        <div class="visible-button" onclick="validateVariant(this)"></div>
                         <button class="button button--large" type="submit" data-add-to-cart-text="{{ add_to_cart_text | escape }}">
                           {{- add_to_cart_text -}}
                         </button>

@@ -15,6 +15,8 @@ class CartRemoveButton extends HTMLElement {
 
 customElements.define('cart-remove-button', CartRemoveButton);
 
+
+
 class CartItems extends HTMLElement {
     constructor() {
         super();
@@ -242,3 +244,77 @@ if (!customElements.get('cart-note')) {
         }
     );
 }
+
+class RecommendProduct extends HTMLElement {
+    constructor() {
+        super();
+
+        
+        this.querySelectorAll('form.product-purchase-form').forEach(item => {
+            $(item.closest('.product-form')).trigger('load-product-form');
+            item.addEventListener('submit', (event) => {
+                event.preventDefault();
+                let $form = $(item);
+                //Disable add button
+                $form.find('button[type="submit"]').attr('disabled', 'disabled').each(function () {
+                $(this).data('previous-value', $(this).val());
+                }).val(theme.strings.products_product_adding_to_cart);
+
+                //Hide any existing notifications
+                $('#cart-summary-overlay #shop-more').triggerHandler('click');
+
+                this.cart = document.querySelector('cart-drawer');
+                const config = fetchConfig('javascript');
+                config.headers['X-Requested-With'] = 'XMLHttpRequest';
+                delete config.headers['Content-Type'];
+
+                const formData = new FormData(item);
+                if (this.cart) {
+                    formData.append(
+                        'sections',
+                        this.cart.getSectionsToRender().map((section) => section.id)
+                    );
+                    formData.append('sections_url', window.location.pathname);
+                    this.cart.setActiveElement(document.activeElement);
+                }
+
+                config.body = formData;
+                fetch(`${routes.cart_add_url}`, config)
+                    .then((response) => response.json())
+                    .then((response) => {
+                        console.log(response);
+                      this.cart.renderContents(response);
+                        
+                      //Enable add button
+                      $form.find('button[type="submit"]').removeAttr('disabled').each(function () {
+                        let buttonAfter = $(this);
+                        //Set to 'DONE', alter button style, wait a few secs, revert to normal
+                        buttonAfter.val(theme.strings.products_product_added_to_cart).addClass('inverted');
+                        window.setTimeout(function () {
+                          buttonAfter.removeClass('inverted').val(buttonAfter.data('previous-value'));
+                        }, 3000); 
+                      }); 
+
+                      //Dispatch change event
+                      document.documentElement.dispatchEvent(
+                        new CustomEvent('theme:cartchanged', { bubbles: true, cancelable: false })
+                      );
+
+                    })
+                    .catch((e) => {
+                      console.error(e);
+                    })
+                    .finally(() => {
+                      if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
+
+                      $form.find('button[type="submit"]').removeAttr('disabled').each(function () {
+                        $(this).val($(this).data('previous-value'));
+                      });
+
+                    });
+            })
+        })
+    }
+}
+
+customElements.define('recommend-product', RecommendProduct);

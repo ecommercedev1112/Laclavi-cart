@@ -3235,14 +3235,13 @@
 
 
           let formsAdd = document.getElementsByClassName("product-purchase-form");
-          if (formsAdd.length > 0) {
+          // if (formsAdd.length > 0) {
             this.cart = document.querySelector('cart-drawer');
-            this.form = formsAdd[0];
             const config = fetchConfig('javascript');
             config.headers['X-Requested-With'] = 'XMLHttpRequest';
             delete config.headers['Content-Type'];
 
-            const formData = new FormData(this.form);
+            const formData = new FormData(this);
             if (this.cart) {
               formData.append(
                   'sections',
@@ -3253,6 +3252,7 @@
             }
 
             config.body = formData;
+            console.log(formData);
              fetch(`${routes.cart_add_url}`, config)
                   .then((response) => response.json())
                   .then((response) => {
@@ -3265,8 +3265,8 @@
                       buttonAfter.val(theme.strings.products_product_added_to_cart).addClass('inverted');
                       window.setTimeout(function () {
                         buttonAfter.removeClass('inverted').val(buttonAfter.data('previous-value'));
-                      }, 3000);
-                    });
+                      }, 3000); 
+                    }); 
 
                     //Dispatch change event
                     document.documentElement.dispatchEvent(
@@ -3285,7 +3285,7 @@
                     });
 
                   });
-          }
+          // }
         }
       });
     });
@@ -3297,8 +3297,8 @@
       });
     }
   };
-
   
+   
   
     /*=============== Components 购物车暂缓 ===============*/
     // theme.applyAjaxToProductForm = function ($formContainer) {
@@ -7450,12 +7450,14 @@
       }
     }
 
-    function validateVariant() {
-      let color = document.querySelectorAll('.option-selector--swatch input.opt-btn'),
-          size = document.querySelectorAll('.option-selector--with-size-chart input.opt-btn')
-          visibleBTN = document.querySelector('.visible-button'),
-          error_ms = document.querySelector('.error-ms-pd'),
-          btnSubmit = document.querySelector('.quantity-submit-row__submit button[type="submit"]');
+    function validateVariant(_this) {
+      console.log(_this);
+      let form = _this.closest('.product-form');
+      let color = form.querySelectorAll('.option-selector--swatch input.opt-btn'),
+          size = form.querySelectorAll('.option-selector--with-size-chart input.opt-btn')
+          visibleBTN = form.querySelector('.visible-button'),
+          error_ms = form.querySelector('.error-ms-pd'),
+          btnSubmit = form.querySelector('.quantity-submit-row__submit button[type="submit"]');
       if (color.length > 0 && size.length > 0) {
         for (const colorItem of color) {
           if (colorItem.checked == true) {
@@ -7524,4 +7526,12 @@
       }
 
     });
+
+
+
+  document.querySelector('.cart-drawer-icon').addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector('#cart-drawer-right').classList.add('active');
+    document.querySelector('body').classList.add('overflow-hidden');
+  })
 

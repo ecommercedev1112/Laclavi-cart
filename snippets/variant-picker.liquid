@@ -13,7 +13,7 @@
 {%- if product.has_only_default_variant == false -%}
   {%- if product.variants.size > 1 or block.settings.show_single -%}
     {%- assign variant_style = block.settings.variant_style -%}
-    <div class="option-selectors" data-disable-unavailable="{{ block.settings.disable_unavailable_variants }}">
+    <div class="option-selectors {{ class_name }}" data-disable-unavailable="{{ block.settings.disable_unavailable_variants }}">
       {%- for option in product.options_with_values -%}
         {%- capture option_id -%}{{ section.id }}-{{ product.id }}-{{ option.name | handle }}-selector{%- endcapture -%}
 
@@ -114,7 +114,7 @@
               <fieldset class="option-selector-fieldset rty">
                 <div class="opposing-items relative">
                    <span>Size</span>
-                  <legend class="label justify-between">
+                  <legend class="label justify-between variant-options">
                    
                     {% comment %} <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><g id="arrow_next"><path id="Vector" d="M1.31687 5.66113L6.99999 8.88543L12.6831 5.66113" stroke="#282828" stroke-width="0.56" stroke-miterlimit="10"></path></g></svg> {% endcomment %}
                   </legend>
