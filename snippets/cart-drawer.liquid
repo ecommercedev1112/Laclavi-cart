@@ -27,7 +27,6 @@
     padding: 24px 0;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
-    padding-bottom: 0;
   }
   .recommend-product-wrapper .prod-details h4 {
     font-size: 14px;
@@ -54,7 +53,7 @@
   }
   .recommend-product-wrapper .look-img img {
     width: 100%;
-    height: 198px;
+    height: 100%;
   }
   .custom-drawer-checkout {
     display: flex;
@@ -322,7 +321,7 @@
                                 {%- for option in item.options_with_values -%}
                                   {%- if option.name == 'Size' -%}
                                     <div class="product-option-size cart-property">
-                                      <span class="size">Size: {{ option.value | capitalize -}}</span>
+                                      <span class="size">Size: {{ option.value -}}</span>
                                     </div>
                                   {%- endif -%}
                                 {%- endfor -%}

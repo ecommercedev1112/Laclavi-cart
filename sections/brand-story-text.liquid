@@ -2,14 +2,17 @@
   <div class="text-container">
     <div class="brand-story-text-row">
       {% for block in section.blocks %}
-      <div class="brand-story-text-col left-col">
-        <div class="text-col-title">
-          {{ block.settings.title }}
+        <div class="brand-story-text-col left-col">
+          <div class="custom text-col-title">
+            {{ block.settings.title }}
+          </div>
+          <div class="mobile-text">
+            <p>{{ block.settings.mobile_text_left }}</p>
+          </div>
         </div>
-      </div>
-      <div class="brand-story-text-col right-col">
-        {{ block.settings.text }}
-      </div>
+        <div class="brand-story-text-col right-col">
+          {{ block.settings.text }}
+        </div>
       {% endfor %}
     </div>
   </div>
@@ -20,18 +23,33 @@
     margin-block: {{section.settings.section_spacing_block}}px;
     margin-inline: {{section.settings.section_spacing_inline}}px;
   }
+  .mobile-text p {
+      display: none;
+  }
 
   @media (max-width: 989px){
      .text-container{
       margin-block: calc({{section.settings.section_spacing_block}}px/2);
-    } 
+    }
   }
-  
+
   @media (max-width: 767px){
-     .text-container{
+    .custom.text-col-title {
+      display: none;
+    }
+    .mobile-text p {
+      display: block;
+      font-size: 24px;
+      line-height: 26px;
+      color: #000;
+      font-family: IvyOra Display;
+      margin: 0;
+      letter-spacing: -0.2px;
+    }
+    .text-container{
       margin-block: {{section.settings.section_spacing_block_mobile}}px;
       margin-inline: {{section.settings.section_spacing_inline_mobile}}px;
-    } 
+    }
   }
 </style>
 
@@ -91,6 +109,12 @@
           "id": "title",
           "label": "Text Left",
           "default": "<p>Use this text to share information</p>"
+        },
+        {
+          "type": "text",
+          "id": "mobile_text_left",
+          "label": "Mobile text",
+          "default": "A passion for golf provides a sanctuary for our souls"
         },
         {
           "type": "richtext",

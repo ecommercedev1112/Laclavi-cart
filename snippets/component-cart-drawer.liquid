@@ -19,7 +19,7 @@
       display: block;
       right: 0;
       width: 100%;
-      height: 100vh;
+      height: calc(100vh - 108px);
       transform: translate(0);
       background-color: #efece5;
   }
@@ -589,8 +589,7 @@
   }
   #cart-drawer-right.drawer cart-drawer-items {
       margin: 0;
-      /* margin: 0 -18px 0 -24px;
-      padding: 0 18px 0 24px; */
+      min-height: 500px;
   }
   #cart-drawer-right.drawer .cart-item__image {
       width: 100%;
